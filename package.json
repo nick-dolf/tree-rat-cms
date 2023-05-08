@@ -1,0 +1,19 @@
+{
+  "name": "tree-rat-cms",
+  "version": "1.0.0",
+  "description": "Open source, git based, CMS. No Database, uses JSON files. Builds from EJS templates.",
+  "main": "treerat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nick-dolf/tree-rat-cms.git"
+  },
+  "author": "Nick Dolf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nick-dolf/tree-rat-cms/issues"
+  },
+  "homepage": "https://github.com/nick-dolf/tree-rat-cms#readme"
+}
