@@ -10,8 +10,11 @@ if (process.env.NODE_ENV === "development") {
   app.locals.pretty = true;
 }
 
+app.set("view engine", "ejs")
+app.set("views", ["admin/views", "views"])
+
 app.get("/", (req, res) => {
-  res.send("TREE RAT");
+  res.render("default");
 });
 
 app.listen(PORT, () => {
