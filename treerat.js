@@ -2,6 +2,10 @@ require('dotenv').config()
 const PORT = 7533;
 const express = require("express");
 const app = express();
+module.exports = app;
+const build = require("./admin/utils/build")
+
+build.setup("treerat.json")
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
