@@ -1,11 +1,12 @@
 const fse = require("fs-extra");
 const path = require("path");
 const express = require("express");
-const app = require("../../treerat"); //
+const app = require("../../treerat");
+const { PurgeCSS } = require('purgecss')
 
 const pageDir = path.join(process.cwd(), "pages/");
 
-function setup(file) {
+async function setup(file) {
   // Read Site Configuration
   const config = fse.readJsonSync(file);
   app.locals.siteDir = config.siteDirectory;
@@ -34,6 +35,13 @@ function setup(file) {
       draftedDate: new Date().toString(),
     });
   }
+
+  const purgeCSSResult = await new PurgeCSS().purge({
+    content: ['admin/views/admin/*.ejs'],
+    css: ['admin/assets/bootstrap.css']
+  })
+
+  fse.outputFileSync('admin/assets/bootstrap.purged.css', purgeCSSResult[0].css)
 }
 
 module.exports = { setup };

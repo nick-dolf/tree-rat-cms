@@ -21,6 +21,11 @@ app.get("/", (req, res) => {
   res.render("default");
 });
 
+/*
+/ Admin Route
+*/
+app.use("/admin", require("./admin/routes/admin"));
+
 app.listen(PORT, () => {
   console.log(`\n--\nTree Rat CMS Starting on port: ${PORT}\n--`);
 });
