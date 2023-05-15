@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const fse = require("fs-extra");
 router.use(express.urlencoded({ extended: true }));
 const cookieSession = require("cookie-session");
 const { body, validationResult } = require("express-validator");
@@ -47,7 +48,14 @@ router.post(
 
       if (errors.isEmpty()) {
         if (req.body.password === req.body.confirmPassword) {
-          res.render("admin/register", { page: { info: "Success" } });
+          const user = req.body.email;
+          const pass = req.body.password;
+
+          fse.appendFileSync(
+            ".env",
+            `\nADMIN_USER="${user}"\nADMIN_PASS="${pass}"`
+          );
+          process.exit();
         } else {
           res.render("admin/register", {
             page: { info: "Passwords do not match" },
@@ -68,29 +76,47 @@ router.use((req, res, next) => {
   }
 });
 
+/*
+ * Login User
+ */
 router.get("/login", (req, res) => {
-  if (process.env.adminName) {
-    res.render("admin/login", { page: { info: "" } });
-  } else {
-    res.render("admin/login", {
-      page: { info: "Create Admin user", init: true },
-    });
-  }
+  res.render("admin/login", { page: { info: "Welcome Back!" } });
 });
 
 router.post(
   "/login",
-  body("email").isEmail().withMessage("Invalid email address"),
-  body("password").notEmpty().withMessage("Invalid password"),
+  body("email").isEmail().normalizeEmail().withMessage("Invalid email address"),
+  body("password").trim().escape(),
   (req, res) => {
     const errors = validationResult(req);
 
     if (errors.isEmpty()) {
-      res.render("admin/login", { page: { info: "Congrats" } });
+      if (
+        req.body.email === adminUser.name &&
+        req.body.password === adminUser.password
+      ) {
+        req.session.loggedin = true;
+        res.redirect(req.app.locals.site.url + "admin/");
+      } else {
+        res.render("admin/login", { page: { info: "Invalid credentials" } });
+      }
     } else {
-      res.render("admin/login", { page: { info: errors.array()[0].msg } });
+      res.render("admin/login", { page: { info: "Invalid credentials" } });
     }
   }
 );
+
+router.use((req, res, next) => {
+  if (req.session.loggedin) {
+    next();
+  } else {
+    req.session.original = req.url;
+    res.redirect(req.app.locals.site.url + "admin/login");
+  }
+});
+
+router.get("/", (req, res) => {
+  res.send("dashboard!!!");
+});
 
 module.exports = router;
