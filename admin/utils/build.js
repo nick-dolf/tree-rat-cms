@@ -2,7 +2,7 @@ const fse = require("fs-extra");
 const path = require("path");
 const express = require("express");
 const app = require("../../treerat");
-const { PurgeCSS } = require('purgecss')
+const { PurgeCSS } = require("purgecss");
 
 const pageDir = path.join(process.cwd(), "pages/");
 
@@ -36,12 +36,20 @@ async function setup(file) {
     });
   }
 
-  const purgeCSSResult = await new PurgeCSS().purge({
-    content: ['admin/views/admin/*.ejs'],
-    css: ['admin/assets/bootstrap.css']
-  })
+  // Site variables
+  app.locals.site = {};
+  app.locals.site.url = config.developmentUrl;
 
-  fse.outputFileSync('admin/assets/bootstrap.purged.css', purgeCSSResult[0].css)
+  // Remove unneeded CSS from Bootstrap
+  const purgeCSSResult = await new PurgeCSS().purge({
+    content: ["admin/views/admin/*.ejs"],
+    css: ["admin/assets/bootstrap.css"],
+  });
+
+  fse.outputFileSync(
+    "admin/assets/bootstrap.purged.css",
+    purgeCSSResult[0].css
+  );
 }
 
 module.exports = { setup };

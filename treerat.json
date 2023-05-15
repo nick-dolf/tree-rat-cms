@@ -3,5 +3,8 @@
   "pageDirectory": "pages",
   "viewDirectory": "views",
   "enableGzipCompression": true,
-  "enableAutoPrefixer": true
+  "enableAutoPrefixer": true,
+  "developmentUrl": "/",
+  "stagingUrl": "/",
+  "productionUrl": "/"
 }

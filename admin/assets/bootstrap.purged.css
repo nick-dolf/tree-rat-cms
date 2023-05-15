@@ -159,6 +159,11 @@ h5, .h5 {
   font-size: 1.25rem;
 }
 
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 address {
   margin-bottom: 1rem;
   font-style: normal;
@@ -638,6 +643,10 @@ button:not(:disabled),
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y);
   color: var(--bs-card-title-color);
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
 }
 
 @keyframes progress-bar-stripes {
