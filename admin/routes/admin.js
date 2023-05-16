@@ -35,7 +35,7 @@ const adminUser = {
   name: process.env.ADMIN_USER,
   password: process.env.ADMIN_PASS,
 };
-console.log(adminUser.password)
+
 /*
  * Create Admin user on first start up
  */
