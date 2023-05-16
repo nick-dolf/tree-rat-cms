@@ -1,16 +1,32 @@
 const express = require("express");
 const router = express.Router();
 const fse = require("fs-extra");
-router.use(express.urlencoded({ extended: true }));
 const cookieSession = require("cookie-session");
 const { body, validationResult } = require("express-validator");
+const crypto = require("crypto");
+const hashpass = require("../utils/hashpass");
 
+router.use(express.urlencoded({ extended: true }));
 router.use("/assets", express.static("admin/assets"));
+
+let secret1, secret2;
+
+if (process.env.SECRET_KEY_1) {
+  secret1 = process.env.SECRET_KEY_1;
+  secret2 = process.env.SECRET_KEY_2;
+} else {
+  secret1 = crypto.randomUUID();
+  secret2 = crypto.randomUUID();
+  fse.appendFileSync(
+    ".env",
+    `\nSECRET_KEY_1="${secret1}"\nSECRET_KEY_2="${secret2}"`
+  );
+}
 
 router.use(
   cookieSession({
     name: "session",
-    keys: ["secret1", "secret2"],
+    keys: [secret1, secret2],
     maxAge: 1 * 60 * 1000,
   })
 );
@@ -19,7 +35,7 @@ const adminUser = {
   name: process.env.ADMIN_USER,
   password: process.env.ADMIN_PASS,
 };
-
+console.log(adminUser.password)
 /*
  * Create Admin user on first start up
  */
@@ -51,11 +67,19 @@ router.post(
           const user = req.body.email;
           const pass = req.body.password;
 
-          fse.appendFileSync(
-            ".env",
-            `\nADMIN_USER="${user}"\nADMIN_PASS="${pass}"`
-          );
-          process.exit();
+          hashpass
+            .hash(req.body.password)
+            .then((key) => {
+              console.log(key)
+              fse.appendFileSync(
+                ".env",
+                `\nADMIN_USER="${user}"\nADMIN_PASS="${key}"`
+              );
+              process.exit();
+            })
+            .catch((err) => {
+              console.error(err);
+            });
         } else {
           res.render("admin/register", {
             page: { info: "Passwords do not match" },
@@ -91,12 +115,19 @@ router.post(
     const errors = validationResult(req);
 
     if (errors.isEmpty()) {
-      if (
-        req.body.email === adminUser.name &&
-        req.body.password === adminUser.password
-      ) {
-        req.session.loggedin = true;
-        res.redirect(req.app.locals.site.url + "admin/");
+      if (req.body.email === adminUser.name) {
+        hashpass
+          .compare(req.body.password, adminUser.password)
+          .then((result) => {
+            if (result) {
+              req.session.loggedin = true;
+              res.redirect(req.app.locals.site.url + "admin/");
+            } else {
+              res.render("admin/login", {
+                page: { info: "Invalid credentials" },
+              });
+            }
+          });
       } else {
         res.render("admin/login", { page: { info: "Invalid credentials" } });
       }
