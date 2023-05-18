@@ -1,0 +1,56 @@
+/* MEDIA */
+@mixin tablet {
+  @media screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin content-container-std {
+  margin: 0 16px;
+  
+  @include tablet {
+    margin: 0 32px;
+  }
+  @include desktop {
+    margin: 0 auto;
+  }
+}
+
+
+/* COMMON SPACINGS */
+@mixin spacing-std {
+  padding: 16px;
+  margin: 32px 16px;
+
+  @include tablet {
+    padding: 32px;
+    margin: 24px 32px;
+  }
+
+  @include desktop {
+    margin: 24px auto;
+    width: $std-content-width-percent;
+    max-width: $std-content-width-max;
+  }
+}
+
+@mixin spacing-less-pad {
+  margin: 32px 16px;
+
+  @include tablet {
+    padding: 16px;
+    margin: 24px 32px;
+  }
+
+  @include desktop {
+    margin: 24px auto;
+    width: $std-content-width-percent;
+    max-width: $std-content-width-max;
+  }
+}

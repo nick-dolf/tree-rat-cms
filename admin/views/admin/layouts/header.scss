@@ -1,0 +1,20 @@
+.site-header {
+  background-color: $tree-bark;
+  color: white;
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include tablet{
+      flex-direction: row;
+    }
+  }
+
+  #console {
+    background: black;
+    height:100px;
+    width: 50%;
+  }
+}

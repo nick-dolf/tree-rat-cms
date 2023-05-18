@@ -27,7 +27,7 @@ router.use(
   cookieSession({
     name: "session",
     keys: [secret1, secret2],
-    maxAge: 1 * 60 * 1000,
+    maxAge: 24 * 60 * 60 * 1000,
   })
 );
 
@@ -121,7 +121,7 @@ router.post(
           .then((result) => {
             if (result) {
               req.session.loggedin = true;
-              res.redirect(req.app.locals.site.url + "admin/");
+              res.redirect(req.app.locals.site.url + "admin/pages");
             } else {
               res.render("admin/login", {
                 page: { info: "Invalid credentials" },
@@ -149,5 +149,8 @@ router.use((req, res, next) => {
 router.get("/", (req, res) => {
   res.send("dashboard!!!");
 });
+
+// routes
+router.use("/pages", require("./pages"));
 
 module.exports = router;

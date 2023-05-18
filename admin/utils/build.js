@@ -3,6 +3,7 @@ const path = require("path");
 const express = require("express");
 const app = require("../../treerat");
 const { PurgeCSS } = require("purgecss");
+const sass = require("sass")
 
 const pageDir = path.join(process.cwd(), "pages/");
 
@@ -42,14 +43,23 @@ async function setup(file) {
 
   // Remove unneeded CSS from Bootstrap
   const purgeCSSResult = await new PurgeCSS().purge({
-    content: ["admin/views/admin/*.ejs"],
+    content: ["admin/views/admin/**/*.ejs"],
     css: ["admin/assets/bootstrap.css"],
   });
-
+  
   fse.outputFileSync(
     "admin/assets/bootstrap.purged.css",
     purgeCSSResult[0].css
-  );
+    );
+    
+    // build custom admin stylesheet
+    const sassResult = sass.compile("admin/views/admin/style.scss", { style: "compressed" })
+    
+    fse.outputFileSync(
+      "admin/assets/style.css",
+      sassResult.css
+      );
+
 }
 
 module.exports = { setup };

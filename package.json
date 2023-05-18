@@ -25,6 +25,7 @@
     "express-validator": "^7.0.1",
     "fs-extra": "^11.1.1",
     "livereload": "^0.9.3",
-    "purgecss": "^5.0.0"
+    "purgecss": "^5.0.0",
+    "sass": "^1.62.1"
   }
 }
