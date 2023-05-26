@@ -1,0 +1,42 @@
+<div
+  class="modal fade mt-5"
+  id="deleteFolderModal"
+  tabindex="-1"
+  aria-labelledby="deleteFolderModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="deleteFolderModalLabel">Add Folder</h1>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="modal"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <form id="deleteFolder">
+          <div class="input-group">
+            <label for="name" class="input-group-text">Folder Name</label>
+            <input type="text" name="name" id="name" class="form-control" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+          Cancel
+        </button>
+        <button
+          id="folder-create"
+          type="button"
+          class="btn btn-success"
+          data-bs-dismiss="modal"
+        >
+          Add
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

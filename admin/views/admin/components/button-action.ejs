@@ -1,0 +1,8 @@
+<button class="btn btn-success" type="button"
+  <% if (arg.id) { %> id="<%= arg.id %>" <% } %>
+  <% if (arg.bsToggle) { %> data-bs-toggle="<%= arg.bsToggle %>" <% } %>
+  <% if (arg.bsTarget) { %> data-bs-target="<%= arg.bsTarget %>" <% } %>
+  > 
+  <%= arg.text %>
+  <span class="ms-2 spinner-border spinner-border-sm d-none"></span>
+</button>
