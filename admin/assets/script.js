@@ -17,6 +17,15 @@ function output(message, fail) {
 }
 
 /*
+ * Confirm Modal
+ */
+$("#confirmModal").on("show.bs.modal", (event) => {
+  const button = event.relatedTarget;
+  const text = button.getAttribute('data-cms-text')
+  console.log($(this));
+});
+
+/*
  * Folders
  */
 
@@ -48,7 +57,7 @@ $("#folder-create").click((event) => {
     });
 });
 
-// Folder DELETE (DELETE) 
+// Folder DELETE (DELETE)
 $(document).on("click", ".folder-delete", (event) => {
   const button = event.target;
   const deleteFolder = button.dataset.cms;

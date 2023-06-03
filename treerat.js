@@ -1,9 +1,12 @@
+/** @format */
+
 require("dotenv").config();
 const PORT = 7533;
 const express = require("express");
 const app = express();
 module.exports = app;
 const build = require("./admin/utils/build");
+const ejs = require("ejs");
 
 // Live Reload
 const livereload = require("livereload");
@@ -22,13 +25,22 @@ build.setup("treerat.json");
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
-
-  // Make HTML easy to read in development
-  app.locals.pretty = true;
 }
 
 app.set("view engine", "ejs");
 app.set("views", ["admin/views", "views"]);
+
+app.use((req, res, next) => {
+  res.adminRender = (file, data) => {
+    ejs.renderFile(process.cwd() + "/admin/views/admin/" + file + ".ejs", app.locals, (err, html) => {
+      if (err) {
+        return res.send(`<body>${err.message}</body>`);
+      }
+      res.send(html);
+    });
+  };
+  next();
+});
 
 app.get("/", (req, res) => {
   res.render("default");

@@ -93,7 +93,9 @@ router.post(
 );
 
 router.use((req, res, next) => {
-  if (adminUser.name) {
+  if (process.env.NODE_ENV === "development") {
+    next();
+  } else if (adminUser.name)  {
     next();
   } else {
     res.redirect(req.app.locals.site.url + "admin/register");
@@ -138,7 +140,9 @@ router.post(
 );
 
 router.use((req, res, next) => {
-  if (req.session.loggedin) {
+  if (process.env.NODE_ENV === "development") {
+    next();
+  } else if (req.session.loggedin) {
     next();
   } else {
     req.session.original = req.url;

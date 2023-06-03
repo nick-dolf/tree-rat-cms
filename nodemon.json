@@ -1,5 +1,5 @@
 {
-  "watch": ["app.js", "views", "admin"],
+  "watch": ["treerat.js", "views", "admin"],
   "ext": "js, scss, ejs",
   "ignore": ""
 }
