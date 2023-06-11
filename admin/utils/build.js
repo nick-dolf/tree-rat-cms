@@ -6,6 +6,7 @@ const { PurgeCSS } = require("purgecss");
 const sass = require("sass");
 
 const pageDir = path.join(process.cwd(), "pages/");
+const draftDir = pageDir + "drafts/";
 
 async function setup(file) {
   // Read Site Configuration
@@ -31,6 +32,7 @@ async function setup(file) {
     fse.writeJsonSync(pageDir + "drafts/home.json", {
       name: "Home",
       slug: "home",
+      folder: "",
       permalink: "",
       publishedDate: false,
       draftedDate: new Date().toString(),
@@ -48,6 +50,8 @@ async function setup(file) {
     })
     .map((dirent) => dirent.name);
 
+  app.locals.site.pages =  getPageDetails(draftDir).flat() 
+  console.log(app.locals.site.pages)
 
   // app.locals.site.folders = fse.readdirSync(pageDir + "drafts", {withFileTypes: true }).map((entry) => {
   //   const pageEntry = fse.readJsonSync(pageDir + "drafts/" + entry);
@@ -77,6 +81,16 @@ async function setup(file) {
   });
 
   fse.outputFileSync("admin/assets/style.css", sassResult.css);
+}
+
+function getPageDetails(dir) {
+  return fse.readdirSync(dir, { withFileTypes: true }).map((dirent) => {
+    if (dirent.isDirectory()) {
+      return getPageDetails(draftDir+dirent.name+"/")
+    } else {
+      return fse.readJsonSync(dir + dirent.name);
+    }
+  });
 }
 
 module.exports = { setup };

@@ -1,11 +1,56 @@
-<li class="list-group-item">
+<!-- Page List Item for Page Accordion -->
+<li class="list-group-item mb-2">
   <div class="row">
-    <div class="col-sm-">
-      <a href="" class="link-dark h4">Test</a>
+    <!-- Page Name -->
+    <div class="col-sm-4">
+      <a href="" class="link-dark h4"><%= page.name %></a>
     </div>
-    <div class="col-sm-4 d-sm-flex justify-content-center justify-content-sm-end">
+    <!-- Published -->
+    <% if (page.publishedDate) { %>
+    <div class="col-sm-4 my-2 d-flex align-items-center">
+      <svg
+        viewBox="0 0 16 16"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+        class="text-success mx-1"
+        fill="currentColor">
+        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#check-square-fill" />
+      </svg>
+      <span>Published</span>
+    </div>
+    <!-- Not Published -->
+    <% } else { %>
+    <div class="col-sm-4 my-2 d-flex align-items-center">
+      <svg
+        viewBox="0 0 16 16"
+        width="20"
+        xmlns="http://www.w3.org/2000/svg"
+        class="text-secondary mx-1"
+        fill="currentColor">
+        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#x-square-fill" />
+      </svg>
+      <span>Not Published</span>
+    </div>
+    <% } %>
+    <!-- Actions -->
+    <div class="col-sm-4 d-sm-flex justify-content-center justify-content-sm-end align-items-center">
       <div class="btn-group">
-        
+        <!-- Home is Special -->
+        <% if (page.permalink == "") { %>
+        <a href="<%= site.url %>admin/pages/home" class="btn btn-primary">Edit</a>
+        <!-- Other Pages -->
+        <% } else { %>
+        <!-- <a href="" class="btn btn-primary">Edit</a> -->
+        <a href="<%= site.url %>admin/pages/<%= page.permalink %>" class="btn btn-primary">Edit</a>
+        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button type="button" class="btn btn-danger dropdown-item page-delete" data-cms="<%= page.permalink %>">Delete</button>
+          </li>
+        </ul>
+        <% } %>
       </div>
     </div>
   </div>

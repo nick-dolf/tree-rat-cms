@@ -43,8 +43,6 @@ router.post(
 router.delete("/:folder", (req, res) => {
   const slug = req.params.folder;
 
-  console.log(app.locals.site.folders);
-
   if (!app.locals.site.folders.includes(slug)) {
     return res.status(409).send("folder does not exist");
   }

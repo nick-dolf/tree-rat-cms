@@ -1,3 +1,5 @@
+<%- include("./modal-add-folder")%>
+<%- include("./modal-add-page")%>
 <div id="accordionPage" class="accordion">
   <!-- Top level Folder, always exists -->
   <div class="accordion-item">
@@ -14,7 +16,9 @@
     </h1>
     <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionPage">
       <div class="accordion-body">
-        <%- include("../components/page-row")%>
+        <% for (let i=0; i < site.pages.length; i++) { if (site.pages[i].folder == "")  { %>
+        <%- include("../components/page-row", { page : site.pages[i] } )%>
+        <% }} %>
       </div>
     </div>
   </div>
@@ -37,11 +41,9 @@
     </h1>
     <div id="collapse<%= i %>" class="accordion-collapse collapse" data-bs-parent="#accordionPage">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds
-        the appropriate classes that we use to style each element. These classes control the overall appearance, as well
-        as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our
-        default variables. It's also worth noting that just about any HTML can go within the
-        <code>.accordion-body</code>, though the transition does limit overflow.
+        <% for (let j=0; j < site.pages.length; j++) { if ( site.pages[j].folder == site.folders[i] )  { %>
+        <%- include("../components/page-row", { page : site.pages[j] } )%>
+        <% }} %>
       </div>
     </div>
   </div>

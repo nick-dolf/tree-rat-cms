@@ -30,7 +30,7 @@ $("#confirmModal").on("show.bs.modal", (event) => {
  */
 
 // Folder CREATE (POST)
-$("#folder-create").click((event) => {
+$(document).on("click", "#folder-create",  (event) => {
   const postData = $("#addFolder").serialize();
 
   const button = document.getElementById("folder-add");
@@ -66,6 +66,63 @@ $(document).on("click", ".folder-delete", (event) => {
     button.disabled = true;
 
     $.ajax({ url: `page-folders/${deleteFolder}`, type: "DELETE" })
+      .done((response) => {
+        output("delete request was successful");
+        console.log("delete success", response);
+        $("#accordionPageAnchor").html(response);
+      })
+      .fail((response) => {
+        output("delete request failed: " + response.responseText, true);
+        console.log("delete failed:", response.responseText);
+      })
+      .always(() => {
+        button.disabled = false;
+      });
+  }
+});
+
+
+/*
+ * Pages
+ */
+
+// Pages CREATE (POST)
+$(document).on("click", "#page-create",  (event) => {
+  const postData = $("#addPage").serialize();
+
+  const button = document.getElementById("page-add");
+
+  output(`Creating Page: ${postData}`);
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
+
+  $.post("pages", postData)
+    .done((response) => {
+      output("Page Created");
+      console.log(response);
+      $("#accordionPageAnchor").html(response);
+    })
+    .fail((response) => {
+      output("Page creation failed: " + response.responseText, true);
+      console.log("fail", response.responseText);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+      $(".btn-close").click();
+    });
+});
+
+// Page DELETE (DELETE)
+$(document).on("click", ".page-delete", (event) => {
+  const button = event.target;
+  const deletePage = button.dataset.cms;
+  if (confirm(`Do you really want to delete ${deletePage}?`)) {
+    output(`sending delete request to server: ${deletePage}`);
+    button.disabled = true;
+
+    $.ajax({ url: `pages/${deletePage}`, type: "DELETE" })
       .done((response) => {
         output("delete request was successful");
         console.log("delete success", response);
