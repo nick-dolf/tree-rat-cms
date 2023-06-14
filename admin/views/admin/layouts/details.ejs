@@ -1,0 +1,18 @@
+<% if (!page.details) page.details = {} %>
+<ul class="list-group list-group-flush">
+  <li class="list-group-item">
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Write page title here" id="title" name="details[title]" maxlength="60"><%= page.details.title %></textarea>
+      <label for="title">Title</label>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="form-floating">
+      <textarea class="form-control" placeholder="Write page description here" id="description" name="details[description]" maxlength="150"><%= page.details.description %></textarea>
+      <label for="description">Description</label>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <small>&#128712; Meta Tags. Important for Search Engine Optimization.</small>
+  </li>
+</ul>

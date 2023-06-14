@@ -114,6 +114,41 @@ $(document).on("click", "#page-create",  (event) => {
     });
 });
 
+// Pages UPDATE (PUT)
+$(".page-save-draft").click((event) => {
+  const button = event.currentTarget;
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
+
+  const formData = new FormData(document.getElementById("pageForm"));
+
+  $.ajax({
+    url: "",
+    type: "PUT",
+    data: formData,
+    enctype: "multipart/form-data",
+    processData: false,
+    contentType: false,
+  })
+    .done((response) => {
+      output("Draft Saved");
+      console.log("update success", response);
+      $("#pageFormAnchor").html(response);
+      //initSortable();
+    })
+    .fail((response) => {
+      output("Failed to save draft", true);
+      console.log("update fail", response.responseText);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+    });
+});
+
+
+
 // Page DELETE (DELETE)
 $(document).on("click", ".page-delete", (event) => {
   const button = event.target;
@@ -136,4 +171,22 @@ $(document).on("click", ".page-delete", (event) => {
         button.disabled = false;
       });
   }
+});
+
+/*
+ * Sections
+ */
+
+$(".section-add").click((event) => {
+  const selected = $("#select-template :selected");
+  output(selected.val());
+
+  // Use epoch time for unique id for Accordion
+  let unique = new Date().getTime();
+
+  $("#sortable").prepend(
+    $(`#${selected.val()}`).html().replace(/qq.*q/g, `qq${unique}q`)
+  );
+
+  orderSections();
 });
