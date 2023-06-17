@@ -133,7 +133,6 @@ $(".page-save-draft").click((event) => {
   })
     .done((response) => {
       output("Draft Saved");
-      console.log("update success", response);
       $("#pageFormAnchor").html(response);
       initSortable();
     })

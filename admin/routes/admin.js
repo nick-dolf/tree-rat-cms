@@ -156,6 +156,7 @@ router.get("/", (req, res) => {
 
 // routes
 router.use("/pages", require("./pages"));
+router.use("/drafts", require("./drafts"));
 router.use("/page-folders", require("./page-folders"));
 router.use("/assets", require("./assets"));
 

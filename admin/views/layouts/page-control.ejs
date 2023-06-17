@@ -1,39 +1,17 @@
 <section class="pt-3 row">
-  <div class="col-md">
-    <h1 class="h2 m-0"><%= page.name %></h1>
+  <div class="col-md mb-3">
     <!-- Published -->
     <% if (page.publishedDate) { %>
-    <div class="my-2 d-flex align-items-center">
-      <svg
-        viewBox="0 0 16 16"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-        class="text-success mx-1"
-        fill="currentColor">
-        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#check-square-fill" />
-      </svg>
-      <span>Published</span>
-    </div>
+    
     <!-- Not Published -->
     <% } else { %>
-    <div class="my-2 d-flex align-items-center">
-      <svg
-        viewBox="0 0 16 16"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-        class="text-secondary mx-1"
-        fill="currentColor">
-        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#x-square-fill" />
-      </svg>
-      <span>Not Published</span>
-    </div>
+    <h1 class="h2 m-0"><%= page.name %></h1>
     <% } %>
   </div>
   <div class="col-md my-2 my-md-0">
     <%- include("../components/button-action", { arg: {text: "Publish", extraClass: "page-publish"}}) %>
   </div>
   <div class="col-md my-2 my-md-0 text-end">
-    <%- include("../components/button-action", { arg: {text: "Save Draft", extraClass: "page-save-draft me-2"}}) %> 
-    <%- include("../components/button-action", { arg: {text: "Save and View", extraClass: "page-save-draft"}}) %>
-  </div>
+    <%- include("../components/button-action", { arg: {text: "Save Draft", extraClass: "page-save-draft me-2"}}) %>
+    <a href="<%= site.url %>admin/drafts/<%= page.permalink %>" class="btn btn-primary">View Draft</a>
 </section>

@@ -7,6 +7,10 @@
   <title>Document</title>
 </head>
 <body>
-  <h1>Tree RAT!</h1>
+  <main>
+    <% if (page.sections) for (let i =0; i < page.sections.length; i++) { %>
+      <%- include(`sections/${page.sections[i].template}/site-${page.sections[i].template}`, { content : page.sections[i].content }) %>
+    <% } %>
+  </main>
 </body>
 </html>

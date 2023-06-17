@@ -30,9 +30,23 @@ if (process.env.NODE_ENV === "development") {
 app.set("view engine", "ejs");
 app.set("views", ["admin/views", "views"]);
 
+/*
+ * Render Middleware
+ */
 app.use((req, res, next) => {
   res.adminRender = (file, data) => {
     ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals}, (err, html) => {
+      if (err) {
+        return res.send(`<body >${err.message.replace(/(?:\n)/g, '<br>')}</body>`);
+      }
+      res.send(html);
+    });
+  };
+  next();
+});
+app.use((req, res, next) => {
+  res.siteRender = (file, data) => {
+    ejs.renderFile(app.locals.viewDir+"/"+file + ".ejs", { page: data, ...app.locals}, (err, html) => {
       if (err) {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, '<br>')}</body>`);
       }
