@@ -177,7 +177,7 @@ $(document).on("click", ".page-delete", (event) => {
  * Sections
  */
 
-$(".section-add").click((event) => {
+$(document).on("click", ".section-add", (event) =>  {
   const selected = $("#select-template :selected");
   output(selected.val());
 
@@ -185,8 +185,23 @@ $(".section-add").click((event) => {
   let unique = new Date().getTime();
 
   $("#sortable").prepend(
-    $(`#${selected.val()}`).html().replace(/qq.*q/g, `qq${unique}q`)
+    $(`#${selected.val()}-template`).html()
+    //.replace(/qq.*q/g, `qq${unique}q`)
   );
 
   orderSections();
 });
+
+function orderSections() {
+  $(".cms-section").each((sectionIndex, sectionItem) => {
+    $(sectionItem)
+      .find("[name*='section']")
+      .each((index, item) => {
+        let name = $(item)
+          .attr("name")
+          .replace(/sections\[[^\]]*\]/, `sections[${sectionIndex}]`);
+
+        $(item).attr("name", name);
+      });
+  });
+}

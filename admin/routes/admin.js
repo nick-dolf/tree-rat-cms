@@ -43,7 +43,7 @@ router.get("/register", (req, res) => {
   if (adminUser.name) {
     res.redirect(req.app.locals.site.url + "admin/login");
   } else {
-    res.render("admin/register", { page: { info: "" } });
+    res.adminRender("register", { page: { info: "" } });
   }
 });
 
@@ -81,12 +81,12 @@ router.post(
               console.error(err);
             });
         } else {
-          res.render("admin/register", {
+          res.adminRegister("register", {
             page: { info: "Passwords do not match" },
           });
         }
       } else {
-        res.render("admin/register", { page: { info: errors.array()[0].msg } });
+        res.adminRegister("register", { page: { info: errors.array()[0].msg } });
       }
     }
   }
@@ -106,7 +106,7 @@ router.use((req, res, next) => {
  * Login User
  */
 router.get("/login", (req, res) => {
-  res.render("admin/login", { page: { info: "Welcome Back!" } });
+  res.adminRender("login", { page: { info: "Welcome Back!" } });
 });
 
 router.post(
@@ -125,16 +125,16 @@ router.post(
               req.session.loggedin = true;
               res.redirect(req.app.locals.site.url + "admin/pages");
             } else {
-              res.render("admin/login", {
+              res.adminRender("login", {
                 page: { info: "Invalid credentials" },
               });
             }
           });
       } else {
-        res.render("admin/login", { page: { info: "Invalid credentials" } });
+        res.adminRender("login", { page: { info: "Invalid credentials" } });
       }
     } else {
-      res.render("admin/login", { page: { info: "Invalid credentials" } });
+      res.adminRender("login", { page: { info: "Invalid credentials" } });
     }
   }
 );

@@ -7,7 +7,7 @@ const sass = require("sass");
 
 const pageDir = path.join(process.cwd(), "pages/");
 const draftDir = pageDir + "drafts/";
-const sectionDir = path.join(process.cwd(), "admin/views/admin/sections");
+const sectionDir = path.join(process.cwd(), "views/sections");
 
 async function setup(file) {
   // Read Site Configuration
@@ -57,6 +57,27 @@ async function setup(file) {
 
   console.log(app.locals.site.sections)
 
+  // build custom admin stylesheet
+  const sassResult = sass.compile("admin/views/style.scss", {
+    style: "compressed",
+  });
+
+  fse.outputFileSync("admin/assets/style.css", sassResult.css);
+}
+
+function getPageDetails(dir) {
+  return fse.readdirSync(dir, { withFileTypes: true }).map((dirent) => {
+    if (dirent.isDirectory()) {
+      return getPageDetails(draftDir+dirent.name+"/")
+    } else {
+      return fse.readJsonSync(dir + dirent.name);
+    }
+  });
+}
+
+module.exports = { setup };
+
+
   // app.locals.site.folders = fse.readdirSync(pageDir + "drafts", {withFileTypes: true }).map((entry) => {
   //   const pageEntry = fse.readJsonSync(pageDir + "drafts/" + entry);
   //   return {
@@ -78,23 +99,3 @@ async function setup(file) {
   //   "admin/assets/bootstrap.purged.css",
   //   purgeCSSResult[0].css
   // );
-
-  // build custom admin stylesheet
-  const sassResult = sass.compile("admin/views/admin/style.scss", {
-    style: "compressed",
-  });
-
-  fse.outputFileSync("admin/assets/style.css", sassResult.css);
-}
-
-function getPageDetails(dir) {
-  return fse.readdirSync(dir, { withFileTypes: true }).map((dirent) => {
-    if (dirent.isDirectory()) {
-      return getPageDetails(draftDir+dirent.name+"/")
-    } else {
-      return fse.readJsonSync(dir + dirent.name);
-    }
-  });
-}
-
-module.exports = { setup };

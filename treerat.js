@@ -32,9 +32,9 @@ app.set("views", ["admin/views", "views"]);
 
 app.use((req, res, next) => {
   res.adminRender = (file, data) => {
-    ejs.renderFile(process.cwd() + "/admin/views/admin/" + file + ".ejs", { page: data, ...app.locals}, (err, html) => {
+    ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals}, (err, html) => {
       if (err) {
-        return res.send(`<body>${err.message}</body>`);
+        return res.send(`<body >${err.message.replace(/(?:\n)/g, '<br>')}</body>`);
       }
       res.send(html);
     });
