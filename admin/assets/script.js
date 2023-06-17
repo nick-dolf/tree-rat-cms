@@ -135,7 +135,7 @@ $(".page-save-draft").click((event) => {
       output("Draft Saved");
       console.log("update success", response);
       $("#pageFormAnchor").html(response);
-      //initSortable();
+      initSortable();
     })
     .fail((response) => {
       output("Failed to save draft", true);
@@ -174,6 +174,16 @@ $(document).on("click", ".page-delete", (event) => {
 });
 
 /*
+/ Initialize Sortable 
+*/
+function initSortable() {
+  $("#sortable").sortable({ handle: ".handle", update: orderSections });
+  $(".block-anchor").sortable({ handle: ".block-handle", update: orderSections });
+}
+initSortable();
+
+
+/*
  * Sections
  */
 
@@ -185,11 +195,21 @@ $(document).on("click", ".section-add", (event) =>  {
   let unique = new Date().getTime();
 
   $("#sortable").prepend(
-    $(`#${selected.val()}-template`).html()
-    //.replace(/qq.*q/g, `qq${unique}q`)
+    $(`#${selected.val()}-template`).html().replace(/section-qq.*q/g, `section-qq${unique}q`)
   );
 
   orderSections();
+});
+
+$(document).on("click", ".section-delete", (event) => {
+  const button = event.currentTarget;
+  const deleteSection = button.dataset.cms;
+
+  if (confirm(`Do you really want to delete ${deleteSection} section?`)) {
+    output(`deleted ${deleteSection} section`);
+    button.closest(".cms-section").remove(0);
+    orderSections();
+  }
 });
 
 function orderSections() {
