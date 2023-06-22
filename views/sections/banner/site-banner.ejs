@@ -1,3 +1,21 @@
-<section class="text-area">
-  <%= content.paragraph %>
+<section class="banner banner-<%= content.color%> banner-<%= content.style %>">
+  <% if (content.style == "vertical") { %>
+  <div>
+    <h1><%- content.heading %></h1>
+    <p class="h4"><%- content.paragraph %></p>
+    <% if (content.button.type != "no") { %>
+      <%- include("../../components/button", {arg : {class: "btn--dark-bg", text: "donate"}}) %>
+    <% } %>
+  </div>
+  <% } else { %>
+  <div class="horizontal">
+    <h1><%- content.heading %></h1>
+    <div>
+      <p><%- content.paragraph %></p>
+      <% if (content.button.type != "no") { %>
+        <%- include("../../components/button", {arg : {class: "btn--dark-bg", text: "donate"}}) %>
+      <% } %>
+    </div>
+  </div>
+  <% } %>
 </section>

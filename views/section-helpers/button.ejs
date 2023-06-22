@@ -1,0 +1,8 @@
+<% if (!content[slug]) content[slug] = {} %>
+<div class="form-floating mb-2">
+  <select class="form-select" id="<%- index %>[<%- slug %>][type]" aria-label=<%- label %> name=<%- index %>[<%- slug %>][type]>
+    <option value="no" <% if (content[slug].type ==  "no") { %>selected<% } %> >No Button</option>
+    <option value="internal" <% if (content[slug].type ==  "internal") { %>selected<% } %> >Internal Link</option>
+  </select>
+  <label for="<%- index %>[<%- slug %>]"><%- label %></label>
+</div>

@@ -1,5 +1,3 @@
-/** @format */
-
 require("dotenv").config();
 const PORT = 7533;
 const express = require("express");
@@ -7,7 +5,9 @@ const app = express();
 module.exports = app;
 const build = require("./admin/utils/build");
 const ejs = require("ejs");
-
+const marked = require("marked");
+marked.setOptions({ breaks: true, mangle: false, headerIds: false });
+const sanitizeHtml = require("sanitize-html");
 // Live Reload
 const livereload = require("livereload");
 const liveReloadServer = livereload.createServer();
@@ -22,22 +22,21 @@ liveReloadServer.server.once("connection", () => {
 });
 
 build.setup("treerat.json");
+build.buildSite();
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
+  app.use(express.static(app.locals.siteDir));
 }
-
-app.set("view engine", "ejs");
-app.set("views", ["admin/views", "views"]);
 
 /*
  * Render Middleware
  */
 app.use((req, res, next) => {
   res.adminRender = (file, data) => {
-    ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals}, (err, html) => {
+    ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
       if (err) {
-        return res.send(`<body >${err.message.replace(/(?:\n)/g, '<br>')}</body>`);
+        return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
       }
       res.send(html);
     });
@@ -46,9 +45,9 @@ app.use((req, res, next) => {
 });
 app.use((req, res, next) => {
   res.siteRender = (file, data) => {
-    ejs.renderFile(app.locals.viewDir+"/"+file + ".ejs", { page: data, ...app.locals}, (err, html) => {
+    ejs.renderFile(app.locals.viewDir + "/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
       if (err) {
-        return res.send(`<body >${err.message.replace(/(?:\n)/g, '<br>')}</body>`);
+        return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
       }
       res.send(html);
     });
@@ -56,9 +55,10 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/", (req, res) => {
-  res.render("default");
-});
+// Convert Markdown and sanitize the HTML
+app.locals.md = (data) => {
+  return sanitizeHtml(marked.parse(data));
+};
 
 // Log request
 app.use("/", (req, res, next) => {

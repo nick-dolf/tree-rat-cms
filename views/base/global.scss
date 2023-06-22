@@ -1,0 +1,25 @@
+html {
+  min-width: 320px;
+  box-sizing: border-box;
+}
+
+/* Keeps box sizing consistent across elements, while allowing overides as neeeded */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+main {
+  @include site-width;
+  background-color: $white;
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}

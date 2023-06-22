@@ -1,4 +1,30 @@
-section.text-area {
-  background: black;
-  color: white;
+section.line {
+  @include spacing-std-nopad;
+
+  display: flex;
+  gap: 32px;
+
+  hr {
+    height: 1px;
+    width: 100%;
+    border: none;
+  }
+
+  &.line-dotted {
+    hr {
+      border-top: 1px dotted $green-800;
+    }
+  }
+  
+  &.line-dashed {
+    hr {
+      border-top: 1px dashed $green-800;
+    }
+  }
+
+  &.line-solid {
+    hr {
+      border-top: 1px solid $green-800;
+    }
+  }
 }

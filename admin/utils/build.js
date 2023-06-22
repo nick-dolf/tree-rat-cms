@@ -9,18 +9,18 @@ const pageDir = path.join(process.cwd(), "pages/");
 const draftDir = pageDir + "drafts/";
 const sectionDir = path.join(process.cwd(), "views/sections");
 
-async function setup(file) {
+function setup(file) {
   // Read Site Configuration
   const config = fse.readJsonSync(file);
-  app.locals.siteDir = config.siteDirectory;
-  app.locals.pageDir = config.pageDirectory;
+  app.locals.siteDir = path.join(process.cwd(), "site/");
+  app.locals.pageDir = path.join(process.cwd(), "pages/");
   app.locals.viewDir = config.viewDirectory;
 
   // Remove previous site build
   fse.removeSync(app.locals.siteDir);
 
   // Ensure needed directories exist
-  fse.ensureDirSync(`${process.cwd()}/${app.locals.siteDir}`);
+  fse.ensureDirSync(app.locals.siteDir);
   fse.ensureDirSync(pageDir);
   fse.ensureDirSync(pageDir + "drafts");
   fse.ensureDirSync(pageDir + "published");
@@ -51,11 +51,11 @@ async function setup(file) {
     })
     .map((dirent) => dirent.name);
 
-  app.locals.site.pages =  getPageDetails(draftDir).flat() 
+  app.locals.site.pages = getPageDetails(draftDir).flat();
 
   app.locals.site.sections = fse.readdirSync(sectionDir);
 
-  console.log(app.locals.site.sections)
+  console.log(app.locals.site.sections);
 
   // build custom admin stylesheet
   const sassResult = sass.compile("admin/views/style.scss", {
@@ -68,34 +68,49 @@ async function setup(file) {
 function getPageDetails(dir) {
   return fse.readdirSync(dir, { withFileTypes: true }).map((dirent) => {
     if (dirent.isDirectory()) {
-      return getPageDetails(draftDir+dirent.name+"/")
+      return getPageDetails(draftDir + dirent.name + "/");
     } else {
       return fse.readJsonSync(dir + dirent.name);
     }
   });
 }
 
-module.exports = { setup };
+function buildSite() {
+  // build custom admin stylesheet
+  const sassResult = sass.compile(app.locals.viewDir + "/main.scss", {
+    style: "compressed",
+  });
 
+  fse.outputFileSync(app.locals.siteDir + "assets/style.css", sassResult.css);
 
-  // app.locals.site.folders = fse.readdirSync(pageDir + "drafts", {withFileTypes: true }).map((entry) => {
-  //   const pageEntry = fse.readJsonSync(pageDir + "drafts/" + entry);
-  //   return {
-  //     name: pageEntry.name,
-  //     slug: pageEntry.slug,
-  //     permalink: pageEntry.permalink,
-  //     publishedDate: pageEntry.publishedDate,
-  //     draftedDate: pageEntry.draftedDate,
-  //   };
-  // });
+  /*
+   * Copy Assets
+   */
+  fse.copy("assets", "site/assets").catch((err) => {
+    console.error(err);
+  });
+}
 
-  // // Remove unneeded CSS from Bootstrap
-  // const purgeCSSResult = await new PurgeCSS().purge({
-  //   content: ["admin/views/admin/**/*.ejs"],
-  //   css: ["admin/assets/bootstrap.css"],
-  // });
+module.exports = { setup, buildSite };
 
-  // fse.outputFileSync(
-  //   "admin/assets/bootstrap.purged.css",
-  //   purgeCSSResult[0].css
-  // );
+// app.locals.site.folders = fse.readdirSync(pageDir + "drafts", {withFileTypes: true }).map((entry) => {
+//   const pageEntry = fse.readJsonSync(pageDir + "drafts/" + entry);
+//   return {
+//     name: pageEntry.name,
+//     slug: pageEntry.slug,
+//     permalink: pageEntry.permalink,
+//     publishedDate: pageEntry.publishedDate,
+//     draftedDate: pageEntry.draftedDate,
+//   };
+// });
+
+// // Remove unneeded CSS from Bootstrap
+// const purgeCSSResult = await new PurgeCSS().purge({
+//   content: ["admin/views/admin/**/*.ejs"],
+//   css: ["admin/assets/bootstrap.css"],
+// });
+
+// fse.outputFileSync(
+//   "admin/assets/bootstrap.purged.css",
+//   purgeCSSResult[0].css
+// );

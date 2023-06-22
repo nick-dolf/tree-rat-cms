@@ -1,0 +1,46 @@
+.logo {
+  fill: $green-400;
+  transition: fill $speed-std;
+  display: block;
+
+  &:active {
+    fill: $neutral-800;
+  }
+
+  &:hover,
+  &:focus-visible {
+    fill: $neutral-800;
+  }
+
+  @include desktop {
+    &:active {
+      fill: $green-400;
+    }
+  }
+}
+
+.logo--mobile {
+  width: 234px;
+}
+
+.logo--primary {
+  width: 149px;
+}
+
+.logo-responsive {
+  text-decoration: 0;
+  font-size: 0;
+
+  .logo--primary {
+    display: none;
+  }
+
+  @include tablet {
+    .logo--mobile {
+      display: none;
+    }
+    .logo--primary {
+      display: block;
+    }
+  }
+}

@@ -1,4 +1,7 @@
-<div class="form-floating">
-  <textarea class="form-control" placeholder="Write page description here" id="<%= index %>[paragraph]" name="<%= index %>[paragraph]" maxlength="150"><%= content.paragraph %></textarea>
-  <label for="<%= index %>[paragraph]">Paragraph</label>
-</div>
+<!-- Heading -->
+<%- include("../../section-helpers/text-area-plain", {index, slug: "heading", label: "Heading"}) %>
+<!-- Paragraph -->
+<%- include("../../section-helpers/text-area-plain", {index, slug: "paragraph", label: "Paragraph"}) %>
+<!-- Style -->
+<%- include("../../section-helpers/select", 
+{index, slug: "style", label: "Style", options : [{slug: "flashy", label:"Flashy"},{slug: "splashy", label: "Splashy"}]}) %>

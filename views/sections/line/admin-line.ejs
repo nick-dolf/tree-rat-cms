@@ -1,4 +1,8 @@
-<div class="form-floating">
-  <textarea class="form-control" placeholder="Write page description here" id="<%= index %>[paragraph]" name="<%= index %>[paragraph]" maxlength="150"><%= content.paragraph %></textarea>
-  <label for="<%= index %>[paragraph]">Paragraph</label>
+<div class="form-floating mb-2">
+  <select class="form-select" id="floatingSelect" aria-label="Style" name="<%= index %>[style]">
+    <option value="dotted" <% if (content.style == "dotted") { %>selected<% } %>>Dotted</option>
+    <option value="dashed" <% if (content.style == "dashed") { %>selected<% } %>>Dashed</option>
+    <option value="solid" <% if (content.style == "solid") { %>selected<% } %>>Solid</option>
+  </select>
+  <label for="floatingSelect">Style</label>
 </div>

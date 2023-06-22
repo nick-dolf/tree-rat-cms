@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Karla;
+  src:  url('../assets/fonts/karla-regular.woff2'),
+        url('../assets/fonts/karla-regular.woff'),;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Karla;
+  src:  url('../assets/fonts/karla-bold.woff2'),
+        url('../assets/fonts/karla-bold.woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Karla;
+  src:  url('../assets/fonts/karla-italic.woff2'),
+        url('../assets/fonts/karla-italic.woff');
+  font-style: italic;
+  font-display: swap;
+}

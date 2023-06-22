@@ -1,4 +1,36 @@
-section.text-area {
-  background: black;
+section.banner {
+  @include spacing-large;
   color: white;
+
+  &.banner-vertical {
+    text-align: center;
+    
+    div {
+      margin: 0 auto;
+      max-width: $std-content-width-max;
+    }
+  }
+
+  .horizontal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include tablet {
+      flex-direction: row;
+      gap: 64px;
+    }
+
+    div {
+      max-width: 587px;
+    }
+  }
+}
+
+section.banner-green {
+  background-color: $green-600;
+}
+
+section.banner-purple {
+  background-color: $purple-600;
 }

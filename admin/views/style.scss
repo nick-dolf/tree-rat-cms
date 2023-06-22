@@ -4,11 +4,14 @@
 
 @import "layouts/header";
 
-
 body {
   background: white;
 }
 
 .brown {
   background: $tree-bark;
+}
+
+textarea.tall {
+  min-height: 100px !important;
 }

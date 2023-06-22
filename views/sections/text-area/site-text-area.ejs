@@ -1,3 +1,8 @@
-<section class="text-area">
-  <%= block.text-area %>
+<section class="text-area text-area-<%- content.style %>">
+  <% if (content.heading) { %>
+  <h1 class="h2"><%= content.heading %></h1>
+  <% } %>
+  <% if (content.paragraph) { %>
+  <%- md(content.paragraph) %>
+  <% } %>
 </section>

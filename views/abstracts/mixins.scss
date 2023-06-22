@@ -1,0 +1,212 @@
+/* COMMON SPACINGS */
+@mixin spacing-std {
+  padding: 16px;
+  margin: 32px 16px;
+
+  @include tablet {
+    padding: 32px;
+    margin: 64px 32px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $std-content-width-percent;
+    max-width: $std-content-width-max;
+  }
+}
+
+@mixin spacing-std-nopad {
+  margin: 32px 16px;
+
+  @include tablet {
+    margin: 64px 32px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $std-content-width-percent;
+    max-width: $std-content-width-max;
+  }
+}
+
+@mixin spacing-std-nomargin {
+  padding: 32px 16px;
+
+  @include tablet {
+    padding: 64px 32px;
+  }
+
+  @include desktop {
+    padding: 64px auto;
+  }
+}
+
+@mixin spacing-std-nomargin-short {
+  padding: 32px 16px;
+
+  @include tablet {
+    padding: 64px 32px;
+  }
+
+  @include desktop {
+    padding: 64px auto;
+  }
+}
+
+@mixin spacing-skinny {
+  padding: 16px;
+  margin: 32px;
+
+  @include tablet {
+    padding: 32px;
+    margin: 64px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $skinny-content-width-percent;
+    max-width: $skinny-content-width-max;
+  }
+}
+
+@mixin spacing-skinny-nopad {
+  margin: 32px;
+
+  @include tablet {
+    margin: 64px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $skinny-content-width-percent;
+    max-width: $skinny-content-width-max;
+  }
+}
+
+@mixin spacing-slim {
+  padding: 16px;
+  margin: 32px;
+
+  @include tablet {
+    padding: 32px;
+    margin: 64px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $slim-content-width-percent;
+    max-width: $slim-content-width-max;
+  }
+}
+
+@mixin spacing-slim-nopad {
+  margin: 32px;
+
+  @include tablet {
+    margin: 64px;
+  }
+
+  @include desktop {
+    margin: 64px auto;
+    width: $slim-content-width-percent;
+    max-width: $slim-content-width-max;
+  }
+}
+
+@mixin spacing-short {
+  padding: 16px;
+  margin: 16px;
+
+  @include tablet {
+    padding: 32px;
+    margin: 32px;
+  }
+
+  @include desktop {
+    margin: 32px auto;
+    width: 94%;
+    max-width: $std-content-width-max;
+  }
+}
+
+@mixin spacing-short-nopad {
+  margin: 16px;
+
+  @include tablet {
+    margin: 32px;
+  }
+
+  @include desktop {
+    margin: 32px auto;
+    width: 94%;
+    max-width: $wide-content-width-max;
+  }
+}
+
+@mixin spacing-wide {
+  padding: 32px 0;
+  margin: 32px 0;
+
+  @include tablet {
+    padding: 64px 0;
+    margin: 64px 0;
+  }
+}
+
+@mixin spacing-wide-nopad {
+  margin: 32px 0;
+
+  @include tablet {
+    margin: 64px 0;
+  }
+}
+
+@mixin spacing-large {
+  padding: 32px;
+
+  @include tablet {
+    padding: 64px;
+  }
+}
+
+@mixin left-margin-abs {
+  left: 16px;
+
+  @include tablet {
+    left: 32px;
+  }
+
+  @include desktop {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 88%;
+    max-width: $std-content-width-max;
+  }
+}
+
+@mixin content-width-std {
+  @include desktop {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: $max-site-width;
+  }
+}
+
+@mixin site-width {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $max-site-width;
+}
+
+/* MEDIA */
+@mixin tablet {
+  @media screen and (min-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: #{$desktop-width}) {
+    @content;
+  }
+}

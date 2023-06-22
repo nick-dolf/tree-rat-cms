@@ -1,0 +1,166 @@
+.site-header {
+  @include site-width;
+  background-color: $white;
+}
+
+.header__container {
+  @include spacing-short-nopad;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    display: grid;
+    grid-template-columns: [col-start] 140px[col-1] 1fr [col-2] 130px [col-end];
+    grid-template-rows: [row-start] 50% [row-1] 50% [row-end];
+  }
+}
+
+.site-header .logo {
+  width: 105px;
+
+  @include tablet {
+    width: 149px;
+  }
+}
+
+.site-header .btn {
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+
+  @include tablet {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.search-button-positioner {
+
+  @include tablet {
+    display: none;
+  }
+}
+
+.search-form-positioner {
+  margin-left: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  flex-basis: 100%;
+  transition: all $speed-std;
+  order: 5;
+
+  @include tablet {
+    display: block;
+    max-height: none;
+    justify-self: end;
+    grid-column: col-1 / col-2;
+    grid-row: row-start / row-1;
+  }
+}
+
+.logo-positioner {
+
+  @include tablet {
+    grid-column: col-start / col-1;
+    grid-row: row-start / row-end;
+  }
+}
+
+.donate-positioner {
+
+  @include tablet {
+    justify-self: right;
+
+    grid-column: col-2 / col-end;
+    grid-row: row-start / row-1;
+  }
+}
+
+.menu-positioner {
+  margin-left: 2rem;
+  max-height: 0;
+  overflow: hidden;
+  flex-basis: 100%;
+  transition: all $speed-std;
+  order: 5;
+
+  @include tablet {
+    max-height: none;
+    display: block;
+    justify-self: right;
+    align-self: flex-end;
+    overflow: visible;
+
+    grid-column: col-1 / col-end;
+    grid-row: row-1 / row-end;
+
+  }
+}
+
+.menu-clicked {
+
+  .burger-positioner {
+    order: 4;
+  }
+
+  .search-positioner {
+    order: 1;
+  }
+
+  .logo-positioner {
+    order: 3;
+  }
+
+
+  .menu-positioner {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 1200px;
+  }
+
+  .donate-positioner {
+    display: none;
+  }
+
+  @include tablet {
+
+    .donate-positioner {
+      display: revert;
+    }
+  }
+}
+
+.search-clicked {
+
+  .burger-positioner {
+    order: 1;
+  }
+
+  .search-button-positioner {
+    order: 3;
+  }
+
+  .logo-positioner {
+    order: 2;
+  }
+
+  .donate-positioner {
+    display: none;
+  }
+
+  .search-form-positioner {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    max-height: 1200px;
+  }
+
+  @include tablet {
+
+    .donate-positioner {
+      display: revert;
+    }
+  }
+
+}

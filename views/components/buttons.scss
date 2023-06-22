@@ -1,0 +1,165 @@
+.btn {
+  padding: 8px 24px;
+  border: 1px solid;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all $speed-std;
+  cursor: pointer;
+}
+
+.btn--large {
+  padding: 12px 32px;
+  font-size: 2rem;
+  border-radius: 8px;
+  line-height: 2.4rem;
+
+  @include tablet {
+    font-size: 2.6rem;
+    line-height: 3.2rem;
+    border-radius: 12px;
+    padding: 14px 56px;
+  }
+
+  @include desktop {
+    border-radius: 16px;
+    font-size: 3.2rem;
+    line-height: 4rem;
+    padding: 16px 80px;
+  }
+}
+
+.btn--ghost {
+  background: $white;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn--light-bg {
+  color: $white;
+  background: $green-600;
+  border-color: $green-600;
+
+  &:hover,
+  &:focus-visible {
+    background: $white;
+    color: $green-800;
+    box-shadow: $shadow-box;
+  }
+
+  &:active {
+    background: $neutral-100;
+    color: $green-800-semi;
+    box-shadow: $shadow-box;
+  }
+
+  &:disabled {
+    color: $white;
+    box-shadow: none;
+    background: $green-600;
+    border-color: $green-600;
+    opacity: 0.25;
+  }
+}
+
+.btn--dark-bg {
+  color: $neutral-800;
+  background: $white;
+  border-color: $green-600;
+
+  &:hover,
+  &:focus-visible {
+    background: transparent;
+    color: $white;
+    box-shadow: $shadow-box;
+    border-color: $white;
+  }
+
+  &:active {
+    color: $white;
+    background: rgba(0, 0,0,.53);
+    border-color: $white;
+    box-shadow: $shadow-box;
+  }
+
+  &:disabled {
+    color: $green-600;
+    box-shadow: none;
+    background: $white;
+    border-color: $green-600;
+    opacity: 0.25;
+  }
+}
+
+.btn--icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 0;
+}
+
+.btn--svg-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  .icon {
+    height: 1.6rem;
+  }
+}
+
+.btn--svg-icon.btn--dark-bg {
+  .icon {
+    fill: $green-800;
+  }
+
+  &:hover,
+  &:focus-visible {
+    .icon {
+      fill: $white;
+    }
+  }
+
+  &:active {
+    .icon {
+      fill: $white;
+    }
+  }
+
+  &:disabled {
+    .icon {
+      fill: $green-600;
+    }
+  }
+}
+
+.btn--light-bg.btn--svg-icon {
+  .icon {
+    fill: $white;
+  }
+
+  &:hover,
+  &:focus-visible {
+    .icon {
+      fill: $green-800;
+    }
+  }
+
+  &:active {
+    .icon {
+      fill: $green-800-semi;
+    }
+  }
+
+  &:disabled {
+    .icon {
+      fill: $white;
+    }
+  }
+}
