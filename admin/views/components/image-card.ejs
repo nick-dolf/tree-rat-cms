@@ -1,0 +1,17 @@
+<div class="col image-card">
+  <div class="card h-100 shadow-sm <%- extraClass %>">
+    <img class="card-img-top img-fluid" src="<%- site.url %>admin/assets/images/original/thumb/<%- key %>" alt="" height="300" width="300"/>
+    <div class="card-body">
+      <div class="form-floating mb-2">
+        <textarea class="form-control tall" placeholder="Write alt text here" id="" name="" ><%- value.alt %></textarea>
+        <label for="">Alt Text</label>
+      </div>
+      <div class="d-flex justify-content-end align-items-center">
+        <div class="btn-group">
+          <%- include("button", 
+          {arg:{text: "Delete", color:"danger", extraClass:"image-delete", cms: key}}) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

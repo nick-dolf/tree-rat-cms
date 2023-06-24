@@ -2,6 +2,7 @@
   "siteDirectory": "site",
   "pageDirectory": "pages",
   "viewDirectory": "views",
+  "imageDirectory": "images",
   "enableGzipCompression": true,
   "enableAutoPrefixer": true,
   "developmentUrl": "/",

@@ -125,8 +125,7 @@ router.delete("/*", (req, res) => {
     return page.permalink == slug;
   });
 
-  console.log(result);
-  if (!result) {
+  if (result == -1) {
     return res.status(404).send("page not found");
   }
 

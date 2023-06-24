@@ -12,19 +12,21 @@ const sectionDir = path.join(process.cwd(), "views/sections");
 function setup(file) {
   // Read Site Configuration
   const config = fse.readJsonSync(file);
-  app.locals.siteDir = path.join(process.cwd(), "site/");
-  app.locals.pageDir = path.join(process.cwd(), "pages/");
-  app.locals.viewDir = config.viewDirectory;
+  app.locals.siteDir = path.join(process.cwd(), config.siteDirectory);
+  app.locals.pageDir = path.join(process.cwd(), config.pageDirectory);
+  app.locals.viewDir = path.join(process.cwd(), config.viewDirectory);
+  app.locals.imgDir = path.join(process.cwd(), config.imageDirectory);
 
   // Remove previous site build
   fse.removeSync(app.locals.siteDir);
 
   // Ensure needed directories exist
   fse.ensureDirSync(app.locals.siteDir);
-  fse.ensureDirSync(pageDir);
-  fse.ensureDirSync(pageDir + "drafts");
-  fse.ensureDirSync(pageDir + "published");
-  fse.ensureDirSync(`${process.cwd()}/${app.locals.viewDir}`);
+  fse.ensureDirSync(app.locals.pageDir);
+  fse.ensureDirSync(app.locals.pageDir + "/drafts");
+  fse.ensureDirSync(app.locals.pageDir + "/published");
+  fse.ensureDirSync(app.locals.viewDir);
+  fse.ensureDirSync(app.locals.imgDir);
 
   // Ensure needed files exist
   try {
@@ -55,7 +57,13 @@ function setup(file) {
 
   app.locals.site.sections = fse.readdirSync(sectionDir);
 
-  console.log(app.locals.site.sections);
+  try {
+    app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
+  } catch (err) {
+    app.locals.site.images = [];
+    console.error(err.message);
+  }
+  console.log(app.locals.site.images.length)
 
   // build custom admin stylesheet
   const sassResult = sass.compile("admin/views/style.scss", {
@@ -81,7 +89,7 @@ function buildSite() {
     style: "compressed",
   });
 
-  fse.outputFileSync(app.locals.siteDir + "assets/style.css", sassResult.css);
+  fse.outputFileSync(app.locals.siteDir + "/assets/style.css", sassResult.css);
 
   /*
    * Copy Assets

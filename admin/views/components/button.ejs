@@ -1,0 +1,11 @@
+<button type="button"
+  class="btn btn-<%- arg.color %> <%= arg.extraClass %>"
+  <% if (arg.id) { %> id="<%= arg.id %>" <% } %>
+  <% if (arg.bsToggle) { %> data-bs-toggle="<%= arg.bsToggle %>" <% } %>
+  <% if (arg.bsTarget) { %> data-bs-target="<%= arg.bsTarget %>" <% } %>
+  <% if (arg.cms) { %> data-cms="<%= arg.cms %>" <% } %>
+  <% if (arg.cmsText) { %> data-cms-text="<%= arg.cmsText %>" <% } %>
+  > 
+  <%= arg.text %>
+  <span class="ms-2 spinner-border spinner-border-sm d-none"></span>
+</button>
