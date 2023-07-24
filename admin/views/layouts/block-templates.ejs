@@ -1,0 +1,34 @@
+<!-- Block Templates -->
+<% for (let i =0; i < blocks.length; i++) {const block = blocks[i];%>
+<template id="<%= block.slug %>-block-template">
+<div class="accordion-item cms-block">
+  <!-- Accordion Header -->
+  <div class="row align-items-baseline">
+    <%- include("../components/accordion-handle") %>
+    <%- include("../components/accordion-header", 
+                { name: block.name,
+                  collapse: "hide", 
+                  extraClass: "bg-success-subtle",
+                  index: "qqoq" }) %>
+  </div>
+  <!-- Accordion Body -->
+  <div id="collapse-qq0q" class="accordion-collapse collapse" 
+       data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <input type="text" name="<%- index %>[template]" 
+             value="<%= block.slug %>" hidden />
+
+      <input type="text" name="<%- index %>[name]" 
+             value="<%= block.name %>" hidden />
+      
+      <input class="remember-collapse" type="text" name="<%- index %>[collapse]" value="hide" hidden />
+
+      <%- include("../../../views/blocks/"+block.slug+"/admin-"+block.slug, 
+                  { index: index+"[content]", content: {} }) %>
+
+    </div>
+  </div>
+
+</div>
+</template>
+<% } %>

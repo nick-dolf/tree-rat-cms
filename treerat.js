@@ -4,7 +4,9 @@ const express = require("express");
 const app = express();
 module.exports = app;
 const build = require("./admin/utils/build");
+const imgProc = require("./admin/utils/imgProc");
 const ejs = require("ejs");
+const fse = require("fs-extra")
 const marked = require("marked");
 marked.setOptions({ breaks: true, mangle: false, headerIds: false });
 const sanitizeHtml = require("sanitize-html");
@@ -22,7 +24,8 @@ liveReloadServer.server.once("connection", () => {
 });
 
 build.setup("treerat.json");
-build.buildSite();
+
+
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
@@ -34,6 +37,7 @@ if (process.env.NODE_ENV === "development") {
  */
 app.use((req, res, next) => {
   res.adminRender = (file, data) => {
+    console.log(file, data)
     ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
       if (err) {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
@@ -45,19 +49,46 @@ app.use((req, res, next) => {
 });
 app.use((req, res, next) => {
   res.siteRender = (file, data) => {
+    let promises = []
+    ejs.renderFile(app.locals.viewDir + "/" + file + ".ejs", { page: data, ...app.locals, promises }, (err, html) => {
+      if (err) {
+        return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
+      }
+      Promise.all(promises).then(() => {
+        res.send(html);
+      })
+    });
+  };
+  next();
+});
+// Render page to process images without sending to client
+app.use((req, res, next) => {
+  res.preRender = (file, data) => {
     ejs.renderFile(app.locals.viewDir + "/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
       if (err) {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
       }
-      res.send(html);
     });
   };
   next();
 });
 
+
 // Convert Markdown and sanitize the HTML
 app.locals.md = (data) => {
   return sanitizeHtml(marked.parse(data));
+};
+
+app.locals.publishImg = imgProc.publishImg;
+app.locals.publishPage = (file, data) => {
+  ejs.renderFile(app.locals.viewDir + "/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
+    if (err) {
+      console.error(err.message);
+    }
+    const link = (data.link != "home" ? "/"+data.link+"/" : "/")
+    console.log(data.link)
+    fse.outputFile(app.locals.siteDir + link + "index.html", html)
+  });
 };
 
 // Log request
@@ -65,6 +96,11 @@ app.use("/", (req, res, next) => {
   console.log(req.method, req.url);
   next();
 });
+
+/**
+ * Build Site
+ */
+build.buildSite();
 
 /*
 / Admin Route

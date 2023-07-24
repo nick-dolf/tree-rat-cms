@@ -1,0 +1,12 @@
+<h2 class="col-9 accordion-header ">
+  <button
+    class="accordion-button <%- locals.extraClass %>
+          <% if (collapse == "hide") { %>collapsed<% } %>"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#collapse-<%-index%>"
+    aria-expanded="true"
+    aria-controls="collapse-<%-index%>">
+    <%- name %>
+  </button>
+</h2>

@@ -1,1 +1,10 @@
-<button class="btn <%= arg.class %>" type="button"><%= arg.text %></button>
+<% if (content.button.type == "internal") { %>
+  <% let link = (content.button.page == "home" ? "" : content.button.page) %>
+  <a href="<%- site.url + link %>" class="btn <%- extraClass %>" ><%- content.button.text %></a>
+<% } else if (content.button.type == "external") { %>
+  <a href="<%- content.button.link %>" class="btn btn--svg-icon <%- extraClass %>" ><%- content.button.text %>
+  <%- include("./icon-svg", {id:"external"})%>
+  </a>      
+<% } else if (content.button.type == "scroll") { %>
+  <button class="btn scroll <%- extraClass %>" data-scroll="<%- content.button.scroll %>" type="button" name="button" ><%- content.button.text %></button>
+<% } %>

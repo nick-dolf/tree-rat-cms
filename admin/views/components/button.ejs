@@ -3,9 +3,14 @@
   <% if (arg.id) { %> id="<%= arg.id %>" <% } %>
   <% if (arg.bsToggle) { %> data-bs-toggle="<%= arg.bsToggle %>" <% } %>
   <% if (arg.bsTarget) { %> data-bs-target="<%= arg.bsTarget %>" <% } %>
+  <% if (arg.bsDismiss) { %> data-bs-dismiss="<%= arg.bsDismiss %>" <% } %>
   <% if (arg.cms) { %> data-cms="<%= arg.cms %>" <% } %>
+  <% if (arg.cmsAnchor) { %> data-cms-anchor="<%= arg.cmsAnchor %>" <% } %>
+  <% if (arg.cmsForm) { %> data-cms-form="<%= arg.cmsForm %>" <% } %>
   <% if (arg.cmsText) { %> data-cms-text="<%= arg.cmsText %>" <% } %>
+  <% if (arg.cmsTarget) { %> data-cms-target="<%= arg.cmsTarget %>" <% } %>
+  <% if (arg.cmsUrl) { %> data-cms-url="<%= arg.cmsUrl %>" <% } %>
   > 
-  <%= arg.text %>
+  <%- arg.text %>
   <span class="ms-2 spinner-border spinner-border-sm d-none"></span>
 </button>

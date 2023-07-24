@@ -1,0 +1,7 @@
+<% const idIndex = index.replace(/[\[\]]/g, "-")+slug %>
+<div class="form-floating mb-2" id="<%- idIndex %>">
+  <textarea class="form-control large" id="<%- idIndex %>-textarea" 
+            placeholder="Write page description here" name="<%= index %>[<%- slug %>]" 
+            ><%= content[slug] %></textarea>
+  <label for="<%- idIndex %>-textarea"><%- label %></label>
+</div>

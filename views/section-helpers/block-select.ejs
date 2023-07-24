@@ -1,0 +1,21 @@
+<% index += `[${slug}][0]`%>
+<p><%- index %></p>
+<p><%- content[slug] %></p>
+<div class="block-controller">
+<div class="brown p-2 rounded-top">
+  <div class="row align-items-center">
+    <div class="input-group col-md">
+      <select class="form-select block-select">
+        <% for (let i =0; i < blocks.length; i++) { %>
+        <option value="<%= blocks[i].slug %>"><%= blocks[i].name %></option>
+        <% } %>
+      </select>
+      <button class="btn btn-success block-add" type="button">Add</button>
+    </div>
+  </div>
+</div>
+<div class="block-anchor">
+<%- include("../../admin/views/layouts/blocks", {blocks, index})%>
+</div>
+<%- include("../../admin/views/layouts/block-templates", {blocks, index})%>
+</div>

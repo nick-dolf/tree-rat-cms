@@ -5,14 +5,6 @@
   justify-content: center;
 }
 
-.hero--black {
-  background: $black;
-}
-
-.hero--white {
-  background: $white;
-}
-
 .hero-img-container {
   width: 100%;
   position: relative;
@@ -61,7 +53,7 @@
   }
 }
 
-.hero.hero--home h1 {
+.hero.hero-home h1 {
   max-width: 100%;
 }
 
@@ -85,7 +77,7 @@
 }
 
 
-.hero--standard .hero-overlay {
+.hero-standard .hero-overlay {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -104,7 +96,7 @@
   }
 }
 
-.hero--home .hero-overlay {
+.hero-home .hero-overlay {
   position: relative;
   z-index: 2;
   color: $white;
@@ -127,7 +119,7 @@
   }
 }
 
-.hero--home .btn {
+.hero .btn {
   position: absolute;
   bottom: 0;
   left: 50%;

@@ -29,14 +29,13 @@
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
           Cancel
         </button>
-        <button
-          id="folder-create"
-          type="button"
-          class="btn btn-success"
-          data-bs-dismiss="modal"
-        >
-          Add
-        </button>
+        <%- include("../components/button", 
+        {arg:{text: "Add", 
+              color:"success", 
+              extraClass:"create",
+              bsDismiss: "modal", 
+              cmsForm: "addFolder",
+              cmsUrl:site.url+"admin/folders", cmsAnchor:"accordionPageAnchor"}}) %>
       </div>
     </div>
   </div>

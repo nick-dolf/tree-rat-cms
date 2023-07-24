@@ -1,8 +1,29 @@
 <section class="text-area text-area-<%- content.style %>">
-  <% if (content.heading) { %>
-  <h1 class="h2"><%= content.heading %></h1>
+  <% if (content.style == "two-column") { %>
+    <!-- Two Column -->
+    <div class="row">
+      <div class="column">
+        <% if (content.columnOne) { %>
+        <%- md(content.columnOne) %>
+        <% } %>
+      </div>
+      <div class="column">
+        <% if (content.columnOne) { %>
+        <%- md(content.columnTwo) %>
+        <% } %>
+      </div>
+    </div>
+  <% } else { %>
+    <!-- All Single column -->
+    <% if (content.columnOne) { %>
+    <%- md(content.columnOne) %>
+    <% } %>
   <% } %>
-  <% if (content.paragraph) { %>
-  <%- md(content.paragraph) %>
+
+  <!-- Optional Button at Bottom -->
+  <% if (content.button.type != "no") { %>
+    <br>
+    <%- include("../../components/button", {extraClass:"btn--light-bg"}) %>
   <% } %>
+
 </section>

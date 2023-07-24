@@ -1,7 +1,9 @@
-<!-- Heading -->
-<%- include("../../section-helpers/text-area-plain", {index, slug: "heading", label: "Heading"}) %>
 <!-- Paragraph -->
-<%- include("../../section-helpers/text-area-plain", {index, slug: "paragraph", label: "Paragraph"}) %>
+<%- include("../../section-helpers/text-area-large", {index, slug: "columnOne", label: "Paragraph"}) %>
+<!-- Paragraph -->
+<%- include("../../section-helpers/text-area-large", {index, slug: "columnTwo", label: "Column Two"}) %>
+<!-- Button -->
+<%- include("../../section-helpers/button", { slug: "button", label: "Button" }) %>
 <!-- Style -->
 <%- include("../../section-helpers/select", 
-{index, slug: "style", label: "Style", options : [{slug: "flashy", label:"Flashy"},{slug: "splashy", label: "Splashy"}]}) %>
+{index, slug: "style", label: "Style", toggle: {value:"two-column",target:"columnTwo"},options : [{slug: "plain", label:"Plain"},{slug: "flashy", label:"Flashy"},{slug: "splashy", label: "Splashy"},{slug:"two-column", label:"Two Columns"}]}) %>

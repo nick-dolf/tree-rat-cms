@@ -3,10 +3,11 @@
 
 <main>
   <section class="container p-3 d-flex gap-3 justify-content-start">
-    <%- include("./components/button-action", { arg: {text: "Add Folder", id:"folder-add", bsToggle:"modal",
-    bsTarget:"#addFolderModal"}}) %> 
-    <%- include("./components/button-action", { arg: {text: "Add Page",
-    id:"page-add", bsToggle:"modal", bsTarget:"#addPageModal"}}) %>
+    <%- include("./components/button-action", 
+                { arg: {text: "Add Folder", 
+                  id:"folder-add", 
+                  bsToggle:"modal",
+                  bsTarget:"#addFolderModal"}}) %> 
   </section>
   <section id="accordionPageAnchor" class="container page-accordion"><%- include("layouts/page-accordion")%></section>
 </main>

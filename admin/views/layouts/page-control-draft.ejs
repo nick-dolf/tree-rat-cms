@@ -1,0 +1,40 @@
+<div class="py-3 page-control page-control-small sticky-top">
+  <div class="text-center text-md-end text-lg-center">
+    <!-- Save Page Draft -->
+    <%- include("../components/button", 
+        {arg:{text: "Save Draft", 
+              color:"success", 
+              extraClass:"update me-2",
+              id:"saveDraft",
+              cmsForm: "pageForm", 
+              cmsText: "Saving Draft", 
+              cmsUrl:site.url+"admin/pages", 
+              cmsAnchor:"pageFormAnchor"}}) %>
+
+    <a href="<%= site.url %>admin/drafts/<%= page.link %>" class="btn btn-primary">View Draft</a>
+  </div>
+  <div class="preview mt-3">
+    <div id="previewSizes" class="d-flex justify-content-center gap-3 my-3">
+      <label>
+        Mobile
+        <input type="radio" name="previewSize" value="mobile" >
+        <%- include("../components/icon-svg", {id: "mobile"}) %>
+      </label>
+      <label>
+        Tablet
+        <input type="radio" name="previewSize" value="tablet">
+        <%- include("../components/icon-svg", {id: "tablet"}) %>
+      </label>
+      <label>
+        Desktop
+        <input type="radio" name="previewSize"value="desktop" checked>
+        <%- include("../components/icon-svg", {id: "desktop"}) %>
+      </label>
+    </div>
+    <div id="thumbnailContainer" class="desktop">
+      <div id="thumbnail">
+        <iframe id="previewFrame" src="<%- site.url%>admin/drafts/<%= page.link %>" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>

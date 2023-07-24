@@ -1,10 +1,11 @@
 <%- include("base/head") %>
-
 <%- include("layouts/site-header")%>
+
 <main>
-  <% if (page.sections) for (let i =0; i < page.sections.length; i++) { %> <%-
-  include(`sections/${page.sections[i].template}/site-${page.sections[i].template}`, { content :
-  page.sections[i].content }) %> <% } %>
+<% if (page.sections) for (section of page.sections) { %> 
+  <%- include(`sections/${section.template}/site-${section.template}`,
+              { content : section.content }) %> 
+<% } %>
 </main>
 
 <%- include("layouts/site-footer")%>

@@ -1,0 +1,19 @@
+<div class="col-2">
+<div class="btn-group">
+  <!-- <a href="" class="btn btn-primary">Edit</a> -->
+  <a href="<%= site.url %>admin/pages/<%= page.link %>" class="btn btn-success">Label</a>
+  <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+    <span class="visually-hidden">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu btn-success">
+    <li>
+      <%- include("../components/button", 
+      {arg:{text: "Remove", 
+            color:"danger", 
+            extraClass:"remove dropdown-item", 
+            cmsTarget: ".cms-section",
+            cmsText: name }}) %>
+    </li>
+  </ul>
+</div>
+</div>

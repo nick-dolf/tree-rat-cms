@@ -1,0 +1,24 @@
+.icon {
+  height: 32px;
+  vertical-align: top;
+  transition: fill $transition-std;
+}
+
+.icon-svg--dark {
+  fill: black;
+  transition: fill $transition-std;
+
+  &:active {
+    fill: black;
+  }
+
+  &:hover, &:focus-visible {
+    fill: black;
+  }
+
+  @include desktop {
+    &:active {
+      fill: black;
+    }
+  }
+}

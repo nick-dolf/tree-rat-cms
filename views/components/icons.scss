@@ -1,0 +1,215 @@
+.icon {
+  height: 32px;
+  vertical-align: top;
+  transition: fill $speed-std;
+}
+
+.icon-svg--light {
+  fill: $green-400;
+
+  &:hover {
+    fill: $green-600;
+  }
+}
+
+.icon-svg--dark {
+  fill: $green-600;
+  transition: fill $speed-std;
+
+  &:active {
+    fill: $neutral-800;
+  }
+
+  &:hover, &:focus-visible {
+    fill: $neutral-800;
+  }
+
+  @include desktop {
+    &:active {
+      fill: $green-400;
+    }
+  }
+}
+
+
+.icon--small {
+  height: 1.6rem;
+}
+
+/* Triangle Icon */
+.icon-triangle {
+  transform-origin: center;
+  transition: transform $speed-std;
+}
+
+/* Plus Icon */
+.icon-plus {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 1.6rem;
+  height: 1.6rem;
+
+  &:before,
+  &:after{
+      content: "";
+      position: absolute;
+      height: .3rem;
+      width: 1.6rem;
+      border-radius: 10px;
+      background-color: $link-green;
+      transition: transform $speed-std ease-out;
+  }
+  /* Vertical line */
+  &:before{
+  }
+
+  /* horizontal line */
+  &:after{
+    transform: rotate(90deg);
+  }
+
+  &:hover {
+    &:after {
+      transform: rotate(0);
+    }
+  }
+
+  @include tablet {
+    display: none;
+  }
+}
+
+/* Search Icon */
+.icon-search {
+  position: relative;
+  width: 2.2rem;
+  height: 2.2rem;
+  background: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover, &:focus-visible {
+    .lens {
+      border-color: $green-400;
+    }
+
+    .handle {
+      background: $green-400;
+    }
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $white;
+    border: 0.3rem solid $green-600;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    transform: translate(-0.3rem, -0.3rem) rotate(-45deg);
+    transition: all $speed-std ease-in-out;
+    z-index: 1;
+  }
+
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $green-600;
+    height: 0.3rem;
+    width: 1.1rem;
+    border-radius: 10px;
+
+    transform: translate(0.6rem, 0.6rem) rotate(45deg);
+    transition: all $speed-std ease-in-out;
+
+  }
+
+
+  .search-clicked .search-button-positioner &::before {
+    border-width: 0;
+    width: 3rem;
+    height: 0.4rem;
+    border-radius: 10px;
+    background-color: $green-600;
+
+    transform: translate(0, 0) rotate(-45deg);
+  }
+
+  .search-clicked .search-button-positioner &::after {
+    height: 0.4rem;
+    width: 3rem;
+    transform: rotate(45deg);
+  }
+
+  &:hover.clicked, &:focus-visible.clicked {
+    .lens {
+      background-color: $green-400;
+    }
+  }
+
+}
+
+/* Hamburger Icon */
+.hamburger {
+  width: 4.8rem;
+  height: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s ease-in;
+
+  &:hover, &:focus-visible {
+
+    .burger-layer {
+      background-color: $green-400;
+    }
+
+  }
+
+
+  @include tablet {
+    display: none;
+  }
+
+}
+
+.burger-layer {
+  background-color: $green-600;
+  height: 0.4rem;
+  width: 3rem;
+  border-radius: 10px;
+  transition: transform $speed-std;
+  transform-origin: center;
+}
+
+.patty {
+  transition: all $speed-std ease-in-out;
+}
+
+.top-bun {
+  transition: all $speed-std ease-in-out;
+}
+
+.bottom-bun {
+  transition: all $speed-std ease-in-out;
+}
+
+.clicked {
+  //transform: translateX( calc(100vw - 80px) );
+}
+.menu-clicked .patty {
+  width: 0;
+}
+
+.menu-clicked .top-bun {
+  transform:  translateY(0.9rem) rotate(45deg);
+}
+
+.menu-clicked .bottom-bun {
+  transform:  translateY(-0.9rem) rotate(-45deg);
+}

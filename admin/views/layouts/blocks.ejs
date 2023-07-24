@@ -1,0 +1,47 @@
+
+<% for (let i =0; i < blocks.length; i++) { %>
+
+<div class="accordion-item cms-block">
+  <div class="row align-items-baseline">
+    <div class="col-1 block-handle">
+      <svg
+        viewBox="0 0 16 16"
+        width="40"
+        xmlns="http://www.w3.org/2000/svg"
+        class="text-secondary mx-1"
+        fill="currentColor">
+        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#grip-horizontal" />
+      </svg>
+    </div>
+    <h2 class="col-11 accordion-header">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#collapse-qq0q"
+        aria-expanded="true"
+        aria-controls="collapse-qq0q">
+        <%= blocks[i].name %>
+      </button>
+    </h2>
+  </div>
+  <div id="collapse-qq0q" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <input type="text" name="sections[0][blocks][0][template]" value="<%= blocks[i].slug %>" hidden />
+      <input type="text" name="sections[0][blocks][0][template]" value="<%= blocks[i].slug %>" hidden />
+      <input class="remember-collapse" type="text" name="sections[0][blocks][0][collapse]" value="hide" hidden />
+
+      <%- include("../../../views/blocks/"+site.blocks[i].slug+"/admin-"+site.blocks[i].slug, { index :
+      "sections[0][blocks][0][content]", content: {} }) %>
+
+      <div class="mt-2 d-flex justify-content-end">
+        <button class="btn btn-danger section-delete" data-cms="<%= site.blocks[i].label %>" type="button">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% } %>

@@ -1,0 +1,52 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "cards-with-links",
+      "name": "Hover Cards with Links",
+      "collapse": "show",
+      "content": {
+        "cards": [
+          {
+            "template": "card-with-link",
+            "name": "Hover Card",
+            "collapse": "hide",
+            "content": {
+              "paragraph": ""
+            }
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "template": [
+            "card-with-link",
+            "card-with-link"
+          ],
+          "collapse": "hide",
+          "content": {
+            "paragraph": ""
+          }
+        }
+      ]
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "",
+        "columnTwo": "",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "privacy-policy",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    }
+  ]
+}

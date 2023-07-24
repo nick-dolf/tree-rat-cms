@@ -1,0 +1,14 @@
+<%- include("base/head", { page: { title: "Dashboard", description: "Manage Site" }})%> <%- include("layouts/header")%>
+
+<main class="container">
+  <h1>Dev Dashboard</h1>
+  <hr class="brown border-2 opacity-100" />
+  <section id="dev-section-anchor">
+    <%- include("layouts/dev-sections")%>
+  </section>
+  <section id="dev-block-anchor">
+    <%- include("layouts/dev-blocks")%>
+  </section>
+</main>
+
+<%- include("base/foot")%>

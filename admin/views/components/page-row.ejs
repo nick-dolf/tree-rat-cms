@@ -1,12 +1,14 @@
 <!-- Page List Item for Page Accordion -->
-<li class="list-group-item mb-2">
+<% console.log(page) %>
+<li class="list-group-item mb-2 p-1 <% if (page.newPage == page.link) { %>border rounded bg-success-subtle<% } %>">
   <div class="row">
+    <% if (page.publishedDate) { %>
     <!-- Page Name -->
     <div class="col-sm-4">
-      <a href="" class="link-dark h4"><%= page.name %></a>
+      <% let link = (page.link == "home" ? "" : page.link) %>
+      <a href="<%- site.url + link %>" class="link-dark h4"><%= page.name %></a>
     </div>
     <!-- Published -->
-    <% if (page.publishedDate) { %>
     <div class="col-sm-4 my-2 d-flex align-items-center">
       <svg
         viewBox="0 0 16 16"
@@ -18,8 +20,12 @@
       </svg>
       <span>Published</span>
     </div>
-    <!-- Not Published -->
     <% } else { %>
+    <!-- Page Name -->
+    <div class="col-sm-4">
+      <h2 class="h4"><%= page.name %></h2>
+    </div>
+    <!-- Not Published -->
     <div class="col-sm-4 my-2 d-flex align-items-center">
       <svg
         viewBox="0 0 16 16"
@@ -41,13 +47,21 @@
         <!-- Other Pages -->
         <% } else { %>
         <!-- <a href="" class="btn btn-primary">Edit</a> -->
-        <a href="<%= site.url %>admin/pages/<%= page.permalink %>" class="btn btn-primary">Edit</a>
+        <a href="<%= site.url %>admin/pages/<%= page.link %>" class="btn btn-primary">Edit</a>
         <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
           <span class="visually-hidden">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu">
+        <ul class="dropdown-menu btn-success">
           <li>
-            <button type="button" class="btn btn-danger dropdown-item page-delete" data-cms="<%= page.permalink %>">Delete</button>
+            <% if (page.permalink != "home") { %>
+            <%- include("../components/button", 
+            {arg:{text: "Delete", 
+                  color:"danger", 
+                  extraClass:"delete dropdown-item", 
+                  cms: page.link,
+                  cmsUrl:site.url+"admin/pages", 
+                  cmsAnchor:"accordionPageAnchor"}}) %>
+              <% } %>
           </li>
         </ul>
         <% } %>

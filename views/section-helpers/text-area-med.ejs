@@ -1,4 +1,5 @@
-<div class="form-floating mb-2">
-  <textarea class="form-control tall" placeholder="Write page description here" id="<%= index %>[<%- slug %>]" name="<%= index %>[<%- slug %>]" ><%= content[slug] %></textarea>
-  <label for="<%= index %>[<%- slug %>]"><%- label %></label>
+<div class="form-floating mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
+  <textarea class="form-control tall" placeholder="Write page description here" name="<%= index %>[<%- slug %>]" id="<%= index %>[<%- slug %>]-textarea"
+    ><%= content[slug] %></textarea>
+  <label for="<%= index %>[<%- slug %>]-textarea"><%- label %></label>
 </div>

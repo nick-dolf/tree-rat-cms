@@ -1,11 +1,15 @@
 .text-area {
-  @include spacing-skinny;
 
-  h1:first-child {
+  :first-child {
     margin-top: 0;
   }
 
+  &.text-area-plain {
+    @include spacing-slim-nopad;
+  }
+
   &.text-area-flashy {
+    @include spacing-skinny;
     color: $green-700;
     border: 1px solid $neutral-300;
     h1, h2, h3 {
@@ -14,7 +18,24 @@
   }
 
   &.text-area-splashy {
+    @include spacing-skinny;
     color: $neutral-900;
     border: 1px solid $green-600;
   }
+
+  &.text-area-two-column {
+  @include spacing-std;
+
+  @include tablet {
+    .row {
+      display: flex;
+      gap: 32px;
+    }
+    
+    .column {
+      flex: 50%;
+    }
+    
+  }
+}
 }

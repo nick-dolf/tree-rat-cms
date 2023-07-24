@@ -22,17 +22,16 @@ router.post(
       lower: true,
     });
 
-    if (app.locals.site.folders.includes(slug)) {
+    const result = app.locals.folders.add({slug: slug, name: req.body.name})
+
+    if (result == -1) {
       return res.status(409).send("folder already exists");
     }
-
-    app.locals.site.folders.push(slug);
-    app.locals.site.folders.sort();
 
     fse
       .mkdir(draftDir + slug)
       .then(() => {
-        res.render("admin/layouts/page-accordion");
+        res.adminRender("layouts/page-accordion", {changedFolder: slug});
       })
       .catch((error) => {
         res.status(500).send(error);
@@ -40,26 +39,23 @@ router.post(
   }
 );
 
-router.delete("/:folder", (req, res) => {
-  const slug = req.params.folder;
+router.delete("/:slug", (req, res) => {
+  const slug = req.params.slug;
 
-  if (!app.locals.site.folders.includes(slug)) {
-    return res.status(409).send("folder does not exist");
+  const result = app.locals.folders.deleteById(slug);
+
+  if (result != -1) {
+    fse
+      .remove(draftDir + slug)
+      .then(() => {
+        res.adminRender("layouts/page-accordion", {changedFolder: slug});
+      })
+      .catch((err) => {
+        console.error(err);
+      });
+  } else {
+    res.status(400).send("unable to delete folder");
   }
-
-  app.locals.site.folders = app.locals.site.folders.filter((folder) => {
-    return folder != slug;
-  });
-  console.log(app.locals.site.folders);
-
-  fse
-    .rmdir(draftDir + slug)
-    .then(() => {
-      res.render("admin/layouts/page-accordion");
-    })
-    .catch((error) => {
-      res.status(500).send(error);
-    });
 });
 
 module.exports = router;

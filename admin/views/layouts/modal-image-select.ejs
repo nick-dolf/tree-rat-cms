@@ -6,11 +6,11 @@
         <h1 class="modal-title fs-5" id="imageSelectModalLabel">Select Image</h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body">
+      <div class="modal-body row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5 g-3">
         <% for (image of site.images) { %>
-          <button class="btn image-change" type="button" data-cms-image=<%- image.name %> data-cms-folder="<%- site.url %>admin/assets/images/original/" data-bs-dismiss="modal">
-            <img src="<%- site.url %>admin/assets/images/original/thumb/<%- image.name %>" alt="">
-
+          <button class="btn image-change col" type="button" data-cms-image=<%- image.name %> data-cms-folder="<%- site.url %>admin/assets/images/original/" data-bs-dismiss="modal">
+            <img class="img-fluid" src="<%- site.url %>admin/assets/images/original/thumb/<%- image.name %>" alt="">
+            <small><%- image.width %>w x <%- image.height %>h</small>
           </button>
         <% } %>
       </div>

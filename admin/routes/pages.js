@@ -9,6 +9,7 @@ const slugify = require("slugify");
 const upload = require("multer")();
 // Variables
 const draftDir = app.locals.pageDir + "/drafts/";
+const publishDir = app.locals.pageDir + "/published/";
 
 /*
 / Create (POST)
@@ -30,33 +31,28 @@ router.post("*", body("name").isString().isLength({ min: 2 }).trim(), (req, res)
     lower: true,
   });
 
-  if (
-    req.app.locals.site.pages.some((item) => {
-      return item.folder === folder && item.slug === slug;
-    })
-  ) {
-    return res.status(403).send("Page with that name already exists");
-  }
-
   const pageData = {
     name: req.body.name,
     slug: slug,
     folder: folder,
-    permalink: path.join(folder, slug),
+    link: path.join(folder, slug),
     publishedDate: false,
     draftedDate: new Date().toString(),
-    details: {},
   };
 
   // Update pages
-  req.app.locals.site.pages.push(pageData);
+  const result = app.locals.pages.add(pageData);
+
+  if (result == -1) {
+    return res.status(409).send("page already exists");
+  }
 
   // Save Page Data to JSON
   const filePath = path.join(draftDir, folder, slug);
   fse
-    .outputJson(`${filePath}.json`, pageData)
+    .outputJson(`${filePath}.json`, {title:"", description:""})
     .then(() => {
-      res.adminRender("layouts/page-accordion");
+      res.adminRender("layouts/page-accordion", {changedFolder: folder, new: pageData.link});
     })
     .catch((err) => {
       console.error(err.message);
@@ -72,12 +68,14 @@ router.get("/", (req, res) => {
 });
 
 router.get("/*", (req, res) => {
-  const page = path.join(draftDir, req.url);
+  const link = req.url.slice(1)
+  const page = app.locals.pages.findById(link)
+  const file = path.join(draftDir, req.url);
 
   fse
-    .readJson(page + ".json")
+    .readJson(file + ".json")
     .then((data) => {
-      res.adminRender("pageEdit", data);
+      res.adminRender("pageEdit", {...data, ...page});
     })
     .catch((err) => {
       res.status(404).end("page does not exist");
@@ -90,23 +88,19 @@ router.get("/*", (req, res) => {
 router.put("/*", upload.none(), (req, res) => {
   const link = req.url.slice(1)
   const pageFile = path.join(draftDir, link)+".json";
-  console.log(link, pageFile)
+  const pageData = req.body;
 
   // Update pages
-  let pageInfo = {};
-  req.app.locals.site.pages = req.app.locals.site.pages.filter((item) => {
-    if (item.permalink == link) {
-      item.draftedDate = new Date().toString();
-      pageInfo = item;
-    }
-    return item;
-  });
-  const pageData = { ...pageInfo, ...req.body };
-  console.log(pageData)
+  let page = app.locals.pages.findById(link)
+  page.draftedDate = new Date().toString();
+  app.locals.pages.update(page)
 
   // Save Page Data to JSON
   fse
-    .outputJson(pageFile, pageData)
+    .outputFile(pageFile, JSON.stringify(pageData, null, 2))
+    .then(() => {
+      res.preRender("default", pageData );
+    })
     .then(() => {
       res.adminRender("layouts/page-form", pageData );
     })
@@ -118,23 +112,30 @@ router.put("/*", upload.none(), (req, res) => {
 
 
 router.delete("/*", (req, res) => {
-  const slug = req.url.slice(1);
+  const link = req.url.slice(1);
 
-  console.log(slug);
-  const result = app.locals.site.pages.findIndex((page) => {
-    return page.permalink == slug;
-  });
+  if (link == "home") {
+    return res.status(400).send("Cannot delete home page")
+  }
+  
+  let page = app.locals.pages.findById(link)
+  const result = app.locals.pages.deleteById(link);
 
   if (result == -1) {
     return res.status(404).send("page not found");
   }
-
-  app.locals.site.pages.splice(result, 1);
-
-  const filePath = path.join(draftDir, slug) + ".json";
-  console.log(filePath);
+  
+  const draftPath = path.join(draftDir, link) + ".json";
+  const publishPath = path.join(publishDir, link) + ".json";
+  const sitePath = path.join(app.locals.siteDir, link);
   fse
-    .rm(filePath)
+    .rm(draftPath)
+    .then(()=>{
+      if (page.publishedDate) return fse.rm(publishPath)
+    })
+    .then(()=>{
+      if (page.publishedDate) return fse.remove(sitePath)
+    })
     .then(() => {
       res.adminRender("layouts/page-accordion");
     })

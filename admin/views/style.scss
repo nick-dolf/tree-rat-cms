@@ -2,7 +2,12 @@
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
+@import "base/global";
+
+@import "components/icons";
+
 @import "layouts/header";
+@import "layouts/page";
 
 body {
   background: white;
@@ -10,8 +15,24 @@ body {
 
 .brown {
   background: $tree-bark;
+  border-color: $tree-bark;
 }
 
 textarea.tall {
   min-height: 100px !important;
+}
+
+textarea.large {
+  min-height: 200px !important;
+}
+textarea.alt {
+  min-height: 150px !important;
+}
+
+
+#pageForm {
+
+  @media screen and (min-width: 992px) {
+  width:75%;
+  }
 }

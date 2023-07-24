@@ -1,0 +1,18 @@
+[
+  {
+    "slug": "text-area",
+    "name": "Text Area"
+  },
+  {
+    "slug": "line",
+    "name": "Line"
+  },
+  {
+    "slug": "hero",
+    "name": "Hero"
+  },
+  {
+    "slug": "banner",
+    "name": "Banner"
+  }
+]

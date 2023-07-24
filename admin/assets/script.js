@@ -1,140 +1,56 @@
-/*
-/ Output 
-*/
-function output(message, fail) {
-  const now = new Date();
-
-  if (fail) {
-    $("#output")
-      .prepend(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} - 
-    <span class="text-danger">${message}</span><br>`);
-  } else {
-    $("#output")
-      .prepend(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} - 
-    ${message}<br>`);
-  }
-  $("#output").animate({ scrollTop: 0 }, "fast");
-}
-
-/*
- * Confirm Modal
- */
-$("#confirmModal").on("show.bs.modal", (event) => {
-  const button = event.relatedTarget;
-  const text = button.getAttribute('data-cms-text')
-  console.log($(this));
-});
-
-/*
- * Folders
+/**
+ * CRUD
  */
 
-// Folder CREATE (POST)
-$(document).on("click", "#folder-create",  (event) => {
-  const postData = $("#addFolder").serialize();
-
-  const button = document.getElementById("folder-add");
-
-  output(`Creating Folder: ${postData}`);
-
-  button.querySelector(".spinner-border").classList.remove("d-none");
-  button.disabled = true;
-
-  $.post("page-folders", postData)
-    .done((response) => {
-      output("Folder Created");
-      console.log(response);
-      $("#accordionPageAnchor").html(response);
-    })
-    .fail((response) => {
-      output("Folder creation failed: " + response.responseText, true);
-      console.log("fail", response.responseText);
-    })
-    .always(() => {
-      button.querySelector(".spinner-border").classList.add("d-none");
-      button.disabled = false;
-      $(".btn-close").click();
-    });
-});
-
-// Folder DELETE (DELETE)
-$(document).on("click", ".folder-delete", (event) => {
-  const button = event.target;
-  const deleteFolder = button.dataset.cms;
-  if (confirm(`Do you really want to delete ${deleteFolder}?`)) {
-    output(`sending delete request to server: ${deleteFolder}`);
-    button.disabled = true;
-
-    $.ajax({ url: `page-folders/${deleteFolder}`, type: "DELETE" })
-      .done((response) => {
-        output("delete request was successful");
-        console.log("delete success", response);
-        $("#accordionPageAnchor").html(response);
-      })
-      .fail((response) => {
-        output("delete request failed: " + response.responseText, true);
-        console.log("delete failed:", response.responseText);
-      })
-      .always(() => {
-        button.disabled = false;
-      });
-  }
-});
-
-
-/*
- * Pages
- */
-
-// Pages CREATE (POST)
-$(document).on("click", "#page-create",  (event) => {
-  const postData = $("#addPage").serialize();
-
-  const button = document.getElementById("page-add");
-
-  output(`Creating Page: ${postData}`);
-
-  button.querySelector(".spinner-border").classList.remove("d-none");
-  button.disabled = true;
-
-  $.post("pages", postData)
-    .done((response) => {
-      output("Page Created");
-      console.log(response);
-      $("#accordionPageAnchor").html(response);
-    })
-    .fail((response) => {
-      output("Page creation failed: " + response.responseText, true);
-      console.log("fail", response.responseText);
-    })
-    .always(() => {
-      button.querySelector(".spinner-border").classList.add("d-none");
-      button.disabled = false;
-      $(".btn-close").click();
-    });
-});
-
-// Pages UPDATE (PUT)
-$(".page-save-draft").click((event) => {
+// Create (POST)
+$(document).on("click", ".create", (event) => {
   const button = event.currentTarget;
+  const form = $(`#${button.dataset.cmsForm}`);
+  const postData = form.serialize();
+
+  output(`${button.dataset.cmsText}: ${postData}`);
 
   button.querySelector(".spinner-border").classList.remove("d-none");
   button.disabled = true;
 
-  const formData = new FormData(document.getElementById("pageForm"));
+  $.post(`${button.dataset.cmsUrl}`, postData)
+    .done((response) => {
+      output("Success");
+      $(`#${button.dataset.cmsAnchor}`).html(response);
+    })
+    .fail((response) => {
+      output("Fail: " + response.responseText, true);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+    });
+});
+
+// Update (PUT)
+$(document).on("click", ".update", (event) => {
+  const button = event.currentTarget;
+  const putData = new FormData(document.getElementById(`${button.dataset.cmsForm}`));
+
+  output(`${button.dataset.cmsText}`);
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
 
   $.ajax({
     url: "",
     type: "PUT",
-    data: formData,
+    data: putData,
     enctype: "multipart/form-data",
     processData: false,
     contentType: false,
   })
     .done((response) => {
-      output("Draft Saved");
-      $("#pageFormAnchor").html(response);
+      output("Success");
+      $(`#${button.dataset.cmsAnchor}`).html(response);
+      $(".toggle").trigger("change");
       initSortable();
+      reloadPreview();
     })
     .fail((response) => {
       output("Failed to save draft", true);
@@ -146,65 +62,78 @@ $(".page-save-draft").click((event) => {
     });
 });
 
+// Delete (DELETE)
+$(document).on("click", ".delete", (event) => {
+  const button = event.currentTarget;
+  const deleteTarget = button.dataset.cms;
 
-
-// Page DELETE (DELETE)
-$(document).on("click", ".page-delete", (event) => {
-  const button = event.target;
-  const deletePage = button.dataset.cms;
-  if (confirm(`Do you really want to delete ${deletePage}?`)) {
-    output(`sending delete request to server: ${deletePage}`);
+  if (confirm(`Do you really want to delete ${deleteTarget}?`)) {
+    output(`sending delete request to server: ${deleteTarget}`);
+    button.querySelector(".spinner-border").classList.remove("d-none");
     button.disabled = true;
 
-    $.ajax({ url: `pages/${deletePage}`, type: "DELETE" })
+    $.ajax({ url: `${button.dataset.cmsUrl}/${deleteTarget}`, type: "DELETE" })
       .done((response) => {
         output("delete request was successful");
-        console.log("delete success", response);
-        $("#accordionPageAnchor").html(response);
+        $(`#${button.dataset.cmsAnchor}`).html(response);
       })
       .fail((response) => {
         output("delete request failed: " + response.responseText, true);
-        console.log("delete failed:", response.responseText);
       })
       .always(() => {
+        button.querySelector(".spinner-border").classList.add("d-none");
         button.disabled = false;
       });
   }
 });
-
-/*
-/ Initialize Sortable 
-*/
-function initSortable() {
-  $("#sortable").sortable({ handle: ".handle", update: orderSections });
-  $(".block-anchor").sortable({ handle: ".block-handle", update: orderSections });
-}
-initSortable();
-
-
 /*
  * Sections
  */
-
-$(document).on("click", ".section-add", (event) =>  {
-  const selected = $("#select-template :selected");
-  output(selected.val());
+$(document).on("click", ".add", (event) => {
+  const button = event.currentTarget;
+  const selected = $(button.dataset.cmsTarget);
+  output(button.dataset.cmsText);
 
   // Use epoch time for unique id for Accordion
   let unique = new Date().getTime();
 
-  $("#sortable").prepend(
-    $(`#${selected.val()}-template`).html().replace(/section-qq.*q/g, `section-qq${unique}q`)
-  );
+  $(button.dataset.cmsAnchor).prepend($(`#${selected.val()}-template`)
+    .html().replace(/qq.*q/g, `qq${unique}q`));
+
+  orderSections();
+  $(".toggle").trigger("change");
+});
+
+$(document).on("click", ".remove", (event) => {
+  const button = event.currentTarget;
+
+  if (confirm(`Do you want to remove ${button.dataset.cmsText}?\n(You will also need to save draft to permanently delete it)`)) {
+    output(`Removed ${button.dataset.cmsText}`);
+    button.closest(button.dataset.cmsTarget).remove(0);
+    orderSections();
+  }
+});
+
+$(document).on("click", ".block-add", (event) => {
+  const parent = $(event.currentTarget.closest(".block-controller"));
+  const selected = parent.find(".block-select");
+  output(selected.val() + "-block-template");
+
+  // Use epoch time for unique id for Accordion
+  let unique = new Date().getTime();
+
+  parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`).html().replace(/qq.*q/g, `qq${unique}q`));
 
   orderSections();
 });
+
+
 
 $(document).on("click", ".section-delete", (event) => {
   const button = event.currentTarget;
   const deleteSection = button.dataset.cms;
 
-  if (confirm(`Do you really want to delete ${deleteSection} section?`)) {
+  if (confirm(`Do you want to delete ${deleteSection} section?\n(You will also need to save draft)`)) {
     output(`deleted ${deleteSection} section`);
     button.closest(".cms-section").remove(0);
     orderSections();
@@ -223,8 +152,68 @@ function orderSections() {
         $(item).attr("name", name);
       });
   });
+
+  $(".block-anchor").each((index, anchor) => {
+    $(anchor)
+      .find(".cms-block")
+      .each((blockIndex, blockItem) => {
+        $(blockItem)
+          .find("[name]")
+          .each((index, item) => {
+            console.log(item)
+            let name = $(item)
+              .attr("name")
+              .replace(/content]\[(.*)]\[[0-9]*]/, `content][$1][${blockIndex}]`);
+
+            $(item).attr("name", name);
+          });
+      });
+  });
 }
 
+/*
+ * Remember Collapse event
+ */
+
+$(document).on("show.bs.collapse", (event) => {
+  let memory = event.target.querySelector(".remember-collapse");
+  if (memory) memory.value = "show";
+});
+
+$(document).on("hide.bs.collapse", (event) => {
+  let memory = event.target.querySelector(".remember-collapse");
+  if (memory) memory.value = "hide";
+});
+
+/*
+ * Display/Hide on Select
+ */
+$(document).on("change", ".toggle", selectToggle);
+$(".toggle").trigger("change");
+
+function selectToggle(event) {
+  const select = event.currentTarget;
+  const targets = select.dataset.cmsTargets.split(" ")
+  const values = select.dataset.cmsValues.split(" ")
+
+  for (target of targets) {
+    if (target.charAt(0) == "!") {
+      $(`#${target.slice(1)}`).show();
+    } else {
+      $(`#${target}`).hide();
+    }
+  }
+
+  for (let i = 0; i < values.length; i++) {
+    if (values[i] == select.value) {
+      if (targets[i].charAt(0) == "!") {
+        $(`#${targets[i].slice(1)}`).hide();
+      } else {
+        $(`#${targets[i]}`).show();
+      }
+    }
+  }
+}
 /*
 / Image Input Preview
 */
@@ -237,10 +226,7 @@ $("#image-input").on("change", (event) => {
     for (var i = 0; i < images.length; i++) {
       let reader = new FileReader();
       reader.onload = (event) => {
-        let image = $("<img class=m-2 height=100/>").attr(
-          "src",
-          event.target.result
-        );
+        let image = $("<img class=m-2 height=100/>").attr("src", event.target.result);
         gallery.append(image);
       };
 
@@ -292,7 +278,7 @@ $("#image-submit").click((event) => {
 // Image Delete (DELETE)
 $(document).on("click", ".image-delete", (event) => {
   const button = event.currentTarget;
-  console.log(button.lastChild)
+  console.log(button.lastChild);
   const deleteImage = button.dataset.cms;
   if (confirm(`Do you really want to delete ${deleteImage}?`)) {
     output(`sending delete request to server: ${deleteImage}`);
@@ -304,7 +290,7 @@ $(document).on("click", ".image-delete", (event) => {
       .done((response) => {
         output("delete request was successful");
         console.log("delete success", response);
-        button.closest(".image-card").remove()
+        button.closest(".image-card").remove();
       })
       .fail((response) => {
         output("delete request failed: " + response.responseText, true);
@@ -317,7 +303,6 @@ $(document).on("click", ".image-delete", (event) => {
   }
 });
 
-
 /*
 / Image Select
 */
@@ -325,7 +310,7 @@ let activeImage;
 
 $(document).on("click", ".image-set-active", (event) => {
   activeImage = event.currentTarget;
-  console.log(activeImage)
+  console.log(activeImage);
 });
 
 $(".image-change").click((event) => {
@@ -336,3 +321,75 @@ $(".image-change").click((event) => {
     .children("img")
     .attr("src", button.dataset.cmsFolder + "thumb/" + button.dataset.cmsImage);
 });
+
+/**
+ * Change folder selected
+ */
+$(document).on("show.bs.modal", "#addPageModal", (event) => {
+  const button = event.relatedTarget;
+  const folder = button.getAttribute("data-cms");
+  $('#addPageModalFolderSelect').val(folder);
+});
+/**
+ * 
+ * @param {String} message - Text to display on output  
+ * @param {Boolean} fail - Displays red text if true
+ */
+function output(message, fail) {
+  const now = new Date();
+
+  if (fail) {
+    $("#output").prepend(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} - 
+    <span class="text-danger">${message}</span><br>`);
+  } else {
+    $("#output").prepend(`${now.getHours()}:${now.getMinutes()}:${now.getSeconds()} - 
+    ${message}<br>`);
+  }
+  $("#output").animate({ scrollTop: 0 }, "fast");
+}
+
+function reloadPreview() {
+  $("#previewFrame")[0].contentWindow.location.reload(true);
+}
+
+$("#previewFrame").on("load", () => {
+  let iframe = document.getElementById("previewFrame");
+
+  const contentHeight = iframe.contentWindow.document.body.scrollHeight;
+  iframe.height = contentHeight;
+
+  const previewSize = $("input[name='previewSize']:checked").val();
+  console.log(previewSize);
+
+  if (previewSize == "mobile") {
+    $("#thumbnailContainer").height(contentHeight * 0.4);
+  } else if (previewSize == "tablet") {
+    $("#thumbnailContainer").height(contentHeight * 0.25);
+  } else {
+    $("#thumbnailContainer").height(contentHeight * 0.125);
+  }
+});
+
+$("input[name='previewSize']").on("change", function () {
+  const previewSize = $(this).val();
+  let iframe = document.getElementById("previewFrame");
+
+  if (previewSize == "mobile") {
+    $("#thumbnailContainer").attr("class", "mobile");
+  } else if (previewSize == "tablet") {
+    $("#thumbnailContainer").attr("class", "tablet");
+  } else {
+    $("#thumbnailContainer").attr("class", "desktop");
+  }
+
+  reloadPreview();
+});
+
+/**
+ * Gives drag and drop functionality. Requires JQuery UI.
+ */
+function initSortable() {
+  $("#sectionAnchor").sortable({ handle: ".handle", update: orderSections });
+  $(".block-anchor").sortable({ handle: ".handle", update: orderSections });
+}
+initSortable();

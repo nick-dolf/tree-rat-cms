@@ -1,0 +1,98 @@
+.form {
+  position: relative;
+}
+
+.search-container {
+  position: relative;
+
+  .icon-search {
+    background: transparent;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 8px;
+  }
+
+  .search-submit {
+    margin: 2rem auto 0 auto;
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  .search-button {
+    visibility: hidden;
+
+    @include tablet {
+      visibility: visible;
+    }
+  }
+
+  .search-span {
+    @include tablet {
+      visibility: hidden;
+    }
+  }
+}
+
+.form-search {
+  display: inline-block;
+
+  .search__input {
+    background-color: transparent;
+
+    @include tablet {
+      width: 48px;
+      visibility: hidden;
+      transition: width $speed-std;
+    }
+  }
+
+  &.active {
+    .search__input {
+      width: 300px;
+      visibility: visible;
+    }
+  }
+}
+
+.form-email {
+  .mce_inline_error {
+    text-align: left;
+    margin: 8px 0 0 0 !important;
+  }
+
+  @include tablet {
+    text-align: right;
+  }
+
+  @include desktop {
+    height: inherit;
+    display: inline-block;
+  }
+
+  @media screen and (max-width: #{$tablet-width}) {
+    .btn {
+      font-size: 0;
+      position: absolute;
+      right: 0;
+      height: 100%;
+      padding: 10px;
+      border-radius: 0 4px 4px 0;
+      gap: 0;
+    }
+  }
+
+  @include tablet {
+    .icon {
+      display: none;
+    }
+
+    .btn {
+      margin-left: 16px;
+    }
+  }
+}

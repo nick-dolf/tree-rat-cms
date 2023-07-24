@@ -3,18 +3,24 @@
   <div>
     <h1><%- content.heading %></h1>
     <p class="h4"><%- content.paragraph %></p>
+
     <% if (content.button.type != "no") { %>
-      <%- include("../../components/button", {arg : {class: "btn--dark-bg", text: "donate"}}) %>
+      <br>
+      <%- include("../../components/button", {extraClass:"btn--dark-bg"}) %>
     <% } %>
+
   </div>
   <% } else { %>
   <div class="horizontal">
     <h1><%- content.heading %></h1>
     <div>
       <p><%- content.paragraph %></p>
+
       <% if (content.button.type != "no") { %>
-        <%- include("../../components/button", {arg : {class: "btn--dark-bg", text: "donate"}}) %>
+        <br>
+        <%- include("../../components/button", {extraClass:"btn--dark-bg"}) %>
       <% } %>
+
     </div>
   </div>
   <% } %>

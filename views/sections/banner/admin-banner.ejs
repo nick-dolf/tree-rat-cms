@@ -4,10 +4,16 @@
 <%- include("../../section-helpers/text-area-med", { slug: "paragraph", label: "Paragraph"}) %>
 <!-- Button -->
 <%- include("../../section-helpers/button", { slug: "button", label: "Button" }) %>
-<br>
-<!-- Style -->
-<%- include("../../section-helpers/select", 
-{ slug: "style", label: "Style", options : [{slug: "vertical", label:"Vertical"},{slug: "horizontal", label: "Horizontal"}]}) %>
-<!-- Background Color -->
-<%- include("../../section-helpers/select", 
-{ slug: "color", label: "Background Color", options : [{slug: "green", label:"Green"},{slug: "purple", label: "Purple"}]}) %>
+<br />
+<div class="row row-cols-1 row-cols-sm-2">
+  <div class="col">
+    <!-- Style -->
+    <%- include("../../section-helpers/select", { slug: "style", label: "Style", options : [{slug: "vertical",
+    label:"Vertical"},{slug: "horizontal", label: "Horizontal"}]}) %>
+  </div>
+  <div class="col">
+    <!-- Background Color -->
+    <%- include("../../section-helpers/select", { slug: "color", label: "Background Color", options : [{slug: "green",
+    label:"Green"},{slug: "purple", label: "Purple"}]}) %>
+  </div>
+</div>

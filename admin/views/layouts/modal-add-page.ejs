@@ -1,19 +1,21 @@
-<!-- Modal -->
+<!-- Add Page Modal -->
 <div class="modal fade mt-5" id="addPageModal" tabindex="-1" aria-labelledby="addPageModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
-        <h1 class="modal-title fs-5" id="addPageModalLabel">Add Page</h1>
+        <h1 class="modal-title fs-5" id="addPageModalLabel">
+          Add Page
+        </h1>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        <form id="addPage">
+        <form id="addPageForm">
           <div class="input-group mb-3">
-            <label for="folder" class="input-group-text">Folder</label>
-            <select class="form-select" name="folder" id="folder">
+            <label for="addPageModalFolderSelect" class="input-group-text">Folder</label>
+            <select class="form-select" name="folder" id="addPageModalFolderSelect">
               <option value="/">/</option>
               <% for (let i=0; i < site.folders.length; i++) { %>
-              <option value="<%= site.folders[i] %>"><%= site.folders[i] %></option>
+              <option value="<%= site.folders[i].slug %>"><%= site.folders[i].name %></option>
               <% } %>
             </select>
           </div>
@@ -25,7 +27,13 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-        <button id="page-create" type="button" class="btn btn-success" data-bs-dismiss="modal">Add</button>
+        <%- include("../components/button", 
+            {arg:{text: "Add", 
+                  color:"success", 
+                  extraClass:"create",
+                  bsDismiss: "modal", 
+                  cmsForm: "addPageForm",
+                  cmsUrl:site.url+"admin/pages", cmsAnchor:"accordionPageAnchor"}}) %>
       </div>
     </div>
   </div>

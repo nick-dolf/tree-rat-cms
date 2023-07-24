@@ -1,0 +1,36 @@
+<h2>Add Section:</h2>
+<form id="addSection" class="mb-3">
+  <div class="row row-cols-2 mb-2">
+    <div class="col">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingSlug" name="slug" />
+        <label for="floatingSlug">slug</label>
+      </div>
+    </div>
+    <div class="col">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="floatingLabel" name="name" />
+        <label for="floatingLabel">name</label>
+      </div>
+    </div>
+  </div>
+  <%- include("../components/button", {arg:{text: "Add Section", color:"primary", extraClass:"create", cmsForm:
+  "addSection", cmsUrl:site.url+"admin/sections", cmsText:"Creating Section", cmsAnchor:"dev-section-anchor"}}) %>
+</form>
+<ul class="list-group">
+  <% for (let section of site.sections) { %>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col">slug: <%- section.slug %></div>
+      <div class="col">name: <%- section.name %></div>
+      <div class="col">
+        <%- include("../components/button", 
+        {arg:{text: "Delete", 
+              color:"danger", 
+              extraClass:"delete", cms: section.slug,
+              cmsUrl:site.url+"admin/sections", cmsAnchor:"dev-section-anchor"}}) %>
+      </div>
+    </div>
+  </li>
+  <% } %>
+</ul>

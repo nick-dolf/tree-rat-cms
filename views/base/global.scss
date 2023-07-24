@@ -8,6 +8,12 @@ html {
   box-sizing: inherit;
 }
 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   @include site-width;
   background-color: $white;

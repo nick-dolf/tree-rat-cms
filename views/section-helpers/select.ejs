@@ -1,8 +1,12 @@
-<div class="form-floating mb-2">
-  <select class="form-select" id="<%- index %>[<%- slug %>]" aria-label=<%- label %> name=<%- index %>[<%- slug %>]>
+<div class="form-floating mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
+  <select class="form-select <% if (locals.toggle) { %>toggle<% } %>" 
+          <% if (locals.toggle) { %>data-cms-targets=<%- index.replace(/[\[\]]/g, "-") %><%- toggle.target %><% } %>
+          <% if (locals.toggle) { %>data-cms-values=<%- toggle.value %><% } %>
+          aria-label=<%- label %> 
+          name=<%- index %>[<%- slug %>] id="<%- index %>[<%- slug %>]-select">
     <% for (option of options) { %>
     <option value="<%- option.slug %>" <% if (content[slug] ==  option.slug) { %>selected<% } %> ><%- option.label %></option>
     <% } %>
   </select>
-  <label for="<%- index %>[<%- slug %>]"><%- label %></label>
+  <label for="<%- index %>[<%- slug %>]-select"><%- label %></label>
 </div>

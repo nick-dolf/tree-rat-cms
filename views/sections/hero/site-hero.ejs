@@ -1,5 +1,32 @@
-<section class="hero hero-<%= content.style %>">
+<!-- Hero Image -->
+<section class="hero hero-<%- content.style %>">
+  <!-- Image -->
+  <% if (content.image) { %>
   <div class="hero-img-container">
-    <img class="hero-img" src="<%- site.url %>admin/assets/images/original/<%- content.image %>" alt="">
-  </div>
+    <%- include("../../components/image-hero-"+content.style ) %>
+    <% } %>
+    <!-- Gradient overlay -->
+    <% if (content.overlay == "yes") { %>
+      <div class="gradient-overlay"></div>
+      <% } %>
+      <!-- Text Overlay -->
+      <div class="hero-overlay">
+        <% if (content.heading) { %>
+          <h1><%= content.heading %></h1>
+          <% } %>
+          <% if (content.paragraph) { %>
+            <p><%= content.paragraph %></p>
+            <% } %>
+          </div>
+        </div>
+
+        <% if (content.button.type == "internal") { %>
+          <% let link = (content.button.page == "home" ? "" : content.button.page) %>
+          <a href="<%- site.url + link %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>
+        <% } else if (content.button.type == "external") { %>
+          <a href="<%- content.button.link %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>      
+        <% } else if (content.button.type == "scroll") { %>
+          <button class="btn btn--light-bg btn--large scroll" data-scroll="<%- content.button.scroll %>" type="button" name="button" ><%- content.button.text %></button>
+        <% } %>
+        
 </section>

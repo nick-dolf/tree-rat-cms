@@ -4,6 +4,7 @@ const express = require("express");
 const app = require("../../treerat");
 const { PurgeCSS } = require("purgecss");
 const sass = require("sass");
+const JsonDb = require("./jsonDb")
 
 const pageDir = path.join(process.cwd(), "pages/");
 const draftDir = pageDir + "drafts/";
@@ -22,40 +23,28 @@ function setup(file) {
 
   // Ensure needed directories exist
   fse.ensureDirSync(app.locals.siteDir);
+  fse.ensureDirSync(app.locals.siteDir + "/assets/images");
   fse.ensureDirSync(app.locals.pageDir);
   fse.ensureDirSync(app.locals.pageDir + "/drafts");
   fse.ensureDirSync(app.locals.pageDir + "/published");
   fse.ensureDirSync(app.locals.viewDir);
   fse.ensureDirSync(app.locals.imgDir);
 
-  // Ensure needed files exist
-  try {
-    fse.statSync(pageDir + "drafts/home.json");
-  } catch {
-    fse.writeJsonSync(pageDir + "drafts/home.json", {
-      name: "Home",
-      slug: "home",
-      folder: "",
-      permalink: "home",
-      publishedDate: false,
-      draftedDate: new Date().toString(),
-    });
-  }
-
   // Site variables
   app.locals.site = {};
   app.locals.site.url = config.developmentUrl;
 
-  app.locals.site.folders = fse
-    .readdirSync(pageDir + "drafts", { withFileTypes: true })
-    .filter((entry) => {
-      return entry.isDirectory();
-    })
-    .map((dirent) => dirent.name);
+  app.locals.pages = new JsonDb("pages", "link");
+  app.locals.site.pages = app.locals.pages.data;
 
-  app.locals.site.pages = getPageDetails(draftDir).flat();
+  app.locals.folders = new JsonDb("folders", "slug")
+  app.locals.site.folders = app.locals.folders.data;
 
-  app.locals.site.sections = fse.readdirSync(sectionDir);
+  app.locals.blocks = new JsonDb("blocks", "slug");
+  app.locals.site.blocks = app.locals.blocks.data;
+
+  app.locals.sections = new JsonDb("sections", "slug");
+  app.locals.site.sections = app.locals.sections.data;
 
   try {
     app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
@@ -63,7 +52,39 @@ function setup(file) {
     app.locals.site.images = [];
     console.error(err.message);
   }
-  console.log(app.locals.site.images.length)
+
+  // Make Sure Home Page exists
+  app.locals.pages.add({
+    name: "Home",
+    slug: "home",
+    folder: "",
+    link: "home",
+    publishedDate: false,
+    draftedDate: new Date().toString(),
+  })
+  try {
+    fse.statSync(pageDir + "drafts/home.json");
+  } catch {
+    fse.writeJsonSync(pageDir + "drafts/home.json", {
+      title: "",
+      description:""
+    });
+  }
+
+
+  // build admin script
+  let out = "";
+  fse
+    .readdir("admin/browser")
+    .then((files) => {
+      for (file of files) {
+        let contents = fse.readFileSync("admin/browser/" + file);
+        out += contents.toString() + "\n";
+      }
+    })
+    .then(() => {
+      fse.outputFile("admin/assets/script.js", out);
+    });
 
   // build custom admin stylesheet
   const sassResult = sass.compile("admin/views/style.scss", {
@@ -84,19 +105,49 @@ function getPageDetails(dir) {
 }
 
 function buildSite() {
-  // build custom admin stylesheet
+  // Block Imports
+  let blockImport = "";
+  for (block of app.locals.site.blocks) {
+    blockImport += `@import "${block.slug}/style-${block.slug}";\n`;
+  }
+
+  fse.outputFileSync(app.locals.viewDir + "/blocks/blocks.scss", blockImport);
+
+  // Section Imports
+  let sectionImport = "";
+  for (section of app.locals.site.sections) {
+    sectionImport += `@import "${section.slug}/style-${section.slug}";\n`;
+  }
+
+  fse.outputFileSync(app.locals.viewDir + "/sections/sections.scss", sectionImport);
+
+  /**
+   * SASS
+   */
   const sassResult = sass.compile(app.locals.viewDir + "/main.scss", {
     style: "compressed",
   });
 
   fse.outputFileSync(app.locals.siteDir + "/assets/style.css", sassResult.css);
 
-  /*
+  /** 
    * Copy Assets
    */
   fse.copy("assets", "site/assets").catch((err) => {
     console.error(err);
   });
+
+  /**
+   * Publish Pages
+   */
+  for (page of app.locals.site.pages) {
+    if (page.publishedDate) {
+      const data = fse.readJsonSync(app.locals.pageDir + "/published/" + page.link + ".json")
+
+      app.locals.publishPage('default', {...data, ...page})
+    }
+  }
+
 }
 
 module.exports = { setup, buildSite };
