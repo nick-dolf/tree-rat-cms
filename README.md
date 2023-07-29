@@ -8,6 +8,7 @@ This project is being developed with Node/EJS/SASS/jQuery/Bootstrap.
 - Clone this repository `git clone git@github.com:nick-dolf/tree-rat-cms.git`
 - cd into the directory `tree-rat-cms`
 - Install dependencies with `npm install`
+- Rename `.env.example` to `.env` for dev environment
 - Run nodemon `nodemon`
 
 View site at http://localhost:7533 and admin at http://localhost:7533/admin/
