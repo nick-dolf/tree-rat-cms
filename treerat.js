@@ -30,7 +30,7 @@ build.setup("treerat.json");
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
   app.use(express.static(app.locals.siteDir));
-} else if (process.env.NODE_ENV === "development") {
+} else {
   console.log("Environment: Staging");
 }
 

@@ -36,7 +36,7 @@ function setup(file) {
 
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;
-  } else if (process.env.NODE_ENV === "staging") {
+  } else {
     app.locals.site.url = config.stagingUrl;
   }
 
