@@ -115,6 +115,11 @@ $(document).on("click", ".remove", (event) => {
 });
 
 $(document).on("click", ".block-add", (event) => {
+  const button = event.currentTarget;
+  const index = button.dataset.cms;
+  console.log(index)
+
+
   const parent = $(event.currentTarget.closest(".block-controller"));
   const selected = parent.find(".block-select");
   output(selected.val() + "-block-template");
@@ -122,7 +127,10 @@ $(document).on("click", ".block-add", (event) => {
   // Use epoch time for unique id for Accordion
   let unique = new Date().getTime();
 
-  parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`).html().replace(/qq.*q/g, `qq${unique}q`));
+  parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`)
+    .html()
+    .replace(/qq.*q/g, `qq${unique}q`)
+    .replace(/ww0ww/g, index));
 
   orderSections();
 });
