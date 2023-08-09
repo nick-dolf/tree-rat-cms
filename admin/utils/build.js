@@ -32,7 +32,13 @@ function setup(file) {
 
   // Site variables
   app.locals.site = {};
-  app.locals.site.url = config.developmentUrl;
+
+
+  if (process.env.NODE_ENV === "development") {
+    app.locals.site.url = config.developmentUrl;
+  } else if (process.env.NODE_ENV === "staging") {
+    app.locals.site.url = config.stagingUrl;
+  }
 
   app.locals.pages = new JsonDb("pages", "link");
   app.locals.site.pages = app.locals.pages.data;

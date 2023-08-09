@@ -6,6 +6,6 @@
   "enableGzipCompression": true,
   "enableAutoPrefixer": true,
   "developmentUrl": "/",
-  "stagingUrl": "/",
+  "stagingUrl": "/staging/ceic/",
   "productionUrl": "/"
 }
