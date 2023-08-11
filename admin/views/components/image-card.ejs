@@ -1,13 +1,23 @@
 <div class="col image-card">
   <div class="card h-100 shadow-sm <%- extraClass %>">
-    <img class="card-img-top img-fluid" src="<%- site.url %>admin/assets/images/original/thumb/<%- image.name %>" alt="" height="300" width="300"/>
+
+    <button class="btn" type="button" 
+            data-bs-target="#imageEditModal" data-bs-toggle="modal"
+            data-cms="<%- site.url %>admin/assets/images/original/<%- image.name %>">
+      <img class="card-img-top img-fluid" 
+            src="<%- site.url %>admin/assets/images/original/thumb/<%- image.name %>" alt="<%- image.alt %>" height="300" width="300"/>
+    </button>
+
     <div class="card-body">
-      <small><%- image.width %>w x <%- image.height %>h</small>
       <div class="form-floating mb-2">
         <textarea class="form-control tall" placeholder="Write alt text here" id="" name="" ><%- image.alt %></textarea>
         <label for="">Alt Text</label>
       </div>
-      <div class="d-flex justify-content-end align-items-center">
+      <div class="d-flex justify-content-between align-items-center">
+        <div>
+          <small><strong><%- image.name %></strong></small><br>
+          <small><%- image.width %>w x <%- image.height %>h</small>
+        </div>
         <div class="btn-group">
           <%- include("button", 
           {arg:{text: "Delete", color:"danger", extraClass:"image-delete", cms: image.name}}) %>

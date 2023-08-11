@@ -1,4 +1,4 @@
-require("dotenv").config();
+require("dotenv").config({ override: true });
 const PORT = 7533;
 const express = require("express");
 const app = express();
