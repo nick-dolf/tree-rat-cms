@@ -5,7 +5,7 @@
     {
       "template": "hero",
       "name": "Hero",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": "hero.webp",
         "heading": "Testing by dave",
@@ -32,7 +32,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "columnOne": "Words ahoy",
         "columnTwo": "",
@@ -44,42 +44,6 @@
           "scroll": ""
         },
         "style": "flashy"
-      }
-    },
-    {
-      "template": "banner",
-      "name": "Banner",
-      "collapse": "hide",
-      "content": {
-        "heading": "This is horizontal",
-        "paragraph": "ahghahs",
-        "button": {
-          "type": "no",
-          "text": "",
-          "page": "privacy-policy",
-          "link": "",
-          "scroll": ""
-        },
-        "style": "horizontal",
-        "color": "green"
-      }
-    },
-    {
-      "template": "banner",
-      "name": "Banner",
-      "collapse": "show",
-      "content": {
-        "heading": "tshsh",
-        "paragraph": "",
-        "button": {
-          "type": "no",
-          "text": "",
-          "page": "privacy-policy",
-          "link": "",
-          "scroll": ""
-        },
-        "style": "vertical",
-        "color": "purple"
       }
     }
   ]
