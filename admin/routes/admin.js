@@ -152,15 +152,16 @@ router.use((req, res, next) => {
 
 router.get("/", (req, res) => {
   if (process.env.NODE_ENV === "development") {
-    res.adminRender("dashboardDev")
+    res.adminRender("dashboardDev");
   } else {
-    res.send("Site dashboard!!!");
+    res.adminRender("dashboard");
   }
 });
 
 // routes
 router.use("/pages", require("./pages"));
 router.use("/images", require("./images"));
+router.use("/files", require("./files"));
 router.use("/drafts", require("./drafts"));
 router.use("/publish", require("./publish"));
 router.use("/blocks", require("./blocks"));
