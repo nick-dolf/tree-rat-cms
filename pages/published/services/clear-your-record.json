@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "collapse": "show",
+      "content": {
+        "image": "expungementgroup.jpg",
+        "alt": "Coalition members at National Expungement Week 2019 wearing matching blue t-shirts",
+        "heading": "Clear Your Record",
+        "paragraph": "We believe everyone who has a criminal record for a cannabis offense should\r\n    have their record cleared immediately",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "services/clear-your-record",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    }
+  ]
+}

@@ -1,5 +1,6 @@
 <% if (!page.sections) page.sections = {} %> 
 <% for (let i =0; i < page.sections.length; i++){const section = page.sections[i];%>
+<% if (!section.content) section.content = {} %>
 <div class="accordion-item cms-section">
 
   <div class="row align-items-baseline">
@@ -9,7 +10,9 @@
                   collapse: section.collapse,
                   index: i }) %>
     <%- include("../components/accordion-button", 
-                { name: section.name }) %>
+                { name: section.name,
+                  removeTarget: ".cms-section",
+                  labelTarget: "" }) %>
   </div>
 
   <div id="collapse-<%= i %>" class="accordion-collapse collapse 
@@ -30,4 +33,5 @@
   </div>
 
 </div>
+
 <% } %>

@@ -3,25 +3,6 @@
   "description": "",
   "sections": [
     {
-      "template": "hero",
-      "name": "Hero",
-      "collapse": "show",
-      "content": {
-        "image": "hero.webp",
-        "heading": "Testing by dave",
-        "paragraph": "this is a test",
-        "button": {
-          "type": "internal",
-          "text": "Support time button",
-          "page": "our-work/reentry-support",
-          "link": "",
-          "scroll": ""
-        },
-        "style": "standard",
-        "overlay": "yes"
-      }
-    },
-    {
       "template": "line",
       "name": "Line",
       "collapse": "show",
@@ -32,7 +13,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "columnOne": "Words ahoy",
         "columnTwo": "",
@@ -44,6 +25,42 @@
           "scroll": ""
         },
         "style": "flashy"
+      }
+    },
+    {
+      "template": "banner",
+      "name": "Banner",
+      "collapse": "hide",
+      "content": {
+        "heading": "This is horizontal",
+        "paragraph": "ahghahs",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "our-work/reentry-support",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "horizontal",
+        "color": "green"
+      }
+    },
+    {
+      "template": "banner",
+      "name": "Banner",
+      "collapse": "show",
+      "content": {
+        "heading": "tshsh",
+        "paragraph": "",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "our-work/reentry-support",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "vertical",
+        "color": "purple"
       }
     }
   ]

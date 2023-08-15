@@ -107,11 +107,10 @@ $(document).on("click", ".add", (event) => {
 $(document).on("click", ".remove", (event) => {
   const button = event.currentTarget;
 
-  if (confirm(`Do you want to remove ${button.dataset.cmsText}?\n(You will also need to save draft to permanently delete it)`)) {
-    output(`Removed ${button.dataset.cmsText}`);
-    button.closest(button.dataset.cmsTarget).remove(0);
-    orderSections();
-  }
+  output(`Removed ${button.dataset.cmsText}`);
+  button.closest(button.dataset.cmsTarget).remove(0);
+  orderSections();
+  
 });
 
 $(document).on("click", ".block-add", (event) => {
@@ -283,6 +282,40 @@ $("#image-submit").click((event) => {
     });
 });
 
+// Update Alt Text(PUT)
+$(document).on("click", ".image-alt-update", (event) => {
+  const button = event.currentTarget;
+  const updateImage = button.dataset.cms;
+  console.log(button.dataset.cmsForm)
+  const putData = new FormData(document.getElementById(`${button.dataset.cmsForm}`));
+
+  output(`Updating alt text for ${updateImage}`);
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
+
+  $.ajax({
+    url: `images/${updateImage}`,
+    type: "PUT",
+    data: putData,
+    enctype: "multipart/form-data",
+    processData: false,
+    contentType: false,
+  })
+    .done((response) => {
+      output("Updated alt text");
+    })
+    .fail((response) => {
+      output("Failed to update alt text", true);
+      console.log("update fail", response.responseText);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+    });
+});
+
+
 // Image Delete (DELETE)
 $(document).on("click", ".image-delete", (event) => {
   const button = event.currentTarget;
@@ -318,7 +351,6 @@ let activeImage;
 
 $(document).on("click", ".image-set-active", (event) => {
   activeImage = event.currentTarget;
-  console.log(activeImage);
 });
 
 $(".image-change").click((event) => {
@@ -328,6 +360,7 @@ $(".image-change").click((event) => {
   $(activeImage)
     .children("img")
     .attr("src", button.dataset.cmsFolder + "thumb/" + button.dataset.cmsImage);
+  $(activeImage).closest("div").find("textarea[name*=alt]").val(button.dataset.cmsText)
 });
 
 /**

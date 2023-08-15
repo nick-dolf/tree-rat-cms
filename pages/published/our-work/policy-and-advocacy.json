@@ -1,1 +1,26 @@
-{"title":"","description":""}
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "collapse": "show",
+      "content": {
+        "image": "tucker-good-t2gyvhmks98-unsplash.jpg",
+        "alt": "State Capitol dome behind a wall",
+        "heading": "Policy & Advocacy",
+        "paragraph": "We work to make cannabis policy in Illinois more inclusive, transparent and accountable",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "services/know-your-rights",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    }
+  ]
+}

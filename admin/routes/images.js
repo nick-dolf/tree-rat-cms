@@ -53,15 +53,12 @@ router.post("/", upload.array("pic"), (req, res) => {
         width: metadata.width,
         og: { height: metadata.height, width: metadata.width },
       };
-      app.locals.site.images.unshift(imageData);
+      app.locals.images.add(imageData);
       newImages.unshift(imageData);
 
       await processUploadImg(file.filename, imgOgDir);
     })
   )
-    .then(() => {
-      return fse.outputJson(imgDir + "/info.json", app.locals.site.images);
-    })
     .then(() => {
       res.adminRender('layouts/image-gallery-new', {images: newImages});
     })
@@ -71,30 +68,47 @@ router.post("/", upload.array("pic"), (req, res) => {
 });
 
 /*
+ * Update (Put)
+ */
+router.put("/*", upload.none(),(req, res) => {
+  const slug = req.url.slice(1);
+
+  let image = app.locals.images.findById(slug)
+
+  if(!image) {
+    return res.status(400).send("image not found")
+  }
+
+  image.alt = req.body.alt
+  app.locals.images.update(image)
+
+  res.send(slug)
+})
+
+/*
  * Delete (DELETE)
  */
 router.delete("/*", (req, res) => {
   const slug = req.url.slice(1);
 
-  const result = app.locals.site.images.findIndex((image) => {
-    console.log(image)
-    return image.name == slug;
-  });
-  console.log(result)
+  const result = app.locals.images.deleteById(slug)
 
-  if (result == -1) {
-    return res.status(404).send("image not found");
+  if (result != -1) {
+    fse.rm(imgOgDir+req.url)
+      .then(() => {
+        return fse.rm(imgOgDir+"/thumb"+req.url)
+      })
+      .then(() => {
+        res.send("image deleted")
+      })
+      .catch((err) => {
+        console.error(err)
+        res.status(400).send(err.message)
+      })
+  } else {
+    res.status(400).send("unable to delete file")
   }
 
-  app.locals.site.images.splice(result, 1);
-
-
-  fse.outputJson(imgDir + "/info.json", app.locals.site.images)
-
-  fse.rm(imgOgDir+req.url)
-  //fse.rm(imgOgDir+"/thumb"+req.url)
-
-  res.send("ok")
 });
 
 function niceImageName(imageFile) {

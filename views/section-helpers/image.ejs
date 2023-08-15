@@ -7,8 +7,8 @@
   </button>
   <div class="form-floating flex-grow-1" id="<%-idIndex%><%- slug %>" >
     <textarea id="<%-idIndex%>-alt" class="form-control alt" 
-              placeholder="Write alt text here" name="" 
-              ></textarea>
+              placeholder="Write alt text here" name="<%= index %>[alt]" 
+              ><%- content.alt %></textarea>
     <label for="<%-idIndex%>-alt">Alt Text</label>
   </div>
 </div>

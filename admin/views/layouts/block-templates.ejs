@@ -10,6 +10,10 @@
                   collapse: "hide", 
                   extraClass: "bg-success-subtle",
                   index: "qqoq" }) %>
+    <%- include("../components/accordion-button", 
+                { name: block.name,
+                  removeTarget: ".cms-block",
+                  labelTarget: "" }) %>
   </div>
   <!-- Accordion Body -->
   <div id="collapse-qq0q" class="accordion-collapse collapse" 

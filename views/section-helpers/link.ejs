@@ -1,0 +1,55 @@
+<% const idIndex = index.replace(/[\[\]]/g, "")+slug %>
+<% if (!content[slug]) content[slug] = {} %>
+<div class="mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
+  <div class="row row-cols-1 row-cols-sm-2">
+    <!-- Select Button Type -->
+    <div class="col">
+      <div class="form-floating mt-2">
+
+        <select class="form-select toggle" id="<%- idIndex %>-select"  
+          name=<%- index %>[<%- slug %>][type]
+          data-cms-targets="<%- idIndex %>internal <%- idIndex %>external <%- idIndex %>scroll"
+          data-cms-values="internal external scroll"
+          >
+          <option value="internal" <% if (content[slug].type ==  "internal") { %>selected<% } %> >Internal Link</option>
+          <option value="external" <% if (content[slug].type ==  "external") { %>selected<% } %> >External Link</option>
+          <option value="scroll" <% if (content[slug].type ==  "scroll") { %>selected<% } %> >Scroll to Section</option>
+        </select>
+        <label for="<%- idIndex %>-select"><%- label %></label>
+      </div>
+    </div>
+    <!-- Internal Link Select -->
+    <div class="col" id="<%- idIndex %>internal">
+      <div class="form-floating mt-2">
+        <select class="form-select" id="<%- idIndex %>ButtonPage"  
+                name=<%- index %>[<%- slug %>][page]
+                >
+          <% for (page of site.pages) { %>
+            <option value=<%- page.link %> <% if (content[slug].page ==  page.link) { %>selected<% } %> ><%- page.name %> (<%- page.link %>)</option>
+          <% } %>
+        </select>
+        <label for="<%- idIndex %>ButtonPage">Select Page</label>
+      </div>
+    </div>
+    <!-- External Link Input -->
+    <div class="col" id="<%- idIndex %>external">
+      <div class="form-floating mt-2" >
+        <textarea class="form-control" placeholder="Insert external link here"  
+        name="<%- index %>[<%- slug %>][link]" id="<%- idIndex %>link"
+        ><%= content[slug].link %></textarea>
+        <label for="<%- idIndex %>link">Full Link (https://example.com)</label>
+      </div>
+    </div>
+    <!-- Scroll to Section -->
+    <div class="col" id="<%- idIndex %>scroll">
+      <div class="form-floating mt-2" >
+        <input class="form-control" id="<%- idIndex %>num"
+               type="number" min="0"
+               name="<%- index %>[<%- slug %>][scroll]" 
+               value=<%- content[slug].scroll %>>
+        <label for="<%- idIndex %>num">Scroll to Section:</label>
+      </div>
+    </div>
+  </div>
+
+</div>

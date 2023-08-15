@@ -1,0 +1,26 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "collapse": "show",
+      "content": {
+        "image": "seldoms-team.jpg",
+        "alt": "Coalition members gathered together",
+        "heading": "Community Benefits Agreements",
+        "paragraph": "Cannabis businesses should put their community first",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "services/clear-your-record",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    }
+  ]
+}

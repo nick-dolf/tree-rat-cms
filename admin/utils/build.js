@@ -52,12 +52,15 @@ function setup(file) {
   app.locals.sections = new JsonDb("sections", "slug");
   app.locals.site.sections = app.locals.sections.data;
 
-  try {
-    app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
-  } catch (err) {
-    app.locals.site.images = [];
-    console.error(err.message);
-  }
+  app.locals.images = new JsonDb("images", "name");
+  app.locals.site.images = app.locals.images.data;
+
+  // try {
+  //   app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
+  // } catch (err) {
+  //   app.locals.site.images = [];
+  //   console.error(err.message);
+  // }
 
   // Make Sure Home Page exists
   app.locals.pages.add({

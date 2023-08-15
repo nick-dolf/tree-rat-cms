@@ -1,10 +1,18 @@
 [
   {
+    "slug": "about-us",
+    "name": "About Us"
+  },
+  {
     "slug": "our-work",
     "name": "Our Work"
   },
   {
-    "slug": "about-us",
-    "name": "About Us"
+    "slug": "services",
+    "name": "Services"
+  },
+  {
+    "slug": "get-involved",
+    "name": "Get Involved"
   }
 ]

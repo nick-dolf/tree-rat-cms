@@ -1,5 +1,9 @@
 [
   {
+    "slug": "cards-with-links",
+    "name": "Hover Cards"
+  },
+  {
     "slug": "text-area",
     "name": "Text Area"
   },

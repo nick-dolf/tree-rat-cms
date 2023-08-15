@@ -5,17 +5,18 @@
     {
       "template": "hero",
       "name": "Hero",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
-        "image": "1015-1600x800.jpg",
+        "image": "group-photo7.jpg",
+        "alt": "Coalition members holding a CEIC banner",
         "heading": "Providing a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice.",
         "paragraph": "",
         "button": {
           "type": "scroll",
           "text": "Learn More",
-          "page": "privacy-policy",
+          "page": "our-work/reentry-support",
           "link": "",
-          "scroll": "1"
+          "scroll": "2"
         },
         "style": "home",
         "overlay": "yes"
@@ -26,16 +27,103 @@
       "name": "Text Area",
       "collapse": "hide",
       "content": {
-        "columnOne": "## Lorem ipsum\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquamsdfdf laborum excsfsdfsepturi ex dolorum saepe. Dicta iste ipsa sit?",
+        "columnOne": "## What We Do\r\n\r\nFormed in 2019, the Coalition provides a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice. The Coalition supports individuals and communities in the following ways:",
         "columnTwo": "## Lorem ipsim\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquam laborum excepturi ex dolorum saepe. Dicta iste ipsa sit?",
         "button": {
-          "type": "scroll",
+          "type": "no",
           "text": "Link",
           "page": "our-work/reentry-support",
           "link": "",
           "scroll": "1"
         },
-        "style": "two-column"
+        "style": "plain"
+      }
+    },
+    {
+      "template": "cards-with-links",
+      "name": "Hover Cards",
+      "collapse": "show",
+      "content": {
+        "cards": [
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "collapse": "hide",
+            "content": {
+              "heading": "Legislative Education",
+              "paragraph": "Using legislative education to increase engagement amongst our community members in the policy process.",
+              "link": {
+                "type": "internal",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://google.com",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "collapse": "hide",
+            "content": {
+              "heading": "Expungement Resources",
+              "paragraph": "Provides services and support for individuals to expunge or seal their criminal records, especially for cannabis offenses. We advocate to promote the expansion of automatic expungement, and to ensure anyone with a criminal record is able to access record clearing in a timely manner.",
+              "link": {
+                "type": "internal",
+                "page": "services/clear-your-record",
+                "link": "",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "collapse": "hide",
+            "content": {
+              "heading": "Community Benefits Agreements",
+              "paragraph": "Advocate for cannabis dispensaries to formally partner with community organizations by encouraging the implementation of Community Benefits Agreements.",
+              "link": {
+                "type": "internal",
+                "page": "services/community-benefits-agreements",
+                "link": "",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "collapse": "hide",
+            "content": {
+              "heading": "Know Your Rights",
+              "paragraph": "We host Know Your Rights education sessions and promote KYR information to ensure nobody else is criminalized for cannabis.",
+              "link": {
+                "type": "internal",
+                "page": "services/know-your-rights",
+                "link": "",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "banner",
+      "name": "Banner",
+      "collapse": "hide",
+      "content": {
+        "heading": "WE ARE THE WATCHDOG",
+        "paragraph": "of the government and of the industry, working to ensure legalization benefits those most impacted by cannabis prohibition.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "our-work/reentry-support",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "vertical",
+        "color": "purple"
       }
     },
     {
@@ -48,7 +136,7 @@
         "button": {
           "type": "external",
           "text": "Donate",
-          "page": "privacy-policy",
+          "page": "our-work/reentry-support",
           "link": "https://funraise.org/give/Ceic-Corp/3aca7fd5-e9cb-4eb4-8574-807dbbb8bc93/",
           "scroll": ""
         },

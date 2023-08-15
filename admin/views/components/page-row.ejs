@@ -53,7 +53,7 @@
         </button>
         <ul class="dropdown-menu btn-success">
           <li>
-            <% if (page.permalink != "home") { %>
+            <% if (page.slug != "home") { %>
             <%- include("../components/button", 
             {arg:{text: "Delete", 
                   color:"danger", 

@@ -1,4 +1,8 @@
+<section class="cards-with-links">
+
 <% if (content.cards) for (card of content.cards) { %> 
-  <%- include(`../../blocks/${card.template}/site-${card.template}`,
+    <%- include(`../../blocks/${card.template}/site-${card.template}`,
               { content : card.content }) %> 
 <% } %>
+
+</section>

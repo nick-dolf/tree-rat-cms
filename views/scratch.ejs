@@ -1,0 +1,30 @@
+<div class="accordion-item cms-section">
+
+  <div class="row align-items-baseline">
+    <%- include("../components/accordion-handle") %>
+    <%- include("../components/accordion-header", 
+                { name: section.name, 
+                  collapse: section.collapse,
+                  index: i }) %>
+    <%- include("../components/accordion-button", 
+                { name: section.name }) %>
+  </div>
+
+  <div id="collapse-<%= i %>" class="accordion-collapse collapse 
+       <% if ( section.collapse == "show") { %>show<% } %>"
+       data-bs-parent="#accordionExample">
+    <div class="accordion-body">
+      <input type="text" name="sections[<%= i %>][template]" 
+             value="<%= section.template %>" hidden />
+      <input type="text" name="sections[<%= i %>][name]" 
+             value="<%= section.name %>" hidden />
+      <input class="remember-collapse" 
+             type="text" name="sections[<%= i %>][collapse]" 
+             value="<%= section.collapse %>" hidden />
+      <%- include("../../../views/sections/"+section.template+"/admin-"+section.template, 
+                  { index :"sections["+i+"][content]", 
+                    content : section.content }) %>
+    </div>
+  </div>
+
+</div>
