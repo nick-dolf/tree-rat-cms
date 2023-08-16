@@ -10,14 +10,12 @@
 
     <div class="card-body">
       <form id="image<%- index %>">
-
         <div class="form-floating mb-2">
           <textarea class="form-control tall" placeholder="Write alt text here" id="" name="alt" ><%- image.alt %></textarea>
           <label for="">Alt Text</label>
         </div>
         <div class="d-flex justify-content-between align-items-center">
           <div>
-            <small><strong><%- image.name %></strong></small><br>
             <small><%- image.width %>w x <%- image.height %>h</small>
           </div>
           <div class="btn-group">

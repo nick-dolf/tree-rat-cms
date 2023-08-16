@@ -1,0 +1,5 @@
+<ul class="list-group">
+  <% for (let i =0; i < site.files.length; i++) { const file = site.files[i]; %>
+    <%- include("../components/file-row", {file, extraClass:"bg-info", index: `new${i}`}) %>
+  <% } %>
+</ul>

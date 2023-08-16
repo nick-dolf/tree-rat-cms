@@ -1,0 +1,9 @@
+<li class="file-row list-group-item d-flex justify-content-between align-items-center <%- locals.extraClass %>">
+  <a href="<%- site.url+"assets/files/"+file.name %>" class="link"><%- file.name %></a >
+    <%- include("button", 
+        {arg:{text: "Delete", 
+        color:"danger", 
+        extraClass:"file-delete", 
+        cms: file.name,
+        cmsUrl: "files" }}) %>
+</li>

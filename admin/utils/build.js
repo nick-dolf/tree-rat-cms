@@ -17,6 +17,7 @@ function setup(file) {
   app.locals.pageDir = path.join(process.cwd(), config.pageDirectory);
   app.locals.viewDir = path.join(process.cwd(), config.viewDirectory);
   app.locals.imgDir = path.join(process.cwd(), config.imageDirectory);
+  app.locals.fileDir = path.join(process.cwd(), config.fileDirectory);
 
   // Remove previous site build
   fse.removeSync(app.locals.siteDir);
@@ -29,6 +30,7 @@ function setup(file) {
   fse.ensureDirSync(app.locals.pageDir + "/published");
   fse.ensureDirSync(app.locals.viewDir);
   fse.ensureDirSync(app.locals.imgDir);
+  fse.ensureDirSync(app.locals.fileDir);
 
   // Site variables
   app.locals.site = {};
@@ -54,6 +56,9 @@ function setup(file) {
 
   app.locals.images = new JsonDb("images", "name");
   app.locals.site.images = app.locals.images.data;
+
+  app.locals.files = new JsonDb("files", "name");
+  app.locals.site.files = app.locals.files.data;
 
   // try {
   //   app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
@@ -143,6 +148,13 @@ function buildSite() {
    * Copy Assets
    */
   fse.copy("assets", "site/assets").catch((err) => {
+    console.error(err);
+  });
+
+  /** 
+   * Copy Files
+   */
+  fse.copy("files", "site/assets/files").catch((err) => {
     console.error(err);
   });
 

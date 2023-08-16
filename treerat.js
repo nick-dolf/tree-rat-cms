@@ -39,7 +39,6 @@ if (process.env.NODE_ENV === "development") {
  */
 app.use((req, res, next) => {
   res.adminRender = (file, data) => {
-    console.log(file, data)
     ejs.renderFile(process.cwd() + "/admin/views/" + file + ".ejs", { page: data, ...app.locals }, (err, html) => {
       if (err) {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
