@@ -1,0 +1,48 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "collapse": "hide",
+      "content": {
+        "heading": "",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "collapse": "hide",
+            "content": {
+              "text": "asdfsdf",
+              "svg": "bill",
+              "link": {
+                "type": "internal",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "collapse": "hide",
+            "content": {
+              "text": "",
+              "svg": "bill",
+              "link": {
+                "type": "file",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

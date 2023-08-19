@@ -5,7 +5,9 @@
           aria-label=<%- label %> 
           name=<%- index %>[<%- slug %>] id="<%- index %>[<%- slug %>]-select">
     <% for (option of options) { %>
-    <option value="<%- option.slug %>" <% if (content[slug] ==  option.slug) { %>selected<% } %> ><%- option.label %></option>
+    <option value="<%- option.slug %>" 
+        <% if (content[slug] ==  option.slug) { %>selected<% } %> 
+        ><%- option.label %></option>
     <% } %>
   </select>
   <label for="<%- index %>[<%- slug %>]-select"><%- label %></label>

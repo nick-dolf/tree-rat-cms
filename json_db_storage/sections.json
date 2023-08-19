@@ -1,5 +1,9 @@
 [
   {
+    "slug": "quick-links",
+    "name": "Quick Links"
+  },
+  {
     "slug": "cards-with-links",
     "name": "Hover Cards"
   },

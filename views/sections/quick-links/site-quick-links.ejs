@@ -1,0 +1,13 @@
+<section class="quick-links">
+  <h2><%- content.heading %></h2>
+
+  <ul class="list list--responsive">
+    <% if (content.quickLinks) for (quickLink of content.quickLinks) { %>
+      <li class="list-item">
+        <%- include(`../../blocks/${quickLink.template}/site-${quickLink.template}`,
+        { content : quickLink.content }) %> 
+      </li>
+    <% } %>
+    </ul>
+
+</section>

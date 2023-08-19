@@ -28,7 +28,7 @@
       <input class="remember-collapse" type="text" name="<%- index %>[collapse]" value="hide" hidden />
 
       <%- include("../../../views/blocks/"+block.slug+"/admin-"+block.slug, 
-                  { index: index+"[content]", content: {} }) %>
+                  { index: index+"[content]", content: {default: true} }) %>
 
     </div>
   </div>

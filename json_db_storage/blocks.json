@@ -1,5 +1,9 @@
 [
   {
+    "slug": "link-text-svg",
+    "name": "Text Link with Icon"
+  },
+  {
     "slug": "card-with-link",
     "name": "Card with Link"
   }

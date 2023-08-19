@@ -28,6 +28,7 @@ $(document).on("click", ".remove", (event) => {
 $(document).on("click", ".block-add", (event) => {
   const button = event.currentTarget;
   const index = button.dataset.cms;
+  const indexId = index.replace(/[\[\]]/g, "");
   console.log(index)
 
 
@@ -41,9 +42,11 @@ $(document).on("click", ".block-add", (event) => {
   parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`)
     .html()
     .replace(/qq.*q/g, `qq${unique}q`)
-    .replace(/ww0ww/g, index));
+    .replace(/ww0ww/g, index)
+    .replace(/zz0zz/g, indexId));
 
   orderSections();
+  $(".toggle").trigger("change");
 });
 
 

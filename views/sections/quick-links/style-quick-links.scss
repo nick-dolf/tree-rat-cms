@@ -1,0 +1,26 @@
+.quick-links {
+  background-color: $neutral-50;
+  text-align: center;
+  outline: 1px solid $neutral-100;
+
+  @include spacing-std;
+
+  @include tablet {
+    padding: 32px;
+  }
+
+  h2 {
+    margin: 0px 0 32px 0;
+    text-align: center;
+
+    font-size: 2.0rem;
+
+    @include tablet {
+      font-size: 2.4rem;
+    }
+  }
+
+  button {
+    text-decoration: underline;
+  }
+}

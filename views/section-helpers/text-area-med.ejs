@@ -1,3 +1,6 @@
+<% if (content.default) {
+  content[slug] = "test"
+} %>
 <div class="form-floating mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
   <textarea class="form-control tall" placeholder="Write page description here" name="<%= index %>[<%- slug %>]" id="<%= index %>[<%- slug %>]-textarea"
     ><%= content[slug] %></textarea>

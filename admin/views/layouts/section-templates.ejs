@@ -28,7 +28,7 @@
              value="hide" hidden />
       <%- include("../../../views/sections/"+section.slug+"/admin-"+section.slug, 
                  { index : "sections["+i+"][content]",
-                   content: {} }) %>
+                   content: {default: true} }) %>
     </div>
   </div>
 
