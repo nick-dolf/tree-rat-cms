@@ -25,7 +25,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "columnOne": "## What We Do\r\n\r\nFormed in 2019, the Coalition provides a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice. The Coalition supports individuals and communities in the following ways:",
         "columnTwo": "## Lorem ipsim\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquam laborum excepturi ex dolorum saepe. Dicta iste ipsa sit?",
@@ -56,6 +56,7 @@
                 "type": "internal",
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://google.com",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }
@@ -71,6 +72,7 @@
                 "type": "internal",
                 "page": "services/clear-your-record",
                 "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }
@@ -86,6 +88,7 @@
                 "type": "internal",
                 "page": "services/community-benefits-agreements",
                 "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }
@@ -101,6 +104,7 @@
                 "type": "internal",
                 "page": "services/know-your-rights",
                 "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }

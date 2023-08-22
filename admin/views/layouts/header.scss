@@ -13,8 +13,17 @@
   }
 
   #output {
+    @include scrollbars;
+    max-width: 100%;
+    overflow-x: hidden !important;
+    
     background: black;
     height:100px;
-    width: 50%;
+    width: 100%;
+    padding: 4px;
+
+    @include tablet {
+      width: 50%;
+    }
   }
 }

@@ -8,7 +8,7 @@ $(document).on("click", ".create", (event) => {
   const form = $(`#${button.dataset.cmsForm}`);
   const postData = form.serialize();
 
-  output(`${button.dataset.cmsText}: ${postData}`);
+  output(`${button.dataset.cmsText}`);
 
   button.querySelector(".spinner-border").classList.remove("d-none");
   button.disabled = true;
@@ -67,7 +67,7 @@ $(document).on("click", ".delete", (event) => {
   const button = event.currentTarget;
   const deleteTarget = button.dataset.cms;
 
-  if (confirm(`Do you really want to delete ${deleteTarget}?`)) {
+  if (confirm(`${button.dataset.cmsText} ${deleteTarget}?`)) {
     output(`sending delete request to server: ${deleteTarget}`);
     button.querySelector(".spinner-border").classList.remove("d-none");
     button.disabled = true;
