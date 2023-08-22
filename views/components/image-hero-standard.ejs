@@ -5,5 +5,5 @@ let imgName = publishImg(content.image, { width: 1600, height: 800, widths}, loc
   <source media="(min-width:1200px)" type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-1600.webp" />
   <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-800.webp" />
 
-  <img class="hero-img" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="1600" height="800" alt="" />
+  <img class="hero-img" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="1600" height="800" alt="<%- content.alt %>" />
 </picture>
