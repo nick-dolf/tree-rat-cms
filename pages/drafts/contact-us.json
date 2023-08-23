@@ -1,0 +1,43 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "collapse": "hide",
+      "content": {
+        "image": "computer-6720x4480.jpg",
+        "alt": "Person on laptop",
+        "heading": "Contact Us",
+        "paragraph": "Ways to reach out and connect with the Coalition",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "contact-us",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "### Email\r\n\r\nCannabisEquityIL@gmail.com - launch email",
+        "columnTwo": "### Social Media\r\n\r\nFollow us on Instagram, Facebook, and Twitter - @cannabisequityil, #CannabisEquityIL, and #CannabisCBA",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "contact-us",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "two-column"
+      }
+    }
+  ]
+}
