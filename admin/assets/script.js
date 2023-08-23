@@ -101,6 +101,7 @@ $(document).on("click", ".add", (event) => {
     .html().replace(/qq.*q/g, `qq${unique}q`));
 
   orderSections();
+  initSortable();
   $(".toggle").trigger("change");
 });
 
@@ -110,15 +111,12 @@ $(document).on("click", ".remove", (event) => {
   output(`Removed ${button.dataset.cmsText}`);
   button.closest(button.dataset.cmsTarget).remove(0);
   orderSections();
-  
 });
 
 $(document).on("click", ".block-add", (event) => {
   const button = event.currentTarget;
   const index = button.dataset.cms;
   const indexId = index.replace(/[\[\]]/g, "");
-  console.log(index)
-
 
   const parent = $(event.currentTarget.closest(".block-controller"));
   const selected = parent.find(".block-select");
@@ -170,7 +168,6 @@ function orderSections() {
         $(blockItem)
           .find("[name]")
           .each((index, item) => {
-            console.log(item)
             let name = $(item)
               .attr("name")
               .replace(/content]\[(.*)]\[[0-9]*]/, `content][$1][${blockIndex}]`);
