@@ -59,8 +59,9 @@
                   color:"danger", 
                   extraClass:"delete dropdown-item", 
                   cms: page.link,
-                  cmsUrl:site.url+"admin/pages", 
-                  cmsAnchor:"accordionPageAnchor"}}) %>
+                  cmsText: "Do you really want to delete: ", 
+                  cmsAnchor:"accordionPageAnchor",
+                  cmsUrl:site.url+"admin/pages" }}) %>
               <% } %>
           </li>
         </ul>

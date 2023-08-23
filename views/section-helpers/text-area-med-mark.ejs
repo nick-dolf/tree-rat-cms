@@ -1,9 +1,11 @@
 <% if (content.default) {
   content[slug] = 
-`Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.`
+`# Squirrel Ipsum\n\n
+[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.`
 } %>
 <div class="form-floating mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
   <textarea class="form-control tall" placeholder="Write page description here" name="<%= index %>[<%- slug %>]" id="<%= index %>[<%- slug %>]-textarea"
     ><%= content[slug] %></textarea>
   <label for="<%= index %>[<%- slug %>]-textarea"><%- label %></label>
 </div>
+<%- include("../components/icon-svg", {id: "markdown"}) %>

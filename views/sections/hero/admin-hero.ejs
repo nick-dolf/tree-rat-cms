@@ -1,3 +1,10 @@
+<!-- Default content for template -->
+<% if (content.default) {
+  content.image = "default.webp"
+  content.alt = "Squirrel on tree."
+  content.overlay = "yes"
+} %>
+
 <!-- Image -->
 <%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
 <!-- Heading -->

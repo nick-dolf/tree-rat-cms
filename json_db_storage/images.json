@@ -76,5 +76,18 @@
       "width": 1600
     },
     "alt": "pretty river"
+  },
+  {
+    "name": "default.webp",
+    "uploadEpochTime": 1692744936804,
+    "modifiedEpochTime": "",
+    "generatedEpochTime": "",
+    "height": 544,
+    "width": 1440,
+    "og": {
+      "height": 544,
+      "width": 1440
+    },
+    "alt": "Squirrel on tree."
   }
 ]

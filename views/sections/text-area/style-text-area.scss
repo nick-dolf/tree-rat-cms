@@ -4,6 +4,15 @@
     margin-top: 0;
   }
 
+  h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+  
+    @include tablet {
+      font-size: 4.0rem;
+    }
+  }
+
   &.text-area-plain {
     @include spacing-slim-nopad;
   }
@@ -24,18 +33,18 @@
   }
 
   &.text-area-two-column {
-  @include spacing-std;
+    @include spacing-std;
 
-  @include tablet {
-    .row {
-      display: flex;
-      gap: 32px;
+    @include tablet {
+      .row {
+        display: flex;
+        gap: 32px;
+      }
+      
+      .column {
+        flex: 50%;
+      }
+      
     }
-    
-    .column {
-      flex: 50%;
-    }
-    
   }
-}
 }

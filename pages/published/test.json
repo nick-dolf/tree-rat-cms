@@ -3,83 +3,21 @@
   "description": "",
   "sections": [
     {
-      "template": "hero",
-      "name": "Hero",
-      "collapse": "show",
-      "content": {
-        "image": "1015-1600x800.jpg",
-        "alt": "pretty river",
-        "heading": "",
-        "paragraph": "test",
-        "button": {
-          "type": "scroll",
-          "text": "Learn more",
-          "page": "services/community-benefits-agreements",
-          "link": "",
-          "scroll": "2"
-        },
-        "style": "standard",
-        "overlay": "yes"
-      }
-    },
-    {
-      "template": "quick-links",
-      "name": "Quick Links",
-      "collapse": "hide",
-      "content": {
-        "heading": "",
-        "quickLinks": [
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "collapse": "show",
-            "content": {
-              "text": "Test",
-              "svg": "bill",
-              "link": {
-                "type": "internal",
-                "page": "test",
-                "link": "",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "collapse": "show",
-            "content": {
-              "text": "Sample",
-              "svg": "bill",
-              "link": {
-                "type": "internal",
-                "page": "test",
-                "link": "",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
       "template": "banner",
       "name": "Banner",
       "collapse": "hide",
       "content": {
-        "heading": "Heading",
-        "paragraph": "test",
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
         "button": {
-          "type": "scroll",
-          "text": "Scroll to top",
+          "type": "external",
+          "text": "Squiritur",
           "page": "test",
-          "link": "",
-          "scroll": "0"
+          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
+          "scroll": ""
         },
         "style": "horizontal",
-        "color": "purple"
+        "color": "green"
       }
     }
   ]
