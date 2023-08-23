@@ -5,7 +5,7 @@
     {
       "template": "hero",
       "name": "Hero",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": "seldoms-team.jpg",
         "alt": "Coalition members gathered together",
@@ -20,6 +20,48 @@
         },
         "style": "standard",
         "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "collapse": "hide",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "collapse": "hide",
+            "content": {
+              "text": "Download our CBA toolkit (pdf)",
+              "svg": "bill",
+              "link": {
+                "type": "file",
+                "page": "test",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "collapse": "hide",
+            "content": {
+              "text": "Read more about CBAs",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://shelterforce.org/2016/10/21/making-community-benefits-agreements-count/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]
