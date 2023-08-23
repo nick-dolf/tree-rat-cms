@@ -1,5 +1,5 @@
-<div class="py-3 page-control page-control-small sticky-top">
-  <div class="text-center text-md-end text-lg-center">
+<div class="sticky-top">
+  <div class="text-end text-lg-center">
     <!-- Save Page Draft -->
     <%- include("../components/button", 
         {arg:{text: "Save Draft", 
@@ -13,7 +13,7 @@
 
     <a href="<%= site.url %>admin/drafts/<%= page.link %>" class="btn btn-primary">View Draft</a>
   </div>
-  <div class="preview mt-3">
+  <div class="preview mt-2">
     <div id="previewSizes" class="d-flex justify-content-center gap-3 my-3">
       <label>
         Mobile
@@ -31,9 +31,12 @@
         <%- include("../components/icon-svg", {id: "desktop"}) %>
       </label>
     </div>
-    <div id="thumbnailContainer" class="desktop">
-      <div id="thumbnail">
-        <iframe id="previewFrame" src="<%- site.url%>admin/drafts/<%= page.link %>" frameborder="0"></iframe>
+    <div class="preview-scroll">
+
+      <div id="thumbnailContainer" class="desktop">
+        <div id="thumbnail">
+          <iframe id="previewFrame" src="<%- site.url%>admin/drafts/<%= page.link %>" frameborder="0"></iframe>
+        </div>
       </div>
     </div>
   </div>

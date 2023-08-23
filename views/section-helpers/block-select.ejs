@@ -1,6 +1,4 @@
-<% index += `[${slug}][0]`%>
-<p><%- index %></p>
-<p><%-  JSON.stringify(content[slug]) %></p>
+<% index += `[${slug}]`%>
 <div class="block-controller">
 <!-- Block Select -->
 <div class="brown p-2 rounded-top">
@@ -11,12 +9,16 @@
         <option value="<%= blocks[i].slug %>"><%= blocks[i].name %></option>
         <% } %>
       </select>
-      <button class="btn btn-success block-add" type="button" data-cms=<%- index %>>Add</button>
+      <button class="btn btn-success block-add" type="button" data-cms="<%- index %>[0]">Add</button>
     </div>
   </div>
 </div>
 <!-- Block Content -->
 <div class="block-anchor">
+  <% console.log(content[slug]) %>
+<% if (content[slug]) { %>
 <%- include("../../admin/views/layouts/blocks", {blocks: content[slug], index})%>
+<% } %>
 </div>
 </div>
+

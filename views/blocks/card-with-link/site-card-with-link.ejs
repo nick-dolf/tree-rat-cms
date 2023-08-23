@@ -1,3 +1,23 @@
+<% if (content.link.type == "internal") { %>
+  <% let link = (content.link.page == "home" ? "" : content.link.page) %>
+  <a href="<%- site.url + link %>" >
+<% } else if (content.link.type == "external") { %>
+  <a href="<%- content.link.link %>" target="_blank">
+<!-- Files -->
+<% } else if (content.link.type == "file") { %>
+  <a href="<%- site.url +"assets/files/"+ content.link.file %>" target="_blank">
+<% } else if (content.link.type == "scroll") { %>
+  <button class="btn--ghost scroll" data-scroll="<%- content.link.scroll %>" type="button" name="button" >
+<% } %>
 <div class="card-with-link">
-  <p><%- content.paragraph %></p>
+  <span class="card-icon">
+    <%- include("../../components/icon-svg", {id:"arrow"})%>
+  </span>
+  <h2 class="card-heading"><%- content.heading %></h2>
+  <p class="card-body"><%- content.paragraph %></p>
 </div>
+<% if (content.link.type == "scroll") { %>
+</button>
+<% } else { %>
+</a>
+<% } %>

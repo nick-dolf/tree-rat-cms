@@ -2,9 +2,16 @@
 <%- include("layouts/header")%>
 
 <main class="container">
-  <h1>Files under construction</h1>
-  <hr class="brown border-2 opacity-100" />
-
+  <h1 class="h3 ms-2">Upload Files</h1>
+  <section class="container">
+    <form id="file-form" enctype="multipart/form-data">
+      <input id="file-input" class="form-control my-4" type="file" name="file" accept=".pdf" required multiple>
+      <%- include("./components/button-action", { arg: {text: "Submit", id: "file-submit"}}) %>
+    </form>
+  </section>
+  <section id="file-gallery-anchor" class="container my-3">
+    <%- include("layouts/file-gallery") %>
+  </section>
 </main>
 
 <%- include("base/foot")%>

@@ -1,0 +1,19 @@
+<% const link = (page.link == "home" ? "" : page.link) %>
+<!-- Published -->
+<% if (page.publishedDate) { %>
+<div class="d-flex align-items-center">
+  <a href="<%- site.url + link %>" class="link dark h4 me-4"><%= page.name %></a>
+  <%- include("../components/icon-svg", {id: "check-square-fill", 
+                                          width: 20}) %>
+  <small>Published</small>
+</div>
+<!-- Not Published -->
+<% } else { %>
+<div class="d-flex align-items-center">
+  <span class="h4 me-4"><%= page.name %></span>
+  <%- include("../components/icon-svg", {id: "x-square-fill", 
+                                          width: 20,
+                                          color: "text-secondary"}) %>
+  <small>Not published</small>
+</div>
+<% } %>

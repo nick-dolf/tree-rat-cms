@@ -3,6 +3,7 @@
   "pageDirectory": "pages",
   "viewDirectory": "views",
   "imageDirectory": "images",
+  "fileDirectory": "files",
   "enableGzipCompression": true,
   "enableAutoPrefixer": true,
   "developmentUrl": "/",

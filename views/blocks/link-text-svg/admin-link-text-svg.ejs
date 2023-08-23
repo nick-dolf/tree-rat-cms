@@ -1,0 +1,16 @@
+<div class="row row-cols-1 row-cols-sm-2">
+<div class="col">
+  <!-- Link Text -->
+  <%- include("../../section-helpers/text-area-plain", { slug: "text", label: "Text"}) %>
+</div>
+<div class="col">
+  <!-- Select SVG -->
+  <%- include("../../section-helpers/select", 
+              { slug: "svg", label: "Icon",
+              options : [{slug: "bill", label:"Bill"},
+                         {slug: "video", label: "Video"},
+                         {slug: "house", label: "House"},
+            ]}) %>
+</div>
+</div>
+<%- include("../../section-helpers/link", { slug: "link", label: "Link"}) %>

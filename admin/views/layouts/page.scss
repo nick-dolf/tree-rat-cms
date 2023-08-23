@@ -1,25 +1,44 @@
-.page-control {
-  display: inline-block;
+#page-control {
+  font-size: 0;
+
+
+  & > * {
+    font-size: 1rem;
+  }
 }
 
-.page-control-small {
+#publish-anchor {
+  display: inline-flex;
+  justify-content: space-between;
+  align-content: center;
   width: 100%;
 
   @include tablet {
-    width: 50%;
+    width: 60%;
+  }
+
+  @include desktop {
+    width: 75%;
+  }
+}
+
+#draft-control {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  z-index: 0;
+  span {
+    width: 100%;
+  }
+
+  @include tablet {
+    width: 40%;
   }
 
   @include desktop {
     width: 25%;
   }
-}
 
-.page-control-large {
-  width: 100%;
-
-  @include desktop {
-    width: 50%;
-  }
 }
 
 .preview {
@@ -70,6 +89,12 @@
   input[type="radio"]:checked + svg {
     fill: $tree-bark;
   }
+}
+
+.preview-scroll {
+  max-height: 70vh;
+  overflow: auto;
+  @include scrollbars;
 }
 
 #thumbnailContainer {

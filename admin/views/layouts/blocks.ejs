@@ -1,6 +1,5 @@
 <% const idIndex = index.replace(/[\[\]]/g, "")+slug %>
-<%- typeof(blocks) %>
-<% for (let i =0; i < 0; i++) { const block = blocks[i]; %>
+<% for (let i =0; i < blocks.length; i++) { const block = blocks[i]; %>
 
 <div class="accordion-item cms-block">
 
@@ -9,12 +8,14 @@
     <%- include("../components/accordion-header", 
                 { name: block.name, 
                   collapse: block.collapse,
-                  index: idIndex }) %>
+                  index: idIndex+i }) %>
     <%- include("../components/accordion-button", 
-                { name: block.name }) %>
+                { name: block.name,
+                  removeTarget: ".cms-block",
+                  labelTarget: "" }) %>
   </div>
 
-  <div id="collapse-<%- idIndex %>" class="accordion-collapse collapse 
+  <div id="collapse-<%- idIndex+i %>" class="accordion-collapse collapse 
     <% if ( block.collapse == "show") { %>show<% } %>" 
     data-bs-parent="#accordionExample">
     <div class="accordion-body">
@@ -27,7 +28,7 @@
              value="<%= block.collapse %>" hidden />
       
       <%- include("../../../views/blocks/"+block.template+"/admin-"+block.template, { index :
-      `${index}[${i}][content]`, content: content }) %>
+      `${index}[${i}][content]`, content: block.content }) %>
 
 
     </div>

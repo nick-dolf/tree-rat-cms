@@ -17,7 +17,9 @@ async function processUploadImg(img, srcDir) {
 }
 
 function publishImg(img, options, promises) {
-  let image = app.locals.site.images.find((e) => e.name == img);
+  let image = app.locals.images.findById(img)
+
+  if(!image) return "";
 
   let imgName = path.parse(image.name).name + `-${image.uploadEpochTime}`;
 

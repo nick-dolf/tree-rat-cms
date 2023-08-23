@@ -1,12 +1,11 @@
 <%- include("base/head", { page: { title: "Pages", description: "Manage Pages" }})%> 
 <%- include("layouts/header")%>
 
-<main class="container">    
-  <%- include("layouts/page-control-link") %>
-  <%- include("layouts/page-control-publish") %>
-  <%- include("layouts/page-control-draft") %>
-
-  <section id="pageFormAnchor"><%- include("layouts/page-form")%></section>
+<main class="container">
+  <%- include("sections/page-control")%>
+  <section id="pageFormAnchor">
+    <%- include("layouts/page-form")%>
+  </section>
 </main>
 
 <%- include("layouts/section-templates")%> 

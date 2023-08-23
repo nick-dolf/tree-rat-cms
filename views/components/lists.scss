@@ -1,0 +1,41 @@
+.list  {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list--responsive {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  gap: 2rem;
+  margin: auto;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 3rem;
+    flex-wrap: wrap;
+  }
+}
+
+.list--horizontal {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+
+  @include tablet {
+    gap: 3rem;
+  }
+}
+
+.sub-list {
+  text-align: left;
+  padding-left: 3rem;
+
+  @include tablet {
+    position: absolute;
+    padding: 0;
+    z-index: 10;
+    background-color: $white;
+  }
+}

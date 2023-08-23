@@ -8,7 +8,7 @@ $(document).on("click", ".create", (event) => {
   const form = $(`#${button.dataset.cmsForm}`);
   const postData = form.serialize();
 
-  output(`${button.dataset.cmsText}: ${postData}`);
+  output(`${button.dataset.cmsText}`);
 
   button.querySelector(".spinner-border").classList.remove("d-none");
   button.disabled = true;
@@ -67,7 +67,7 @@ $(document).on("click", ".delete", (event) => {
   const button = event.currentTarget;
   const deleteTarget = button.dataset.cms;
 
-  if (confirm(`Do you really want to delete ${deleteTarget}?`)) {
+  if (confirm(`${button.dataset.cmsText} ${deleteTarget}?`)) {
     output(`sending delete request to server: ${deleteTarget}`);
     button.querySelector(".spinner-border").classList.remove("d-none");
     button.disabled = true;
@@ -107,16 +107,16 @@ $(document).on("click", ".add", (event) => {
 $(document).on("click", ".remove", (event) => {
   const button = event.currentTarget;
 
-  if (confirm(`Do you want to remove ${button.dataset.cmsText}?\n(You will also need to save draft to permanently delete it)`)) {
-    output(`Removed ${button.dataset.cmsText}`);
-    button.closest(button.dataset.cmsTarget).remove(0);
-    orderSections();
-  }
+  output(`Removed ${button.dataset.cmsText}`);
+  button.closest(button.dataset.cmsTarget).remove(0);
+  orderSections();
+  
 });
 
 $(document).on("click", ".block-add", (event) => {
   const button = event.currentTarget;
   const index = button.dataset.cms;
+  const indexId = index.replace(/[\[\]]/g, "");
   console.log(index)
 
 
@@ -130,9 +130,11 @@ $(document).on("click", ".block-add", (event) => {
   parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`)
     .html()
     .replace(/qq.*q/g, `qq${unique}q`)
-    .replace(/ww0ww/g, index));
+    .replace(/ww0ww/g, index)
+    .replace(/zz0zz/g, indexId));
 
   orderSections();
+  $(".toggle").trigger("change");
 });
 
 
@@ -222,6 +224,68 @@ function selectToggle(event) {
     }
   }
 }
+// File Submit (POST)
+$("#file-submit").click((event) => {
+  output("Uploading file(s)");
+  const button = event.currentTarget;
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
+
+  const formData = new FormData(document.getElementById("file-form"));
+
+  $.ajax({
+    url: "",
+    type: "POST",
+    data: formData,
+    enctype: "multipart/form-data",
+    processData: false,
+    contentType: false,
+  })
+    .done((response) => {
+      output("Files Uploaded");
+      console.log("update success", response);
+      $("#file-gallery-anchor").prepend(response);
+      initSortable();
+    })
+    .fail((response) => {
+      output("Failed to upload files", true);
+      console.log("update fail", response.responseText);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+      $("#file-form").trigger("reset");
+    });
+});
+
+// File Delete (DELETE)
+$(document).on("click", ".file-delete", (event) => {
+  const button = event.currentTarget;
+  console.log(button.lastChild);
+  const deleteFile = button.dataset.cms;
+  if (confirm(`Do you really want to delete ${deleteFile}?`)) {
+    output(`sending delete request to server: ${deleteFile}`);
+
+    button.querySelector(".spinner-border").classList.remove("d-none");
+    button.disabled = true;
+
+    $.ajax({ url: `files/${deleteFile}`, type: "DELETE" })
+      .done((response) => {
+        output("delete request was successful");
+        console.log("delete success", response);
+        button.closest(".file-row").remove();
+      })
+      .fail((response) => {
+        output("delete request failed: " + response.responseText, true);
+        console.log("delete failed:", response.responseText);
+      })
+      .always(() => {
+        button.querySelector(".spinner-border").classList.add("d-none");
+        button.disabled = false;
+      });
+  }
+});
 /*
 / Image Input Preview
 */
@@ -283,6 +347,40 @@ $("#image-submit").click((event) => {
     });
 });
 
+// Update Alt Text(PUT)
+$(document).on("click", ".image-alt-update", (event) => {
+  const button = event.currentTarget;
+  const updateImage = button.dataset.cms;
+  console.log(button.dataset.cmsForm)
+  const putData = new FormData(document.getElementById(`${button.dataset.cmsForm}`));
+
+  output(`Updating alt text for ${updateImage}`);
+
+  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.disabled = true;
+
+  $.ajax({
+    url: `images/${updateImage}`,
+    type: "PUT",
+    data: putData,
+    enctype: "multipart/form-data",
+    processData: false,
+    contentType: false,
+  })
+    .done((response) => {
+      output("Updated alt text");
+    })
+    .fail((response) => {
+      output("Failed to update alt text", true);
+      console.log("update fail", response.responseText);
+    })
+    .always(() => {
+      button.querySelector(".spinner-border").classList.add("d-none");
+      button.disabled = false;
+    });
+});
+
+
 // Image Delete (DELETE)
 $(document).on("click", ".image-delete", (event) => {
   const button = event.currentTarget;
@@ -318,7 +416,6 @@ let activeImage;
 
 $(document).on("click", ".image-set-active", (event) => {
   activeImage = event.currentTarget;
-  console.log(activeImage);
 });
 
 $(".image-change").click((event) => {
@@ -328,6 +425,7 @@ $(".image-change").click((event) => {
   $(activeImage)
     .children("img")
     .attr("src", button.dataset.cmsFolder + "thumb/" + button.dataset.cmsImage);
+  $(activeImage).closest("div").find("textarea[name*=alt]").val(button.dataset.cmsText)
 });
 
 /**

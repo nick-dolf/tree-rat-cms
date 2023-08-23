@@ -3,25 +3,6 @@
   "description": "",
   "sections": [
     {
-      "template": "hero",
-      "name": "Hero",
-      "collapse": "hide",
-      "content": {
-        "image": "hero.webp",
-        "heading": "Testing by dave",
-        "paragraph": "this is a test",
-        "button": {
-          "type": "internal",
-          "text": "Support time button",
-          "page": "our-work/reentry-support",
-          "link": "",
-          "scroll": ""
-        },
-        "style": "standard",
-        "overlay": "yes"
-      }
-    },
-    {
       "template": "line",
       "name": "Line",
       "collapse": "show",
@@ -56,7 +37,7 @@
         "button": {
           "type": "no",
           "text": "",
-          "page": "privacy-policy",
+          "page": "our-work/reentry-support",
           "link": "",
           "scroll": ""
         },
@@ -74,7 +55,7 @@
         "button": {
           "type": "no",
           "text": "",
-          "page": "privacy-policy",
+          "page": "our-work/reentry-support",
           "link": "",
           "scroll": ""
         },

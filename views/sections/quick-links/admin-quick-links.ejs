@@ -1,0 +1,29 @@
+<!-- Default content for template -->
+<% if (content.default) {
+  content.heading = "Squirrel Ipsum"
+  content.quickLinks = [
+  {
+    "template": "link-text-svg",
+    "name": "Text Link with Icon",
+    "collapse": "show",
+    "content": {
+      "text": "Squirrel Ipsum",
+      "svg": "video",
+      "link": {
+        "type": "external",
+        "page": "test",
+        "link": "https://www.youtube.com/watch?v=w7f1z27RI7g"
+      }
+    }
+  }
+]
+} %>
+
+
+<!-- Heading -->
+<%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
+
+<!-- Quick Links -->
+<%- include("../../section-helpers/block-select", 
+{ slug: "quickLinks",
+  blocks:[{slug:"link-text-svg", name:"Link"}]}) %>

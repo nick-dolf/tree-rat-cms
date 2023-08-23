@@ -10,6 +10,10 @@
                   collapse: "hide", 
                   extraClass: "bg-success-subtle",
                   index: "qqoq" }) %>
+    <%- include("../components/accordion-button", 
+                { name: block.name,
+                  removeTarget: ".cms-block",
+                  labelTarget: "" }) %>
   </div>
   <!-- Accordion Body -->
   <div id="collapse-qq0q" class="accordion-collapse collapse" 
@@ -24,7 +28,7 @@
       <input class="remember-collapse" type="text" name="<%- index %>[collapse]" value="hide" hidden />
 
       <%- include("../../../views/blocks/"+block.slug+"/admin-"+block.slug, 
-                  { index: index+"[content]", content: {} }) %>
+                  { index: index+"[content]", content: {default: true} }) %>
 
     </div>
   </div>

@@ -3,6 +3,7 @@
 
 <main>
 <% if (page.sections) for (section of page.sections) { %> 
+  <% if (!section.content) section.content = {} %>
   <%- include(`sections/${section.template}/site-${section.template}`,
               { content : section.content }) %> 
 <% } %>

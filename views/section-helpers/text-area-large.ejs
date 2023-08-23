@@ -1,3 +1,9 @@
+<% if (content.default) {
+  content[slug] = 
+`## Sample Heading\n\n
+This field accepts markdown. You can do **bold** and *italic*.\n\n
+Add a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.`
+} %>
 <% const idIndex = index.replace(/[\[\]]/g, "-")+slug %>
 <div class="form-floating mb-2" id="<%- idIndex %>">
   <textarea class="form-control large" id="<%- idIndex %>-textarea" 

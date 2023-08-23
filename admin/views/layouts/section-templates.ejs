@@ -11,7 +11,9 @@
                   extraClass: "bg-success-subtle",
                   index: "qqoq" }) %>
     <%- include("../components/accordion-button", 
-                { name: section.name }) %>
+                { name: section.name,
+                  removeTarget: ".cms-section",
+                  labelTarget: "" }) %>
   </div>
   <!-- Accordion Body -->
   <div id="collapse-qq0q" class="accordion-collapse collapse" 
@@ -26,7 +28,7 @@
              value="hide" hidden />
       <%- include("../../../views/sections/"+section.slug+"/admin-"+section.slug, 
                  { index : "sections["+i+"][content]",
-                   content: {} }) %>
+                   content: {default: true} }) %>
     </div>
   </div>
 

@@ -1,18 +1,27 @@
 [
   {
-    "slug": "text-area",
-    "name": "Text Area"
-  },
-  {
-    "slug": "line",
-    "name": "Line"
+    "slug": "banner",
+    "name": "Banner"
   },
   {
     "slug": "hero",
     "name": "Hero"
   },
   {
-    "slug": "banner",
-    "name": "Banner"
+    "slug": "cards-with-links",
+    "name": "Hover Cards"
+  },
+  {
+    "slug": "line",
+    "name": "Line"
+  },
+  {
+    "slug": "quick-links",
+    "name": "Quick Links"
+  },
+
+  {
+    "slug": "text-area",
+    "name": "Text Area"
   }
 ]

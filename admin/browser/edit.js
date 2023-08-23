@@ -19,16 +19,16 @@ $(document).on("click", ".add", (event) => {
 $(document).on("click", ".remove", (event) => {
   const button = event.currentTarget;
 
-  if (confirm(`Do you want to remove ${button.dataset.cmsText}?\n(You will also need to save draft to permanently delete it)`)) {
-    output(`Removed ${button.dataset.cmsText}`);
-    button.closest(button.dataset.cmsTarget).remove(0);
-    orderSections();
-  }
+  output(`Removed ${button.dataset.cmsText}`);
+  button.closest(button.dataset.cmsTarget).remove(0);
+  orderSections();
+  
 });
 
 $(document).on("click", ".block-add", (event) => {
   const button = event.currentTarget;
   const index = button.dataset.cms;
+  const indexId = index.replace(/[\[\]]/g, "");
   console.log(index)
 
 
@@ -42,9 +42,11 @@ $(document).on("click", ".block-add", (event) => {
   parent.find(".block-anchor").prepend($(`#${selected.val()}-block-template`)
     .html()
     .replace(/qq.*q/g, `qq${unique}q`)
-    .replace(/ww0ww/g, index));
+    .replace(/ww0ww/g, index)
+    .replace(/zz0zz/g, indexId));
 
   orderSections();
+  $(".toggle").trigger("change");
 });
 
 

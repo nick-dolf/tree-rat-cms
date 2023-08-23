@@ -1,0 +1,24 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "banner",
+      "name": "Banner",
+      "collapse": "hide",
+      "content": {
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "external",
+          "text": "Squiritur",
+          "page": "test",
+          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
+          "scroll": ""
+        },
+        "style": "horizontal",
+        "color": "green"
+      }
+    }
+  ]
+}
