@@ -5,7 +5,7 @@
     {
       "template": "hero",
       "name": "Hero",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": "group-photo7.jpg",
         "alt": "Coalition members holding a CEIC banner",
@@ -36,13 +36,13 @@
           "link": "",
           "scroll": "1"
         },
-        "style": "plain"
+        "style": "splashy"
       }
     },
     {
       "template": "cards-with-links",
       "name": "Hover Cards",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "cards": [
           {

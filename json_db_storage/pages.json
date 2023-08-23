@@ -1,11 +1,27 @@
 [
   {
-    "name": "Test",
-    "slug": "test",
+    "name": "Contact Us",
+    "slug": "contact-us",
     "folder": "",
-    "link": "test",
-    "publishedDate": "Tue Aug 22 2023 23:13:37 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Wed Aug 23 2023 08:36:02 GMT-0500 (Central Daylight Time)"
+    "link": "contact-us",
+    "publishedDate": "Wed Aug 23 2023 16:46:53 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Aug 23 2023 16:51:35 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Terms of Use",
+    "slug": "terms-of-use",
+    "folder": "",
+    "link": "terms-of-use",
+    "publishedDate": "Wed Aug 23 2023 16:47:10 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Aug 23 2023 16:47:09 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Privacy Policy",
+    "slug": "privacy-policy",
+    "folder": "",
+    "link": "privacy-policy",
+    "publishedDate": "Wed Aug 23 2023 16:45:33 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Aug 23 2023 16:41:16 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Clear Your Record",
@@ -85,6 +101,6 @@
     "folder": "",
     "link": "home",
     "publishedDate": "Sat Aug 19 2023 21:29:02 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Tue Aug 22 2023 08:11:10 GMT-0500 (Central Daylight Time)"
+    "draftedDate": "Wed Aug 23 2023 16:26:32 GMT-0500 (Central Daylight Time)"
   }
 ]

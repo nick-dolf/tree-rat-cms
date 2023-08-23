@@ -1,0 +1,23 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "collapse": "show",
+      "content": {
+        "columnOne": "# Terms of Use\r\nTerms\r\n\r\nEFFECTIVE January 1, 2023",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "contact-us",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    }
+  ]
+}

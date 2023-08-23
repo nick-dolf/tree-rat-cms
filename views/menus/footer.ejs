@@ -1,0 +1,17 @@
+<%
+  site.menus = {}
+  site.menus.footer = [{"name": "Privacy Policy", "slug": "privacy-policy"},
+                       {"name": "Terms of Use", "slug": "terms-of-use"},
+                       {"name": "Contact Us", "slug": "contact-us"}]
+%>
+<nav class="nav nav-footer">
+  <ul class="list list--horizontal">
+    <% for (let i = 0; i < site.menus.footer.length; i++) { const page =  site.menus.footer[i] %>
+    <li class="list-item">
+      <a class="utility-links" data-text="{{ item.title }}" href="<%- site.url + page.slug %>">
+        <%- page.name %>
+      </a>
+    </li>
+    <% } %>
+  </ul>
+</nav>
