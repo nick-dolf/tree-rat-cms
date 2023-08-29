@@ -1,37 +1,75 @@
 <% if (!page.sections) page.sections = {} %> 
 <% for (let i =0; i < page.sections.length; i++){const section = page.sections[i];%>
 <% if (!section.content) section.content = {} %>
-<div class="accordion-item cms-section">
-
-  <div class="row align-items-baseline">
-    <%- include("../components/accordion-handle") %>
-    <%- include("../components/accordion-header", 
-                { name: section.name, 
-                  collapse: section.collapse,
-                  index: i }) %>
-    <%- include("../components/accordion-button", 
-                { name: section.name,
-                  removeTarget: ".cms-section",
-                  labelTarget: "" }) %>
-  </div>
-
-  <div id="collapse-<%= i %>" class="accordion-collapse collapse 
-       <% if ( section.collapse == "show") { %>show<% } %>"
-       data-bs-parent="#accordionExample">
-    <div class="accordion-body">
-      <input type="text" name="sections[<%= i %>][template]" 
-             value="<%= section.template %>" hidden />
-      <input type="text" name="sections[<%= i %>][name]" 
-             value="<%= section.name %>" hidden />
-      <input class="remember-collapse" 
-             type="text" name="sections[<%= i %>][collapse]" 
-             value="<%= section.collapse %>" hidden />
-      <%- include("../../../views/sections/"+section.template+"/admin-"+section.template, 
-                  { index :"sections["+i+"][content]", 
-                    content : section.content }) %>
+<section class="roller cms-section ">
+  <header class="roller-header <% if ( section.collapse == "show") { %>show-on-load<% } %>">
+    <div class="handle">
+      <%- include("../components/icon-svg", {id:"grip-horizontal", 
+                                             color: "black", 
+                                             width: 40})%>
+    </div>
+    <button type="button" class="button-ghost roller-toggle">
+      <h1>
+        <%- section.name %>
+        <span class="accordion-label">
+          <% if (section.label) { %>
+          <%- "&nbsp;- " + section.label %>
+          <% } %>
+        </span>
+      </h1>
+      <%- include("../components/icon-svg", {id:"chevron", 
+                                             color: "black", 
+                                             width: 24})%>
+    </button>
+    <div class="button-group roller-actions">
+      <%- include("../components/button", 
+                    {arg:{text: "Label", 
+                          color:"action", 
+                          extraClass:"label-set-active", 
+                          bsToggle:"modal",
+                          bsTarget:"#label-modal",
+                          cmsTarget: ".cms-section",
+                          cmsText: section.name }}) %>
+      <button type="button" class="button button-action button-toggle">
+        <%- include("../components/icon-svg", {id:"three-dots", 
+                               color: "black", 
+                               width: 18}) %>
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <div class="button-drop">
+        <%- include("../components/button", 
+                  {arg:{text: "Copy", 
+                        color:"action", 
+                        extraClass:"copy button-drop-item", 
+                        cmsTarget: ".cms-section" }}) %>
+      <%- include("../components/button", 
+                  {arg:{text: "Remove", 
+                        color:"danger", 
+                        extraClass:"remove dropdown-item", 
+                        cmsTarget: ".cms-section",
+                        cmsText: section.name }}) %>
+      </div>
+    </div>
+  </header>
+  <div class="roller-body <% if ( section.collapse == "show") { %>show-on-load<% } %>">
+    <div class="p-3">
+      <div class="roller-content-shadow">
+        
+        <input type="text" name="sections[<%= i %>][template]" 
+        value="<%= section.template %>" hidden />
+        <input type="text" name="sections[<%= i %>][name]" 
+        value="<%= section.name %>" hidden />
+        <input type="text" name="sections[<%= i %>][label]" 
+        value="<%= section.label %>" hidden />
+        <input class="remember-collapse" 
+        type="text" name="sections[<%= i %>][collapse]" 
+        value="<%= section.collapse %>" hidden />
+        <%- include("../../../views/sections/"+section.template+"/admin-"+section.template, 
+         { index :"sections["+i+"][content]", 
+         content : section.content }) %>
+      </div>
     </div>
   </div>
-
-</div>
+  </section>
 
 <% } %>

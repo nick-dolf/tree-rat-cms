@@ -4,18 +4,26 @@
 
 @import "base/global";
 
+@import "components/buttons";
+@import "components/cards";
+@import "components/forms";
 @import "components/icons";
 
 @import "layouts/header";
+@import "layouts/modals";
 @import "layouts/page";
+@import "layouts/blocks";
 
-body {
-  background: white;
+@import "sections/roller";
+
+
+// Needs to be organized
+.section-add {
+  width: 105px;
 }
 
-.brown {
-  background: $tree-bark;
-  border-color: $tree-bark;
+.white-back {
+  background: $white-trans;
 }
 
 textarea.tall {
@@ -29,10 +37,21 @@ textarea.alt {
   min-height: 150px !important;
 }
 
-
 #pageForm {
 
   @media screen and (min-width: 992px) {
   width:75%;
   }
+}
+
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+// Bootstrap Overrides
+.img-thumbnail {
+  background: $white-subtle-trans;
 }

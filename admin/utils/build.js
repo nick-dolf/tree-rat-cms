@@ -161,13 +161,17 @@ function buildSite() {
   /**
    * Publish Pages
    */
-  for (page of app.locals.site.pages) {
-    if (page.publishedDate) {
-      const data = fse.readJsonSync(app.locals.pageDir + "/published/" + page.link + ".json")
+  if (process.env.NODE_ENV != "development") {
 
-      app.locals.publishPage('default', {...data, ...page})
+    for (page of app.locals.site.pages) {
+      if (page.publishedDate) {
+        const data = fse.readJsonSync(app.locals.pageDir + "/published/" + page.link + ".json")
+        
+        app.locals.publishPage('default', {...data, ...page})
+      }
     }
-  }
+
+  } 
 
 }
 

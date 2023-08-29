@@ -1,20 +1,17 @@
 <form id="pageForm" class="accordion">
-  <div class="accordion-item">
-    <h2 class="accordion-header">
-      <button
-        class="accordion-button collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#collapseOne"
-        aria-expanded="true"
-        aria-controls="collapseOne">
-        Page Details
+  <section class="roller">
+    <header class="roller-header">
+      <button type="button" class="button-ghost roller-toggle no-left no-right">
+        <h1>Page Details</h1>
+        <%- include("../components/icon-svg", {id:"chevron", 
+                                               color: "black", 
+                                               width: 24})%>
       </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-      <div class="accordion-body"><%- include("details")%></div>
+    </header>
+    <div class="roller-body">
+      <%- include("details")%>
     </div>
-  </div>
+  </section>
   <%- include("./section-select")%>
   <div id="sectionAnchor">
     <%- include("./sections")%>

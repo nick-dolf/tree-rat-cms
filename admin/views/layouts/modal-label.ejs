@@ -1,0 +1,32 @@
+<!-- Label Modal -->
+<div class="modal fade mt-5" id="label-modal" tabindex="-1" aria-labelledby="label-modalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="label-modalLabel">
+          Add A Label
+        </h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="label-form">
+          <div class="input-group">
+            <label for="add-label-input" class="input-group-text">Label</label>
+            <input type="text" name="label" id="add-label-input" class="form-control" />
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="button button-cancel" data-bs-dismiss="modal">Cancel</button>
+        <%- include("../components/button", 
+            {arg:{text: "Add", 
+                  color:"action", 
+                  extraClass:"label-change",
+                  bsDismiss: "modal", 
+                  cmsForm: "label-form",
+                  cmsAnchor:"accordionPageAnchor",
+                  cmsText: "Adding label"}}) %>
+      </div>
+    </div>
+  </div>
+</div>

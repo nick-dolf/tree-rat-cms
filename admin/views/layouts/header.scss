@@ -1,6 +1,7 @@
 .site-header {
-  background-color: $tree-bark;
+  background-color: $tree-green;
   color: white;
+
   
   .content {
     display: flex;
@@ -16,8 +17,8 @@
     @include scrollbars;
     max-width: 100%;
     overflow-x: hidden !important;
-    
-    background: black;
+    border-radius: 16px;
+
     height:100px;
     width: 100%;
     padding: 4px;

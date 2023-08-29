@@ -4,6 +4,7 @@
   content.alt = "Squirrel on tree."
   content.overlay = "yes"
 } %>
+<div class="white-back">
 
 <!-- Image -->
 <%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
@@ -25,4 +26,5 @@
     <%- include("../../section-helpers/select", { slug: "overlay", label: "Gradient Overlay", options : [{slug: "no",
     label:"No"},{slug: "yes", label: "Yes"}]}) %>
   </div>
+</div>
 </div>

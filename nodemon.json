@@ -1,5 +1,5 @@
 {
   "watch": ["treerat.js", "views", "admin", "assets"],
   "ext": "js, scss, ejs, svg",
-  "ignore": ["blocks.scss","sections.scss", "admin/assets/script.js"]
+  "ignore": ["views/blocks/blocks.scss","views/sections/sections.scss", "admin/assets/script.js"]
 }

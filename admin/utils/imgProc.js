@@ -25,11 +25,6 @@ function publishImg(img, options, promises) {
 
   let promise = convertImages(image, imgName, options)
 
-  // let promise = new Promise((resolve, reject) => {
-  //   setTimeout(() => {
-  //     resolve("foo");
-  //   }, 500);
-  // });
   if(promises) {
     promises.push(promise)
   }

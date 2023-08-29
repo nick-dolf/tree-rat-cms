@@ -2,14 +2,14 @@
 <%- include("layouts/header")%>
 
 <main class="container">
-  <h1 class="h3 ms-2">Upload Files</h1>
-  <section class="container">
+
+  <section class="p-3">
     <form id="file-form" enctype="multipart/form-data">
-      <input id="file-input" class="form-control my-4" type="file" name="file" accept=".pdf" required multiple>
-      <%- include("./components/button-action", { arg: {text: "Submit", id: "file-submit"}}) %>
+      <input id="file-input" class="form-control mb-3" type="file" name="file" accept=".pdf" required multiple>
+      <%- include("./components/button", { arg: {text: "Upload File(s)", id: "file-submit", color: "action"}}) %>
     </form>
   </section>
-  <section id="file-gallery-anchor" class="container my-3">
+  <section id="file-gallery-anchor" class="container p-3">
     <%- include("layouts/file-gallery") %>
   </section>
 </main>

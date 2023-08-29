@@ -3,7 +3,7 @@
     <!-- Save Page Draft -->
     <%- include("../components/button", 
         {arg:{text: "Save Draft", 
-              color:"success", 
+              color:"action", 
               extraClass:"update me-2",
               id:"saveDraft",
               cmsForm: "pageForm", 
@@ -11,7 +11,7 @@
               cmsUrl:site.url+"admin/pages", 
               cmsAnchor:"pageFormAnchor"}}) %>
 
-    <a href="<%= site.url %>admin/drafts/<%= page.link %>" class="btn btn-primary">View Draft</a>
+    <a href="<%= site.url %>admin/drafts/<%= page.link %>" class="button button-link">View Draft</a>
   </div>
   <div class="preview mt-2">
     <div id="previewSizes" class="d-flex justify-content-center gap-3 my-3">

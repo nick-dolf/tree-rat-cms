@@ -1,12 +1,38 @@
-<header class="site-header ">
-  <div class="container content py-3">
+<% if (!page) page = {} %>
+<header class="site-header container">
+  <div class="content p-3">
     <div id="output" class="order-md-1 overflow-auto"></div>
     <div>
       <h1><a href="<%= site.url %>admin/" class="text-white link-underline link-underline-opacity-0 link-underline-opacity-100-hover">Tree Rat CMS</a></h1>
       <nav class="d-flex justify-content-start gap-3 ">
-        <a href="<%= site.url %>admin/pages" class="btn btn-primary">Pages</a>
-        <a href="<%= site.url %>admin/images" class="btn btn-primary">Images</a>
-        <a href="<%= site.url %>admin/files" class="btn btn-primary">Files</a>
+
+        <!-- Pages -->
+        <% if(page.link == "pages") { %>
+          <button class="button button-link" disabled>Pages</button>
+        <% } else { %>
+          <a href="<%= site.url %>admin/pages" class="button button-link">Pages</a>
+        <% } %>
+
+        <!-- Images -->
+        <% if(page.link == "images") { %>
+          <button class="button button-link" disabled>Images</button>
+        <% } else { %>
+          <a href="<%= site.url %>admin/images" class="button button-link">Images</a>
+        <% } %>
+
+        <!-- Files -->
+        <% if(page.link == "files") { %>
+          <button class="button button-link" disabled>Files</button>
+        <% } else { %>
+          <a href="<%= site.url %>admin/files" class="button button-link">Files</a>
+        <% } %>
+
+        <!-- Dev only -->
+        <% if(page.link == "dev") { %>
+          <button class="button button-link" disabled>Dev</button>
+        <% } else { %>
+          <a href="<%= site.url %>admin/dev" class="button button-link">Dev</a>
+        <% } %>
       </nav>
     </div>
   </div>

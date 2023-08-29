@@ -108,7 +108,7 @@ $(document).on("click", ".image-delete", (event) => {
       .done((response) => {
         output("delete request was successful");
         console.log("delete success", response);
-        button.closest(".image-card").remove();
+        button.closest(".card-image").remove();
       })
       .fail((response) => {
         output("delete request failed: " + response.responseText, true);

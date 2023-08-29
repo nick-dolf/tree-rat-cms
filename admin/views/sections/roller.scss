@@ -1,0 +1,143 @@
+.roller {
+  color: black;
+  margin-bottom: 8px;
+
+  .roller-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .handle {
+    border-radius: $border-radius 0 0 $border-radius;
+    background-color: $white-trans;
+    width: 80px;
+    text-align: center;
+    transition: all $transition-std;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background-color: $tree-bark;
+    }
+  }
+
+  .roller-toggle {
+    background-color: $white-trans;
+    padding: 0 20px 0 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    transition: all $transition-std;
+
+    &.no-left {
+      border-top-left-radius: $border-radius;
+      border-bottom-left-radius: $border-radius;
+    }
+
+    &.no-right {
+      border-top-right-radius: $border-radius;
+      border-bottom-right-radius: $border-radius;
+    }
+
+    &:hover {
+      color: white;
+      background-color: $tree-bark;
+    }
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 0 0 4px 0;
+  }
+
+  svg {
+    transition: transform $transition-std;
+  }
+
+  .roller-actions {
+    flex-shrink: 0;
+    height: 40px;
+    text-align: center;
+    border-radius: 0 $border-radius $border-radius 0;
+    
+    .button {
+      border-radius: 0 ;
+    }
+
+    .button-toggle {
+      border-radius: 0 $border-radius $border-radius 0;
+    }
+  }
+
+  .roller-body {
+    border-radius: 0 0 $border-radius $border-radius;
+
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height $transition-std;
+  }
+
+  .roller-body.show-on-load {
+      max-height: none;
+      overflow: visible;
+  }
+
+  .roller-body.show {
+      animation-name: delay-overflow;
+      animation-delay: $transition-std;
+      animation-fill-mode: forwards;
+  }
+
+  .roller-content {
+    background-color: $white-trans;
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+  
+  .roller-content-shadow {
+    box-shadow: 0 0 0 16px $white-trans;
+    border-radius: 0 0 $border-radius $border-radius;
+  }
+
+  .roller-header.show-on-load {
+    .roller-toggle > svg {
+      transform: rotateX(180deg);
+    }
+
+    .handle,
+    .no-left {
+      border-bottom-left-radius: 0;
+    }
+
+    .no-right,
+    .roller-actions,
+    .button-toggle {
+      border-bottom-right-radius: 0;
+    }
+  }
+
+  .roller-header.show {
+    .roller-toggle > svg {
+      transform: rotateX(180deg);
+    }
+
+    .handle,
+    .no-left {
+      border-bottom-left-radius: 0;
+    }
+
+    .no-right,
+    .roller-actions,
+    .button-toggle {
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+@keyframes delay-overflow {
+  to {
+    overflow: visible;
+  }
+}

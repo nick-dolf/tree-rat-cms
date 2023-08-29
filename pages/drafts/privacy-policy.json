@@ -5,7 +5,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "columnOne": "# Privacy Policy\r\nLast Updated: 01/01/2023\r\n\r\nThis privacy policy (the \"Privacy Policy\") applies to this Website. We at Cannabis Equity IL (“us,” “our” “we,” or “Cannabis Equity”) consider the protection of your personal information to be a priority when you visit our Website, www.cannabisquityil.org, (the “Website”). The purpose of this Privacy Policy is to disclose to you what information we may collect, how we may collect it, with whom we may share it, and certain other matters related to such information, including the choices you have regarding our collection of information and our use and disclosure to other parties of information we may have collected from you.\r\n\r\nWe reserve the right to modify this Privacy Policy at any time without notice (for example, if we modify our practices regarding the collection or use of information). We will revise our Last Updated date to reflect any revisions to this Privacy Policy. Your continued use of the Website following the posting of any revisions shall constitute your acceptance thereof. We own the information collected via the Website and we may use it for our own purposes, including marketing. Please note that this Privacy Policy applies only to information collected on this Website; it does not apply to any other information collected or obtained through other means or information collected by third-parties.\r\n\r\nWhen this Privacy Policy uses the term \"Personally Identifiable Information\" or \"Personal Information,\" we mean information that identifies a particular individual, such as your full name, street address or email address. When other information is associated with personal information, it also becomes personally identifiable information for the purposes of this Privacy Policy.",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
@@ -24,12 +24,29 @@
       "name": "Text Area",
       "collapse": "hide",
       "content": {
-        "columnOne": "1. What Information Is Collected\r\n\r\n2. How Do We Collect Information\r\n\r\n3. How Is your Information Used\r\n\r\n4. Shared Information\r\n\r\n5. Links To Third-party Websites\r\n\r\n6. Information Security\r\n\r\n7. Data Retention Periods\r\n\r\n8. Other State Privacy Rights\r\n\r\n9. General Audience Web Website Not Directed Toward Children\r\n\r\n10. Consent to Privacy Policy\r\n\r\n11. Questions About This Privacy Policy",
+        "columnOne": "1. [What Information Is Collected](#test) \r\n\r\n2. How Do We Collect Information\r\n\r\n3. How Is your Information Used\r\n\r\n4. Shared Information\r\n\r\n5. Links To Third-party Websites\r\n\r\n6. Information Security\r\n\r\n7. Data Retention Periods\r\n\r\n8. Other State Privacy Rights\r\n\r\n9. General Audience Web Website Not Directed Toward Children\r\n\r\n10. Consent to Privacy Policy\r\n\r\n11. Questions About This Privacy Policy",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
           "type": "no",
           "text": "",
           "page": "privacy-policy",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "collapse": "show",
+      "content": {
+        "columnOne": "Normal *markdown* paragraph.\r\n\r\n<p class=\"myclass\">This paragraph has a class \"myclass\"</p>",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "contact-us",
           "link": "",
           "scroll": ""
         },

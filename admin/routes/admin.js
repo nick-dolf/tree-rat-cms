@@ -151,11 +151,7 @@ router.use((req, res, next) => {
 });
 
 router.get("/", (req, res) => {
-  if (process.env.NODE_ENV === "development") {
-    res.adminRender("dashboardDev");
-  } else {
-    res.adminRender("dashboard");
-  }
+  res.adminRender("dashboard");
 });
 
 // routes
@@ -169,5 +165,9 @@ router.use("/sections", require("./sections"));
 router.use("/folders", require("./folders"));
 router.use("/assets", require("./assets"));
 router.use("/assets/images", express.static("images"));
+
+if (process.env.NODE_ENV === "development") {
+  router.use("/dev", require("./dev"));
+} 
 
 module.exports = router;
