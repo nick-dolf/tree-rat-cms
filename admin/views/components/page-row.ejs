@@ -1,28 +1,28 @@
 <!-- Page List Item for Page Accordion -->
-<li class="list-group-item p-1 <% if (page.newPage == page.link) { %>border rounded bg-success-subtle<% } %>">
+<li class="list-group-item p-1 <% if (page.newPage == page.link) { %>border rounded new<% } %>">
   <div class="row">
     <% if (page.publishedDate) { %>
     <!-- Page Name -->
     <div class="col-sm-4">
       <% let link = (page.link == "home" ? "" : page.link) %>
-      <a href="<%- site.url + link %>" class="link-dark h5"><%= page.name %></a>
+      <a href="<%- site.url + link %>" class="link-dark h5 m-0"><%= page.name %></a>
     </div>
     <!-- Published -->
     <div class="col-sm-4 my-2 d-flex align-items-center">
       <%- include("../components/icon-svg", {id: "check-square-fill", 
-                                             width: 20}) %>
+                                             width: 20,}) %>
       <span class="ms-2">Published</span>
     </div>
     <% } else { %>
     <!-- Page Name -->
     <div class="col-sm-4">
-      <h2 class="h5"><%= page.name %></h2>
+      <h2 class="h5 m-0"><%= page.name %></h2>
     </div>
     <!-- Not Published -->
     <div class="col-sm-4 my-2 d-flex align-items-center">
       <%- include("../components/icon-svg", {id: "x-square-fill", 
                                              width: 20,
-                                             color: "text-secondary"}) %>
+                                             color: "text-black"}) %>
       <span class="ms-2">Not Published</span>
     </div>
     <% } %>

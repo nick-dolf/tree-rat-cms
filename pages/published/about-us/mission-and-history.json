@@ -54,7 +54,7 @@
       "template": "history",
       "name": "History",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "History",
         "events": [
@@ -85,7 +85,7 @@
             "collapse": "hide",
             "content": {
               "date": "2021",
-              "paragraph": "The Coalition celebrates the passing of HB1443, legislation that Coalition members helped draft, secures the first of a number of grants for its work in community policy research, advocacy training, and education, and forms committees to research key legislative items."
+              "paragraph": "\r\nThe Coalition celebrates the passing of HB1443, legislation that Coalition members helped draft, secures the first of a number of grants for its work in community policy research, advocacy training, and education, and forms committees to research key legislative items."
             }
           },
           {

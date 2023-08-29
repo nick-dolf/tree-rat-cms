@@ -3,12 +3,12 @@
 <template id="<%= section.slug %>-template">
   <section class="roller cms-section <% if ( section.collapse == "show") { %>show-on-load<% } %>">
     <header class="roller-header">
-      <div class="handle">
+      <div class="handle new">
         <%- include("../components/icon-svg", {id:"grip-horizontal", 
                                                color: "black", 
                                                width: 40})%>
       </div>
-      <button type="button" class="button-ghost roller-toggle">
+      <button type="button" class="button-ghost roller-toggle new">
         <h1>
           <%- section.name %>
           <span class="accordion-label">

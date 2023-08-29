@@ -1,5 +1,5 @@
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 mb-3">
   <% for (let i =0; i < page.images.length; i++) { const image = page.images[i]; %>
-    <%- include("../components/image-card", {image, extraClass:"bg-info", index: `new${i}`}) %>
+    <%- include("../components/image-card", {image, extraClass:"new", index: `new${i}`}) %>
   <% } %>
 </div>

@@ -14,6 +14,11 @@
     text-align: center;
     transition: all $transition-std;
 
+    &.new {
+      background: $new;
+      color: white;
+    }
+
     &:hover {
       cursor: pointer;
       color: white;
@@ -31,6 +36,11 @@
     align-items: center;
     height: 40px;
     transition: all $transition-std;
+
+    &.new {
+      background: $new;
+      color: white;
+    }
 
     &.no-left {
       border-top-left-radius: $border-radius;
@@ -98,7 +108,7 @@
   
   .roller-content-shadow {
     box-shadow: 0 0 0 16px $white-trans;
-    border-radius: 0 0 $border-radius $border-radius;
+    border-radius: 0 0 1px 1px;
   }
 
   .roller-header.show-on-load {
