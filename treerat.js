@@ -10,26 +10,28 @@ const fse = require("fs-extra")
 const marked = require("marked");
 marked.setOptions({ breaks: true, mangle: false, headerIds: false });
 const sanitizeHtml = require("sanitize-html");
-// Live Reload
-const livereload = require("livereload");
-const liveReloadServer = livereload.createServer();
 
-const connectLivereload = require("connect-livereload");
-app.use(connectLivereload());
-
-liveReloadServer.server.once("connection", () => {
-  setTimeout(() => {
-    liveReloadServer.refresh("/");
-  }, 100);
-});
 
 build.setup("treerat.json");
-
 
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
   app.use(express.static(app.locals.siteDir));
+
+  // Live Reload
+  const livereload = require("livereload");
+  const liveReloadServer = livereload.createServer();
+
+  const connectLivereload = require("connect-livereload");
+  app.use(connectLivereload());
+
+  liveReloadServer.server.once("connection", () => {
+    setTimeout(() => {
+      liveReloadServer.refresh("/");
+    }, 100);
+  });
+
 } else {
   console.log("Environment: Staging");
 }
