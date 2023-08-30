@@ -46,8 +46,10 @@ function setup(file) {
 
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;
+    app.locals.env = "development"
   } else {
     app.locals.site.url = config.stagingUrl;
+    app.locals.env = "staging"
   }
 
   app.locals.pages = new JsonDb("pages", "link");

@@ -28,10 +28,12 @@
         <% } %>
 
         <!-- Dev only -->
+        <% if(env == "development") { %>
         <% if(page.link == "dev") { %>
           <button class="button button-link" disabled>Dev</button>
         <% } else { %>
           <a href="<%= site.url %>admin/dev" class="button button-link">Dev</a>
+        <% } %>
         <% } %>
       </nav>
     </div>
