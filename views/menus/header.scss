@@ -1,0 +1,161 @@
+.nav-primary {
+  background-color: $white;
+
+  .icon-triangle {
+    display: none;
+    fill: $green-600;
+
+    @include tablet {
+      display: block;
+    }
+  }
+
+  .navigation {
+    color: $green-800;
+
+    @include tablet {
+      color: $green-600;
+    }
+  }
+
+  .icon-plus:before,
+  .icon-plus:after {
+    background-color: $green-800;
+  }
+}
+
+.nav-drop-down-only {
+  margin-top: 32px;
+
+  @include tablet {
+    display: none;
+  }
+
+  .btn {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
+
+.bar {
+  margin-top: 4px;
+  background-color: $white;
+  height: 3px;
+  width: 100%;
+  border-radius: 99px;
+}
+
+.bar.visible {
+  @include tablet {
+    background-color: $green-600;
+  }
+}
+
+.nav-primary .list-item {
+  > .sub-list {
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition: max-height $speed-slow;
+  }
+
+  &.sub-menu-clicked {
+    .icon-triangle {
+      transform: rotate(180deg);
+    }
+
+    .bar {
+      background-color: $green-600;
+    }
+
+    .icon-plus:after {
+      transform: rotate(0);
+    }
+
+    > .sub-list {
+      visibility: visible;
+      max-height: 30rem;
+    }
+  }
+
+  &:active {
+    .icon-plus:before,
+    .icon-plus:after {
+      background-color: $green-400;
+    }
+
+    .navigation {
+      color: $green-400;
+    }
+  }
+
+  .menu-link {
+    padding: 1rem;
+  }
+
+  @include tablet {
+    &:active {
+      .navigation {
+        color: $green-800;
+      }
+
+      .icon-triangle {
+        fill: $green-800;
+      }
+
+      .bar {
+        background-color: $green-800;
+      }
+    }
+
+    &:hover {
+      .sub-list {
+        visibility: visible;
+        max-height: 30rem;
+      }
+
+      .navigation {
+        color: $green-800;
+      }
+
+      .icon-triangle {
+        fill: $green-800;
+      }
+
+      .bar {
+        background-color: $green-800;
+      }
+    }
+  }
+}
+
+.sub-list li {
+  &.current {
+    background-color: $green-600;
+  }
+
+  &.current span {
+    color: $white;
+  }
+
+  @include tablet {
+    &:hover,
+    &:focus-within {
+      background: $green-600;
+      a {
+        color: $white;
+      }
+    }
+
+    &.current {
+    }
+
+    &.current span {
+      color: $white;
+    }
+
+    &:active {
+      background: $green-800;
+    }
+  }
+}

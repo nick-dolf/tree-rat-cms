@@ -1,0 +1,28 @@
+<nav class="nav-primary">
+  <ul class="list list--responsive">
+    <% for (let i = 0; i < site.menus.header.length; i++) { const heading =  site.menus.header[i] %>
+      <li class="list-item">
+        <button class="btn--ghost btn--icons sub-menu-toggle">
+          <span class="icon-plus"></span>
+            <span class="navigation"><%- heading.name %></span>
+            <%- include("../components/icon-svg", {id: "triangle", extraClass: "icon-triangle icon--small"}) %>
+          <span class="bar"></span>
+        </button>
+        <ul class="list sub-list">
+          <% for (menuPage of site.pages){ %>
+            <% if (menuPage.folder == heading.folder && menuPage.publishedDate) { %>
+              <% if (menuPage.link == page.link){ %>
+                <li class="current"><span class="menu-link"><%- menuPage.name %></span></li>
+              <% } else { %>
+                <li><a class="menu-link" href="<%-site.url + menuPage.link%>"><%- menuPage.name %></a></li>
+              <% } %>
+            <% } %>
+          <% } %>
+        </ul>
+      </li>
+    <% } %>
+  </ul>
+  <div class="nav-drop-down-only">
+    <%- include("../components/button-donate") %>
+  </div>
+</nav>

@@ -1,7 +1,7 @@
 <header class="site-header">
   <div class="header__container">
-    <button aria-label="Open primary menu" class="btn--ghost burger-positioner" type="button" name="button" onclick="menuToggle()">
-      <!-- {% include components/icon-hamburger.html %} -->
+    <button id="menu-toggle" aria-label="Open primary menu" class="btn--ghost burger-positioner" type="button" name="button" >
+      <%- include("../components/icon-hamburger") %>
     </button>
     <button aria-label="Open search input" class="btn--ghost search-button search-button-positioner" type="button" name="button" onclick="searchToggle()">
       <%- include("../components/icon-search") %>
@@ -13,11 +13,10 @@
       <%- include("../components/button-donate") %>
     </div>
     <div class="menu-positioner">
-      <!-- {% include menus/header.html %} -->
+      <%- include("../menus/header") %>
     </div>
     <div class="search-form-positioner">
       <%- include("../components/form-search") %>
-      <!-- {% include components/form-search.html %} -->
     </div>
   </div>
 </header>
