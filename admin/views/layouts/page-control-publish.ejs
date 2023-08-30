@@ -1,29 +1,43 @@
 <%- include("../components/page-link") %>
 
 <span class="btn-group dropdown-center">
-  <%- include("../components/button", {arg:{text: "Publish", 
-                                        color:"success", 
-                                        extraClass:"create", 
-                                        cmsForm: "pageForm", 
-                                        cmsText: "Publishing Page", 
-                                        cmsUrl:site.url+"admin/publish/"+page.link, 
-                                        cmsAnchor:"publish-anchor"}})
-                                        %>
   <!-- Published -->
   <% if (page.publishedDate) { %>
-  <button class="btn btn-success dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-    <span class="visually-hidden">Toggle Dropdown</span>
-  </button>
-  <ul class="dropdown-menu btn-success">
-    <li>
+    <div class="button-group">
+      <%- include("../components/button", {arg:{text: "Publish", 
+                                            color:"action", 
+                                            extraClass:"create", 
+                                            cmsForm: "pageForm", 
+                                            cmsText: "Publishing Page", 
+                                            cmsUrl:site.url+"admin/publish/"+page.link, 
+                                            cmsAnchor:"publish-anchor"}})
+                                            %>
+      <button class="button button-action button-toggle">
+        <%- include("../components/icon-svg", {id:"three-dots", 
+                               color: "black", 
+                               width: 18}) %>
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <div class="button-drop">
       <%- include("../components/button", {arg:{text: "Recall", 
                                           color:"danger", 
-                                          extraClass:"delete dropdown-item",
+                                          extraClass:"delete button-drop-item",
                                           cms: page.link, 
                                           cmsUrl: site.url+"admin/publish",
                                           cmsText: "Do you really want to recall:",
                                           cmsAnchor:"publish-anchor"}}) %>
+      </div>
+    </div>
+    <% } else { %>
+      <%- include("../components/button", {arg:{text: "Publish", 
+                                            color:"action", 
+                                            extraClass:"create", 
+                                            cmsForm: "pageForm", 
+                                            cmsText: "Publishing Page", 
+                                            cmsUrl:site.url+"admin/publish/"+page.link, 
+                                            cmsAnchor:"publish-anchor"}})
+                                            %>
     <% } %>
-    </li>
+
   </ul>
 </span>

@@ -5,12 +5,32 @@ $max-site-width: 1600px;
 $std-content-width-percent: 94%;
 $std-content-width-max: 1400px;
 
+/*  */
+$border-radius: 4px;
+
 /* COLOR */
 $blue: #266DD3;
 $accent1: #ffa62b;
 $accent2: #e57a44;
-$charcoal: #344055; 
-$tree-bark: #25150b;
+$charcoal: #344055;
+$tree-bark: rgba($color: #000, $alpha: 0.3);
+$tree-green: rgba($color: #041E42, $alpha: 0.6);
+
+$link: #1434A4;
+$link-hover: #2c80fe;
+$action: #117144;
+$action-hover: #06854a;
+$cancel: #555;
+$cancel-hover: #888;
+$danger: #a91b0d;
+$danger-hover: #c0453a;
+
+$new: rgba($color: #041E42, $alpha: 0.6);
+$brown-trans: rgba($color: #25150B, $alpha: 0.7);
+$dark-trans: rgba($color: #000, $alpha: 0.6);
+$white-trans: rgba($color: #fff, $alpha: 0.94);
+$white-subtle-trans: rgba($color: #fff, $alpha: 0.7);
 
 /* TIMINGS */
+$transition-fast: 0.3s;
 $transition-std: 0.6s;

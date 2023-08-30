@@ -1,5 +1,9 @@
 [
   {
+    "slug": "history",
+    "name": "History"
+  },
+  {
     "slug": "banner",
     "name": "Banner"
   },
@@ -19,7 +23,6 @@
     "slug": "quick-links",
     "name": "Quick Links"
   },
-
   {
     "slug": "text-area",
     "name": "Text Area"

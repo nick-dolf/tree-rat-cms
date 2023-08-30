@@ -1,0 +1,55 @@
+.history {
+
+  @include spacing-skinny-nopad;
+
+  h2 {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  .card {
+    margin: 32px 0;
+    padding: 0;
+  }
+
+  .card-image-container {
+    margin: 2rem 0;
+    padding: 0;
+    gap: 0;
+
+    @include tablet {
+      gap: 3.2rem;
+    }
+  }
+
+  .text-container {
+
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+.purple-box {
+  background-color: $purple-600;
+  color: $white;
+  padding: 3.2rem;
+  text-align: center;
+  min-width: 18rem;
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  @include tablet {
+
+    span {
+      display: block;
+    }
+  }
+}

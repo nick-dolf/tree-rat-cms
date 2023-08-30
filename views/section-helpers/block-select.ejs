@@ -1,15 +1,16 @@
 <% index += `[${slug}]`%>
-<div class="block-controller">
+<div class="block-controller p-2">
 <!-- Block Select -->
-<div class="brown p-2 rounded-top">
-  <div class="row align-items-center">
-    <div class="input-group col-md">
+<div class="rounded-top mb-2 d-flex justify-content-between">
+  <h3 class="text-white m-0">Blocks</h2>
+  <div class="block-select-container">
+    <div class="input-group">
       <select class="form-select block-select">
         <% for (let i =0; i < blocks.length; i++) { %>
         <option value="<%= blocks[i].slug %>"><%= blocks[i].name %></option>
         <% } %>
       </select>
-      <button class="btn btn-success block-add" type="button" data-cms="<%- index %>[0]">Add</button>
+      <button class="button button-action block-add" type="button" data-cms="<%- index %>[0]">Add</button>
     </div>
   </div>
 </div>

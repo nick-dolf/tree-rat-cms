@@ -12,6 +12,7 @@
   content.style = "horizontal"
   content.color = "green"
 } %>
+<div class="white-back">
 
 <!-- Heading -->
 <%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
@@ -31,4 +32,5 @@
     <%- include("../../section-helpers/select", { slug: "color", label: "Background Color", options : [{slug: "green",
     label:"Green"},{slug: "purple", label: "Purple"}]}) %>
   </div>
+</div>
 </div>

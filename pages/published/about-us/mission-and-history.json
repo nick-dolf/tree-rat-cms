@@ -1,0 +1,142 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": "20220309_112302.jpg",
+        "alt": "Coalition members gathered before an outing",
+        "heading": "Our Story",
+        "paragraph": "Elevating community voices and collaborating with partners to create change in the cannabis industry",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "# Mission\r\n\r\nFounded in 2019, the Cannabis Equity Illinois Coalition is a grassroots nonprofit that advances equity in the State of Illinois by elevating community voices and collaborating with partners to create change in the cannabis  industry. \r\n\r\nWe fight to make sure the legalization of cannabis in Illinois repairs and reinvests in the communities most impacted by the War on Drugs, and to ensure the cannabis industry prioritizes people over profits.",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "flashy"
+      }
+    },
+    {
+      "template": "line",
+      "name": "Line",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "style": "dashed"
+      }
+    },
+    {
+      "template": "history",
+      "name": "History",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "History",
+        "events": [
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2019",
+            "collapse": "hide",
+            "content": {
+              "date": "2019",
+              "paragraph": "During a series of town hall meetings hosted across the South Side of Chicago by Illinois legislators, community members demanded accountability and transparency in the legalization law. This leads to the first Coalition meeting at the Port Ministries in Back of the Yards where the group develops a list of priorities for legalized cannabis. During the Coalition’s first year, they met with lawmakers to share their strategies to achieve equity & justice, participated in National Expungement Week events, and launched the Know Your Rights program."
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2020",
+            "collapse": "show",
+            "content": {
+              "date": "2020",
+              "paragraph": "The Coalition organizes the first ever Community Benefits Agreement for a cannabis business in the nation, holds its first fundraiser raising thousands of dollars for record clearing programming, and launches an expanded expungement program that includes RAP Sheet Assistance Day, a community resource fair, and virtual resource fair."
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2021",
+            "collapse": "hide",
+            "content": {
+              "date": "2021",
+              "paragraph": "\r\nThe Coalition celebrates the passing of HB1443, legislation that Coalition members helped draft, secures the first of a number of grants for its work in community policy research, advocacy training, and education, and forms committees to research key legislative items."
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2022",
+            "collapse": "hide",
+            "content": {
+              "date": "2022",
+              "paragraph": "The Coalition launches a community legislative working group and invites the community to learn and engage with the legislative session. The Coalition also hosts its first in-person fundraiser in partnership with Hush raising thousands of dollars to support our ongoing community programs."
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "Today",
+            "collapse": "show",
+            "content": {
+              "date": "Today",
+              "paragraph": "Since Legalization, the Coalition has continued to meet weekly, advocate for impacted communities in policy, organize events & campaigns to promote our mission, and watchdog the state & the cannabis industry as legalization is implemented."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "line",
+      "name": "Line",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "style": "dashed"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "# A Grassroots Approach\r\n\r\nThe Coalition organizes as a grassroots collective to expand opportunities for record clearing in Chicagoland and across Illinois, and to educate communities about their rights and record clearing opportunities.\r\n\r\nThe Coalition utilizes its grassroots strength to advocate for ‘Plus-1’ dispensaries to sign onto Community Benefits Agreements, tying the economic success of those dispensaries to impacted communities.\r\n\r\nThe Coalition's grassroots structure shapes the development of the Coalition's legislative priorities, as we gather community feedback to ensure we're fighting for changes that will bring the largest benefit to communities.",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    }
+  ]
+}

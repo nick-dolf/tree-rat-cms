@@ -1,3 +1,18 @@
+$(document).on("click", ".button-toggle", (event) => {
+  const button = event.currentTarget;
+  const group = $(button.closest(".button-group"));
+
+  if (group.hasClass("show")) {
+    group.toggleClass("show");
+  } else {
+    $(".button-group").removeClass("show");
+    group.toggleClass("show");
+  }
+});
+
+$(document).on("click", ".button-drop-item", (event) => {
+  $(".button-group").removeClass("show");
+});
 /**
  * CRUD
  */
@@ -98,10 +113,9 @@ $(document).on("click", ".add", (event) => {
   let unique = new Date().getTime();
 
   $(button.dataset.cmsAnchor).prepend($(`#${selected.val()}-template`)
-    .html().replace(/qq.*q/g, `qq${unique}q`));
+    .html());
 
   orderSections();
-  initSortable();
   $(".toggle").trigger("change");
 });
 
@@ -135,8 +149,6 @@ $(document).on("click", ".block-add", (event) => {
   $(".toggle").trigger("change");
 });
 
-
-
 $(document).on("click", ".section-delete", (event) => {
   const button = event.currentTarget;
   const deleteSection = button.dataset.cms;
@@ -148,8 +160,21 @@ $(document).on("click", ".section-delete", (event) => {
   }
 });
 
+$(document).on("click", ".copy", (event) => {
+  const button = event.currentTarget;
+
+  const copy = $(button.closest(button.dataset.cmsTarget))
+  const parent = copy.parent()
+  parent.prepend(copy.clone())
+
+  orderSections();
+  initSortable();
+});
+
 function orderSections() {
+  console.log("ordering sections")
   $(".cms-section").each((sectionIndex, sectionItem) => {
+    // Form names
     $(sectionItem)
       .find("[name*='section']")
       .each((index, item) => {
@@ -393,7 +418,7 @@ $(document).on("click", ".image-delete", (event) => {
       .done((response) => {
         output("delete request was successful");
         console.log("delete success", response);
-        button.closest(".image-card").remove();
+        button.closest(".card-image").remove();
       })
       .fail((response) => {
         output("delete request failed: " + response.responseText, true);
@@ -423,6 +448,30 @@ $(".image-change").click((event) => {
     .children("img")
     .attr("src", button.dataset.cmsFolder + "thumb/" + button.dataset.cmsImage);
   $(activeImage).closest("div").find("textarea[name*=alt]").val(button.dataset.cmsText)
+});
+
+/*
+/ Label Sections and block
+*/
+let activeLabel;
+
+$(document).on("click", ".label-set-active", (event) => {
+  activeLabel = event.currentTarget;
+});
+
+$(".label-change").click((event) => {
+  const label = $("#add-label-input").val();
+
+  $(activeLabel)
+    .closest(".roller")
+    .find("input[name*=label]")
+    .first()
+    .val(label);
+  $(activeLabel)
+    .closest(".roller")
+    .find(".accordion-label")
+    .first()
+    .html("&nbsp;- " + label);
 });
 
 /**
@@ -460,6 +509,9 @@ function output(message, fail) {
   $("#output").animate({ scrollTop: 0 }, "fast");
 }
 
+window.addEventListener("load", (event) => {
+  document.body.classList.remove("preload")
+});
 function reloadPreview() {
   $("#previewFrame")[0].contentWindow.location.reload(true);
 }
@@ -495,6 +547,51 @@ $("input[name='previewSize']").on("change", function () {
   }
 
   reloadPreview();
+});
+
+let activeTransition = false;
+
+$(document).on("click", ".roller-toggle", (event) => {
+  if (!activeTransition) {
+    activeTransition = true;
+    const button = event.currentTarget;
+    const roller = $(button.closest(".roller"));
+    const rollerHeader = roller.find(".roller-header").first();
+    const rollerBody = roller.find(".roller-body").first();
+    const memory = roller.find(".remember-collapse").first();
+
+    if (rollerHeader.hasClass("show-on-load")) {
+      rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
+      rollerBody.css("overflow", "hidden");
+      memory.val("hide");
+      
+      setTimeout(() => {
+        rollerBody.css("max-height", 0);
+        rollerHeader.removeClass("show-on-load");
+        rollerBody.removeClass("show-on-load");
+        activeTransition = false;
+      }, 10);
+    } else {
+      rollerHeader.toggleClass("show");
+      rollerBody.toggleClass("show");
+      
+      if (rollerBody.css("max-height") == "0px") {
+        rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
+        memory.val("show");
+        setTimeout(() => {
+          rollerBody.css("max-height", "none");
+          activeTransition = false;
+        }, 700);
+      } else {
+        rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
+        memory.val("hide");
+        setTimeout(() => {
+          rollerBody.css("max-height", 0);
+          activeTransition = false;
+        }, 10);
+      }
+    }
+  }
 });
 
 /**

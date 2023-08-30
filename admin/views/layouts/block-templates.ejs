@@ -1,38 +1,73 @@
 <!-- Block Templates -->
 <% for (let i =0; i < site.blocks.length; i++) {const block = site.blocks[i]; const index = "ww0ww";%>
 <template id="<%= block.slug %>-block-template">
-<div class="accordion-item cms-block">
-  <!-- Accordion Header -->
-  <div class="row align-items-baseline">
-    <%- include("../components/accordion-handle") %>
-    <%- include("../components/accordion-header", 
-                { name: block.name,
-                  collapse: "hide", 
-                  extraClass: "bg-success-subtle",
-                  index: "qqoq" }) %>
-    <%- include("../components/accordion-button", 
-                { name: block.name,
-                  removeTarget: ".cms-block",
-                  labelTarget: "" }) %>
-  </div>
-  <!-- Accordion Body -->
-  <div id="collapse-qq0q" class="accordion-collapse collapse" 
-       data-bs-parent="#accordionExample">
-    <div class="accordion-body">
-      <input type="text" name="<%- index %>[template]" 
-             value="<%= block.slug %>" hidden />
+  <section class="roller cms-block">
+    <header class="roller-header">
+      <div class="handle new">
+        <%- include("../components/icon-svg", {id:"grip-horizontal", 
+                                               color: "black", 
+                                               width: 40})%>
+      </div>
+      <button type="button" class="button-ghost roller-toggle new">
+        <h1>
+          <%- block.name %>
+          <span class="accordion-label">
+            <% if (block.label) { %>
+            <%- "&nbsp;- " + block.label %>
+            <% } %>
+          </span>
+        </h1>
+        <%- include("../components/icon-svg", {id:"chevron", 
+                                               color: "black", 
+                                               width: 24})%>
+      </button>
+      <div class="button-group roller-actions">
+        <%- include("../components/button", 
+                      {arg:{text: "Label", 
+                            color:"action", 
+                            extraClass:"label-set-active", 
+                            bsToggle:"modal",
+                            bsTarget:"#label-modal",
+                            cmsTarget: ".cms-block",
+                            cmsText: block.name }}) %>
+        <button type="button" class="button button-action button-toggle">
+          <%- include("../components/icon-svg", {id:"three-dots", 
+                                 color: "black", 
+                                 width: 18}) %>
+          <span class="visually-hidden">Toggle Dropdown</span>
+        </button>
+        <div class="button-drop">
+          <%- include("../components/button", 
+                    {arg:{text: "Copy", 
+                          color:"action", 
+                          extraClass:"copy button-drop-item", 
+                          cmsTarget: ".cms-block" }}) %>
+        <%- include("../components/button", 
+                    {arg:{text: "Remove", 
+                          color:"danger", 
+                          extraClass:"remove dropdown-item", 
+                          cmsTarget: ".cms-block",
+                          cmsText: block.name }}) %>
+        </div>
+      </div>
+    </header>
+    <div class="roller-body">
+      <div class="p-3">
+        <div class="roller-content-shadow">
+        <input type="text" name="<%- index %>[template]" 
+                value="<%= block.slug %>" hidden />
+        <input type="text" name="<%- index %>[name]" 
+                value="<%= block.name %>" hidden />
+        <input type="text" name="<%- index %>[label]" 
+                value="<%= block.label %>" hidden />
+        <input class="remember-collapse" type="text" name="<%- index %>[collapse]" value="hide" hidden />
 
-      <input type="text" name="<%- index %>[name]" 
-             value="<%= block.name %>" hidden />
-      
-      <input class="remember-collapse" type="text" name="<%- index %>[collapse]" value="hide" hidden />
-
-      <%- include("../../../views/blocks/"+block.slug+"/admin-"+block.slug, 
-                  { index: index+"[content]", content: {default: true} }) %>
-
+        <%- include("../../../views/blocks/"+block.slug+"/admin-"+block.slug, 
+                    { index: index+"[content]", content: {default: true} }) %>
+        </div>
+        </div>
     </div>
-  </div>
-
-</div>
+  </section>
+  
 </template>
 <% } %>

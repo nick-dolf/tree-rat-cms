@@ -1,15 +1,14 @@
 <%- include("base/head", { page: { title: "Pages", description: "Manage Pages" }})%> 
 <%- include("layouts/header")%>
 
-<main>
-  <section class="container p-3 d-flex gap-3 justify-content-start">
-    <%- include("./components/button-action", 
-                { arg: {text: "Add Folder", 
-                  id:"folder-add", 
-                  bsToggle:"modal",
-                  bsTarget:"#addFolderModal"}}) %> 
+<main class="container">
+  <section class="p-3 d-flex gap-3 justify-content-start">
+    <button id="folder-add" class="button button-action" data-bs-toggle="modal" data-bs-target="#addFolderModal">Add Folder</button>
   </section>
-  <section id="accordionPageAnchor" class="container page-accordion"><%- include("layouts/page-accordion")%></section>
+
+  <section id="accordionPageAnchor" class="p-3 page-accordion">
+    <%- include("layouts/page-accordion")%>
+  </section>
 </main>
 
 <%- include("base/foot")%>

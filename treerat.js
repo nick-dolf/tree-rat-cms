@@ -56,7 +56,9 @@ app.use((req, res, next) => {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
       }
       Promise.all(promises).then(() => {
-        res.send(html);
+        setTimeout(() => {
+          res.send(html);
+        }, 200)
       })
     });
   };

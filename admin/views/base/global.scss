@@ -1,7 +1,24 @@
+html {
+  scrollbar-gutter: stable;
+}
+
+body {
+  background-image: url('background-opt.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 0;
+}
+
 main {
   font-size: 0;
+  background-color: $tree-bark;
+  color: white;
+  min-height: calc(100vh - 134px);
 
   & > * {
     font-size: 1rem;
   }
+
+
 }

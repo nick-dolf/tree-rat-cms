@@ -1,39 +1,74 @@
 <% const idIndex = index.replace(/[\[\]]/g, "")+slug %>
 <% for (let i =0; i < blocks.length; i++) { const block = blocks[i]; %>
 
-<div class="accordion-item cms-block">
+<section class="roller cms-block">
 
-  <div class="row align-items-baseline">
-    <%- include("../components/accordion-handle") %>
-    <%- include("../components/accordion-header", 
-                { name: block.name, 
-                  collapse: block.collapse,
-                  index: idIndex+i }) %>
-    <%- include("../components/accordion-button", 
-                { name: block.name,
-                  removeTarget: ".cms-block",
-                  labelTarget: "" }) %>
-  </div>
-
-  <div id="collapse-<%- idIndex+i %>" class="accordion-collapse collapse 
-    <% if ( block.collapse == "show") { %>show<% } %>" 
-    data-bs-parent="#accordionExample">
-    <div class="accordion-body">
+  <header class="roller-header <% if ( block.collapse == "show") { %>show-on-load<% } %>">
+    <div class="handle">
+      <%- include("../components/icon-svg", {id:"grip-horizontal", 
+                                             color: "black", 
+                                             width: 40})%>
+    </div>
+    <button type="button" class="button-ghost roller-toggle">
+      <h1>
+        <%- block.name %>
+        <span class="accordion-label">
+          <% if (block.label) { %>
+          <%- "&nbsp;- " + block.label %>
+          <% } %>
+        </span>
+      </h1>
+      <%- include("../components/icon-svg", {id:"chevron", 
+                                             color: "black", 
+                                             width: 24})%>
+    </button>
+    <div class="button-group roller-actions">
+      <%- include("../components/button", 
+                    {arg:{text: "Label", 
+                          color:"action", 
+                          extraClass:"label-set-active", 
+                          bsToggle:"modal",
+                          bsTarget:"#label-modal",
+                          cmsTarget: ".cms-block",
+                          cmsText: section.name }}) %>
+      <button type="button" class="button button-action button-toggle">
+        <%- include("../components/icon-svg", {id:"three-dots", 
+                               color: "black", 
+                               width: 18}) %>
+        <span class="visually-hidden">Toggle Dropdown</span>
+      </button>
+      <div class="button-drop">
+        <%- include("../components/button", 
+                  {arg:{text: "Copy", 
+                        color:"action", 
+                        extraClass:"copy button-drop-item", 
+                        cmsTarget: ".cms-block" }}) %>
+      <%- include("../components/button", 
+                  {arg:{text: "Remove", 
+                        color:"danger", 
+                        extraClass:"remove dropdown-item", 
+                        cmsTarget: ".cms-block",
+                        cmsText: block.name }}) %>
+      </div>
+    </div>
+  </header>
+  <div class="roller-body <% if ( block.collapse == "show") { %>show-on-load<% } %>">
+    <div class="p-3">
+      <div class="roller-content-shadow">
       <input type="text" name=<%-`${index}[${i}][template]` %> 
              value="<%= block.template %>" hidden />
       <input type="text" name=<%-`${index}[${i}][name]` %>
              value="<%= block.name %>" hidden />
+      <input type="text" name=<%-`${index}[${i}][label]` %>
+             value="<%= block.label %>" hidden />
       <input class="remember-collapse" 
              type="text" name=<%-`${index}[${i}][collapse]` %>
              value="<%= block.collapse %>" hidden />
       
       <%- include("../../../views/blocks/"+block.template+"/admin-"+block.template, { index :
       `${index}[${i}][content]`, content: block.content }) %>
-
-
+      </div>
     </div>
   </div>
-</div>
-
-
+</section>
 <% } %>

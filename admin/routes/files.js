@@ -24,7 +24,7 @@ var upload = multer({ storage: storage });
 / Read (GET)
 */
 router.get("/*", (req, res) => {
-  res.adminRender("files");
+  res.adminRender("files", {link: "files"});
 });
 
 /*

@@ -1,71 +1,50 @@
 <!-- Page List Item for Page Accordion -->
-<% console.log(page) %>
-<li class="list-group-item mb-2 p-1 <% if (page.newPage == page.link) { %>border rounded bg-success-subtle<% } %>">
+<li class="list-group-item p-1 <% if (page.newPage == page.link) { %>border rounded new<% } %>">
   <div class="row">
     <% if (page.publishedDate) { %>
     <!-- Page Name -->
     <div class="col-sm-4">
       <% let link = (page.link == "home" ? "" : page.link) %>
-      <a href="<%- site.url + link %>" class="link-dark h4"><%= page.name %></a>
+      <a href="<%- site.url + link %>" class="link-dark h5 m-0"><%= page.name %></a>
     </div>
     <!-- Published -->
     <div class="col-sm-4 my-2 d-flex align-items-center">
-      <svg
-        viewBox="0 0 16 16"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-        class="text-success mx-1"
-        fill="currentColor">
-        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#check-square-fill" />
-      </svg>
-      <span>Published</span>
+      <%- include("../components/icon-svg", {id: "check-square-fill", 
+                                             width: 20,}) %>
+      <span class="ms-2">Published</span>
     </div>
     <% } else { %>
     <!-- Page Name -->
     <div class="col-sm-4">
-      <h2 class="h4"><%= page.name %></h2>
+      <h2 class="h5 m-0"><%= page.name %></h2>
     </div>
     <!-- Not Published -->
     <div class="col-sm-4 my-2 d-flex align-items-center">
-      <svg
-        viewBox="0 0 16 16"
-        width="20"
-        xmlns="http://www.w3.org/2000/svg"
-        class="text-secondary mx-1"
-        fill="currentColor">
-        <use xlink:href="<%= site.url %>admin/assets/sprites.svg#x-square-fill" />
-      </svg>
-      <span>Not Published</span>
+      <%- include("../components/icon-svg", {id: "x-square-fill", 
+                                             width: 20,
+                                             color: "text-black"}) %>
+      <span class="ms-2">Not Published</span>
     </div>
     <% } %>
     <!-- Actions -->
     <div class="col-sm-4 d-sm-flex justify-content-center justify-content-sm-end align-items-center">
-      <div class="btn-group">
-        <!-- Home is Special -->
-        <% if (page.permalink == "") { %>
-        <a href="<%= site.url %>admin/pages/home" class="btn btn-primary">Edit</a>
-        <!-- Other Pages -->
-        <% } else { %>
-        <!-- <a href="" class="btn btn-primary">Edit</a> -->
-        <a href="<%= site.url %>admin/pages/<%= page.link %>" class="btn btn-primary">Edit</a>
-        <button class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+      <div class="button-group">
+        <a href="<%= site.url %>admin/pages/<%= page.link %>" class="button button-link">Edit</a>
+        <button class="button button-link button-toggle">
+          <%- include("icon-svg", {id:"three-dots", 
+                                 color: "black", 
+                                 width: 18}) %>
           <span class="visually-hidden">Toggle Dropdown</span>
         </button>
-        <ul class="dropdown-menu btn-success">
-          <li>
-            <% if (page.slug != "home") { %>
-            <%- include("../components/button", 
-            {arg:{text: "Delete", 
-                  color:"danger", 
-                  extraClass:"delete dropdown-item", 
-                  cms: page.link,
-                  cmsText: "Do you really want to delete: ", 
-                  cmsAnchor:"accordionPageAnchor",
-                  cmsUrl:site.url+"admin/pages" }}) %>
-              <% } %>
-          </li>
-        </ul>
-        <% } %>
+        <div class="button-drop">
+          <%- include("../components/button", {arg:{text: "Delete", 
+                          color:"danger", 
+                          extraClass:"delete button-drop-item", 
+                          cms: page.link,
+                          cmsText: "Do you really want to delete: ", 
+                          cmsAnchor:"accordionPageAnchor",
+                          cmsUrl:site.url+"admin/pages" }}) %>
+        </div>
       </div>
     </div>
   </div>

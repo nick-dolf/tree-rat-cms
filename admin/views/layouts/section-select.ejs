@@ -1,6 +1,6 @@
-<div class="brown px-3 py-2">
+<div class="py-1">
 <div class="row align-items-center">
-  <h2 class="text-white col-md">Sections</h2>
+  <h2 class="text-white col-md ">Sections</h2>
   <div class="input-group col-md">
     <select name="" id="select-template" class="form-select">
       <% for (let i =0; i < site.sections.length; i++) { %>
@@ -9,8 +9,8 @@
     </select>
     <%- include("../components/button", 
                 {arg:{text: "Add", 
-                      color:"success", 
-                      extraClass:"add",
+                      color:"action", 
+                      extraClass:"add section-add",
                       cmsAnchor:"#sectionAnchor",
                       cmsTarget: "#select-template :selected", 
                       cmsText: "Adding Section" }}) %> 

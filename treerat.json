@@ -7,6 +7,7 @@
   "enableGzipCompression": true,
   "enableAutoPrefixer": true,
   "developmentUrl": "/",
+  "developmentAutoBuildPages": false ,
   "stagingUrl": "/staging/ceic/",
   "productionUrl": "/"
 }

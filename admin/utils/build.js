@@ -35,6 +35,14 @@ function setup(file) {
   // Site variables
   app.locals.site = {};
 
+  app.locals.site.menus = {}
+  app.locals.site.menus.footer = [{"name": "Privacy Policy", "slug": "privacy-policy"},
+                                  {"name": "Terms of Use", "slug": "terms-of-use"},
+                                  {"name": "Contact Us", "slug": "contact-us"}]
+  app.locals.site.menus.header = [{"name": "About Us", "folder": "about-us"},
+                                  {"name": "Our Work", "folder": "our-work"},
+                                  {"name": "Services", "folder": "services"},
+                                  {"name": "Get Involved", "folder": "get-involved"}]
 
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;
@@ -59,13 +67,6 @@ function setup(file) {
 
   app.locals.files = new JsonDb("files", "name");
   app.locals.site.files = app.locals.files.data;
-
-  // try {
-  //   app.locals.site.images = fse.readJsonSync(app.locals.imgDir + "/info.json");
-  // } catch (err) {
-  //   app.locals.site.images = [];
-  //   console.error(err.message);
-  // }
 
   // Make Sure Home Page exists
   app.locals.pages.add({
@@ -161,13 +162,17 @@ function buildSite() {
   /**
    * Publish Pages
    */
-  for (page of app.locals.site.pages) {
-    if (page.publishedDate) {
-      const data = fse.readJsonSync(app.locals.pageDir + "/published/" + page.link + ".json")
+  if (true) {  //process.env.NODE_ENV != "development"
 
-      app.locals.publishPage('default', {...data, ...page})
+    for (page of app.locals.site.pages) {
+      if (page.publishedDate) {
+        const data = fse.readJsonSync(app.locals.pageDir + "/published/" + page.link + ".json")
+        
+        app.locals.publishPage('default', {...data, ...page})
+      }
     }
-  }
+
+  } 
 
 }
 

@@ -8,5 +8,10 @@
     aria-expanded="true"
     aria-controls="collapse-<%-index%>">
     <%- name %>
+    <span class="accordion-label">
+      <% if (locals.label) { %>
+      <%- "&nbsp;- " + locals.label %>
+      <% } %>
+    </span>
   </button>
 </h2>

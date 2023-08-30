@@ -10,10 +10,9 @@ $(document).on("click", ".add", (event) => {
   let unique = new Date().getTime();
 
   $(button.dataset.cmsAnchor).prepend($(`#${selected.val()}-template`)
-    .html().replace(/qq.*q/g, `qq${unique}q`));
+    .html());
 
   orderSections();
-  initSortable();
   $(".toggle").trigger("change");
 });
 
@@ -47,8 +46,6 @@ $(document).on("click", ".block-add", (event) => {
   $(".toggle").trigger("change");
 });
 
-
-
 $(document).on("click", ".section-delete", (event) => {
   const button = event.currentTarget;
   const deleteSection = button.dataset.cms;
@@ -60,8 +57,21 @@ $(document).on("click", ".section-delete", (event) => {
   }
 });
 
+$(document).on("click", ".copy", (event) => {
+  const button = event.currentTarget;
+
+  const copy = $(button.closest(button.dataset.cmsTarget))
+  const parent = copy.parent()
+  parent.prepend(copy.clone())
+
+  orderSections();
+  initSortable();
+});
+
 function orderSections() {
+  console.log("ordering sections")
   $(".cms-section").each((sectionIndex, sectionItem) => {
+    // Form names
     $(sectionItem)
       .find("[name*='section']")
       .each((index, item) => {

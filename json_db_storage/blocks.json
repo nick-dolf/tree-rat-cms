@@ -1,5 +1,9 @@
 [
   {
+    "slug": "event",
+    "name": "Event"
+  },
+  {
     "slug": "link-text-svg",
     "name": "Text Link with Icon"
   },

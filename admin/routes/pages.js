@@ -64,7 +64,7 @@ router.post("*", body("name").isString().isLength({ min: 2 }).trim(), (req, res)
 / Read (GET)
 */
 router.get("/", (req, res) => {
-  res.adminRender("pages");
+  res.adminRender("pages", {link: "pages"});
 });
 
 router.get("/*", (req, res) => {
@@ -125,6 +125,7 @@ router.delete("/*", (req, res) => {
     return res.status(404).send("page not found");
   }
   
+  const folder = page.folder;
   const draftPath = path.join(draftDir, link) + ".json";
   const publishPath = path.join(publishDir, link) + ".json";
   const sitePath = path.join(app.locals.siteDir, link);
@@ -137,7 +138,7 @@ router.delete("/*", (req, res) => {
       if (page.publishedDate) return fse.remove(sitePath)
     })
     .then(() => {
-      res.adminRender("layouts/page-accordion");
+      res.adminRender("layouts/page-accordion", {changedFolder: folder});
     })
     .catch((err) => {
       console.error(err.message);

@@ -32,7 +32,7 @@ var upload = multer({ storage: storage });
 / Read (GET)
 */
 router.get("/*", (req, res) => {
-  res.adminRender("images");
+  res.adminRender("images", {link: "images"});
 });
 
 /*

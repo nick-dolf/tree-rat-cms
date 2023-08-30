@@ -1,0 +1,73 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": "volunteer.jpg",
+        "alt": "A coalition member assisting two other people at a tabling event.",
+        "heading": "Volunteer Opportunities",
+        "paragraph": "We welcome anyone who believes in our mission to get involved! We need all talents to help!",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Biweekly Meeting & Newsletter Signup",
+              "svg": "calendar",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSf5wrfcTJ7UeI6y7ne3F9CeeiNo-7rmSQIbIcXc3Y9cPg2Aug/viewform?fbzx=-2495019821929962422&pli=1",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "# Event Organizers\r\nAre you interested in organizing events like record clearing days or resource fairs? We host them regularly in different areas of the city, and welcome volunteers and community partners to host these events.\r\n\r\n# Fundraisers\r\nHave ideas about fundraising campaigns or other ways to generate revenue? We welcome all support exploring fundraising strategies!\r\n\r\n# Policy Shapers\r\nInterested in shaping policy at the local and state level? We are always looking for people to think of innovative policies to support communities, to create and analyze policies, and to connect directly with our elected officials in advocating for policy change!\r\n\r\n# Creatives\r\nAre you interested in taking photos or videos of movement work? Do you like graphic design? We encourage you to engage with the Coalition, and use our skills to promote our work, present these programs to the public, and more to expand access to our work!\r\n\r\n# Educators\r\nYou know your community best. We welcome anyone interested in expanding education to join our work. You could educate people about legal rights, and how they have been impacted by legal cannabis, as well as political education. This is critical work, and relies on community trust. If this sounds like something you'd like to help out with, hit us up!\r\n\r\n# Donations\r\nBecause of the federal status of cannabis, even though we do not touch the plant at all, there is limited access to funding for this work.\r\n\r\nMost of our members are currently volunteers, and we hope to eventually pay staff for this work full time! Donations help us continue this work by paying staff, and to help us access necessary resources to continue this work. We are organising events like National Expungement Week, Know Your Rights, and resource fairs. Those events are incredibly important but aren’t free! We hope to one day open up a physical office that can be a resource center for the community.",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    }
+  ]
+}

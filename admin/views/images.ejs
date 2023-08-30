@@ -1,15 +1,15 @@
 <%- include("base/head", { page: { title: "Images", description: "Manage Images" }})%>
 <%- include("layouts/header")%>
 
-<main>
-  <section class="container">
+<main class="container">
+  <section class="p-3">
     <div id="input-gallery"></div>
     <form id="image-form" enctype="multipart/form-data">
-      <input id="image-input" class="form-control my-4" type="file" name="pic" accept="image/*" required multiple>
-      <%- include("./components/button-action", { arg: {text: "Submit", id: "image-submit"}}) %>
+      <input id="image-input" class="form-control mb-3" type="file" name="pic" accept="image/*" required multiple>
+      <%- include("./components/button", { arg: {text: "Upload Image(s)", id: "image-submit", color: "action"}}) %>
     </form>
   </section>
-  <section id="image-gallery-anchor" class="container my-3">
+  <section id="image-gallery-anchor" class="p-3">
     <%- include("layouts/image-gallery") %>
   </section>
 

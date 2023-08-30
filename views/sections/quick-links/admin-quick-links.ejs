@@ -1,6 +1,7 @@
 <!-- Default content for template -->
 <% if (content.default) {
-  content.heading = "Squirrel Ipsum"
+  content.default = false
+  content.heading = "Quick Links"
   content.quickLinks = [
   {
     "template": "link-text-svg",
@@ -19,10 +20,10 @@
 ]
 } %>
 
-
+<div class="white-back pb-1">
 <!-- Heading -->
 <%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
-
+</div>
 <!-- Quick Links -->
 <%- include("../../section-helpers/block-select", 
 { slug: "quickLinks",

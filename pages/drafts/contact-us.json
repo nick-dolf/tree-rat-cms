@@ -3,8 +3,53 @@
   "description": "",
   "sections": [
     {
+      "template": "cards-with-links",
+      "name": "Hover Cards",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "cards": [
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "label": "",
+            "collapse": "",
+            "content": {
+              "heading": "Squirrel Ipsum",
+              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "link": {
+                "type": "internal",
+                "page": "home",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "label": "",
+            "collapse": "",
+            "content": {
+              "heading": "Squirrel Ipsum",
+              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://www.youtube.com/watch?v=wfz2fUd-8Tw",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "template": "hero",
       "name": "Hero",
+      "label": "",
       "collapse": "hide",
       "content": {
         "image": "computer-6720x4480.jpg",
@@ -25,6 +70,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
+      "label": "",
       "collapse": "hide",
       "content": {
         "columnOne": "### Email\r\n\r\nCannabisEquityIL@gmail.com - launch email",
