@@ -1,6 +1,6 @@
 .button {
   font-size: 16px;
-  padding: 6px 12px;
+  padding: 6px 14px;
   min-width: 75px;
   min-height: 36px;
   text-align: center;
@@ -11,6 +11,7 @@
   &:hover {
     transition: all $transition-fast;
   }
+  
 }
 
 button:disabled, button:disabled:hover {
@@ -109,5 +110,37 @@ button:disabled, button:disabled:hover {
     .button-drop {
       transform: scaleY(1);
     }
+  }
+}
+
+.button-text {
+  padding: 6px 16px;
+}
+
+.button-svg {
+  position: relative;
+  
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 3px;
+    transform: translateY(-50%);
+    color: transparent;
+    animation: rotating 2s linear infinite;
+  }
+
+  &.spinner {
+    svg {
+      color: white;
+      animation: rotating 2s linear infinite;
+    }
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: translateY(-50%) rotate(0deg);
+  } to {
+    transform: translateY(-50%) rotate(360deg);
   }
 }

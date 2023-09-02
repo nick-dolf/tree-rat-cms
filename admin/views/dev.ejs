@@ -1,10 +1,26 @@
 <%- include("base/head", { page: { title: "Dashboard", description: "Manage Site" }})%> <%- include("layouts/header")%>
 
 <main class="container p-3">
-  <input type="text" class="form-control">
-
   <section class="mb-3">
-    <%- include("components/button-group") %>
+    <button class="button button-svg button-action spinner">Test
+      <svg viewBox="0 0 16 16" fill="currentColor" width="12">
+        <circle cx="8" cy="2" r="2"/>
+        <circle cx="2" cy="6" r="2"/>
+        <circle cx="4" cy="13" r="2"/>
+        <circle cx="12" cy="13" r="2"/>
+        <circle cx="14" cy="6" r="2"/>
+      </svg>
+    </button>
+    <br>
+    <button class="button button-svg button-action">Test
+      <svg viewBox="0 0 16 16" fill="currentColor" width="12">
+        <circle cx="8" cy="2" r="2"/>
+        <circle cx="2" cy="6" r="2"/>
+        <circle cx="4" cy="13" r="2"/>
+        <circle cx="12" cy="13" r="2"/>
+        <circle cx="14" cy="6" r="2"/>
+      </svg>
+    </button>
   </section>
 
   <section id="dev-section-anchor" >

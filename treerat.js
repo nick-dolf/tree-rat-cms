@@ -11,9 +11,7 @@ const marked = require("marked");
 marked.setOptions({ breaks: true, mangle: false, headerIds: false });
 const sanitizeHtml = require("sanitize-html");
 
-
 build.setup("treerat.json");
-
 
 if (process.env.NODE_ENV === "development") {
   console.log("Environment: Development");
@@ -60,7 +58,7 @@ app.use((req, res, next) => {
       Promise.all(promises).then(() => {
         setTimeout(() => {
           res.send(html);
-        }, 200)
+        }, 1000)
       })
     });
   };
@@ -73,6 +71,7 @@ app.use((req, res, next) => {
       if (err) {
         return res.send(`<body >${err.message.replace(/(?:\n)/g, "<br>")}</body>`);
       }
+      
     });
   };
   next();

@@ -1,15 +1,15 @@
 <div class="sticky-top">
   <div class="text-end text-lg-center">
     <!-- Save Page Draft -->
-    <%- include("../components/button", 
-        {arg:{text: "Save Draft", 
+    <%- include("../components/button-spinner", 
+              {text: "Save Draft", 
               color:"action", 
               extraClass:"update me-2",
               id:"saveDraft",
               cmsForm: "pageForm", 
               cmsText: "Saving Draft", 
               cmsUrl:site.url+"admin/pages", 
-              cmsAnchor:"pageFormAnchor"}}) %>
+              cmsAnchor:"pageFormAnchor"}) %>
 
     <a href="<%= site.url %>admin/drafts/<%= page.link %>" class="button button-link">View Draft</a>
   </div>
