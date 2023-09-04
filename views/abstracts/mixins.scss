@@ -210,3 +210,27 @@
     @content;
   }
 }
+
+@mixin scrollbars (
+  $size: 1rem,
+  $foreground-color: $neutral-800,
+  $background-color: $white,
+) {
+  // For Chrome & Safari
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: 4px;
+    border: 2px solid $white;
+  }
+  &::-webkit-scrollbar-track {
+    border-radius: 4px;
+    background: $background-color;
+  }
+
+  // Standard version (Firefox only for now)
+  scrollbar-color: $foreground-color $background-color;
+}

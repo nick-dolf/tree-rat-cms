@@ -1,0 +1,8 @@
+<h3 class="card-slider"><%- content.heading %></h3>
+<p class="card-slider"><%- content.paragraph %></p>
+
+<div class="card-slider">
+  <% if (content.button.type != "no") { %>
+    <%- include("../../components/button", {extraClass:"btn--dark-bg"}) %>
+  <% } %>
+</div>

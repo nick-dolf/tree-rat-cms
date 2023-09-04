@@ -1,0 +1,63 @@
+.card-slider {
+  margin: 0;
+}
+
+h3.card-slider {
+  word-wrap: break-word;
+}
+
+.slider-normal {
+  & .card-slider {
+    width: 310px;
+
+    @include tablet {
+      width: 335px;
+    }
+  }
+
+  & h3.card-slider {
+    padding: 64px 64px 16px 64px;
+    font-size: 6rem;
+    line-height: 7.2rem;
+  }
+
+  & p.card-slider {
+    padding: 0 64px;
+  }
+
+  & div.card-slider {
+    padding: 16px 64px 64px 64px;
+  }
+}
+
+.slider-big {
+  & .card-slider {
+    text-align: left;
+    width: 310px;
+  }
+
+  & h3.card-slider {
+    padding: 32px 32px 16px 32px;
+    font-size: 7.2rem;;
+    line-height: 7.2rem;
+  }
+
+  & p.card-slider {
+    padding: 0 32px;
+  }
+
+  & div.card-slider {
+    padding: 16px 32px 32px 32px;
+  }
+}
+
+
+.slider-green .card-slider {
+  background-color: $green-600;
+  color: white;
+}
+
+.slider-purple .card-slider {
+  background-color: $purple-600;
+  color: white;
+}

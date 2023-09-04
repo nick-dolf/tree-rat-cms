@@ -49,7 +49,7 @@ $(document).on("click", ".update", (event) => {
 
   output(`${button.dataset.cmsText}`);
 
-  button.querySelector(".spinner-border").classList.remove("d-none");
+  button.classList.add("spinner");
   button.disabled = true;
 
   $.ajax({
@@ -72,7 +72,7 @@ $(document).on("click", ".update", (event) => {
       console.log("update fail", response.responseText);
     })
     .always(() => {
-      button.querySelector(".spinner-border").classList.add("d-none");
+      button.classList.remove("spinner");
       button.disabled = false;
     });
 });

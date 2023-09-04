@@ -1,0 +1,11 @@
+<% if (content.default) {
+  content.default = false
+  content.heading = "Squiritur"
+  content.paragraph = "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+} %>
+
+<div class="white-back">
+  <%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
+  <%- include("../../section-helpers/text-area-med", { slug: "paragraph", label: "Paragraph"}) %>
+  <%- include("../../section-helpers/button", { slug: "button", label: "Button" }) %>
+</div>

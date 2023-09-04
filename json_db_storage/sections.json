@@ -1,9 +1,5 @@
 [
   {
-    "slug": "history",
-    "name": "History"
-  },
-  {
     "slug": "banner",
     "name": "Banner"
   },
@@ -12,8 +8,16 @@
     "name": "Hero"
   },
   {
+    "slug": "history",
+    "name": "History"
+  },
+  {
     "slug": "cards-with-links",
     "name": "Hover Cards"
+  },
+  {
+    "slug": "card-image",
+    "name": "Image Card"
   },
   {
     "slug": "line",
@@ -22,6 +26,10 @@
   {
     "slug": "quick-links",
     "name": "Quick Links"
+  },
+  {
+    "slug": "slider",
+    "name": "Slider"
   },
   {
     "slug": "text-area",

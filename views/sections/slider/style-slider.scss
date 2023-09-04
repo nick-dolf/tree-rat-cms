@@ -1,0 +1,37 @@
+.slider {
+  text-align: center;
+  margin: 32px 0;
+  padding: 0 16px;
+  overflow: hidden;
+  width: 100%;
+
+  @include tablet {
+    margin: 64px 0;
+    padding: 0 32px;
+  }
+
+  @include desktop {
+    padding: 0 64px;
+    margin: 64px auto;
+    width: $std-content-width-percent;
+    max-width: $std-content-width-max;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+}
+
+.slider-content-container {
+  overflow-x: scroll;
+  @include scrollbars;
+}
+
+.slider-contents {
+  display: inline-grid;
+  grid-template-rows: auto auto auto;
+  grid-auto-flow: column;
+  column-gap: 32px;
+  justify-items: center;
+}

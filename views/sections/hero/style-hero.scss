@@ -82,7 +82,7 @@
   z-index: 2;
   top: 50%;
   max-height: 95%;
-  color: $white;
+  color: white;
   transform: translateY(-50%);
 
   @include left-margin-abs;
@@ -99,7 +99,7 @@
 .hero-home .hero-overlay {
   position: relative;
   z-index: 2;
-  color: $white;
+  color: white;
   background-color: $black;
   padding: 16px 16px 48px 16px;
 
