@@ -1,3 +1,36 @@
+<!-- Default content for template -->
+<% if (content.default) {
+  content.cards = [
+  {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+              }
+            }
+          }
+        ]
+} %>
+
+
 <div class="white-back pb-1">
 <!-- Heading -->
 <%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>

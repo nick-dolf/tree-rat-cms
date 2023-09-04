@@ -1,18 +1,4 @@
 {
   "title": "",
-  "description": "",
-  "sections": [
-    {
-      "template": "card-image",
-      "name": "Image Card",
-      "label": "",
-      "collapse": "show",
-      "content": {
-        "image": "default.webp",
-        "alt": "Squirrel on tree.",
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui."
-      }
-    }
-  ]
+  "description": ""
 }

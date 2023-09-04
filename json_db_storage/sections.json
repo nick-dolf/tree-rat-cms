@@ -1,13 +1,5 @@
 [
   {
-    "slug": "card-image",
-    "name": "Image Card"
-  },
-  {
-    "slug": "slider",
-    "name": "Slider"
-  },
-  {
     "slug": "banner",
     "name": "Banner"
   },
@@ -24,12 +16,20 @@
     "name": "Hover Cards"
   },
   {
+    "slug": "card-image",
+    "name": "Image Card"
+  },
+  {
     "slug": "line",
     "name": "Line"
   },
   {
     "slug": "quick-links",
     "name": "Quick Links"
+  },
+  {
+    "slug": "slider",
+    "name": "Slider"
   },
   {
     "slug": "text-area",
