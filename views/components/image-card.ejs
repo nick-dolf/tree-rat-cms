@@ -1,0 +1,9 @@
+<% 
+let widths = [554]; 
+let imgName = publishImg(content.image, { width: 554, height: 320, widths}, locals.promises) 
+%>
+<picture>
+  <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-554.webp" />
+
+  <img class="card-image" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="554" height="320" alt="<%- content.alt %>" />
+</picture>
