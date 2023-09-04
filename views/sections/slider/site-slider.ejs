@@ -1,0 +1,16 @@
+<section class="slider">
+  <h2><%- content.heading %></h2>
+
+  <div class="slider-content-container 
+              slider-<%-content.style%> 
+              slider-<%-content.color %>">
+    
+    <div class="slider-contents">
+      <% if (content.cards) for (card of content.cards) { %> 
+      <%- include(`../../blocks/${card.template}/site-${card.template}`,
+                  { content : card.content }) %> 
+      <% } %>
+    </div>
+    
+  </div>
+</section>

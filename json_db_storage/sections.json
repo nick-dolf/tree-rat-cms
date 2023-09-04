@@ -1,7 +1,7 @@
 [
   {
-    "slug": "history",
-    "name": "History"
+    "slug": "slider",
+    "name": "Slider"
   },
   {
     "slug": "banner",
@@ -10,6 +10,10 @@
   {
     "slug": "hero",
     "name": "Hero"
+  },
+  {
+    "slug": "history",
+    "name": "History"
   },
   {
     "slug": "cards-with-links",

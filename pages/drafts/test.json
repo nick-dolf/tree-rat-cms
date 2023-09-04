@@ -15,8 +15,9 @@
         "button": {
           "type": "no",
           "text": "",
-          "page": "get-involved/volunteer",
+          "page": "test",
           "link": "",
+          "file": "alliance-priorities-one-pager-_-4_5.pdf",
           "scroll": ""
         },
         "style": "standard",
@@ -24,83 +25,134 @@
       }
     },
     {
-      "template": "history",
-      "name": "History",
+      "template": "quick-links",
+      "name": "Quick Links",
       "label": "",
       "collapse": "hide",
       "content": {
-        "heading": "History",
-        "events": [
+        "heading": "Quick Links",
+        "quickLinks": [
           {
-            "template": "event",
-            "name": "Event",
-            "label": "2019",
-            "collapse": "hide",
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
             "content": {
-              "date": "2019",
-              "paragraph": "During a series of town hall meetings hosted across the South Side of Chicago by Illinois legislators, community members demanded accountability and transparency in the legalization law. This leads to the first Coalition meeting at the Port Ministries in Back of the Yards where the group develops a list of priorities for legalized cannabis. During the Coalition’s first year, they met with lawmakers to share their strategies to achieve equity & justice, participated in National Expungement Week events, and launched the Know Your Rights program."
-            }
-          },
-          {
-            "template": "event",
-            "name": "Event",
-            "label": "2020",
-            "collapse": "hide",
-            "content": {
-              "date": "2020",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui."
-            }
-          },
-          {
-            "template": "event",
-            "name": "Event",
-            "label": "2021",
-            "collapse": "hide",
-            "content": {
-              "date": "2021",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui."
-            }
-          },
-          {
-            "template": "event",
-            "name": "Event",
-            "label": "2022",
-            "collapse": "hide",
-            "content": {
-              "date": "2022",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui."
-            }
-          },
-          {
-            "template": "event",
-            "name": "Event",
-            "label": "Today",
-            "collapse": "hide",
-            "content": {
-              "date": "Today",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+              "text": "Squirrel Ipsum",
+              "svg": "video",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
             }
           }
         ]
       }
     },
     {
-      "template": "banner",
-      "name": "Banner",
+      "template": "slider",
+      "name": "Slider",
       "label": "",
       "collapse": "hide",
       "content": {
         "heading": "Squirrel Ipsum",
-        "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
-        "button": {
-          "type": "external",
-          "text": "Squiritur",
-          "page": "test",
-          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
-          "scroll": ""
-        },
-        "style": "horizontal",
-        "color": "green"
+        "style": "big",
+        "color": "purple",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

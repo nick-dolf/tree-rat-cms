@@ -99,9 +99,7 @@ router.put("/*", upload.none(), (req, res) => {
   fse
     .outputFile(pageFile, JSON.stringify(pageData, null, 2))
     .then(() => {
-      setTimeout(() => {
-        res.adminRender("layouts/page-form", pageData );
-      }, 2000)
+      res.adminRender("layouts/page-form", pageData );
     })
     .catch((err) => {
       console.error(err.message);
