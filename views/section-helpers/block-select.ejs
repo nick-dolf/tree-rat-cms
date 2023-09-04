@@ -16,7 +16,6 @@
 </div>
 <!-- Block Content -->
 <div class="block-anchor">
-  <% console.log(content[slug]) %>
 <% if (content[slug]) { %>
 <%- include("../../admin/views/layouts/blocks", {blocks: content[slug], index})%>
 <% } %>
