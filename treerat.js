@@ -88,7 +88,6 @@ app.locals.publishPage = (file, data) => {
       console.error(err.message);
     }
     const link = (data.link != "home" ? "/"+data.link+"/" : "/")
-    console.log(data.link)
     fse.outputFile(app.locals.siteDir + link + "index.html", html)
   });
 };

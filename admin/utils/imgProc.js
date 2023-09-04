@@ -36,11 +36,9 @@ async function convertImages(image, imgName, options) {
   let siteImgDir = path.join(app.locals.siteDir, "assets/images/");
   let imgDir = path.join(app.locals.imgDir, "original");
 
-  const imageBuff = await sharp(`${imgDir}/${image.name}`).toBuffer()
-
   // Produce fallback jpg
   if(!fse.existsSync(siteImgDir + imgName + ".jpg")) {
-    await sharp(imageBuff)
+    await sharp(`${imgDir}/${image.name}`)
       .resize({
         width: options.width,
         height: options.height,
@@ -57,7 +55,7 @@ async function convertImages(image, imgName, options) {
     const imgWidth = width
 
     if(!fse.existsSync(fname)) {
-      await sharp(imageBuff).resize({ width: imgWidth }).webp().toFile(fname);
+      await sharp(`${imgDir}/${image.name}`).resize({ width: imgWidth }).webp().toFile(fname);
     }
   }
 }
