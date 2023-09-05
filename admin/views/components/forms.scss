@@ -1,3 +1,38 @@
 .form-control {
   background: $white-subtle-trans;
 }
+
+.floating-label {
+  position: relative;
+  font-size: 0;
+
+  label {
+    font-size: 14px;
+    line-height: 14px;
+    position: absolute;
+    top: 4px;
+    left: 9px;
+    color: grey;
+  }
+
+  input,
+  select,
+  textarea {
+    border: 1px solid $outline;
+    border-radius: $border-radius;
+    font-size: 16px;
+    line-height: 20px;
+    padding: 20px 8px 4px 8px;
+    width: 100%;
+    background: $white-subtle-trans;
+    
+    &:focus {
+      border: 1px solid black;
+    }
+  }
+
+  select {
+    padding: 17px 8px 4px 6px;
+  }
+}
+

@@ -1,0 +1,17 @@
+<% if (content.default) {
+  content[slug] = 
+`# Squirrel Ipsum\n\n
+[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.`
+} %>
+
+<div id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" 
+     class="floating-label <%-locals.extraClass%>">
+  <label for="<%= index %>[<%- slug %>]-textarea">
+    <%- label %> (markdown)</label>
+  <textarea id="<%= index %>[<%- slug %>]-textarea"
+            name="<%= index %>[<%- slug %>]"
+            placeholder="Write markdown here."
+            rows="9"
+    ><%= content[slug] %></textarea>
+
+</div>

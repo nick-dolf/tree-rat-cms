@@ -1,5 +1,9 @@
 [
   {
+    "slug": "link-card",
+    "name": "Link"
+  },
+  {
     "slug": "card-slider",
     "name": "Slider Card"
   },

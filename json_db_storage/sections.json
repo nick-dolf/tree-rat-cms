@@ -32,6 +32,10 @@
     "name": "Slider"
   },
   {
+    "slug": "testimonial",
+    "name": "Testimonial"
+  },
+  {
     "slug": "text-area",
     "name": "Text Area"
   }

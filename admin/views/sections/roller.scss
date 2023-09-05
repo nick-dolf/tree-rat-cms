@@ -1,6 +1,17 @@
+.roller:last-child {
+  margin-bottom: 0;
+}
 .roller {
   color: black;
   margin-bottom: 8px;
+
+  &:first-child {
+    margin-top: 8px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 
   .roller-header {
     display: flex;

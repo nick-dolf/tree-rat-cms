@@ -33,7 +33,7 @@
 
 <div class="white-back pb-1">
 <!-- Heading -->
-<%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
+<%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass:"mb-1"}) %>
 <div class="row row-cols-1 row-cols-sm-2">
   <div class="col">
     <!-- Style -->
@@ -42,8 +42,12 @@
   </div>
   <div class="col">
     <!-- Background Color -->
-    <%- include("../../section-helpers/select", { slug: "color", label: "Background Color", options : [{slug: "green",
-    label:"Green"},{slug: "purple", label: "Purple"}]}) %>
+    <%- include("../../section-helpers/select", 
+                    { slug: "color", label: "Background Color", 
+                      options : [{slug: "purple",label:"Purple"},
+                                 {slug: "green",label:"Green"},
+                                 {slug: "blue",label:"Blue"},
+                                 {slug: "neutral", label: "Neutral"}]}) %>
   </div>
 </div>
 

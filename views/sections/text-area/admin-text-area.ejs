@@ -1,10 +1,10 @@
 <div class="white-back">
 <!-- Paragraph -->
-<%- include("../../section-helpers/text-area-large-mark", {index, slug: "columnOne", label: "Paragraph"}) %>
+<%- include("../../section-helpers/text-area-mark-ninelines", {index, slug: "columnOne", label: "Paragraph", extraClass: "mb-1"}) %>
 <!-- Paragraph -->
-<%- include("../../section-helpers/text-area-large", {index, slug: "columnTwo", label: "Column Two"}) %>
+<%- include("../../section-helpers/text-area-mark-ninelines", {index, slug: "columnTwo", label: "Column Two", extraClass: "mb-1"}) %>
 <!-- Button -->
-<%- include("../../section-helpers/button", { slug: "button", label: "Button" }) %>
+<%- include("../../section-helpers/button", { slug: "button", label: "Button", extraClass: "my-2" }) %>
 <!-- Style -->
 <%- include("../../section-helpers/select", 
 {index, slug: "style", label: "Style", toggle: {value:"two-column",target:"columnTwo"},options : [{slug: "plain", label:"Plain"},{slug: "flashy", label:"Flashy"},{slug: "splashy", label: "Splashy"},{slug:"two-column", label:"Two Columns"}]}) %>

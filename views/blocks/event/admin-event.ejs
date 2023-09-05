@@ -1,9 +1,12 @@
 <% if (content.default) {
   content.default = false
-  content.date = "2023"
+  content.date = "3000"
+  content.paragraph = "Ut sciuri super terram. Et salvum facere omnes homines, qui pascat eas nuces, et occidere cetera."
 } %>
 
 <div class="white-back">
-  <%- include("../../section-helpers/text-area-plain", { slug: "date", label: "Date"}) %>
-  <%- include("../../section-helpers/text-area-med", { slug: "paragraph", label: "Paragraph"}) %>
+  <%- include("../../section-helpers/text-area-plain-oneline", 
+             { slug: "date", label: "Date", extraClass: "mb-1"}) %>
+  <%- include("../../section-helpers/text-area-mark-threeline", 
+             { slug: "paragraph", label: "Paragraph"}) %>
 </div>

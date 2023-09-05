@@ -7,17 +7,18 @@ if (content.default) {
 if (!content[slug]) content[slug] = {}
 %>
 
-<div class="mb-2" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
+<div class="mb-2 <%-locals.extraClass%>" id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" >
   <div class="row row-cols-1 row-cols-sm-2">
     <!-- Select Button Type -->
     <div class="col">
-      <div class="form-floating mt-2">
+      <div class="floating-label">
 
-        <select class="form-select toggle" id="<%- idIndex %>-select"  
-          name=<%- index %>[<%- slug %>][type]
-          data-cms-targets="<%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll"
-          data-cms-values="internal external file scroll"
-          >
+        <select id="<%- idIndex %>-select" 
+                class="toggle"   
+                name=<%- index %>[<%- slug %>][type]
+                data-cms-targets="<%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll"
+                data-cms-values="internal external file scroll"
+                >
           <option value="internal" <% if (content[slug].type ==  "internal") { %>selected<% } %> >Internal Link</option>
           <option value="external" <% if (content[slug].type ==  "external") { %>selected<% } %> >External Link</option>
           <option value="file" <% if (content[slug].type ==  "file") { %>selected<% } %> >File</option>
@@ -28,8 +29,8 @@ if (!content[slug]) content[slug] = {}
     </div>
     <!-- Internal Link Select -->
     <div class="col" id="<%- idIndex2 %>internal">
-      <div class="form-floating mt-2">
-        <select class="form-select" id="<%- idIndex %>ButtonPage"  
+      <div class="floating-label">
+        <select id="<%- idIndex %>ButtonPage"  
                 name=<%- index %>[<%- slug %>][page]
                 >
           <% for (page of site.pages) { %>
@@ -41,17 +42,19 @@ if (!content[slug]) content[slug] = {}
     </div>
     <!-- External Link Input -->
     <div class="col" id="<%- idIndex2 %>external">
-      <div class="form-floating mt-2" >
-        <textarea class="form-control" placeholder="Insert external link here"  
-        name="<%- index %>[<%- slug %>][link]" id="<%- idIndex %>link"
+      <div class="floating-label" >
+        <textarea id="<%- idIndex %>link"
+                  name="<%- index %>[<%- slug %>][link]"
+                  placeholder="Insert external link here"  
+                  rows="1"
         ><%= content[slug].link %></textarea>
         <label for="<%- idIndex %>link">Full Link (https://example.com)</label>
       </div>
     </div>
     <!-- File Select -->
     <div class="col" id="<%- idIndex2 %>file">
-      <div class="form-floating mt-2">
-        <select class="form-select"   
+      <div class="floating-label">
+        <select    
                 name=<%- index %>[<%- slug %>][file]
                 >
           <% for (file of site.files) { %>
@@ -63,8 +66,8 @@ if (!content[slug]) content[slug] = {}
     </div>
     <!-- Scroll to Section -->
     <div class="col" id="<%- idIndex2 %>scroll">
-      <div class="form-floating mt-2" >
-        <input class="form-control" id="<%- idIndex %>num"
+      <div class="floating-label" >
+        <input  id="<%- idIndex %>num"
                type="number" min="0"
                name="<%- index %>[<%- slug %>][scroll]" 
                value=<%- content[slug].scroll %>>

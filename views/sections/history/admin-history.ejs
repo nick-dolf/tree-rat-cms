@@ -1,19 +1,13 @@
 <% if (content.default) {
   content.default = false
   content.heading = "History"
-  content.quickLinks = [
+  content.events = [
   {
-    "template": "link-text-svg",
-    "name": "Text Link with Icon",
-    "collapse": "show",
+    "template": "event",
+    "name": "Event",
     "content": {
-      "text": "2023",
-      "svg": "video",
-      "link": {
-        "type": "external",
-        "page": "test",
-        "link": "https://www.youtube.com/watch?v=w7f1z27RI7g"
-      }
+              "date": "3000",
+              "paragraph": "Ut sciuri super terram. Et salvum facere omnes homines, qui pascat eas nuces, et occidere cetera."
     }
   }
 ]
@@ -21,7 +15,13 @@
 
 <div class="white-back pb-1">
 <!-- Heading -->
-<%- include("../../section-helpers/text-area-plain", { slug: "heading", label: "Heading"}) %>
+<%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass: "mb-1"}) %>
+<%- include("../../section-helpers/select", 
+                    { slug: "color", label: "Background Color", 
+                      options : [{slug: "purple",label:"Purple"},
+                                 {slug: "green",label:"Green"},
+                                 {slug: "blue",label:"Blue"},
+                                 {slug: "neutral", label: "Neutral"}]}) %>
 </div>
 <!-- Quick Links -->
 <%- include("../../section-helpers/block-select", 
