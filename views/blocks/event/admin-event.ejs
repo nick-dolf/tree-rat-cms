@@ -4,6 +4,8 @@
 } %>
 
 <div class="white-back">
-  <%- include("../../section-helpers/text-area-plain", { slug: "date", label: "Date"}) %>
-  <%- include("../../section-helpers/text-area-med", { slug: "paragraph", label: "Paragraph"}) %>
+  <%- include("../../section-helpers/text-area-plain-oneline", 
+             { slug: "date", label: "Date", extraClass: "mb-1"}) %>
+  <%- include("../../section-helpers/text-area-mark-threeline", 
+             { slug: "paragraph", label: "Paragraph"}) %>
 </div>

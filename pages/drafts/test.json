@@ -3,57 +3,22 @@
   "description": "",
   "sections": [
     {
-      "template": "card-image",
-      "name": "Image Card",
+      "template": "text-area",
+      "name": "Text Area",
       "label": "",
       "collapse": "show",
       "content": {
-        "image": "default.webp",
-        "alt": "Squirrel on tree.",
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+        "columnOne": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "button": {
-          "type": "no",
+          "type": "internal",
           "text": "Home",
-          "page": "home",
+          "page": "test",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
-        "links": [
-          {
-            "template": "link-card",
-            "name": "Link",
-            "label": "",
-            "collapse": "show",
-            "content": {
-              "text": "Home",
-              "link": {
-                "type": "internal",
-                "page": "test",
-                "link": "",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-card",
-            "name": "Link",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Donate",
-              "link": {
-                "type": "internal",
-                "page": "test",
-                "link": "",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          }
-        ]
+        "style": "splashy"
       }
     }
   ]

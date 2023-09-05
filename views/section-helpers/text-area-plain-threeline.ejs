@@ -1,0 +1,15 @@
+<% if (content.default) {
+  content[slug] = `Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.`
+} %>
+<div id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>"
+     class="floating-label <%- locals.extraClass %>" >
+
+  <label for="<%= index %>[<%- slug %>]-textarea"
+    ><%- label %> (plain-text)</label>
+  <textarea id="<%= index %>[<%- slug %>]-textarea"
+            rows="3"
+            placeholder="Add plain text content here." 
+            name="<%= index %>[<%- slug %>]" 
+    ><%= content[slug] %></textarea>
+
+</div>

@@ -164,7 +164,9 @@ function buildSite() {
   /**
    * Publish Pages
    */
-  if (true) {  //process.env.NODE_ENV != "development"
+  const autoBuild = (process.env.AUTO_BUILD == "false" ? false : true)
+  console.log(process.env.AUTO_BUILD, autoBuild)
+  if (process.env.NODE_ENV != "development" || autoBuild) {  //process.env.NODE_ENV != "development"
 
     for (page of app.locals.site.pages) {
       if (page.publishedDate) {
