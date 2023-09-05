@@ -3,25 +3,23 @@
   "description": "",
   "sections": [
     {
-      "template": "hero",
-      "name": "Hero",
+      "template": "banner",
+      "name": "Banner",
       "label": "",
       "collapse": "show",
       "content": {
-        "image": "1015-1600x800.jpg",
-        "alt": "pretty river",
         "heading": "Squirrel Ipsum",
         "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
         "button": {
-          "type": "no",
-          "text": "",
+          "type": "external",
+          "text": "Squiritur",
           "page": "test",
-          "link": "",
+          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
-        "style": "standard",
-        "overlay": "yes"
+        "style": "horizontal",
+        "color": "green"
       }
     }
   ]
