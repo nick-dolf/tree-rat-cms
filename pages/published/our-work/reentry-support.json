@@ -1,1 +1,250 @@
-{"title":"","description":""}
+{
+  "title": "Reentry Support",
+  "description": "CEIC supports community members with system involvement throughout the\r\n  reentry process with record clearing, wraparound resources, and more, to ensu",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": "john-towner-3kv48ns4wuu-unsplash-2.jpg",
+        "alt": "A road through the forest with a large patch of light.",
+        "heading": "Reentry Support",
+        "paragraph": "The Coalition supports community members with system involvement throughout the reentry process to ensure they have everything they need to be prosperous and whole.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "get-involved/become-a-member",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Clear Your Record",
+              "svg": "bill",
+              "link": {
+                "type": "internal",
+                "page": "services/clear-your-record",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Record Clearing",
+      "collapse": "hide",
+      "content": {
+        "image": "record-cleaning.png",
+        "alt": "Coalition members in front of City of Chicago plaque",
+        "heading": "Record Clearing",
+        "paragraph": "CEIC supports people across the state in starting the process of clearing\r\n    their records. Regardless of where the record is, and whether it is cannabis or\r\n    not, the Coalition will help you start the record clearing process.",
+        "button": {
+          "type": "internal",
+          "text": "Learn About Expungement",
+          "page": "services/clear-your-record",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Community Resource Fairs",
+      "collapse": "hide",
+      "content": {
+        "image": "community-resource.png",
+        "alt": "Members at a table with different household products.",
+        "heading": "Community Resource Fairs",
+        "paragraph": "We organize & support wraparound resource fairs in communities across Illinois. These fairs bring vital resources such as housing, jobs, food assistance IDs, education, and more, directly to impacted communities.",
+        "button": {
+          "type": "external",
+          "text": "Follow Our Events",
+          "page": "get-involved/become-a-member",
+          "link": "https://www.instagram.com/cannaequityil/?hl=en",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Legal Aid",
+      "collapse": "hide",
+      "content": {
+        "image": "legal-aid.png",
+        "alt": "Group members wearing t-shirts for nation engagement week 2019",
+        "heading": "Legal Aid",
+        "paragraph": "We support people statewide access legal aid resources to help them navigate different issues.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "get-involved/become-a-member",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "color": "neutral",
+        "links": [
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "New Leaf Illinois",
+              "link": {
+                "type": "external",
+                "page": "get-involved/become-a-member",
+                "link": "https://www.newleafillinois.org/s",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Illinois Legal Aid",
+              "link": {
+                "type": "external",
+                "page": "get-involved/become-a-member",
+                "link": "https://www.illinoislegalaid.org/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Accessing Public Benefits in Illinois",
+              "link": {
+                "type": "external",
+                "page": "get-involved/become-a-member",
+                "link": "https://www.illinoislegalaid.org/legal-information/health-benefits",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": "jefferson.jpg",
+        "alt": "Jefferson Davis, who is a Coalition member, wearing a white shirt and pants",
+        "heading": "Jefferson Davis",
+        "paragraph": "Mr. Davis started the record clearing process through the Coalition by attending one of our RAP Sheet Assistance Days. After attending the event he was connected with legal aids, and in 2022 was notified that his record has been fully cleared & sealed!",
+        "quote": "Having the expungement brings me great joy.  It allows me to let go of a past that no longer represents who I am.  I'm now a proud owner of my own company, provider for my family and mentor for my community.",
+        "style": "purple"
+      }
+    },
+    {
+      "template": "slider",
+      "name": "Slider",
+      "label": "How to get Involved (green)",
+      "collapse": "hide",
+      "content": {
+        "heading": "How to get involved",
+        "style": "big",
+        "color": "green",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "SUPPORT",
+              "paragraph": "SUPPORT ONE OF OUR COMMUNITY PROGRAMS OR JOIN AN EVENT",
+              "button": {
+                "type": "internal",
+                "text": "Ways to Support",
+                "page": "get-involved/volunteer",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "EXPUNGE",
+              "paragraph": "CLEAR YOUR RECORD",
+              "button": {
+                "type": "internal",
+                "text": "Expungement",
+                "page": "services/clear-your-record",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "ATTEND",
+              "paragraph": "ATTEND A COMMUNITY RESOURCE FAIR OR ONE OF OUR OTHER EVENTS",
+              "button": {
+                "type": "external",
+                "text": "Events",
+                "page": "get-involved/become-a-member",
+                "link": "https://www.facebook.com/CannaEquityIL/events/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
