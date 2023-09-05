@@ -1,0 +1,26 @@
+<!-- Internal Links -->
+<% if (content.link.type == "internal") { %>
+  <% let link = (content.link.page == "home" ? "" : content.link.page) %>
+  <div>
+
+    <a class="link-icon--green" href="<%- site.url + link %>" >
+      <span><%- content.text %></span>
+      <%- include("../../components/icon-svg", {id: "chevron" })%>
+    </a>
+  </div>
+<!-- External Links -->
+<% } else if (content.link.type == "external") { %>
+  <a class="link-icon--green" href="<%- content.link.link %>" target="_blank">
+    <span><%- content.text %></span>
+    <%- include("../../components/icon-svg", {id: "chevron" })%>
+  </a>
+  <!-- Files -->
+  <% } else if (content.link.type == "file") { %>
+    <a class="link-icon--green" href="<%- site.url +"assets/files/"+ content.link.file %>" target="_blank">
+      <span><%- content.text %></span>
+      <%- include("../../components/icon-svg", {id: "chevron" })%>
+    </a>
+<!-- Scroll -->
+<% } else if (content.link.type == "scroll") { %>
+  <button class="btn--ghost scroll link-icon--green" data-scroll="<%- content.link.scroll %>" type="button" name="button" ><%- content.text %><%- include("../../components/icon-svg", {id: "chevron" })%></button>
+<% } %>

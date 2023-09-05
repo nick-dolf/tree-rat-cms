@@ -5,5 +5,15 @@
   <div class="card-text">
     <h3><%- content.heading %></h3>
     <p><%- content.paragraph %></p>
+  
+    <div class="foot">
+      <% if (content.links) for (link of content.links) { %> 
+        <%- include(`../../blocks/${link.template}/site-${link.template}`,
+                  { content : link.content }) %> 
+      <% } %>
+      <% if (content.button.type != "no") { %>
+        <%- include("../../components/button", {extraClass:"btn--light-bg"}) %>
+      <% } %>  
+    </div>
   </div>
 </section>
