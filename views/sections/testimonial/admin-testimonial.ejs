@@ -1,0 +1,22 @@
+<!-- Default content for template -->
+<% if (content.default) {
+  content.image = "default.webp"
+  content.alt = "Squirrel on tree."
+} %>
+
+<div class="white-back pb-2">
+<!-- Image -->
+<%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
+<!-- Heading -->
+<%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass: "mb-1"}) %>
+<!-- Paragraph -->
+<%- include("../../section-helpers/text-area-plain-threeline", { slug: "paragraph", label: "Paragraph", extraClass: "mb-1"}) %>
+<!-- Paragraph -->
+<%- include("../../section-helpers/text-area-plain-threeline", { slug: "quote", label: "Quote", extraClass: "mb-1"}) %>
+<!-- Style -->
+<%- include("../../section-helpers/select", 
+                { slug: "style", label: "Style", 
+                  options : [{slug: "purple",label:"Purple"},
+                             {slug: "green", label: "Green"},
+                             {slug: "blue", label: "Blue"},
+                             {slug: "neutral", label: "Neutral"}]}) %>

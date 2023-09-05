@@ -1,0 +1,20 @@
+<section class="testimonial testimonial-<%- content.style %>">
+  <div class="card">
+    <div class="card-image-container">
+      <%- include("../../components/image-card") %>
+    </div>
+    <div class="card-text">
+      <h2><%- content.heading %></h2>
+      <p><%- content.paragraph %></p>
+      <div class="quote-container">
+        <div class="quote-start">
+          <%- include("../../components/icon-svg", {id: "quote"}) %>
+        </div>
+        <p class="quote"><%- content.quote %></p>
+        <div class="quote-end">
+          <%- include("../../components/icon-svg", {id: "quote"}) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

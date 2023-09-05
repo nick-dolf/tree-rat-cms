@@ -1,5 +1,9 @@
 [
   {
+    "slug": "testimonial",
+    "name": "Testimonial"
+  },
+  {
     "slug": "banner",
     "name": "Banner"
   },

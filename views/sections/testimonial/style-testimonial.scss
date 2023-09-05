@@ -1,0 +1,78 @@
+.testimonial {
+  padding: 32px 0;
+  margin: 32px 0;
+
+  @include tablet {
+    padding: 64px 0;
+    margin: 64px 0;
+
+    .card-image-container {
+      width: 40%;
+    }
+
+    .card-text {
+      width: 60%;
+    }
+  }
+
+  .card {
+    margin: 0 auto;
+    max-width: 994px;
+  }
+}
+
+.quote-container {
+  margin-top: 4rem;
+  position: relative;
+  display: flex;
+
+  p {
+    margin: 0;
+  }
+}
+
+.quote-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  svg {
+    transform: rotateY(180deg);
+  }
+}
+
+@mixin testimonial-color($light, $normal, $dark) {
+  background: $light;
+
+  .card {
+    background: $dark;
+  }
+
+  h3 {
+    color: $dark;
+  }
+
+  svg {
+    fill: $normal;
+  }
+
+  .quote {
+    color: $normal;
+  }
+}
+
+.testimonial-purple {
+  @include testimonial-color($purple-50, $purple-400, $purple-600);
+}
+
+.testimonial-green {
+  @include testimonial-color($green-50, $green-400, $green-600);
+}
+
+.testimonial-blue {
+  @include testimonial-color($blue-50, $blue-400, $blue-600);
+}
+
+.testimonial-neutral {
+  @include testimonial-color($neutral-50, $neutral-400, $neutral-600);
+}
