@@ -13,49 +13,56 @@
         "heading": "Squirrel Ipsum",
         "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "style": "blue"
-      }
-    },
-    {
-      "template": "testimonial",
-      "name": "Testimonial",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "image": "default.webp",
-        "alt": "Squirrel on tree.",
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "style": "purple"
-      }
-    },
-    {
-      "template": "testimonial",
-      "name": "Testimonial",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "image": "default.webp",
-        "alt": "Squirrel on tree.",
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "style": "green"
       }
     },
     {
-      "template": "testimonial",
-      "name": "Testimonial",
+      "template": "slider",
+      "name": "Slider",
       "label": "",
       "collapse": "hide",
       "content": {
-        "image": "default.webp",
-        "alt": "Squirrel on tree.",
         "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "style": "neutral"
+        "style": "normal",
+        "color": "blue",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "test",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

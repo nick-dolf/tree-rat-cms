@@ -3,8 +3,12 @@ const idIndex = index.replace(/[\[\]]/g, "")+slug
 let idIndex2 = idIndex;
 if (content.default) {
   idIndex2 = "zz0zz";
+  
 } 
-if (!content[slug]) content[slug] = {}
+if (!content[slug]) {
+  content[slug] = {}
+  content[slug].text = "Squirrels"
+} 
 %>
 <div id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>" class="<%-locals.extraClass%>">
   <!-- Select Button Type -->

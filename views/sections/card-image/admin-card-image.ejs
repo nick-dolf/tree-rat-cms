@@ -12,7 +12,13 @@
 <!-- Paragraph -->
 <%- include("../../section-helpers/text-area-plain-threeline", { slug: "paragraph", label: "Paragraph"}) %>
 <!-- Button -->
-<%- include("../../section-helpers/button", { slug: "button", label: "Button", extraClass: "mt-2" }) %>
+<%- include("../../section-helpers/button", { slug: "button", label: "Button", extraClass: "my-2" }) %>
+<%- include("../../section-helpers/select", 
+                    { slug: "color", label: "Background Color", 
+                      options : [{slug: "neutral", label: "Neutral"},
+                                 {slug: "purple",label:"Purple"},
+                                 {slug: "green",label:"Green"},
+                                 {slug: "blue",label:"Blue"} ]}) %>
 </div>
 <!-- Links -->
 <%- include("../../section-helpers/block-select", 

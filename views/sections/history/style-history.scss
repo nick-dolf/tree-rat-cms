@@ -1,5 +1,4 @@
 .history {
-
   @include spacing-skinny-nopad;
 
   h2 {
@@ -23,15 +22,12 @@
   }
 
   .text-container {
-
     display: flex;
     align-items: center;
   }
 }
 
-
-.purple-box {
-  background-color: $purple-600;
+.box {
   color: $white;
   padding: 3.2rem;
   text-align: center;
@@ -47,9 +43,29 @@
   }
 
   @include tablet {
-
     span {
       display: block;
     }
+  }
+}
+
+.history-purple {
+  .box {
+    background-color: $purple-600;
+  }
+}
+.history-green {
+  .box {
+    background-color: $green-600;
+  }
+}
+.history-blue {
+  .box {
+    background-color: $blue-600;
+  }
+}
+.history-neutral {
+  .box {
+    background-color: $neutral-600;
   }
 }

@@ -1,9 +1,8 @@
-<section class="history">
+<section class="history history-<%- content.color %>">
   <h2><%- content.heading %></h2>
 
   <% if (content.events) for (event of content.events) { %>
       <%- include(`../../blocks/${event.template}/site-${event.template}`,
       { content : event.content }) %> 
   <% } %>
-
 </section>

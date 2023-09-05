@@ -1,9 +1,5 @@
 [
   {
-    "slug": "testimonial",
-    "name": "Testimonial"
-  },
-  {
     "slug": "banner",
     "name": "Banner"
   },
@@ -34,6 +30,10 @@
   {
     "slug": "slider",
     "name": "Slider"
+  },
+  {
+    "slug": "testimonial",
+    "name": "Testimonial"
   },
   {
     "slug": "text-area",
