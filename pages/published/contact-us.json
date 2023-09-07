@@ -3,20 +3,46 @@
   "description": "",
   "sections": [
     {
-      "template": "text-area",
-      "name": "Text Area",
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
       "collapse": "show",
       "content": {
-        "columnOne": "# Terms of Use\r\nTerms\r\n\r\nEFFECTIVE January 1, 2023",
-        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "image": {
+          "src": "computer-6720x4480.jpg",
+          "alt": "Person on laptop"
+        },
+        "heading": "Contact Us",
+        "paragraph": "Ways to reach out and connect with the Coalition",
         "button": {
           "type": "no",
           "text": "",
           "page": "contact-us",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
-        "style": "plain"
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "### Email\r\n\r\nCannabisEquityIL@gmail.com - launch email",
+        "columnTwo": "### Social Media\r\n\r\nFollow us on Instagram, Facebook, and Twitter - @cannabisequityil, #CannabisEquityIL, and #CannabisCBA",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "contact-us",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "two-column"
       }
     }
   ]

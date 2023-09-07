@@ -1,25 +1,36 @@
 @import 'vendor/normalize';
 
+// Abstracts:
 @import 'abstracts/fonts';
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
+// Base: 
 @import 'base/global';
 @import 'base/typography';
 
+// Components: Almost atomic parts of the site, no dependencies
 @import 'components/buttons';
 @import 'components/cards';
 @import 'components/forms';
 @import 'components/icons';
 @import 'components/lists';
 @import 'components/logos';
-@import 'components/social';
 
-@import 'layouts/site-footer';
-@import 'layouts/site-header';
+// Layouts: Medium sized part, includes components
+@import 'layouts/social';
 
+
+// Menus:
 @import 'menus/header';
 
+// Partials: Large part, includes layouts and components
+@import 'partials/site-footer';
+@import 'partials/site-header';
+
+
 @import 'blocks/blocks';
+
+// Sections: 
 @import 'sections/sections';
 
