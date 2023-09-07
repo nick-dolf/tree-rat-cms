@@ -1,24 +1,45 @@
 <!-- Default content for template -->
 <% if (content.default) {
-  content.image = "default.webp"
-  content.alt = "Squirrel on tree."
+  content.image = {}
+  content.image2 = {}
+  content.image.src = "default.webp"
+  content.image.alt = "Squirrel on tree."
+  content.image2.src = "default.webp"
+  content.image2.alt = "Image2"
 } %>
 
 <div class="white-back pb-2">
 <!-- Image -->
 <%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
+<%- include("../../section-helpers/image", { slug: "image2", label: "Image" }) %>
 <!-- Heading -->
 <%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass: "mb-1"}) %>
 <!-- Paragraph -->
-<%- include("../../section-helpers/text-area-plain-threeline", { slug: "paragraph", label: "Paragraph"}) %>
+<%- include("../../section-helpers/text-area-mark-threeline", { slug: "paragraph", label: "Paragraph"}) %>
 <!-- Button -->
 <%- include("../../section-helpers/button", { slug: "button", label: "Button", extraClass: "my-2" }) %>
-<%- include("../../section-helpers/select", 
+<div class="row row-cols-1 row-cols-sm-2">
+  <div class="col">
+    <!-- Style -->
+    <%- include("../../section-helpers/select", 
+                { slug: "style", 
+                  label: "Style", 
+                  options : [{slug: "one", label:"One Image"},
+                             {slug: "two", label: "Two Images"}],
+                  toggle: {value:"two", target:"image2"}}) %>
+  </div>
+  <div class="col">
+    <!-- Background Color -->
+    <%- include("../../section-helpers/select", 
                     { slug: "color", label: "Background Color", 
                       options : [{slug: "neutral", label: "Neutral"},
                                  {slug: "purple",label:"Purple"},
                                  {slug: "green",label:"Green"},
                                  {slug: "blue",label:"Blue"} ]}) %>
+  </div>
+</div>
+
+
 </div>
 <!-- Links -->
 <%- include("../../section-helpers/block-select", 

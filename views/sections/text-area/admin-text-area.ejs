@@ -7,5 +7,10 @@
 <%- include("../../section-helpers/button", { slug: "button", label: "Button", extraClass: "my-2" }) %>
 <!-- Style -->
 <%- include("../../section-helpers/select", 
-{index, slug: "style", label: "Style", toggle: {value:"two-column",target:"columnTwo"},options : [{slug: "plain", label:"Plain"},{slug: "flashy", label:"Flashy"},{slug: "splashy", label: "Splashy"},{slug:"two-column", label:"Two Columns"}]}) %>
+                {index, slug: "style", label: "Style", 
+                 toggle: {value:"two-column", target:"columnTwo"},
+                 options : [{slug: "plain", label:"Plain"},
+                            {slug: "flashy", label:"Flashy"},
+                            {slug: "splashy", label: "Splashy"},
+                            {slug: "two-column", label:"Two Columns"}]}) %>
 </div>

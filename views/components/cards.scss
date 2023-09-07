@@ -17,51 +17,6 @@
   }
 }
 
-.card--grey {
-  background-color: $neutral-100;
-}
-
-.card--purple {
-  background: $purple-600;
-}
-
-.card--fancy {
-  @include content-width-std;
-  font-size: 0;
-  position: relative;
-
-  .card-image-container {
-    margin: 0 0 0 auto;
-    width: 100%;
-
-    display: flex;
-    flex-direction: row;
-
-    div {
-      width: 50%;
-    }
-  }
-
-  .card-text {
-    width: auto;
-    margin: 0 16px;
-    padding: 32px;
-    box-shadow: inset 0 0 0 16px $neutral-100;
-    transform: translate(0, -64px);
-    color: $green-700;
-    
-    @include desktop {
-      position: absolute;
-      top: 50%;
-      left: 64px;
-      width: 70%;
-      padding: 64px;
-      box-shadow: inset 0 0 0 32px $neutral-100;
-      transform: translate(0, -50%);
-    }
-  }
-}
-
 .card-image {
   object-fit: cover;
   width: 100%;

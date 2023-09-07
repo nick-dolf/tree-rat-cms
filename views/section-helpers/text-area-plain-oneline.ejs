@@ -1,7 +1,7 @@
 <% if (content.default) {
   content[slug] = `Squirrel Ipsum`
 } %>
-<div id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>"
+<div id="<%- index.replace(/[\[\]]/g, "") %><%- slug %>"
      class="floating-label <%- locals.extraClass %>" >
 
   <label for="<%= index %>[<%- slug %>]-textarea"

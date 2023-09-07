@@ -1,15 +1,16 @@
 <% const idIndex = index.replace(/[\[\]]/g, "")+slug %>
 <div id="<%- index.replace(/[\[\]]/g, "") %><%- slug %>"
-     class="mb-2 form-group">
+     class="mb-2 d-flex align-items-center justify-content-center" >
   <button type="button" class="btn image-set-active p-0 me-2">
-    <input type="text" name="<%= index %>[<%- slug %>][src]" value="<%= content[slug].src %>" hidden>
-    <img src="<%- site.url %>admin/assets/images/original/thumb/<%= content[slug].src %>" 
+    <input type="text" name="<%= index %>[<%- slug %>]" value="<%= content[slug] %>" hidden>
+    <img src="<%- site.url %>admin/assets/images/original/thumb/<%= content[slug] %>" 
           alt="" height="150" width="150" class="image-fluid img-thumbnail" data-bs-toggle="modal" data-bs-target="#imageSelectModal" />
   </button>
   <div class="form-floating flex-grow-1" id="<%-idIndex%><%- slug %>" >
     <textarea id="<%-idIndex%>-alt" class="form-control alt" 
-              placeholder="Write alt text here" name="<%= index %>[<%- slug %>][alt]" 
-              ><%- content[slug].alt %></textarea>
+              placeholder="Write alt text here" name="<%= index %>[alt]" 
+              ><%- content.alt %></textarea>
     <label for="<%-idIndex%>-alt">Alt Text</label>
   </div>
 </div>
+

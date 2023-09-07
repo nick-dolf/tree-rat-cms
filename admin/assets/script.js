@@ -228,6 +228,9 @@ function selectToggle(event) {
   const targets = select.dataset.cmsTargets.split(" ")
   const values = select.dataset.cmsValues.split(" ")
 
+  console.log("targets", targets)
+  console.log("values: ",values)
+
   for (target of targets) {
     if (target.charAt(0) == "!") {
       $(`#${target.slice(1)}`).show();
