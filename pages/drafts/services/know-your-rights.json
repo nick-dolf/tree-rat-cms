@@ -5,10 +5,13 @@
     {
       "template": "hero",
       "name": "Hero",
+      "label": "",
       "collapse": "show",
       "content": {
-        "image": "20220326_111536_08.jpg",
-        "alt": "Image of the Coalition helping share Know Your Rights resources as a fair. The image includes three people, one of which is behind a table with the Coalition's logo on it.",
+        "image": {
+          "src": "20220326_111536_08.jpg",
+          "alt": "Image of the Coalition helping share Know Your Rights resources at a fair. The image includes three people, one of which is behind a table with the Coalition's logo on it."
+        },
         "heading": "Know Your Rights",
         "paragraph": "We need communities to know how their rights have changed with legalized cannabis",
         "button": {
@@ -16,6 +19,7 @@
           "text": "",
           "page": "services/clear-your-record",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "standard",

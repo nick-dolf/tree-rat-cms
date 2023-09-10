@@ -6,10 +6,12 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "image": "cytonn-photography-n95vmlxqm2i-unsplash.jpg",
-        "alt": "Handshake between two people",
+        "image": {
+          "src": "cytonn-photography-n95vmlxqm2i-unsplash.jpg",
+          "alt": "Handshake between two people"
+        },
         "heading": "Partners & Resources",
         "paragraph": "We are incredibly grateful for the relationships we’ve built. The Coalition would not be where it is today without our partners.",
         "button": {

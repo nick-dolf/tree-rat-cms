@@ -17,19 +17,19 @@
     text-align: left;
   }
 
-  .card-image-neutral {
+  &.card-image-neutral {
     background-color: $neutral-100;
   }
   
-  .card-image-green {
+  &.card-image-green {
     background-color: $green-100;
   }
   
-  .card-image-blue {
+  &.card-image-blue {
     background-color: $blue-100;
   }
   
-  .card-image-purple {
+  &.card-image-purple {
     background-color: $purple-100;
   }
 }

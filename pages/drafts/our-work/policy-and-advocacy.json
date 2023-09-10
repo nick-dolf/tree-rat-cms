@@ -8,14 +8,16 @@
       "label": "",
       "collapse": "hide",
       "content": {
-        "image": "tucker-good-t2gyvhmks98-unsplash.jpg",
-        "alt": "State Capitol dome behind a wall",
+        "image": {
+          "src": "tucker-good-t2gyvhmks98-unsplash.jpg",
+          "alt": "State Capitol dome behind a wall"
+        },
         "heading": "Policy & Advocacy",
         "paragraph": "We work to make cannabis policy in Illinois more inclusive, transparent and accountable",
         "button": {
           "type": "no",
-          "text": "",
-          "page": "services/know-your-rights",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -36,49 +38,15 @@
             "template": "link-text-svg",
             "name": "Text Link with Icon",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
-              "text": "Lobby Day Interest Form",
-              "svg": "bill",
+              "text": "Squirrel Ipsum",
+              "svg": "video",
               "link": {
                 "type": "external",
                 "page": "test",
-                "link": "https://docs.google.com/forms/d/e/1FAIpQLSclvmhzQn7slCBL0c98O_H_FCY6h9sTmZEsfEJzH5ZmPogheg/viewform",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Our Legislative Priorities",
-              "svg": "bill",
-              "link": {
-                "type": "file",
-                "page": "test",
-                "link": "",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Policy Working Group Sign-up",
-              "svg": "bill",
-              "link": {
-                "type": "external",
-                "page": "test",
-                "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }
@@ -89,12 +57,12 @@
     {
       "template": "slider",
       "name": "Slider",
-      "label": "Policy in Action (Purple)",
-      "collapse": "hide",
+      "label": "",
+      "collapse": "show",
       "content": {
         "heading": "Policy in Action",
         "style": "normal",
-        "color": "purple",
+        "color": "blue",
         "cards": [
           {
             "template": "card-slider",
@@ -106,8 +74,8 @@
               "paragraph": "Coalition members visited Springfield in 2019",
               "button": {
                 "type": "no",
-                "text": "",
-                "page": "test",
+                "text": "Squirrels",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -125,7 +93,7 @@
               "button": {
                 "type": "no",
                 "text": "",
-                "page": "test",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -136,14 +104,14 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "100s",
               "paragraph": "of members educated on the political process",
               "button": {
                 "type": "no",
                 "text": "",
-                "page": "test",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -151,18 +119,6 @@
             }
           }
         ]
-      }
-    },
-    {
-      "template": "card-image",
-      "name": "Image Card",
-      "label": "",
-      "collapse": "show",
-      "content": {
-        "image": "policy-research.png",
-        "alt": "Two people looking over a railing in the legislature building with a clipboard",
-        "heading": "Policy Research",
-        "paragraph": "We research policies and practices that increase cannabis equity and share our findings with the public and with lawmakers. Our current areas of research include: opportunities for ownership for impacted entrepreneurs, increasing investment into impacted communities, and providing young people evidence-based education."
       }
     }
   ]

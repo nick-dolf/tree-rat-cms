@@ -1,0 +1,64 @@
+.page-row {
+  background: $white-trans;
+  border-radius: $border-radius;
+  list-style-type: none;
+  
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+
+
+  h2 {
+    margin: 0;
+    padding-left: 8px;
+    font-size: 20px;
+    width: 30%;
+
+    a {
+      color: black;
+    }
+  }
+
+  .publish-state {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .drop-icon {
+    line-height: 36px;
+    margin-left: auto;
+    width: 60px;
+    text-align: center;
+  }
+
+  .button {
+    width: 80px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+}
+
+.drop-icon {
+
+  transition: all $transition-std;
+
+  .drop-icon-menu {
+    z-index: 10;
+    line-height: 1.5;
+    padding: 6px;
+    background: $dark-trans;
+    position: absolute;
+    transform: translateX(-30px) scaleY(0);
+    transition: all $transition-std;
+  }
+
+  &:hover {
+    color: white;
+    background: $dark-trans;
+
+    .drop-icon-menu {
+      transform: translateX(-30px) scaleY(1);
+    }
+  }
+}

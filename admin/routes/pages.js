@@ -52,7 +52,7 @@ router.post("*", body("name").isString().isLength({ min: 2 }).trim(), (req, res)
   fse
     .outputJson(`${filePath}.json`, {title:"", description:""})
     .then(() => {
-      res.adminRender("layouts/page-accordion", {changedFolder: folder, new: pageData.link});
+      res.adminRender("sections/page-accordion", {changedFolder: folder, new: pageData.link});
     })
     .catch((err) => {
       console.error(err.message);
@@ -135,7 +135,7 @@ router.delete("/*", (req, res) => {
       if (page.publishedDate) return fse.remove(sitePath)
     })
     .then(() => {
-      res.adminRender("layouts/page-accordion", {changedFolder: folder});
+      res.adminRender("sections/page-accordion", {changedFolder: folder});
     })
     .catch((err) => {
       console.error(err.message);

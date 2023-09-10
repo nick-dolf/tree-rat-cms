@@ -5,21 +5,53 @@
     {
       "template": "hero",
       "name": "Hero",
+      "label": "",
       "collapse": "show",
       "content": {
-        "image": "tucker-good-t2gyvhmks98-unsplash.jpg",
-        "alt": "State Capitol dome behind a wall",
-        "heading": "Policy & Advocacy",
-        "paragraph": "We work to make cannabis policy in Illinois more inclusive, transparent and accountable",
+        "image": {
+          "src": "tucker-good-t2gyvhmks98-unsplash.jpg",
+          "alt": "State Capitol dome behind a wall"
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "button": {
           "type": "no",
-          "text": "",
-          "page": "services/know-your-rights",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "standard",
         "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Squirrel Ipsum",
+              "svg": "video",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

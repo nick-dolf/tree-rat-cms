@@ -6,10 +6,12 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "image": "volunteer.jpg",
-        "alt": "A coalition member assisting two other people at a tabling event.",
+        "image": {
+          "src": "volunteer.jpg",
+          "alt": "A coalition member assisting two other people at a tabling event."
+        },
         "heading": "Volunteer Opportunities",
         "paragraph": "We welcome anyone who believes in our mission to get involved! We need all talents to help!",
         "button": {
@@ -17,6 +19,7 @@
           "text": "",
           "page": "get-involved/volunteer",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "standard",
@@ -64,6 +67,7 @@
           "text": "",
           "page": "get-involved/volunteer",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "plain"

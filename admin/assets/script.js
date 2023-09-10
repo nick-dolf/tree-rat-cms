@@ -559,13 +559,13 @@ $(document).on("click", ".roller-toggle", (event) => {
     activeTransition = true;
     const button = event.currentTarget;
     const roller = $(button.closest(".roller"));
+    console.log(roller)
     const rollerHeader = roller.find(".roller-header").first();
     const rollerBody = roller.find(".roller-body").first();
     const memory = roller.find(".remember-collapse").first();
 
     if (rollerHeader.hasClass("show-on-load")) {
       rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
-      rollerBody.css("overflow", "hidden");
       memory.val("hide");
       
       setTimeout(() => {
@@ -581,17 +581,11 @@ $(document).on("click", ".roller-toggle", (event) => {
       if (rollerBody.css("max-height") == "0px") {
         rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
         memory.val("show");
-        setTimeout(() => {
-          rollerBody.css("max-height", "none");
-          activeTransition = false;
-        }, 700);
+        activeTransition = false;
       } else {
-        rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
+        rollerBody.css("max-height", 0);
         memory.val("hide");
-        setTimeout(() => {
-          rollerBody.css("max-height", 0);
-          activeTransition = false;
-        }, 10);
+        activeTransition = false;
       }
     }
   }
