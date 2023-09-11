@@ -6,6 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
+
       "collapse": "show",
       "content": {
         "image": {

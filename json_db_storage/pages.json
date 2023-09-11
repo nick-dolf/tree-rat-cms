@@ -32,6 +32,13 @@
     "draftedDate": "Sat Sep 09 2023 16:02:10 GMT-0500 (Central Daylight Time)"
   },
   {
+    "name": "Madison test page",
+    "slug": "madison-test-page",
+    "folder": "madison-test",
+    "link": "madison-test/madison-test-page",
+    "publishedDate": false,
+  },
+  {
     "name": "Become a Member",
     "slug": "become-a-member",
     "folder": "get-involved",
@@ -104,6 +111,22 @@
     "draftedDate": "Sat Sep 09 2023 15:10:22 GMT-0500 (Central Daylight Time)"
   },
   {
+    "name": "Reentry Support",
+    "slug": "reentry-support",
+    "folder": "our-work",
+    "link": "our-work/reentry-support",
+    "publishedDate": "Tue Sep 05 2023 22:50:11 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Sat Sep 09 2023 20:58:09 GMT+0000 (Coordinated Universal Time)"
+  },
+  {
+    "name": "Policy & Advocacy",
+    "slug": "policy-and-advocacy",
+    "folder": "our-work",
+    "link": "our-work/policy-and-advocacy",
+    "publishedDate": "Tue Aug 15 2023 09:35:40 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Mon Sep 04 2023 14:55:00 GMT+0000 (Coordinated Universal Time)"
+  },
+  {
     "name": "Business Advising",
     "slug": "business-advising",
     "folder": "our-work",
@@ -118,6 +141,7 @@
     "link": "about-us/our-partners",
     "publishedDate": "Sat Sep 09 2023 14:58:57 GMT-0500 (Central Daylight Time)",
     "draftedDate": "Sat Sep 09 2023 14:58:54 GMT-0500 (Central Daylight Time)"
+
   },
   {
     "name": "Our Impact",
