@@ -1,11 +1,11 @@
-<div  id="<%- index.replace(/[\[\]]/g, "-") %><%- slug %>"
+<div  id="<%- index.replace(/[\[\]]/g, "") %><%- slug %>"
       class="floating-label">
 
   <label for="<%- index %>[<%- slug %>]-select"><%- label %></label>
   <select id="<%- index %>[<%- slug %>]-select"
           class="<% if (locals.toggle) { %>toggle<% } %>"
           name=<%- index %>[<%- slug %>]
-          <% if (locals.toggle) { %>data-cms-targets=<%- index.replace(/[\[\]]/g, "-") %><%- toggle.target %><% } %>
+          <% if (locals.toggle) { %>data-cms-targets=<%- index.replace(/[\[\]]/g, "") %><%- toggle.target %><% } %>
           <% if (locals.toggle) { %>data-cms-values=<%- toggle.value %><% } %>>
     <% for (option of options) { %>
     <option value="<%- option.slug %>" 

@@ -8,14 +8,16 @@
       "label": "",
       "collapse": "hide",
       "content": {
-        "image": "tucker-good-t2gyvhmks98-unsplash.jpg",
-        "alt": "State Capitol dome behind a wall",
+        "image": {
+          "src": "tucker-good-t2gyvhmks98-unsplash.jpg",
+          "alt": "State Capitol dome behind a wall"
+        },
         "heading": "Policy & Advocacy",
         "paragraph": "We work to make cannabis policy in Illinois more inclusive, transparent and accountable",
         "button": {
           "type": "no",
-          "text": "",
-          "page": "services/know-your-rights",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -38,47 +40,13 @@
             "label": "",
             "collapse": "hide",
             "content": {
-              "text": "Lobby Day Interest Form",
-              "svg": "bill",
+              "text": "Squirrel Ipsum",
+              "svg": "video",
               "link": {
                 "type": "external",
                 "page": "test",
-                "link": "https://docs.google.com/forms/d/e/1FAIpQLSclvmhzQn7slCBL0c98O_H_FCY6h9sTmZEsfEJzH5ZmPogheg/viewform",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Our Legislative Priorities",
-              "svg": "bill",
-              "link": {
-                "type": "file",
-                "page": "test",
-                "link": "",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Policy Working Group Sign-up",
-              "svg": "bill",
-              "link": {
-                "type": "external",
-                "page": "test",
-                "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": ""
               }
             }
@@ -89,7 +57,7 @@
     {
       "template": "slider",
       "name": "Slider",
-      "label": "Policy in Action (Purple)",
+      "label": "",
       "collapse": "hide",
       "content": {
         "heading": "Policy in Action",
@@ -106,8 +74,8 @@
               "paragraph": "Coalition members visited Springfield in 2019",
               "button": {
                 "type": "no",
-                "text": "",
-                "page": "test",
+                "text": "Squirrels",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -125,7 +93,7 @@
               "button": {
                 "type": "no",
                 "text": "",
-                "page": "test",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -136,14 +104,14 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "100s",
               "paragraph": "of members educated on the political process",
               "button": {
                 "type": "no",
                 "text": "",
-                "page": "test",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -157,12 +125,151 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
-        "image": "policy-research.png",
-        "alt": "Two people looking over a railing in the legislature building with a clipboard",
-        "heading": "Policy Research",
-        "paragraph": "We research policies and practices that increase cannabis equity and share our findings with the public and with lawmakers. Our current areas of research include: opportunities for ownership for impacted entrepreneurs, increasing investment into impacted communities, and providing young people evidence-based education."
+        "image": {
+          "src": "policy-research.png",
+          "alt": "Two people looking over a railing in the legislature building with a clipboard"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Political Education",
+        "paragraph": "We educate community members on the political process so they can effectively advocate for their communities. We host workshops, webinars, and social media campaigns to share tools & strategies to support people building power in their community.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "slider",
+      "name": "Slider",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "How to get involved",
+        "style": "big",
+        "color": "green",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "DONATE",
+              "paragraph": "SUPPORT OUR WORK WITH A DONATION",
+              "button": {
+                "type": "external",
+                "text": "Make A Donation",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://funraise.org/give/Ceic-Corp/3aca7fd5-e9cb-4eb4-8574-807dbbb8bc93/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "JOIN",
+              "paragraph": "JOIN OUR POLICY RESEARCH WORKING GROUPS",
+              "button": {
+                "type": "external",
+                "text": "Join A Working Group",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "PARTICIPATE",
+              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
+              "button": {
+                "type": "internal",
+                "text": "Become A Member",
+                "page": "get-involved/become-a-member",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

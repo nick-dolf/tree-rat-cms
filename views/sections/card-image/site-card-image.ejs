@@ -1,10 +1,14 @@
-<section class="card card-image-<%-content.color%>">
+<section class="card-image-<%-content.style%> card-image-<%-content.color%>">
   <div class="card-image-container">
-    <%- include("../../components/image-card") %>
+    <%- include("../../components/image-card", {slug: "image"}) %>
+
+    <% if (content.style == "two") { %>
+    <%- include("../../components/image-card", {slug: "image2"}) %>
+    <% } %>
   </div>
   <div class="card-text">
-    <h3><%- content.heading %></h3>
-    <p><%- content.paragraph %></p>
+    <h2><%- content.heading %></h2>
+    <%- md(content.paragraph) %>
   
     <div class="foot">
       <% if (content.links) for (link of content.links) { %> 

@@ -1,51 +1,39 @@
 <!-- Page List Item for Page Accordion -->
-<li class="list-group-item p-1 <% if (page.newPage == page.link) { %>border rounded new<% } %>">
-  <div class="row">
-    <% if (page.publishedDate) { %>
-    <!-- Page Name -->
-    <div class="col-sm-4">
-      <% let link = (page.link == "home" ? "" : page.link) %>
-      <a href="<%- site.url + link %>" class="link-dark h5 m-0"><%= page.name %></a>
+<li class="page-row">
+
+  <% if (page.publishedDate) { %>
+  <!-- Published -->
+  <% let link = (page.link == "home" ? "" : page.link) %>
+  <h2><a href="<%- site.url + link %>"><%- page.name %></a></h2>
+  <span class="publish-state">
+    <%- include("../components/icon-svg", {id: "check-square-fill", 
+                                           width: 20,
+                                           color: "text-success"}) %>
+    Published
+  </span>
+  <% } else { %>
+  <!-- Not Published -->
+  <h2><%- page.name %></h2>
+  <span class="publish-state">
+    <%- include("../components/icon-svg", {id: "x-square-fill", 
+                                           width: 20,
+                                           color: "text-black"}) %>
+    Not Published
+  </span>
+  <% } %>
+
+  <span class="drop-icon">
+    <%- include("../components/icon-svg", {id: "nut", 
+                                           width: 20 }) %>
+    <div class="drop-icon-menu">
+      <%- include("../components/button", {arg:{text: "Delete", 
+                      color:"danger", 
+                      extraClass:"delete drop-menu-item", 
+                      cms: page.link,
+                      cmsText: "Do you really want to delete: ", 
+                      cmsAnchor:"accordionPageAnchor",
+                      cmsUrl:site.url+"admin/pages" }}) %>
     </div>
-    <!-- Published -->
-    <div class="col-sm-4 my-2 d-flex align-items-center">
-      <%- include("../components/icon-svg", {id: "check-square-fill", 
-                                             width: 20,}) %>
-      <span class="ms-2">Published</span>
-    </div>
-    <% } else { %>
-    <!-- Page Name -->
-    <div class="col-sm-4">
-      <h2 class="h5 m-0"><%= page.name %></h2>
-    </div>
-    <!-- Not Published -->
-    <div class="col-sm-4 my-2 d-flex align-items-center">
-      <%- include("../components/icon-svg", {id: "x-square-fill", 
-                                             width: 20,
-                                             color: "text-black"}) %>
-      <span class="ms-2">Not Published</span>
-    </div>
-    <% } %>
-    <!-- Actions -->
-    <div class="col-sm-4 d-sm-flex justify-content-center justify-content-sm-end align-items-center">
-      <div class="button-group">
-        <a href="<%= site.url %>admin/pages/<%= page.link %>" class="button button-link">Edit</a>
-        <button class="button button-link button-toggle">
-          <%- include("icon-svg", {id:"three-dots", 
-                                 color: "black", 
-                                 width: 18}) %>
-          <span class="visually-hidden">Toggle Dropdown</span>
-        </button>
-        <div class="button-drop">
-          <%- include("../components/button", {arg:{text: "Delete", 
-                          color:"danger", 
-                          extraClass:"delete button-drop-item", 
-                          cms: page.link,
-                          cmsText: "Do you really want to delete: ", 
-                          cmsAnchor:"accordionPageAnchor",
-                          cmsUrl:site.url+"admin/pages" }}) %>
-        </div>
-      </div>
-    </div>
-  </div>
+  </span>
+  <a href="<%= site.url %>admin/pages/<%= page.link %>" class="button button-link">Edit</a>
 </li>

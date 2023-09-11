@@ -1,8 +1,7 @@
-<%- include("./modal-add-folder")%>
-<%- include("./modal-add-page")%>
+<%- include("../layouts/modal-add-folder")%>
+<%- include("../layouts/modal-add-page")%>
 <% let openFolder, newPage; if (page) { openFolder = page.changedFolder; newPage = page.new } %>
-<% let openBaseFolder = (openFolder == "") %>
-<% console.log(openFolder)%>
+<% let openBaseFolder = (false) %>
 <div id="accordionPage" class="accordion">
   <!-- Top level Folder, always exists -->
   <section class="roller">
@@ -20,18 +19,18 @@
     </header>
 
     <div class="roller-body <% if (openBaseFolder) { %>show-on-load<% } %>">
-      <div class="roller-content p-3">
+      <ul class="roller-content py-3 px-4">
       <% for (let i=0; i < site.pages.length; i++) { if (site.pages[i].folder == "")  { %>
         <%- include("../components/page-row", { page : {...site.pages[i], newPage} } )%>
       <% }} %>
-      </div>
+      </ul>
     </div>
     
   </section>
   <!-- Other Folders -->
   <% for (let i=0; i < site.folders.length; i++) { const folder = site.folders[i];%>
-    <section class="roller <% if (openFolder == folder.slug) { %>show-on-load<% } %>">
-      <header class="roller-header">
+    <section class="roller">
+      <header class="roller-header <% if (openFolder == folder.slug) { %>show-on-load<% } %>">
         <button class="button-ghost roller-toggle  no-left">
           <h1><%- site.folders[i].name %></h1>
           <%- include("../components/icon-svg", {id:"chevron", 
@@ -43,7 +42,7 @@
         </button>
       </header>
       <div class="roller-body <% if (openFolder == folder.slug) { %>show-on-load<% } %>">
-        <div class="roller-content p-3">
+        <ul class="roller-content py-3 px-4">
         <% let empty = true; for (let j=0; j < site.pages.length; j++) { if ( site.pages[j].folder == site.folders[i].slug )  { empty = false; %>
           <%- include("../components/page-row", { page : {...site.pages[j], newPage} } )%>
           <% }} %>
@@ -58,7 +57,7 @@
                   cmsUrl:site.url+"admin/folders",
                   cmsText: "Do you really want to delete: " }}) %>  
           <% } %>
-        </div>
+        </ul>
       </div>
     </section>
   <% } %>

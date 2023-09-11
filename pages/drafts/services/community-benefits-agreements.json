@@ -5,10 +5,13 @@
     {
       "template": "hero",
       "name": "Hero",
-      "collapse": "hide",
+      "label": "",
+      "collapse": "show",
       "content": {
-        "image": "seldoms-team.jpg",
-        "alt": "Coalition members gathered together",
+        "image": {
+          "src": "seldoms-team.jpg",
+          "alt": "Coalition members gathered together"
+        },
         "heading": "Community Benefits Agreements",
         "paragraph": "Cannabis businesses should put their community first",
         "button": {
@@ -16,6 +19,7 @@
           "text": "",
           "page": "services/clear-your-record",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "standard",
@@ -25,6 +29,7 @@
     {
       "template": "quick-links",
       "name": "Quick Links",
+      "label": "",
       "collapse": "hide",
       "content": {
         "heading": "Quick Links",
@@ -32,6 +37,7 @@
           {
             "template": "link-text-svg",
             "name": "Text Link with Icon",
+            "label": "",
             "collapse": "hide",
             "content": {
               "text": "Download our CBA toolkit (pdf)",
@@ -48,6 +54,7 @@
           {
             "template": "link-text-svg",
             "name": "Text Link with Icon",
+            "label": "",
             "collapse": "hide",
             "content": {
               "text": "Read more about CBAs",

@@ -7,16 +7,7 @@
   border: none;
   border-radius: $border-radius;
   color: white;
-
-  &:hover {
-    transition: all $transition-fast;
-  }
-  
-}
-
-button:disabled, button:disabled:hover {
-  background-color: $tree-bark;
-  color: white;
+  transition: background-color $transition-fast;
 }
 
 .button-action {
@@ -25,17 +16,31 @@ button:disabled, button:disabled:hover {
   &:hover {
     background-color: $action-hover;
   }
+  &:active {
+    background-color: $action-active;
+  }
+  &:disabled {
+    background-color: $action-disabled;
+  }
 }
 
 .button-link {
   display: inline-block;
   text-decoration: none;
   background-color: $link;
-
+  
   &:hover {
     background-color: $link-hover;
   }
+  &:active {
+    background-color: $link-active;
+  }
+  &:disabled {
+    background-color: $link-disabled;
+  }
 }
+
+
 
 .button-cancel {
   background-color: $cancel;
@@ -49,6 +54,12 @@ button:disabled, button:disabled:hover {
   background-color: $danger;
 
   &:hover {
+    background-color: $danger-hover;
+  }
+  &:active {
+    background-color: $danger-active;
+  }
+  &:disabled {
     background-color: $danger-hover;
   }
 }

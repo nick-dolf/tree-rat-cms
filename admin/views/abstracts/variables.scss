@@ -15,13 +15,22 @@ $tree-green: rgba($color: #041E42, $alpha: 0.6);
 $outline: #ccc;
 
 $link: #1434A4;
-$link-hover: #2c80fe;
+$link-hover: #2c48ad;
+$link-active: #122f94;
+$link-disabled: rgba($color: #040a21, $alpha: 0.8);
+
 $action: #117144;
-$action-hover: #06854a;
+$action-hover: #297f57;
+$action-active: #0f663d;
+$action-disabled: #03170e;
+
 $cancel: #555;
 $cancel-hover: #888;
+
 $danger: #a91b0d;
-$danger-hover: #c0453a;
+$danger-hover: #b23225;
+$danger-active: #98180c;
+$danger-disabled: #220503;
 
 $new: rgba($color: #041E42, $alpha: 0.6);
 $brown-trans: rgba($color: #25150B, $alpha: 0.7);

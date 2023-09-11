@@ -3,10 +3,38 @@
   "description": "",
   "sections": [
     {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "juneteenth-w-small-group.jpg",
+          "alt": "Coalition volunteers in a group photo"
+        },
+        "image2": {
+          "src": "group-new2020-sharped.png",
+          "alt": "Coalition and Legal Aid booths at RAP Sheet Day"
+        },
+        "heading": "Get Involved",
+        "paragraph": "We welcome anyone who believes in our mission to get involved with us.\r\n\r\nIf you would like to support record clearing, you can get involved in organizing events and opportunities for expungement, assist people through the expungement process, or help promote education on record clearing!\r\n\r\nIf you’re a creative, we encourage you to engage with the programming of the Coalition, and use your skills to promote this work, present these programs to the public through graphic design, video, etc., and to help curate content for our social media!\r\n\r\nWe are organizing events like National Expungement Week, Know Your Rights, and resource fairs. We need support to ensure those events are effective, safe, and impactful for all involved!",
+        "button": {
+          "type": "internal",
+          "text": "Become A Member",
+          "page": "get-involved/become-a-member",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "two",
+        "color": "green"
+      }
+    },
+    {
       "template": "banner",
       "name": "Banner",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "heading": "Squirrel Ipsum",
         "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
@@ -19,7 +47,7 @@
           "scroll": ""
         },
         "style": "horizontal",
-        "color": "purple"
+        "color": "green"
       }
     }
   ]

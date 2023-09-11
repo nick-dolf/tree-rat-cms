@@ -1,15 +1,112 @@
-.card-image-neutral {
-  background-color: $neutral-100;
+.card-image-one {
+  @include spacing-short;
+
+  font-size: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @include tablet {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  h2 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
+  &.card-image-neutral {
+    background-color: $neutral-100;
+  }
+  
+  &.card-image-green {
+    background-color: $green-100;
+  }
+  
+  &.card-image-blue {
+    background-color: $blue-100;
+  }
+  
+  &.card-image-purple {
+    background-color: $purple-100;
+  }
 }
 
-.card-image-green {
-  background-color: $green-100;
+.card-image-two {
+  @include content-width-std;
+  font-size: 0;
+  position: relative;
+
+  h2 {
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .card-image-container {
+    margin: 0 0 0 auto;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+
+    picture {
+      width: 50%;
+    }
+  }
+
+  .card-text {
+    width: auto;
+    margin: 0 16px;
+    padding: 32px;
+    transform: translate(0, -64px);
+    color: $green-700;
+    
+    @include desktop {
+      position: absolute;
+      top: 50%;
+      left: 64px;
+      width: 70%;
+      padding: 64px;
+      transform: translate(0, -50%);
+    }
+  }
+
+  &.card-image-neutral {
+    .card-text {
+      box-shadow: inset 0 0 0 16px $neutral-100;
+      @include desktop {
+        box-shadow: inset 0 0 0 32px $neutral-100;
+      }
+    }
+  }
+  
+  &.card-image-green {
+    .card-text {
+      box-shadow: inset 0 0 0 16px $green-100;
+      @include desktop {
+        box-shadow: inset 0 0 0 32px $green-100;
+      }
+    }
+  }
+  
+  &.card-image-blue {
+    .card-text {
+      box-shadow: inset 0 0 0 16px $blue-100;
+      @include desktop {
+        box-shadow: inset 0 0 0 32px $blue-100;
+      }
+    }
+  }
+  
+  &.card-image-purple {
+    .card-text {
+      box-shadow: inset 0 0 0 16px $purple-100;
+      @include desktop {
+        box-shadow: inset 0 0 0 32px $purple-100;
+      }
+    }
+  }
 }
 
-.card-image-blue {
-  background-color: $blue-100;
-}
-
-.card-image-purple {
-  background-color: $purple-100;
-}

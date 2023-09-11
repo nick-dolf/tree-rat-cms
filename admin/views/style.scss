@@ -15,8 +15,8 @@
 @import "layouts/page";
 @import "layouts/blocks";
 
+@import "sections/page-accordion";
 @import "sections/roller";
-
 
 // Needs to be organized
 
@@ -40,9 +40,8 @@ textarea.alt {
 }
 
 #pageForm {
-
   @media screen and (min-width: 992px) {
-  width:75%;
+    width: 75%;
   }
 }
 

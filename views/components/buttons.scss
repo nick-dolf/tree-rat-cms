@@ -71,12 +71,17 @@
   background: white;
   border-color: $green-600;
 
+  svg {
+    background: transparent;
+  }
+
   &:hover,
   &:focus-visible {
     background: transparent;
     color: $white;
     box-shadow: $shadow-box;
     border-color: $white;
+
   }
 
   &:active {

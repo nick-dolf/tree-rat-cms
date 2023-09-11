@@ -3,57 +3,15 @@
   "description": "",
   "sections": [
     {
-      "template": "cards-with-links",
-      "name": "Hover Cards",
-      "label": "",
-      "collapse": "show",
-      "content": {
-        "cards": [
-          {
-            "template": "card-with-link",
-            "name": "Card with Link",
-            "label": "",
-            "collapse": "",
-            "content": {
-              "heading": "Squirrel Ipsum",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
-              "link": {
-                "type": "internal",
-                "page": "home",
-                "link": "",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "card-with-link",
-            "name": "Card with Link",
-            "label": "",
-            "collapse": "",
-            "content": {
-              "heading": "Squirrel Ipsum",
-              "paragraph": "Squiritur sunt optima. Et ascendentes arbores et saltare amant ex genere est. Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
-              "link": {
-                "type": "external",
-                "page": "test",
-                "link": "https://www.youtube.com/watch?v=wfz2fUd-8Tw",
-                "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
-              }
-            }
-          }
-        ]
-      }
-    },
-    {
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "image": "computer-6720x4480.jpg",
-        "alt": "Person on laptop",
+        "image": {
+          "src": "computer-6720x4480.jpg",
+          "alt": "Person on laptop"
+        },
         "heading": "Contact Us",
         "paragraph": "Ways to reach out and connect with the Coalition",
         "button": {
@@ -61,6 +19,7 @@
           "text": "",
           "page": "contact-us",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "standard",
@@ -80,6 +39,7 @@
           "text": "",
           "page": "contact-us",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "two-column"

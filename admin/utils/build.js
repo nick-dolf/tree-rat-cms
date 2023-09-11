@@ -142,7 +142,7 @@ function buildSite() {
    * SASS
    */
   const sassResult = sass.compile(app.locals.viewDir + "/main.scss", {
-    style: "compressed",
+    style: "compressed", sourceMap : true
   });
 
   fse.outputFileSync(app.locals.siteDir + "/assets/style.css", sassResult.css);

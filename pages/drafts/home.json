@@ -8,8 +8,10 @@
       "label": "",
       "collapse": "hide",
       "content": {
-        "image": "group-photo7.jpg",
-        "alt": "Coalition members holding a CEIC banner",
+        "image": {
+          "src": "group-photo7.jpg",
+          "alt": "Coalition members holding a CEIC banner"
+        },
         "heading": "Providing a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice.",
         "paragraph": "",
         "button": {
@@ -17,6 +19,7 @@
           "text": "Learn More",
           "page": "our-work/reentry-support",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": "2"
         },
         "style": "home",
@@ -36,6 +39,7 @@
           "text": "Link",
           "page": "our-work/reentry-support",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": "1"
         },
         "style": "splashy"
@@ -132,10 +136,39 @@
           "text": "",
           "page": "our-work/reentry-support",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "vertical",
         "color": "purple"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "juneteenth-w-small-group.jpg",
+          "alt": "Coalition volunteers in a group photo"
+        },
+        "image2": {
+          "src": "group-new2020-sharped.png",
+          "alt": "Coalition and Legal Aid booths at RAP Sheet Day"
+        },
+        "heading": "Get Involved",
+        "paragraph": "We welcome anyone who believes in our mission to get involved with us.\r\n\r\nIf you would like to support record clearing, you can get involved in organizing events and opportunities for expungement, assist people through the expungement process, or help promote education on record clearing!\r\n\r\nIf you’re a creative, we encourage you to engage with the programming of the Coalition, and use your skills to promote this work, present these programs to the public through graphic design, video, etc., and to help curate content for our social media!\r\n\r\nWe are organizing events like National Expungement Week, Know Your Rights, and resource fairs. We need support to ensure those events are effective, safe, and impactful for all involved!",
+        "button": {
+          "type": "internal",
+          "text": "Become A Member",
+          "page": "get-involved/become-a-member",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "two",
+        "color": "neutral"
       }
     },
     {
@@ -151,6 +184,7 @@
           "text": "Donate",
           "page": "our-work/reentry-support",
           "link": "https://funraise.org/give/Ceic-Corp/3aca7fd5-e9cb-4eb4-8574-807dbbb8bc93/",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "horizontal",

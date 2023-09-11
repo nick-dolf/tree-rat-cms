@@ -228,6 +228,9 @@ function selectToggle(event) {
   const targets = select.dataset.cmsTargets.split(" ")
   const values = select.dataset.cmsValues.split(" ")
 
+  console.log("targets", targets)
+  console.log("values: ",values)
+
   for (target of targets) {
     if (target.charAt(0) == "!") {
       $(`#${target.slice(1)}`).show();
@@ -556,13 +559,13 @@ $(document).on("click", ".roller-toggle", (event) => {
     activeTransition = true;
     const button = event.currentTarget;
     const roller = $(button.closest(".roller"));
+    console.log(roller)
     const rollerHeader = roller.find(".roller-header").first();
     const rollerBody = roller.find(".roller-body").first();
     const memory = roller.find(".remember-collapse").first();
 
     if (rollerHeader.hasClass("show-on-load")) {
       rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
-      rollerBody.css("overflow", "hidden");
       memory.val("hide");
       
       setTimeout(() => {
@@ -581,7 +584,7 @@ $(document).on("click", ".roller-toggle", (event) => {
         setTimeout(() => {
           rollerBody.css("max-height", "none");
           activeTransition = false;
-        }, 700);
+        }, 600);
       } else {
         rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
         memory.val("hide");

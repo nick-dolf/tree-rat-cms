@@ -1,9 +1,9 @@
 <% 
 let widths = [1600, 800]; 
-let imgName = publishImg(content.image, { width: 1600, height: 800, widths}, locals.promises) %>
+let imgName = publishImg(content.image.src, { width: 1600, height: 800, widths}, locals.promises) %>
 <picture>
   <source media="(min-width:1200px)" type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-1600.webp" />
   <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-800.webp" />
 
-  <img class="hero-img-home" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="1600" height="800" alt="<%- content.alt %>" />
+  <img class="hero-img-home" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="1600" height="800" alt="<%- content.image.alt %>" />
 </picture>

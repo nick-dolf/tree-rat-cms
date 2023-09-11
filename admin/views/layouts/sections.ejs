@@ -21,22 +21,19 @@
                                              color: "black", 
                                              width: 24})%>
     </button>
-    <div class="button-group roller-actions">
-      <%- include("../components/button", 
-                    {arg:{text: "Label", 
-                          color:"action", 
-                          extraClass:"label-set-active", 
-                          bsToggle:"modal",
-                          bsTarget:"#label-modal",
-                          cmsTarget: ".cms-section",
-                          cmsText: section.name }}) %>
-      <button type="button" class="button button-action button-toggle">
-        <%- include("../components/icon-svg", {id:"three-dots", 
-                               color: "black", 
-                               width: 18}) %>
-        <span class="visually-hidden">Toggle Dropdown</span>
-      </button>
-      <div class="button-drop">
+    <div class="roller-actions drop-icon">
+      <%- include("../components/icon-svg", {id: "nut", 
+      width: 20 }) %>
+
+      <div class="drop-icon-menu">
+        <%- include("../components/button", 
+                  {arg:{text: "Add Label", 
+                        color:"action", 
+                        extraClass:"label-set-active", 
+                        bsToggle:"modal",
+                        bsTarget:"#label-modal",
+                        cmsTarget: ".cms-section",
+                        cmsText: section.name }}) %>
         <%- include("../components/button", 
                   {arg:{text: "Copy", 
                         color:"action", 

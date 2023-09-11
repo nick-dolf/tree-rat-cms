@@ -1,11 +1,42 @@
 [
   {
+    "name": "Policy & Advocacy",
+    "slug": "policy-and-advocacy",
+    "folder": "our-work",
+    "link": "our-work/policy-and-advocacy",
+    "publishedDate": "Sun Sep 10 2023 10:51:59 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sun Sep 10 2023 11:03:09 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Banner",
+    "slug": "banner",
+    "folder": "about-us",
+    "link": "about-us/banner",
+    "publishedDate": false,
+    "draftedDate": "Sun Sep 10 2023 10:33:06 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Drum Up",
+    "slug": "drum-up",
+    "folder": "about-us",
+    "link": "about-us/drum-up",
+    "publishedDate": false,
+    "draftedDate": "Sun Sep 10 2023 10:25:51 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Reentry Support",
+    "slug": "reentry-support",
+    "folder": "our-work",
+    "link": "our-work/reentry-support",
+    "publishedDate": "Sat Sep 09 2023 19:05:12 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 16:02:10 GMT-0500 (Central Daylight Time)"
+  },
+  {
     "name": "Madison test page",
     "slug": "madison-test-page",
     "folder": "madison-test",
     "link": "madison-test/madison-test-page",
     "publishedDate": false,
-    "draftedDate": "Thu Sep 07 2023 16:53:15 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Become a Member",
@@ -13,7 +44,7 @@
     "folder": "get-involved",
     "link": "get-involved/become-a-member",
     "publishedDate": "Mon Sep 04 2023 15:51:41 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Sep 04 2023 16:00:29 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Sat Sep 09 2023 15:10:41 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Test",
@@ -21,30 +52,30 @@
     "folder": "",
     "link": "test",
     "publishedDate": false,
-    "draftedDate": "Tue Sep 05 2023 22:22:36 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Mon Sep 11 2023 08:06:11 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Volunteer",
     "slug": "volunteer",
     "folder": "get-involved",
     "link": "get-involved/volunteer",
-    "publishedDate": "Tue Aug 29 2023 08:13:29 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Tue Aug 29 2023 08:19:26 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 15:11:21 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:11:19 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Contact Us",
     "slug": "contact-us",
     "folder": "",
     "link": "contact-us",
-    "publishedDate": "Wed Aug 23 2023 16:46:53 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Fri Aug 25 2023 22:21:35 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 14:59:27 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Sep 06 2023 19:42:37 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Terms of Use",
     "slug": "terms-of-use",
     "folder": "",
     "link": "terms-of-use",
-    "publishedDate": "Wed Aug 23 2023 16:47:10 GMT-0500 (Central Daylight Time)",
+    "publishedDate": "Sat Sep 09 2023 14:59:17 GMT-0500 (Central Daylight Time)",
     "draftedDate": "Wed Aug 23 2023 16:47:09 GMT-0500 (Central Daylight Time)"
   },
   {
@@ -52,7 +83,7 @@
     "slug": "privacy-policy",
     "folder": "",
     "link": "privacy-policy",
-    "publishedDate": "Wed Aug 23 2023 16:45:33 GMT-0500 (Central Daylight Time)",
+    "publishedDate": "Sat Sep 09 2023 14:59:14 GMT-0500 (Central Daylight Time)",
     "draftedDate": "Wed Aug 23 2023 22:40:35 GMT-0500 (Central Daylight Time)"
   },
   {
@@ -60,24 +91,24 @@
     "slug": "clear-your-record",
     "folder": "services",
     "link": "services/clear-your-record",
-    "publishedDate": "Mon Aug 21 2023 08:52:17 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Tue Aug 15 2023 09:44:19 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 15:09:36 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:09:34 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Community Benefits Agreements",
     "slug": "community-benefits-agreements",
     "folder": "services",
     "link": "services/community-benefits-agreements",
-    "publishedDate": "Wed Aug 23 2023 14:13:23 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Wed Aug 23 2023 04:50:12 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Sat Sep 09 2023 15:10:07 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:10:01 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Know Your Rights",
     "slug": "know-your-rights",
     "folder": "services",
     "link": "services/know-your-rights",
-    "publishedDate": "Tue Aug 15 2023 09:50:10 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Tue Aug 15 2023 09:50:06 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 15:10:23 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:10:22 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Reentry Support",
@@ -108,8 +139,9 @@
     "slug": "our-partners",
     "folder": "about-us",
     "link": "about-us/our-partners",
-    "publishedDate": "Tue Sep 05 2023 23:04:20 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Thu Sep 07 2023 17:17:05 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Sat Sep 09 2023 14:58:57 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 14:58:54 GMT-0500 (Central Daylight Time)"
+
   },
   {
     "name": "Our Impact",
@@ -124,15 +156,15 @@
     "slug": "mission-and-history",
     "folder": "about-us",
     "link": "about-us/mission-and-history",
-    "publishedDate": "Tue Aug 29 2023 08:58:36 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Tue Aug 29 2023 08:58:50 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 15:00:09 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:00:07 GMT-0500 (Central Daylight Time)"
   },
   {
     "name": "Home",
     "slug": "home",
     "folder": "",
     "link": "home",
-    "publishedDate": "Mon Sep 04 2023 16:07:47 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Fri Aug 25 2023 21:34:22 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sat Sep 09 2023 14:59:05 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Sep 06 2023 19:30:36 GMT-0500 (Central Daylight Time)"
   }
 ]
