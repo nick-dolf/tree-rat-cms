@@ -6,14 +6,14 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "tucker-good-t2gyvhmks98-unsplash.jpg",
           "alt": "State Capitol dome behind a wall"
         },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "heading": "Policy & Advocacy",
+        "paragraph": "We work to make cannabis policy in Illinois more inclusive, transparent and accountable",
         "button": {
           "type": "no",
           "text": "Squirrels",
@@ -46,6 +46,73 @@
                 "type": "external",
                 "page": "test",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "slider",
+      "name": "Slider",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "Policy in Action",
+        "style": "normal",
+        "color": "blue",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "100+",
+              "paragraph": "Coalition members visited Springfield in 2019",
+              "button": {
+                "type": "no",
+                "text": "Squirrels",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "3",
+              "paragraph": "working groups launched, inviting community involvement in policy",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "100s",
+              "paragraph": "of members educated on the political process",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
               }

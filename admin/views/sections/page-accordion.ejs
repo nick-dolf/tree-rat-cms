@@ -19,7 +19,7 @@
     </header>
 
     <div class="roller-body <% if (openBaseFolder) { %>show-on-load<% } %>">
-      <ul class="roller-content p-3">
+      <ul class="roller-content py-3 px-4">
       <% for (let i=0; i < site.pages.length; i++) { if (site.pages[i].folder == "")  { %>
         <%- include("../components/page-row", { page : {...site.pages[i], newPage} } )%>
       <% }} %>
@@ -42,7 +42,7 @@
         </button>
       </header>
       <div class="roller-body <% if (openFolder == folder.slug) { %>show-on-load<% } %>">
-        <ul class="roller-content p-3">
+        <ul class="roller-content py-3 px-4">
         <% let empty = true; for (let j=0; j < site.pages.length; j++) { if ( site.pages[j].folder == site.folders[i].slug )  { empty = false; %>
           <%- include("../components/page-row", { page : {...site.pages[j], newPage} } )%>
           <% }} %>

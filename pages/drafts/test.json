@@ -6,7 +6,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "juneteenth-w-small-group.jpg",

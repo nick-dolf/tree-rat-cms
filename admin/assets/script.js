@@ -581,11 +581,17 @@ $(document).on("click", ".roller-toggle", (event) => {
       if (rollerBody.css("max-height") == "0px") {
         rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
         memory.val("show");
-        activeTransition = false;
+        setTimeout(() => {
+          rollerBody.css("max-height", "none");
+          activeTransition = false;
+        }, 600);
       } else {
-        rollerBody.css("max-height", 0);
+        rollerBody.css("max-height", rollerBody.prop("scrollHeight"));
         memory.val("hide");
-        activeTransition = false;
+        setTimeout(() => {
+          rollerBody.css("max-height", 0);
+          activeTransition = false;
+        }, 10);
       }
     }
   }

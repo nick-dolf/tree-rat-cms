@@ -30,6 +30,10 @@
     margin-left: auto;
     width: 60px;
     text-align: center;
+
+    button {
+      border-radius: 0;
+    }
   }
 
   .button {
@@ -46,10 +50,10 @@
   .drop-icon-menu {
     z-index: 10;
     line-height: 1.5;
-    padding: 6px;
+    padding: 8px;
     background: $dark-trans;
     position: absolute;
-    transform: translateX(-30px) scaleY(0);
+    transform: translateX(-28px) scaleY(0);
     transition: all $transition-std;
   }
 
@@ -58,7 +62,7 @@
     background: $dark-trans;
 
     .drop-icon-menu {
-      transform: translateX(-30px) scaleY(1);
+      transform: translateX(-28px) scaleY(1);
     }
   }
 }
