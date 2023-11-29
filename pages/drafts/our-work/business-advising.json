@@ -1,66 +1,241 @@
 {
-  "title": "",
+  "title": "Business Advising",
   "description": "",
   "sections": [
     {
-      "template": "line",
-      "name": "Line",
-      "collapse": "show",
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
       "content": {
-        "style": "dotted"
+        "image": {
+          "src": "",
+          "alt": ""
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "style": "purple"
       }
     },
     {
-      "template": "text-area",
-      "name": "Text Area",
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
       "collapse": "hide",
       "content": {
-        "columnOne": "Words ahoy",
-        "columnTwo": "",
+        "image": {
+          "src": "briefing-for-the-client-2048x1152-1600-34acad008.webp",
+          "alt": "Business person working"
+        },
+        "heading": "Business Support and Outreach",
+        "paragraph": "The Coalition works to ensure cannabis businesses in Illinois benefit the communities most impacted by prohibition, and support entrepreneurs in achieving their business goals.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "CBA toolkit",
+            "collapse": "hide",
+            "content": {
+              "text": "Download the CBA Toolkit",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Schedule Support Session",
+              "svg": "calendar",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://calendly.com/ceiccoalition/30min",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Starting a Cannabis Business",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "business-table-554-2fdd24908.webp",
+          "alt": "A person making electronic music at a business display table."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Starting a Cannabis Business",
+        "paragraph": "The Coalition is committed to ensuring our community members can build generational wealth in this industry. Coalition members have lots of experience in the cannabis industry, and can support you to make your business dreams a reality!",
+        "button": {
+          "type": "external",
+          "text": "State Of Illinois IDFPR Site",
+          "page": "our-work/policy-and-advocacy",
+          "link": "https://idfpr.illinois.gov/profs/adultusecan.asp",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Community Benefits Agreement",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "capitol-554-578f98fbb.webp",
+          "alt": "Two coalition members in front of the capitol steps."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Community Benefits Agreement",
+        "paragraph": "The Coalition organized the nation’s first community benefits agreement in the cannabis industry. To support our communities organize campaigns across the State, we created a toolkit to guide through the process.",
         "button": {
           "type": "internal",
-          "text": "Now with text",
-          "page": "our-work/business-advising",
+          "text": "Learn More About CBA",
+          "page": "services/community-benefits-agreements",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
-        "style": "flashy"
+        "style": "one",
+        "color": "neutral"
       }
     },
     {
-      "template": "banner",
-      "name": "Banner",
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "Corporate Social Responsibility",
       "collapse": "hide",
       "content": {
-        "heading": "This is horizontal",
-        "paragraph": "ahghahs",
+        "image": {
+          "src": "group-in-front-of-car-554-28e380e99.webp",
+          "alt": "Group members posing in front of a car."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Corporate Social Responsibility",
+        "paragraph": "It is more important than ever before that businesses do right by their customers and community, especially cannabis companies. The Coalition can support your business and develop a CSR plan that benefits everyone.",
         "button": {
           "type": "no",
-          "text": "",
-          "page": "our-work/reentry-support",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
-        "style": "horizontal",
-        "color": "green"
+        "style": "one",
+        "color": "neutral"
       }
     },
     {
-      "template": "banner",
-      "name": "Banner",
-      "collapse": "show",
+      "template": "slider",
+      "name": "Slider",
+      "label": "How to get involved",
+      "collapse": "hide",
       "content": {
-        "heading": "tshsh",
-        "paragraph": "",
-        "button": {
-          "type": "no",
-          "text": "",
-          "page": "our-work/reentry-support",
-          "link": "",
-          "scroll": ""
-        },
-        "style": "vertical",
-        "color": "purple"
+        "heading": "How to get involved",
+        "style": "big",
+        "color": "green",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "TOOLKIT",
+            "collapse": "hide",
+            "content": {
+              "heading": "TOOLKIT",
+              "paragraph": "DOWNLOAD THE CBA TOOLKIT",
+              "button": {
+                "type": "external",
+                "text": "Download Toolkit",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "SCHEDULE",
+            "collapse": "hide",
+            "content": {
+              "heading": "SCHEDULE",
+              "paragraph": "SCHEDULE AN ENTREPRENEUR SUPPORT SESSION",
+              "button": {
+                "type": "external",
+                "text": "Schedule a Session",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://calendly.com/ceiccoalition/30min",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "PARTICIPATE",
+            "collapse": "hide",
+            "content": {
+              "heading": "PARTICIPATE",
+              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
+              "button": {
+                "type": "internal",
+                "text": "Become a Member",
+                "page": "get-involved/become-a-member",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

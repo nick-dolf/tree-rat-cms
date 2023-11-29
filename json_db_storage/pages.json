@@ -29,22 +29,15 @@
     "folder": "our-work",
     "link": "our-work/reentry-support",
     "publishedDate": "Sat Sep 09 2023 19:05:12 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Sep 09 2023 16:02:10 GMT-0500 (Central Daylight Time)"
-  },
-  {
-    "name": "Madison test page",
-    "slug": "madison-test-page",
-    "folder": "madison-test",
-    "link": "madison-test/madison-test-page",
-    "publishedDate": false
+    "draftedDate": "Wed Nov 15 2023 23:16:20 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Become a Member",
     "slug": "become-a-member",
     "folder": "get-involved",
     "link": "get-involved/become-a-member",
-    "publishedDate": "Mon Sep 04 2023 15:51:41 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Sat Sep 09 2023 15:10:41 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Mon Sep 11 2023 14:20:53 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Mon Sep 11 2023 14:20:51 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Test",
@@ -52,7 +45,7 @@
     "folder": "",
     "link": "test",
     "publishedDate": false,
-    "draftedDate": "Mon Sep 11 2023 08:06:11 GMT-0500 (Central Daylight Time)"
+    "draftedDate": "Wed Sep 20 2023 22:16:28 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Volunteer",
@@ -131,25 +124,24 @@
     "slug": "business-advising",
     "folder": "our-work",
     "link": "our-work/business-advising",
-    "publishedDate": "Sat Aug 12 2023 09:27:10 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Aug 12 2023 09:27:09 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Mon Nov 13 2023 03:17:20 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Mon Nov 13 2023 03:17:16 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Our Partners",
     "slug": "our-partners",
     "folder": "about-us",
     "link": "about-us/our-partners",
-    "publishedDate": "Sat Sep 09 2023 14:58:57 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Sep 09 2023 14:58:54 GMT-0500 (Central Daylight Time)"
-
+    "publishedDate": "Mon Nov 13 2023 02:23:12 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Mon Nov 13 2023 02:23:05 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Our Impact",
     "slug": "our-impact",
     "folder": "about-us",
     "link": "about-us/our-impact",
-    "publishedDate": false,
-    "draftedDate": "Wed Jul 12 2023 15:32:23 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Mon Nov 13 2023 02:54:15 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Mon Nov 13 2023 02:54:13 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Mission & History",
