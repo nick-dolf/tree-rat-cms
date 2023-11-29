@@ -6,7 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "cytonn-photography-n95vmlxqm2i-unsplash.jpg",
@@ -43,6 +43,146 @@
           "scroll": ""
         },
         "style": "two-column"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": " Illinois Cannabis Unions",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "romain-dancre-doplsdelx7e-unsplash-554-b3cf9a1de.webp",
+          "alt": "People signing papers"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Illinois Cannabis Unions",
+        "paragraph": "As part of the Cannabis Regulation and Tax Act, those applying for cannabis business licenses from the State can earn additional points towards their license by signing a labor peace agreement. Learn more about labor peace agreements and the participating unions here:",
+        "button": {
+          "type": "no",
+          "text": "Illinois Cannabis Unions",
+          "page": "our-work/policy-and-advocacy",
+          "link": "https://www.ilcannabisunions.com/",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral",
+        "links": [
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "Illinois Cannabis Unions",
+            "collapse": "show",
+            "content": {
+              "text": "Illinois Cannabis Unions",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.ilcannabisunions.com/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "City & State Resources",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "patrick-fore-h5lf0ngyetk-unsplash-554-cf7bd7d6b.webp",
+          "alt": "Interior of a city building with vaulted ceilings and columns"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "City & State Resources",
+        "paragraph": "Check out some of the resources the City of Chicago and State of Illinois have published about cannabis.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral",
+        "links": [
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "Illinois Department of Agriculture - Cannabis Page",
+            "collapse": "show",
+            "content": {
+              "text": "Illinois Department of Agriculture - Cannabis Page",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://cannabis.illinois.gov/agencies/cannabis-idoa.html",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "City of Chicago Cannabis Information Center",
+            "collapse": "show",
+            "content": {
+              "text": "City of Chicago Cannabis Information Center",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home.html",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "Illinois R3 Program Site",
+            "collapse": "show",
+            "content": {
+              "text": "Illinois R3 Program Site",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://r3.illinois.gov/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Illinois Dept of Commerce for Cannabis Equity",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://dceo.illinois.gov/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

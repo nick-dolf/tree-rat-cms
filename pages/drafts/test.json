@@ -6,6 +6,54 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "blue"
+      }
+    },
+    {
+      "template": "banner",
+      "name": "Banner",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "external",
+          "text": "Squiritur",
+          "page": "test",
+          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "horizontal",
+        "color": "blue"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
       "collapse": "hide",
       "content": {
         "image": {
@@ -27,27 +75,7 @@
           "scroll": ""
         },
         "style": "two",
-        "color": "green"
-      }
-    },
-    {
-      "template": "banner",
-      "name": "Banner",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "button": {
-          "type": "external",
-          "text": "Squiritur",
-          "page": "test",
-          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
-          "file": "cba-toolkit-final.pdf",
-          "scroll": ""
-        },
-        "style": "horizontal",
-        "color": "green"
+        "color": "blue"
       }
     }
   ]
