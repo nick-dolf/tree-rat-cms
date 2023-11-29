@@ -6,7 +6,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "default.webp",
@@ -28,6 +28,44 @@
         },
         "style": "one",
         "color": "blue"
+      }
+    },
+    {
+      "template": "history",
+      "name": "History",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "History",
+        "color": "purple",
+        "events": [
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "",
+            "collapse": "",
+            "content": {
+              "date": "3000",
+              "paragraph": "Ut sciuri super terram. Et salvum facere omnes homines, qui pascat eas nuces, et occidere cetera."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "style": "purple"
       }
     },
     {

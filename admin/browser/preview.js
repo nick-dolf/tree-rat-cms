@@ -1,5 +1,9 @@
 function reloadPreview() {
-  $("#previewFrame")[0].contentWindow.location.reload(true);
+  const preview = $("#previewFrame");
+
+  if (preview[0]) {
+    preview[0].contentWindow.location.reload(true);
+  }
 }
 
 $("#previewFrame").on("load", () => {
@@ -9,7 +13,6 @@ $("#previewFrame").on("load", () => {
   iframe.height = contentHeight;
 
   const previewSize = $("input[name='previewSize']:checked").val();
-  console.log(previewSize);
 
   if (previewSize == "mobile") {
     $("#thumbnailContainer").height(contentHeight * 0.4);
@@ -34,3 +37,5 @@ $("input[name='previewSize']").on("change", function () {
 
   reloadPreview();
 });
+
+reloadPreview();
