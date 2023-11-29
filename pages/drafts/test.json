@@ -3,28 +3,6 @@
   "description": "",
   "sections": [
     {
-      "template": "history",
-      "name": "History",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "heading": "History",
-        "color": "purple",
-        "events": [
-          {
-            "template": "event",
-            "name": "Event",
-            "label": "",
-            "collapse": "",
-            "content": {
-              "date": "3000",
-              "paragraph": "Ut sciuri super terram. Et salvum facere omnes homines, qui pascat eas nuces, et occidere cetera."
-            }
-          }
-        ]
-      }
-    },
-    {
       "template": "card-image",
       "name": "Image Card",
       "label": "",
@@ -50,6 +28,28 @@
         },
         "style": "one",
         "color": "blue"
+      }
+    },
+    {
+      "template": "history",
+      "name": "History",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "History",
+        "color": "purple",
+        "events": [
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "",
+            "collapse": "",
+            "content": {
+              "date": "3000",
+              "paragraph": "Ut sciuri super terram. Et salvum facere omnes homines, qui pascat eas nuces, et occidere cetera."
+            }
+          }
+        ]
       }
     },
     {

@@ -3,22 +3,6 @@
   "description": "",
   "sections": [
     {
-      "template": "testimonial",
-      "name": "Testimonial",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "image": {
-          "src": "",
-          "alt": ""
-        },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "style": "purple"
-      }
-    },
-    {
       "template": "hero",
       "name": "Hero",
       "label": "",
@@ -60,7 +44,7 @@
               "svg": "bill",
               "link": {
                 "type": "internal",
-                "page": "services/clear-your-record",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -74,7 +58,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "record-cleaning.png",
@@ -89,7 +73,7 @@
         "button": {
           "type": "internal",
           "text": "Learn About Expungement",
-          "page": "services/clear-your-record",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -152,6 +136,22 @@
         },
         "style": "one",
         "color": "neutral"
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "jefferson.jpg",
+          "alt": "Jefferson Davis, who is a Coalition member, wearing a white shirt and pants"
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "style": "purple"
       }
     }
   ]
