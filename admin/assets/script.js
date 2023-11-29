@@ -552,6 +552,7 @@ $("input[name='previewSize']").on("change", function () {
   reloadPreview();
 });
 
+reloadPreview();
 let activeTransition = false;
 
 $(document).on("click", ".roller-toggle", (event) => {

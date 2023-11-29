@@ -34,3 +34,5 @@ $("input[name='previewSize']").on("change", function () {
 
   reloadPreview();
 });
+
+reloadPreview();
