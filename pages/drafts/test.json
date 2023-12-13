@@ -3,6 +3,26 @@
   "description": "",
   "sections": [
     {
+      "template": "banner",
+      "name": "Banner",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "external",
+          "text": "Squiritur",
+          "page": "test",
+          "link": "https://www.youtube.com/watch?v=xIEWgxuaPyA",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "horizontal",
+        "color": "green"
+      }
+    },
+    {
       "template": "card-image",
       "name": "Image Card",
       "label": "",
@@ -50,6 +70,22 @@
             }
           }
         ]
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "style": "purple"
       }
     },
     {

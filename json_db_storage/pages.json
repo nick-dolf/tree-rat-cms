@@ -8,28 +8,12 @@
     "draftedDate": "Sun Sep 10 2023 11:03:09 GMT-0500 (Central Daylight Time)"
   },
   {
-    "name": "Banner",
-    "slug": "banner",
-    "folder": "about-us",
-    "link": "about-us/banner",
-    "publishedDate": false,
-    "draftedDate": "Sun Sep 10 2023 10:33:06 GMT-0500 (Central Daylight Time)"
-  },
-  {
-    "name": "Drum Up",
-    "slug": "drum-up",
-    "folder": "about-us",
-    "link": "about-us/drum-up",
-    "publishedDate": false,
-    "draftedDate": "Sun Sep 10 2023 10:25:51 GMT-0500 (Central Daylight Time)"
-  },
-  {
     "name": "Reentry Support",
     "slug": "reentry-support",
     "folder": "our-work",
     "link": "our-work/reentry-support",
     "publishedDate": "Sat Sep 09 2023 19:05:12 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Wed Nov 29 2023 08:35:32 GMT-0600 (Central Standard Time)"
+    "draftedDate": "Wed Nov 29 2023 23:36:06 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Become a Member",
@@ -45,7 +29,7 @@
     "folder": "",
     "link": "test",
     "publishedDate": false,
-    "draftedDate": "Wed Nov 29 2023 08:44:14 GMT-0600 (Central Standard Time)"
+    "draftedDate": "Sat Dec 02 2023 22:18:20 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Volunteer",
@@ -72,6 +56,22 @@
     "draftedDate": "Wed Aug 23 2023 16:47:09 GMT-0500 (Central Daylight Time)"
   },
   {
+    "name": "Privacy Policy",
+    "slug": "privacy-policy",
+    "folder": "",
+    "link": "privacy-policy",
+    "publishedDate": "Sat Sep 09 2023 14:59:14 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Wed Aug 23 2023 22:40:35 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Clear Your Record",
+    "slug": "clear-your-record",
+    "folder": "services",
+    "link": "services/clear-your-record",
+    "publishedDate": "Sat Sep 09 2023 15:09:36 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Sat Sep 09 2023 15:09:34 GMT-0500 (Central Daylight Time)"
+  },
+  {
     "name": "Community Benefits Agreements",
     "slug": "community-benefits-agreements",
     "folder": "services",
@@ -86,6 +86,22 @@
     "link": "services/know-your-rights",
     "publishedDate": "Sat Sep 09 2023 15:10:23 GMT-0500 (Central Daylight Time)",
     "draftedDate": "Sat Sep 09 2023 15:10:22 GMT-0500 (Central Daylight Time)"
+  },
+  {
+    "name": "Reentry Support",
+    "slug": "reentry-support",
+    "folder": "our-work",
+    "link": "our-work/reentry-support",
+    "publishedDate": "Tue Sep 05 2023 22:50:11 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Sat Sep 09 2023 20:58:09 GMT+0000 (Coordinated Universal Time)"
+  },
+  {
+    "name": "Policy & Advocacy",
+    "slug": "policy-and-advocacy",
+    "folder": "our-work",
+    "link": "our-work/policy-and-advocacy",
+    "publishedDate": "Tue Aug 15 2023 09:35:40 GMT-0500 (Central Daylight Time)",
+    "draftedDate": "Mon Sep 04 2023 14:55:00 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Business Advising",
