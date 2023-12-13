@@ -31,7 +31,7 @@ router.post(
     fse
       .mkdir(draftDir + slug)
       .then(() => {
-        res.adminRender("layouts/page-accordion", {changedFolder: slug});
+        res.adminRender("sections/page-accordion", {changedFolder: slug});
       })
       .catch((error) => {
         res.status(500).send(error);
@@ -48,7 +48,7 @@ router.delete("/:slug", (req, res) => {
     fse
       .remove(draftDir + slug)
       .then(() => {
-        res.adminRender("layouts/page-accordion", {changedFolder: slug});
+        res.adminRender("sections/page-accordion", {changedFolder: slug});
       })
       .catch((err) => {
         console.error(err);
