@@ -11,7 +11,7 @@
     flex-direction: row;
     gap: 32px;
   }
-
+  
   h3 {
     text-align: left;
   }
@@ -69,6 +69,13 @@
     width: 50%;
   }
 
+  h2 {
+    font-size: 2.0rem;
+    @include tablet {
+      font-size: 2.4rem;
+    }
+  }
+  
   h3  {
     margin: 0;
   }
