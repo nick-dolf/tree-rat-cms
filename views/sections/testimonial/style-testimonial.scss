@@ -2,6 +2,10 @@
   padding: 32px 0;
   margin: 32px 0;
 
+  h2  {
+    margin: 0;
+  }
+
   @include tablet {
     padding: 64px 0;
     margin: 64px 0;
@@ -48,7 +52,7 @@
     background: $dark;
   }
   
-  h3 {
+  h2 {
     color: $dark;
   }
 
