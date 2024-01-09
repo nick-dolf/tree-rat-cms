@@ -3,6 +3,73 @@
   "description": "",
   "sections": [
     {
+      "template": "slider",
+      "name": "Slider",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "Squirrel Ipsum",
+        "style": "normal",
+        "color": "purple",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "Squirrels",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "Squiritur",
+              "paragraph": "Et si pascere nuces sunt valde dolor et facti sunt amici tui.",
+              "button": {
+                "type": "no",
+                "text": "",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
       "template": "banner",
       "name": "Banner",
       "label": "",

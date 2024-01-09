@@ -142,15 +142,15 @@
       "template": "testimonial",
       "name": "Testimonial",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "jefferson.jpg",
           "alt": "Jefferson Davis, who is a Coalition member, wearing a white shirt and pants"
         },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "heading": "Jefferson Davis",
+        "paragraph": "Mr. Davis started the record clearing process through the Coalition by attending one of our RAP Sheet Assistance Days. After attending the event he was connected with legal aids, and in 2022 was notified that his record has been fully cleared & sealed!",
+        "quote": "Having the expungement brings me great joy. It allows me to let go of a past that no longer represents who I am. I'm now a proud owner of my own company, provider for my family and mentor for my community.",
         "style": "purple"
       }
     }

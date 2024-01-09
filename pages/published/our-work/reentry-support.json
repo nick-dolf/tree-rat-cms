@@ -44,7 +44,7 @@
               "svg": "bill",
               "link": {
                 "type": "internal",
-                "page": "services/clear-your-record",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -58,7 +58,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "record-cleaning.png",
@@ -73,7 +73,7 @@
         "button": {
           "type": "internal",
           "text": "Learn About Expungement",
-          "page": "services/clear-your-record",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -136,6 +136,22 @@
         },
         "style": "one",
         "color": "neutral"
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "jefferson.jpg",
+          "alt": "Jefferson Davis, who is a Coalition member, wearing a white shirt and pants"
+        },
+        "heading": "Jefferson Davis",
+        "paragraph": "Mr. Davis started the record clearing process through the Coalition by attending one of our RAP Sheet Assistance Days. After attending the event he was connected with legal aids, and in 2022 was notified that his record has been fully cleared & sealed!",
+        "quote": "Having the expungement brings me great joy. It allows me to let go of a past that no longer represents who I am. I'm now a proud owner of my own company, provider for my family and mentor for my community.",
+        "style": "purple"
       }
     }
   ]
