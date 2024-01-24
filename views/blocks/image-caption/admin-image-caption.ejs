@@ -1,0 +1,13 @@
+<% if (content.default) {
+    content.default = false
+    content.caption = "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+    content.image = {}
+    content.image.src = "default.webp"
+    content.image.alt = "Squirrel on tree."
+  } %>
+  
+  <div class="white-back">
+    <!-- Image -->
+    <%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
+    <%- include("../../section-helpers/text-area-plain-threeline", { slug: "caption", label: "Caption"}) %>
+  </div>

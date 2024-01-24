@@ -1,5 +1,9 @@
 [
   {
+    "slug": "image-caption",
+    "name": "Image"
+  },
+  {
     "slug": "link-card",
     "name": "Link"
   },

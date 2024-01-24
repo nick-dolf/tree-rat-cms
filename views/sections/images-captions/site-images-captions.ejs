@@ -1,0 +1,8 @@
+<section class="images-with-captions">
+
+    <% if (content.images) for (image of content.images) { %>
+        <%- include(`../../blocks/${image.template}/site-${image.template}`,
+                  { content : image.content }) %> 
+    <% } %>
+    
+</section>

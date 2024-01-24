@@ -1,0 +1,21 @@
+.images-with-captions {
+  @include spacing-slim;
+
+  background-color: $green-50;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+
+
+  @include desktop {
+    flex-direction: row;
+  }
+
+  .container {
+    flex: 1 1 0px;
+  }
+
+  .image-container {
+    height: 300px;
+  }
+}
