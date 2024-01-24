@@ -1,6 +1,6 @@
-<section class="images-captions images-captions-<%- content.bgcolor %>">
+<section class="images-with-captions">
 
-    <% if (content.images) for (image of content.images) { %> 
+    <% if (content.images) for (image of content.images) { %>
         <%- include(`../../blocks/${image.template}/site-${image.template}`,
                   { content : image.content }) %> 
     <% } %>
