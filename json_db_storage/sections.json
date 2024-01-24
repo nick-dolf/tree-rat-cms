@@ -1,5 +1,9 @@
 [
   {
+    "slug": "images-captions",
+    "name": "Images with Captions"
+  },
+  {
     "slug": "banner",
     "name": "Banner"
   },

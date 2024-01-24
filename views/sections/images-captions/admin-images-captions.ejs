@@ -1,0 +1,11 @@
+<div class="white-back pb-2">
+<!-- Style -->
+<%- include("../../section-helpers/select", 
+                { slug: "bgcolor", label: "Background Color", 
+                  options : [{slug: "green", label: "Green"},
+                             {slug: "purple",label:"Purple"},
+                             {slug: "neutral", label: "Neutral"}]}) %>
+</div>
+<%- include("../../section-helpers/block-select", 
+{ slug: "images",
+  blocks:[{slug:"image-caption", name:"Image"}]}) %>
