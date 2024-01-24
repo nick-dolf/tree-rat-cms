@@ -1,5 +1,13 @@
 [
   {
+    "name": "New page",
+    "slug": "new-page",
+    "folder": "",
+    "link": "new-page",
+    "publishedDate": "Wed Jan 10 2024 22:56:06 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Mon Jan 15 2024 01:52:54 GMT+0000 (Coordinated Universal Time)"
+  },
+  {
     "name": "Policy & Advocacy",
     "slug": "policy-and-advocacy",
     "folder": "our-work",
@@ -12,7 +20,7 @@
     "slug": "reentry-support",
     "folder": "our-work",
     "link": "our-work/reentry-support",
-    "publishedDate": "Wed Dec 13 2023 23:43:55 GMT+0000 (Coordinated Universal Time)",
+    "publishedDate": "Tue Jan 09 2024 03:42:58 GMT+0000 (Coordinated Universal Time)",
     "draftedDate": "Mon Jan 08 2024 17:49:00 GMT-0800 (Pacific Standard Time)"
   },
   {
@@ -68,8 +76,8 @@
     "slug": "clear-your-record",
     "folder": "services",
     "link": "services/clear-your-record",
-    "publishedDate": "Sat Sep 09 2023 15:09:36 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Sep 09 2023 15:09:34 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Fri Jan 12 2024 05:09:15 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Fri Jan 12 2024 04:30:36 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Community Benefits Agreements",
@@ -84,8 +92,8 @@
     "slug": "know-your-rights",
     "folder": "services",
     "link": "services/know-your-rights",
-    "publishedDate": "Sat Sep 09 2023 15:10:23 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Sep 09 2023 15:10:22 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Fri Jan 12 2024 05:45:48 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Fri Jan 12 2024 06:00:02 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Policy & Advocacy",
@@ -100,8 +108,8 @@
     "slug": "business-advising",
     "folder": "our-work",
     "link": "our-work/business-advising",
-    "publishedDate": "Mon Nov 13 2023 03:17:20 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Nov 13 2023 03:17:16 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Fri Jan 12 2024 05:09:25 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Fri Jan 12 2024 03:36:28 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Our Partners",

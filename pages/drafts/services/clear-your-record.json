@@ -6,7 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "expungementgroup.jpg",
@@ -24,6 +24,229 @@
         },
         "style": "standard",
         "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "New Leaf Illinois",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://newleafillinois.org/s/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Expungement 101",
+              "svg": "video",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.facebook.com/watch/live/?extid=317FVRy2rHqdpH0D&ref=watch_permalink&v=757545795007193",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Virtual Wraparound Reentry Resource Fair",
+              "svg": "video",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.facebook.com/watch/live/?ref=watch_permalink&v=1262070770807141",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "## What We Believe\r\n\r\nThe Cannabis Equity Illinois Coalition believes that if Illinois is going to address the injustices of prohibition, then everyone who has a criminal record for a cannabis offense should have their record cleared immediately.\r\n\r\nWe strongly believe in utilizing technology to support this work, and fully support the use of automatic expungement in Illinois. The Coalition also supports the transition to E-Filing, so that someone can submit their petition for expungement using a computer.\r\n\r\nThe Coalition believes in expunging cannabis records as widely as possible, especially those that are not ‘Stand-alone’ offenses.",
+        "columnTwo": "## What We Do\r\n\r\nThe Coalition organizes record clearing events every other month in Chicago, along with quarterly community reentry resources fairs events to support our neighbors who come home. Our programming is available to all people, not just those who have cannabis records.\r\n\r\nWe also provide connections and resources for people outside of Chicagoland, and partner with organizations across the state to host events.\r\n\r\nIf you are in need of expungement support, would like to partner with us for an event, please reach out to the Coalition at CannabisEquityIL@gmail.com.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "new-page",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "two-column"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "group-new2020-sharped.png",
+          "alt": "Coalition and Legal Aid booths at RAP Sheet Day"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Legal Aid Partners",
+        "paragraph": "The Coalition partners with legal aids organizations across the state to support record clearing, with greater emphasis in Chicagoland. You can also utilize online support through our partners here:",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "new-page",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral",
+        "links": [
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Cabrini-Green Legal Aid",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.cgla.net/get-legal-help",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Legal Aid Chicago",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://legalaidchicago.org/get-help/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Land of Lincoln Legal Aid",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://lincolnlegal.org/apply-for-legal-services/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Illinois Legal Aid Online",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.illinoislegalaid.org/legal-information/expunging-or-sealing-criminal-record",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Prairie State Legal Aid",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "New Leaf Illinois",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://newleafillinois.org/s/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "testimonial",
+      "name": "Testimonial",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "default.webp",
+          "alt": "Squirrel on tree."
+        },
+        "heading": "Expungement 101 with Legal Aid Chicago",
+        "paragraph": "Learn about facts and processes around expungement through our collaboration with Legal Aid Chicago. Topics covered include: RAP Sheets, Adult Records, Cannabis Charges & Juvenile Expungement.",
+        "quote": "",
+        "style": "purple"
       }
     }
   ]

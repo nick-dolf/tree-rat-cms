@@ -6,7 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "20220326_111536_08.jpg",
@@ -24,6 +24,132 @@
         },
         "style": "standard",
         "overlay": "yes"
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Key Facts about Cannabis in Illinois",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.prevention.org/lets-talk-cannabis/the-law/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Recreational Cannabis Use In Illinois",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "test",
+                "link": "https://cannabisequityil.org/assets/images/kyr_flyer.pdf",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "## Know Your Rights!\r\n\r\nWe provide legal education and support to our communities to ensure everyone is staying safe under new laws. We support our mission through education by:\r\n\r\n- Hosting workshops with community partners on how cannabis impacts your legal rights, including housing, employment, and immigration status. Check them out in our partners section!\r\n- Sharing resources and events on expungement, and promoting awareness of new legal vulnerabilities or protections afforded for the use of cannabis.\r\n- Creating educational resources like our crutch cards, designed to inform the public of continued prohibited situations for the possession and consumption of cannabis.\r\n- Providing online resources and videos\r\n",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "new-page",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "kyr6-554-d6104cc21.webp",
+          "alt": "An image of Coalition member Peter presenting to a classroom of people"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Cannabis Rights Education",
+        "paragraph": "If you are interested in supporting this mission by hosting an event, sponsoring printing of crutch cards, or providing production of online resources, DM us on social media or via email.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "new-page",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral",
+        "links": [
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "text": "Contact Us",
+              "link": {
+                "type": "internal",
+                "page": "contact-us",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-card",
+            "name": "Link",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "@CannaEquityIL",
+              "link": {
+                "type": "external",
+                "page": "new-page",
+                "link": "https://www.facebook.com/CannaEquityIL",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]
