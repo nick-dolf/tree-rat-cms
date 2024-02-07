@@ -190,6 +190,76 @@
         "style": "horizontal",
         "color": "green"
       }
+    },
+    {
+      "template": "social",
+      "name": "Social",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "Follow us",
+        "paragraph": "Check us out on Instagram to stay up to date on our news, resources and upcoming events.",
+        "bgcolor": "green",
+        "images": [
+          {
+            "template": "image-social",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "ig1.jpg",
+                "alt": "Rap Sheet Assistance Day"
+              },
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClZs8AtrpJy/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "image-social",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "ig2.jpg",
+                "alt": "Legislative Session is Here!"
+              },
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClWmInJLI7L/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "image-social",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "ig3.jpg",
+                "alt": "Community Resource Fair"
+              },
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClUjXHOvUH7/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
+      }
     }
   ]
 }
