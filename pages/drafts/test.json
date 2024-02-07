@@ -14,7 +14,20 @@
             "template": "image-caption",
             "name": "Image",
             "label": "",
-            "collapse": "show",
+            "collapse": "hide",
+            "content": {
+              "image": {
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
+              },
+              "caption": "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "hide",
             "content": {
               "image": {
                 "src": "political-education.png",
@@ -27,26 +40,13 @@
             "template": "image-caption",
             "name": "Image",
             "label": "",
-            "collapse": "show",
+            "collapse": "hide",
             "content": {
               "image": {
                 "src": "coalition-planning.jpg",
                 "alt": "Coalition members in a group shot raising their fists in the air."
               },
               "caption": "Early Coalition meeting in Back of the Yards."
-            }
-          },
-          {
-            "template": "image-caption",
-            "name": "Image",
-            "label": "",
-            "collapse": "show",
-            "content": {
-              "image": {
-                "src": "rectangle-172.png",
-                "alt": "Smiling coalition member Douglas Kelly standing behind a table at a resource fair."
-              },
-              "caption": "Coalition Executive Director Douglas Kelly tabling at a resource fair."
             }
           }
         ]
