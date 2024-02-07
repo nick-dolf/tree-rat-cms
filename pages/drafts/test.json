@@ -8,24 +8,24 @@
       "label": "",
       "collapse": "show",
       "content": {
-        "heading": "Follow us",
-        "paragraph": "Check us out on Instagram to stay up to date on our news, resources and upcoming events.",
-        "bgcolor": "green",
+        "heading": "Squirrel Ipsum",
+        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "bgcolor": "purple",
         "images": [
           {
             "template": "image-social",
             "name": "Image",
             "label": "",
-            "collapse": "show",
+            "collapse": "hide",
             "content": {
               "image": {
-                "src": "ig1.jpg",
-                "alt": "Rap Sheet Assistance Day"
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
               },
               "link": {
-                "type": "external",
+                "type": "internal",
                 "page": "our-work/policy-and-advocacy",
-                "link": "https://www.instagram.com/p/ClZs8AtrpJy/",
+                "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
               }
@@ -35,35 +35,16 @@
             "template": "image-social",
             "name": "Image",
             "label": "",
-            "collapse": "show",
+            "collapse": "hide",
             "content": {
               "image": {
-                "src": "ig2.jpg",
-                "alt": "Legislative Session is Here!"
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
               },
               "link": {
-                "type": "external",
+                "type": "internal",
                 "page": "our-work/policy-and-advocacy",
-                "link": "https://www.instagram.com/p/ClWmInJLI7L/",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "image-social",
-            "name": "Image",
-            "label": "",
-            "collapse": "show",
-            "content": {
-              "image": {
-                "src": "ig3.jpg",
-                "alt": "Community Resource Fair"
-              },
-              "link": {
-                "type": "external",
-                "page": "our-work/policy-and-advocacy",
-                "link": "https://www.instagram.com/p/ClUjXHOvUH7/",
+                "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
               }

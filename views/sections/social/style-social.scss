@@ -23,6 +23,18 @@
   .content-container {
     margin: 0 auto;
   }
+
+  &.social-neutral {
+    background-color: $neutral-50;
+  }
+
+  &.social-green {
+    background-color: $green-50;
+  }
+
+  &.social-purple {
+    background-color: $purple-50;
+  }
 }
 
 
