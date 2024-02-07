@@ -3,82 +3,70 @@
   "description": "",
   "sections": [
     {
-      "template": "testimonial",
-      "name": "Testimonial",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "image": {
-          "src": "default.webp",
-          "alt": "Squirrel on tree."
-        },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "style": "purple"
-      }
-    },
-    {
-      "template": "testimonial",
-      "name": "Testimonial",
+      "template": "social",
+      "name": "Social",
       "label": "",
       "collapse": "show",
       "content": {
-        "image": {
-          "src": "default.webp",
-          "alt": "Squirrel on tree."
-        },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "quote": "",
-        "style": "purple"
-      }
-    },
-    {
-      "template": "images-captions",
-      "name": "Images with Captions",
-      "label": "",
-      "collapse": "hide",
-      "content": {
+        "heading": "Follow us",
+        "paragraph": "Check us out on Instagram to stay up to date on our news, resources and upcoming events.",
         "bgcolor": "green",
         "images": [
           {
-            "template": "image-caption",
+            "template": "image-social",
             "name": "Image",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "image": {
-                "src": "default.webp",
-                "alt": "Squirrel on tree."
+                "src": "ig1.jpg",
+                "alt": "Rap Sheet Assistance Day"
               },
-              "caption": "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClZs8AtrpJy/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
             }
           },
           {
-            "template": "image-caption",
+            "template": "image-social",
             "name": "Image",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "image": {
-                "src": "political-education.png",
-                "alt": "Coalition members hosting a record clearing event with Cannabis Equity Illinois Coalition signage."
+                "src": "ig2.jpg",
+                "alt": "Legislative Session is Here!"
               },
-              "caption": "Coalition members hosting a record clearing event."
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClWmInJLI7L/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
             }
           },
           {
-            "template": "image-caption",
+            "template": "image-social",
             "name": "Image",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "image": {
-                "src": "coalition-planning.jpg",
-                "alt": "Coalition members in a group shot raising their fists in the air."
+                "src": "ig3.jpg",
+                "alt": "Community Resource Fair"
               },
-              "caption": "Early Coalition meeting in Back of the Yards."
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.instagram.com/p/ClUjXHOvUH7/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
             }
           }
         ]

@@ -1,0 +1,20 @@
+<% if (content.default) {
+  content.heading = "Follow Us"
+} %>
+
+<div class="white-back pb-2">
+
+  <!-- Heading -->
+  <%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass: "mb-1"}) %>
+  <!-- Paragraph -->
+  <%- include("../../section-helpers/text-area-plain-threeline", { slug: "paragraph", label: "Paragraph", extraClass: "mb-1"}) %>
+  <!-- Style -->
+  <%- include("../../section-helpers/select", 
+                  { slug: "bgcolor", label: "Background Color", 
+                    options : [{slug: "green", label: "Green"},
+                               {slug: "purple",label:"Purple"},
+                               {slug: "neutral", label: "Neutral"}]}) %>
+  </div>
+  <%- include("../../section-helpers/block-select", 
+  { slug: "images",
+    blocks:[{slug:"image-social", name:"Image"}]}) %>
