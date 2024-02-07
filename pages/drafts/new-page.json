@@ -3,6 +3,56 @@
   "description": "",
   "sections": [
     {
+      "template": "images-captions",
+      "name": "Images with Captions",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "bgcolor": "neutral",
+        "images": [
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "image": {
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
+              },
+              "caption": "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "image": {
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
+              },
+              "caption": "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "image": {
+                "src": "default.webp",
+                "alt": "Squirrel on tree."
+              },
+              "caption": "Et si pascere nuces sunt valde dolor et facti sunt amici tui."
+            }
+          }
+        ]
+      }
+    },
+    {
       "template": "text-area",
       "name": "Text Area",
       "label": "",
