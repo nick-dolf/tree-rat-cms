@@ -30,7 +30,7 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "columnOne": "## What We Do\r\n\r\nFormed in 2019, the Coalition provides a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice. The Coalition supports individuals and communities in the following ways:",
         "columnTwo": "## Lorem ipsim\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquam laborum excepturi ex dolorum saepe. Dicta iste ipsa sit?",
@@ -42,7 +42,7 @@
           "file": "cba-toolkit-final.pdf",
           "scroll": "1"
         },
-        "style": "splashy"
+        "style": "plain"
       }
     },
     {
@@ -147,7 +147,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "juneteenth-w-small-group.jpg",

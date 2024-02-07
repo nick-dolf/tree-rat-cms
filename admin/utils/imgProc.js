@@ -37,16 +37,15 @@ async function convertImages(image, imgName, options) {
   let imgDir = path.join(app.locals.imgDir, "original");
 
   // Produce fallback jpg
-  if(!fse.existsSync(siteImgDir + imgName + ".jpg")) {
+  if(!fse.existsSync(siteImgDir + imgName + "-" + options.width + ".jpg")) {
     await sharp(`${imgDir}/${image.name}`)
       .resize({
         width: options.width,
-        height: options.height,
         fit: "contain",
         background: "#FFF",
       })
       .jpeg()
-      .toFile(siteImgDir + imgName + ".jpg");
+      .toFile(siteImgDir + imgName + "-" + options.width + ".jpg");
   };
 
   // Produce WebP in different Widths

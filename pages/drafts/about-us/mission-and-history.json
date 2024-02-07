@@ -6,7 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "20220309_112302.jpg",
@@ -123,6 +123,56 @@
       "collapse": "hide",
       "content": {
         "style": "dashed"
+      }
+    },
+    {
+      "template": "images-captions",
+      "name": "Images with Captions",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "bgcolor": "green",
+        "images": [
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "political-education.png",
+                "alt": "Coalition members hosting a record clearing event with Cannabis Equity Illinois Coalition signage."
+              },
+              "caption": "Coalition members hosting a record clearing event."
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "coalition-planning.jpg",
+                "alt": "Coalition members in a group shot raising their fists in the air."
+              },
+              "caption": "Early Coalition meeting in Back of the Yards."
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "rectangle-172.png",
+                "alt": "Smiling coalition member Douglas Kelly standing behind a table at a resource fair."
+              },
+              "caption": "Coalition Executive Director Douglas Kelly tabling at a resource fair."
+            }
+          }
+        ]
       }
     },
     {
