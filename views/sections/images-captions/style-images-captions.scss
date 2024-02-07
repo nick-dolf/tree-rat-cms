@@ -18,4 +18,16 @@
   .image-container {
     height: 300px;
   }
+
+  &.images-with-captions-neutral {
+    background-color: $neutral-50;
+  }
+
+  &.images-with-captions-green {
+    background-color: $green-50;
+  }
+
+  &.images-with-captions-purple {
+    background-color: $purple-50;
+  }
 }
