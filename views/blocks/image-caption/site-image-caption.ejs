@@ -5,10 +5,12 @@ let imgName = publishImg(content.image.src, { width: 554, widths}, locals.promis
 
 <div class="container">
   <div class="image-container">
-    <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-554.webp" />
-
-  <img class="card-image" src="<%- site.url %>assets/images/<%- imgName %>.jpg" width="554" height="320" alt="<%- content.image.alt %>" />
-  </div>
+    <picture>
+      <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-554.webp" />
+      
+      <img class="card-image" src="<%- site.url %>assets/images/<%- imgName %>-554.jpg" width="554" height="320" alt="<%- content.image.alt %>" />
+    </picture>
+    </div>
   <p><%- content.caption %></p>
 </div>
 

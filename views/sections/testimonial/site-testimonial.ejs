@@ -6,6 +6,8 @@
     <div class="card-text">
       <h2 class="h3"><%- content.heading %></h2 class="h3">
       <p><%- content.paragraph %></p>
+
+      <% if (content.quote) { %>
       <div class="quote-container">
         <div class="quote-start">
           <%- include("../../components/icon-svg", {id: "quote"}) %>
@@ -15,6 +17,8 @@
           <%- include("../../components/icon-svg", {id: "quote"}) %>
         </div>
       </div>
+      <% } %>
+
     </div>
   </div>
 </section>
