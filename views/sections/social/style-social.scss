@@ -1,0 +1,52 @@
+.social {
+  @include spacing-std-nomargin;
+  background-color: $neutral-50;
+  
+  .text-container {
+    margin: 0 16px;
+
+    @include tablet {
+      margin: 0 32px;
+    }
+  
+    @include desktop {
+      margin: 0 auto;
+      width: $std-content-width-percent;
+      max-width: $std-content-width-max;
+    }
+
+    h2 {
+      margin-top: 0;
+    }
+  }
+
+  .content-container {
+    margin: 0 auto;
+  }
+}
+
+
+
+.post-container {
+  @include spacing-std-nopad;
+  display: grid;
+
+  gap: 32px;
+
+
+  @include tablet {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @include desktop {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  div {
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+   }
+}

@@ -1,0 +1,30 @@
+<% 
+let widths = [554]; 
+let imgName = publishImg(content.image.src, { width: 554, widths}, locals.promises) 
+%>
+
+<% if (content.link.type == "internal") { %>
+  <% let link = (content.link.page == "home" ? "" : content.link.page) %>
+  <a href="<%- site.url + link %>" >
+<% } else if (content.link.type == "external") { %>
+  <a href="<%- content.link.link %>" target="_blank">
+<!-- Files -->
+<% } else if (content.link.type == "file") { %>
+  <a href="<%- site.url +"assets/files/"+ content.link.file %>" target="_blank">
+<% } else if (content.link.type == "scroll") { %>
+  <button class="btn--ghost scroll" data-scroll="<%- content.link.scroll %>" type="button" name="button" >
+<% } %>
+<div class="container">
+  <div class="image-container">
+    <picture>
+      <source type="image/webp" srcset="<%- site.url %>assets/images/<%- imgName %>-554.webp" />
+      
+      <img class="card-image" src="<%- site.url %>assets/images/<%- imgName %>-554.jpg" width="554" height="320" alt="<%- content.image.alt %>" />
+    </picture>
+    </div>
+</div>
+<% if (content.link.type == "scroll") { %>
+</button>
+<% } else { %>
+</a>
+<% } %>

@@ -1,0 +1,19 @@
+<section class="social social-<%-content.bgcolor%>">
+
+  <div class="content-container">
+
+    <div class="text-container">
+      <h2><%- content.heading %></h2>
+      <p><%- content.paragraph %></p>
+    </div>
+    
+    <div class="post-container">
+      <% if (content.images) for (image of content.images) { %>
+        <%- include(`../../blocks/${image.template}/site-${image.template}`,
+                  { content : image.content }) %> 
+      <% } %>
+    </div>
+
+  </div>
+  
+</section>

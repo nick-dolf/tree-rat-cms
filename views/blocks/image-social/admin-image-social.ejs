@@ -1,0 +1,12 @@
+<% if (content.default) {
+  content.default = false
+  content.image = {}
+  content.image.src = "default.webp"
+  content.image.alt = "Squirrel on tree."
+} %>
+
+<div class="white-back">
+  <!-- Image -->
+  <%- include("../../section-helpers/image", { slug: "image", label: "Image" }) %>
+  <%- include("../../section-helpers/link", { slug: "link", label: "Link type"}) %>
+</div>

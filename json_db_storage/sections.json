@@ -1,5 +1,9 @@
 [
   {
+    "slug": "social",
+    "name": "Social"
+  },
+  {
     "slug": "images-captions",
     "name": "Images with Captions"
   },

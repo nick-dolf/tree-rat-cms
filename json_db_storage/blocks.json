@@ -1,5 +1,13 @@
 [
   {
+    "slug": "image-social",
+    "name": "Image"
+  },
+  {
+    "slug": "image",
+    "name": "Image"
+  },
+  {
     "slug": "image-caption",
     "name": "Image"
   },
