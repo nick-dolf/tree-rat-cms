@@ -30,7 +30,7 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "columnOne": "## What We Do\r\n\r\nFormed in 2019, the Coalition provides a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice. The Coalition supports individuals and communities in the following ways:",
         "columnTwo": "## Lorem ipsim\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquam laborum excepturi ex dolorum saepe. Dicta iste ipsa sit?",
@@ -195,11 +195,11 @@
       "template": "social",
       "name": "Social",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "Follow us",
         "paragraph": "Check us out on Instagram to stay up to date on our news, resources and upcoming events.",
-        "bgcolor": "green",
+        "bgcolor": "neutral",
         "images": [
           {
             "template": "image-social",
