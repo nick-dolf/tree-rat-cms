@@ -1,5 +1,9 @@
 [
   {
+    "slug": "embed",
+    "name": "Embed"
+  },
+  {
     "slug": "social",
     "name": "Social"
   },

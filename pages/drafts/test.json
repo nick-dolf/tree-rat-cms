@@ -3,54 +3,13 @@
   "description": "",
   "sections": [
     {
-      "template": "social",
-      "name": "Social",
+      "template": "embed",
+      "name": "Embed",
       "label": "",
       "collapse": "show",
       "content": {
-        "heading": "Squirrel Ipsum",
-        "paragraph": "Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "bgcolor": "purple",
-        "images": [
-          {
-            "template": "image-social",
-            "name": "Image",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "image": {
-                "src": "default.webp",
-                "alt": "Squirrel on tree."
-              },
-              "link": {
-                "type": "internal",
-                "page": "our-work/policy-and-advocacy",
-                "link": "",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          },
-          {
-            "template": "image-social",
-            "name": "Image",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "image": {
-                "src": "default.webp",
-                "alt": "Squirrel on tree."
-              },
-              "link": {
-                "type": "internal",
-                "page": "our-work/policy-and-advocacy",
-                "link": "",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": ""
-              }
-            }
-          }
-        ]
+        "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 100.0000%;\r\n     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\r\n     border-radius: 8px; will-change: transform;\">\r\n      <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\r\n        src=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFVsWotPAo&#x2F;view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\r\n      </iframe>\r\n    </div>",
+        "style": "standard"
       }
     }
   ]
