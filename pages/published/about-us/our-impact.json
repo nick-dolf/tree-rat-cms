@@ -113,12 +113,22 @@
       }
     },
     {
+      "template": "embed",
+      "name": "Embed",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 100.0000%;\r\n     padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\r\n     border-radius: 8px; will-change: transform;\">\r\n      <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\r\n        src=\"https://www.canva.com/design/DAF2-xvSZZo/2Bm7Iw79jAP1Wc9ufc7rkQ/view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\r\n      </iframe>\r\n    </div>",
+        "style": "standard"
+      }
+    },
+    {
       "template": "text-area",
       "name": "Text Area",
       "label": "Previous Reports",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
-        "columnOne": "## Previous Reports\r\n\r\n\r\n[2021 Impact Report](https://www.canva.com/design/DAEyvLK9lOI/HJo00X8beXliHOcKIObjzw/view) \r\n\r\n[2020 Impact Report](https://www.canva.com/design/DAERK-8UNvo/MUYnKKaxxqJMWzeR7ACZSw/view) ",
+        "columnOne": "## Previous Reports\r\n\r\n[2022 Impact Report](https://www.canva.com/design/DAFVsWotPAo/view) \r\n\r\n[2021 Impact Report](https://www.canva.com/design/DAEyvLK9lOI/HJo00X8beXliHOcKIObjzw/view) \r\n\r\n[2020 Impact Report](https://www.canva.com/design/DAERK-8UNvo/MUYnKKaxxqJMWzeR7ACZSw/view) ",
         "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "button": {
           "type": "no",
