@@ -1,5 +1,9 @@
 [
   {
+    "slug": "card-with-youtube",
+    "name": "Youtube"
+  },
+  {
     "slug": "embed",
     "name": "Embed"
   },

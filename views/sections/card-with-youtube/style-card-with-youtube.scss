@@ -1,0 +1,20 @@
+.card-youtube {
+  @include spacing-wide;
+}
+
+.card-youtube-purple {
+    background-color: $purple-50;
+
+}
+
+.card-youtube-green {
+    background-color: $green-50;
+}
+
+.card-youtube-blue {
+    background-color: $blue-50;
+}
+
+.card-youtube-neutral {
+    background-color: $neutral-50;
+}

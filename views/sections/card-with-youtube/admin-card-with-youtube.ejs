@@ -1,0 +1,14 @@
+
+<div class="white-back">
+<%- include("../../section-helpers/text-area-plain-oneline", { slug: "heading", label: "Heading", extraClass: "mb-1"}) %>
+<!-- Paragraph -->
+<%- include("../../section-helpers/text-area-plain-threeline", { slug: "paragraph", label: "Paragraph", extraClass: "mb-1"}) %>
+<!-- Embed -->
+<%- include("../../section-helpers/text-area-plain-ninelines", {index, slug: "code", label: "Code", extraClass: "mb-1"}) %>
+<!-- Style -->
+<%- include("../../section-helpers/select", 
+                    { slug: "color", label: "Background Color", 
+                      options : [{slug: "purple",label:"Purple"},
+                                 {slug: "green",label:"Green"},
+                                 {slug: "neutral", label: "Neutral"}]}) %>
+</div>
