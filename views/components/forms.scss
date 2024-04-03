@@ -2,6 +2,23 @@
   position: relative;
 }
 
+.input {
+  padding: 8px 12px;
+  font-size: 1.4rem;
+  line-height: 2.0rem;
+  border: 0.5px solid $neutral-500;
+  border-radius: 4px;
+  width: 307px;
+}
+
+.input:focus {
+  border: 1px solid $neutral-800;
+}
+
+.input::placeholder {
+  color: $neutral-800;
+}
+
 .search-container {
   position: relative;
 
