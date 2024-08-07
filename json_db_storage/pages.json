@@ -1,19 +1,27 @@
 [
   {
+    "name": "Stay Informed",
+    "slug": "stay-informed",
+    "folder": "get-involved",
+    "link": "get-involved/stay-informed",
+    "publishedDate": "Wed Aug 07 2024 18:39:57 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 18:34:36 GMT+0000 (Coordinated Universal Time)"
+  },
+  {
     "name": "Policy & Advocacy",
     "slug": "policy-and-advocacy",
     "folder": "our-work",
     "link": "our-work/policy-and-advocacy",
-    "publishedDate": "Wed Feb 07 2024 16:57:04 GMT-0600 (Central Standard Time)",
-    "draftedDate": "Sun Sep 10 2023 11:03:09 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Wed Aug 07 2024 17:56:57 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed May 01 2024 22:22:59 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Reentry Support",
     "slug": "reentry-support",
     "folder": "our-work",
     "link": "our-work/reentry-support",
-    "publishedDate": "Tue Jan 09 2024 03:42:58 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Jan 08 2024 17:49:00 GMT-0800 (Pacific Standard Time)"
+    "publishedDate": "Wed Aug 07 2024 18:07:48 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 18:03:30 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Become a Member",
@@ -21,7 +29,7 @@
     "folder": "get-involved",
     "link": "get-involved/become-a-member",
     "publishedDate": "Mon Sep 11 2023 14:20:53 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Sep 11 2023 14:20:51 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Sun Jun 23 2024 19:27:51 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Test",
@@ -29,7 +37,7 @@
     "folder": "",
     "link": "test",
     "publishedDate": "Wed Mar 06 2024 23:17:13 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Wed Mar 06 2024 23:17:04 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Wed May 01 2024 22:12:06 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Volunteer",
@@ -44,32 +52,32 @@
     "slug": "contact-us",
     "folder": "",
     "link": "contact-us",
-    "publishedDate": "Sat Sep 09 2023 14:59:27 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Wed Sep 06 2023 19:42:37 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Sun Jun 23 2024 19:44:26 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Sun Jun 23 2024 19:43:50 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Terms of Use",
     "slug": "terms-of-use",
     "folder": "",
     "link": "terms-of-use",
-    "publishedDate": "Sat Sep 09 2023 14:59:17 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Wed Aug 23 2023 16:47:09 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Wed May 15 2024 22:50:56 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed May 15 2024 22:50:55 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Privacy Policy",
     "slug": "privacy-policy",
     "folder": "",
     "link": "privacy-policy",
-    "publishedDate": "Sat Sep 09 2023 14:59:14 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Wed Aug 23 2023 22:40:35 GMT-0500 (Central Daylight Time)"
+    "publishedDate": "Wed Aug 07 2024 18:58:35 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 18:58:32 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Clear Your Record",
     "slug": "clear-your-record",
     "folder": "services",
     "link": "services/clear-your-record",
-    "publishedDate": "Fri Jan 12 2024 05:09:15 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Fri Jan 12 2024 04:30:36 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Wed Aug 07 2024 18:17:40 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 18:17:34 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Community Benefits Agreements",
@@ -77,7 +85,7 @@
     "folder": "services",
     "link": "services/community-benefits-agreements",
     "publishedDate": "Sat Sep 09 2023 15:10:07 GMT-0500 (Central Daylight Time)",
-    "draftedDate": "Sat Sep 09 2023 15:10:01 GMT-0500 (Central Daylight Time)"
+    "draftedDate": "Wed May 01 2024 22:12:51 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Know Your Rights",
@@ -85,15 +93,15 @@
     "folder": "services",
     "link": "services/know-your-rights",
     "publishedDate": "Fri Jan 12 2024 05:45:48 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Fri Jan 12 2024 06:00:02 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Wed May 01 2024 22:30:21 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Business Advising",
     "slug": "business-advising",
     "folder": "our-work",
     "link": "our-work/business-advising",
-    "publishedDate": "Wed Mar 06 2024 22:28:28 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Wed Mar 06 2024 22:28:27 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Sun Jun 23 2024 18:10:54 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Sun Jun 23 2024 18:09:45 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Our Partners",
@@ -101,30 +109,30 @@
     "folder": "about-us",
     "link": "about-us/our-partners",
     "publishedDate": "Mon Nov 13 2023 02:23:12 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Nov 13 2023 02:23:05 GMT+0000 (Coordinated Universal Time)"
+    "draftedDate": "Wed Mar 20 2024 22:16:00 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Our Impact",
     "slug": "our-impact",
     "folder": "about-us",
     "link": "about-us/our-impact",
-    "publishedDate": "Mon Nov 13 2023 02:54:15 GMT+0000 (Coordinated Universal Time)",
-    "draftedDate": "Mon Nov 13 2023 02:54:13 GMT+0000 (Coordinated Universal Time)"
+    "publishedDate": "Sun Jun 23 2024 18:07:51 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Sun Jun 23 2024 18:07:18 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Mission & History",
     "slug": "mission-and-history",
     "folder": "about-us",
     "link": "about-us/mission-and-history",
-    "publishedDate": "Tue Feb 06 2024 19:39:29 GMT-0600 (Central Standard Time)",
-    "draftedDate": "Tue Feb 06 2024 18:42:21 GMT-0600 (Central Standard Time)"
+    "publishedDate": "Sun Jun 23 2024 18:06:16 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 17:38:46 GMT+0000 (Coordinated Universal Time)"
   },
   {
     "name": "Home",
     "slug": "home",
     "folder": "",
     "link": "home",
-    "publishedDate": "Wed Mar 06 2024 15:55:38 GMT-0600 (Central Standard Time)",
-    "draftedDate": "Wed Feb 07 2024 16:48:11 GMT-0600 (Central Standard Time)"
+    "publishedDate": "Wed Aug 07 2024 17:32:38 GMT+0000 (Coordinated Universal Time)",
+    "draftedDate": "Wed Aug 07 2024 17:31:56 GMT+0000 (Coordinated Universal Time)"
   }
 ]

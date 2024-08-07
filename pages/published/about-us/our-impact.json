@@ -97,9 +97,9 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "Our 2022 Impact Report",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "## Our 2022 Impact Report\r\n\r\nCheck out the Coalition’s 2022 Impact Report! In this report, we highlight all of the Coalition’s work for the last 12 months, and the impact we made.",
+        "columnOne": "## Our 2023 Impact Report\r\n\r\nCheck out the Coalition’s 2023 Impact Report! In this report, we highlight all of the Coalition’s work for the last 12 months, and the impact we made.",
         "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "button": {
           "type": "no",

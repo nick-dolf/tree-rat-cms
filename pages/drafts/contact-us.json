@@ -30,7 +30,7 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "columnOne": "### Email\r\n\r\nCannabisEquityIL@gmail.com - launch email",
         "columnTwo": "### Social Media\r\n\r\nFollow us on Instagram, Facebook, and Twitter - @cannabisequityil, #CannabisEquityIL, and #CannabisCBA",
@@ -43,6 +43,16 @@
           "scroll": ""
         },
         "style": "two-column"
+      }
+    },
+    {
+      "template": "embed",
+      "name": "Embed",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "code": "<h2>Embed Code</h2><p>(carefully please)</p>",
+        "style": "standard"
       }
     }
   ]

@@ -95,7 +95,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "City & State Resources",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "patrick-fore-h5lf0ngyetk-unsplash-554-cf7bd7d6b.webp",

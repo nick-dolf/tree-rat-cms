@@ -61,7 +61,7 @@
               "svg": "video",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.facebook.com/watch/live/?extid=317FVRy2rHqdpH0D&ref=watch_permalink&v=757545795007193",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -78,7 +78,7 @@
               "svg": "video",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.facebook.com/watch/live/?ref=watch_permalink&v=1262070770807141",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -99,7 +99,7 @@
         "button": {
           "type": "no",
           "text": "Squirrels",
-          "page": "new-page",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -111,7 +111,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "group-new2020-sharped.png",
@@ -126,7 +126,7 @@
         "button": {
           "type": "no",
           "text": "Squirrels",
-          "page": "new-page",
+          "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
           "scroll": ""
@@ -143,7 +143,7 @@
               "text": "Cabrini-Green Legal Aid",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.cgla.net/get-legal-help",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -159,7 +159,7 @@
               "text": "Legal Aid Chicago",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://legalaidchicago.org/get-help/",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -175,7 +175,7 @@
               "text": "Land of Lincoln Legal Aid",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://lincolnlegal.org/apply-for-legal-services/",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -191,7 +191,7 @@
               "text": "Illinois Legal Aid Online",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://www.illinoislegalaid.org/legal-information/expunging-or-sealing-criminal-record",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -207,7 +207,7 @@
               "text": "Prairie State Legal Aid",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -223,7 +223,7 @@
               "text": "New Leaf Illinois",
               "link": {
                 "type": "external",
-                "page": "new-page",
+                "page": "our-work/policy-and-advocacy",
                 "link": "https://newleafillinois.org/s/",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
@@ -234,19 +234,15 @@
       }
     },
     {
-      "template": "testimonial",
-      "name": "Testimonial",
+      "template": "card-with-youtube",
+      "name": "Youtube",
       "label": "",
       "collapse": "hide",
       "content": {
-        "image": {
-          "src": "default.webp",
-          "alt": "Squirrel on tree."
-        },
-        "heading": "Expungement 101 with Legal Aid Chicago",
+        "heading": "Expungement 101 with Chicago Legal Aid",
         "paragraph": "Learn about facts and processes around expungement through our collaboration with Legal Aid Chicago. Topics covered include: RAP Sheets, Adult Records, Cannabis Charges & Juvenile Expungement.",
-        "quote": "",
-        "style": "purple"
+        "code": "<iframe src=\"https://www.facebook.com/plugins/video.php?height=314&amp;href=https%3A%2F%2Fwww.facebook.com%2FLegalAidChicago%2Fvideos%2F757545795007193%2F&amp;show_text=false&amp;width=560&amp;t=0\" width=\"560\" height=\"314\" style=\"border:none;overflow:hidden\" scrolling=\"no\" frameborder=\"0\" allowfullscreen=\"true\" allow=\"autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share\"></iframe>",
+        "color": "purple"
       }
     }
   ]

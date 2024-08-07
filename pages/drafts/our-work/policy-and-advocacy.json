@@ -30,7 +30,7 @@
       "template": "quick-links",
       "name": "Quick Links",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "Quick Links",
         "quickLinks": [
@@ -38,14 +38,48 @@
             "template": "link-text-svg",
             "name": "Text Link with Icon",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
-              "text": "Squirrel Ipsum",
-              "svg": "video",
+              "text": "Lobby Day Interest Form",
+              "svg": "bill",
               "link": {
                 "type": "external",
                 "page": "test",
-                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSclvmhzQn7slCBL0c98O_H_FCY6h9sTmZEsfEJzH5ZmPogheg/viewform",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Our Legislative Priorities",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://cannabisequityil.org/assets/images/alliance-priorities-one-pager-_-4_5.pdf",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "Policy Working Group Sign-up",
+              "svg": "bill",
+              "link": {
+                "type": "external",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
               }
@@ -125,11 +159,39 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "policy-research.png",
           "alt": "Two people looking over a railing in the legislature building with a clipboard"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Policy Research",
+        "paragraph": "We research policies and practices that increase cannabis equity and share our findings with the public and with lawmakers. Our current areas of research include: opportunities for ownership for impacted entrepreneurs, increasing investment into impacted communities, and providing young people evidence-based education.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "political-education.png",
+          "alt": "Coalition members hosting a record clearing event with Cannabis Equity Illinois Coalition signage."
         },
         "image2": {
           "src": "default.webp",
@@ -153,46 +215,18 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
-          "src": "default.webp",
-          "alt": "Squirrel on tree."
+          "src": "canna_equity_lobby_day.jpg",
+          "alt": ""
         },
         "image2": {
           "src": "default.webp",
           "alt": "Image2"
         },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
-        "button": {
-          "type": "no",
-          "text": "Squirrels",
-          "page": "our-work/policy-and-advocacy",
-          "link": "",
-          "file": "cba-toolkit-final.pdf",
-          "scroll": ""
-        },
-        "style": "one",
-        "color": "neutral"
-      }
-    },
-    {
-      "template": "card-image",
-      "name": "Image Card",
-      "label": "",
-      "collapse": "hide",
-      "content": {
-        "image": {
-          "src": "default.webp",
-          "alt": "Squirrel on tree."
-        },
-        "image2": {
-          "src": "default.webp",
-          "alt": "Image2"
-        },
-        "heading": "Squirrel Ipsum",
-        "paragraph": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "heading": "Advocacy",
+        "paragraph": "We advocate for policies to repair and reinvest into impacted communities and entrepreneurs. We aim to end the war on drugs entirely, and enusre that all impacted people can explore opportunities to build wealth in the new industry. We are both a 501(c)3 & 501(c)4 organization, ensuring that our community programming is not impacted by our advocacy work.",
         "button": {
           "type": "no",
           "text": "Squirrels",
