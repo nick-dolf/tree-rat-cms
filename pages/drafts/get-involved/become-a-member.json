@@ -6,7 +6,7 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "image": {
           "src": "coalition-planning.jpg",
@@ -30,7 +30,7 @@
       "template": "quick-links",
       "name": "Quick Links",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "Quick Links",
         "quickLinks": [
@@ -80,6 +80,75 @@
       "collapse": "hide",
       "content": {
         "style": "dotted"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "columnOne": "Member Spotlight",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "images-captions",
+      "name": "Images with Captions",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "bgcolor": "neutral",
+        "images": [
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "Member Spotlight",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "screen-shot-2024-06-23-at-142437.png",
+                "alt": ""
+              },
+              "caption": ""
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "screen-shot-2024-06-23-at-142445.png",
+                "alt": ""
+              },
+              "caption": ""
+            }
+          },
+          {
+            "template": "image-caption",
+            "name": "Image",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "image": {
+                "src": "screen-shot-2024-06-23-at-142459.png",
+                "alt": ""
+              },
+              "caption": ""
+            }
+          }
+        ]
       }
     },
     {

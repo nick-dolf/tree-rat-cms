@@ -126,10 +126,29 @@
       }
     },
     {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "# A Grassroots Approach\r\n\r\nThe Coalition organizes as a grassroots collective to expand opportunities for record clearing in Chicagoland and across Illinois, and to educate communities about their rights and record clearing opportunities.\r\n\r\nThe Coalition utilizes its grassroots strength to advocate for ‘Plus-1’ dispensaries to sign onto Community Benefits Agreements, tying the economic success of those dispensaries to impacted communities.\r\n\r\nThe Coalition's grassroots structure shapes the development of the Coalition's legislative priorities, as we gather community feedback to ensure we're fighting for changes that will bring the largest benefit to communities.",
+        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
+        "button": {
+          "type": "no",
+          "text": "",
+          "page": "get-involved/volunteer",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
       "template": "images-captions",
       "name": "Images with Captions",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "bgcolor": "green",
         "images": [
@@ -176,22 +195,70 @@
       }
     },
     {
-      "template": "text-area",
-      "name": "Text Area",
+      "template": "slider",
+      "name": "Slider",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "# A Grassroots Approach\r\n\r\nThe Coalition organizes as a grassroots collective to expand opportunities for record clearing in Chicagoland and across Illinois, and to educate communities about their rights and record clearing opportunities.\r\n\r\nThe Coalition utilizes its grassroots strength to advocate for ‘Plus-1’ dispensaries to sign onto Community Benefits Agreements, tying the economic success of those dispensaries to impacted communities.\r\n\r\nThe Coalition's grassroots structure shapes the development of the Coalition's legislative priorities, as we gather community feedback to ensure we're fighting for changes that will bring the largest benefit to communities.",
-        "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
-        "button": {
-          "type": "no",
-          "text": "",
-          "page": "get-involved/volunteer",
-          "link": "",
-          "file": "cba-toolkit-final.pdf",
-          "scroll": ""
-        },
-        "style": "plain"
+        "heading": "How to get involved",
+        "style": "big",
+        "color": "green",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "TOOLKIT",
+              "paragraph": "DOWNLOAD THE CBA TOOLKIT",
+              "button": {
+                "type": "file",
+                "text": "Download Toolkit",
+                "page": "our-work/policy-and-advocacy",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "SCHEDULE",
+              "paragraph": "SCHEDULE AN ENTREPRENEUR SUPPORT SESSION",
+              "button": {
+                "type": "external",
+                "text": "Schedule A Session",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://calendly.com/ceiccoalition/30min",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "PARTICIPATE",
+              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
+              "button": {
+                "type": "external",
+                "text": "Become a member",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://cannabisequityil.org/pages/get-involved/membership",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

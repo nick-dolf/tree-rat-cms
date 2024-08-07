@@ -1,0 +1,78 @@
+{
+  "title": "",
+  "description": "",
+  "sections": [
+    {
+      "template": "hero",
+      "name": "Hero",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "20220619_172114-1600-7b5a2d379.webp",
+          "alt": ""
+        },
+        "heading": "Stay Informed",
+        "paragraph": "Get the freshest updates and information straight from the Coalition.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "get-involved/stay-informed",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "standard",
+        "overlay": "yes"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "Biweekly Virtual Meetings & Newsletter Signup",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "get-involved/stay-informed",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "columnOne": "Want to join our community? We meet as a group every other Thursday at 6PM on Zoom! You can also sign up for our newsletter.\r\n\r\nPlease reach out to CannabisEquityIL@gmail.com with any questions.",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "get-involved/stay-informed",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "embed",
+      "name": "Embed",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "code": "<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSccDsKbtQj3IWhwmpE-fPu0VKazTZdPilcvabeSMmuyMUXm-g/viewform?embedded=true\" width=\"640\" height=\"1917\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…</iframe>",
+        "style": "standard"
+      }
+    }
+  ]
+}

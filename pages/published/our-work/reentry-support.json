@@ -83,6 +83,62 @@
       }
     },
     {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "image": {
+          "src": "community-resource.png",
+          "alt": "Members at a table with different household products. "
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Community Resource Fairs",
+        "paragraph": "We organize & support wraparound resource fairs in communities across Illinois. These fairs bring vital resources such as housing, jobs, food assistance IDs, education, and more, directly to impacted communities.",
+        "button": {
+          "type": "external",
+          "text": "Follow Our Events",
+          "page": "our-work/policy-and-advocacy",
+          "link": "https://www.instagram.com/cannaequityil/?hl=en",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
+      "template": "card-image",
+      "name": "Image Card",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "image": {
+          "src": "legal-aid.png",
+          "alt": "Group members wearing t-shirts for nation engagement week 2019"
+        },
+        "image2": {
+          "src": "default.webp",
+          "alt": "Image2"
+        },
+        "heading": "Legal Aid",
+        "paragraph": "We support people statewide access legal aid resources to help them navigate different issues.\r\n\r\n[New Leaf Illinois](https://www.newleafillinois.org/s/)\r\n[Illinois Legal Aid](https://www.illinoislegalaid.org/)\r\n[Accessing Public Benefits in Illinois](https://www.illinoislegalaid.org/legal-information/health-benefits)",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "one",
+        "color": "neutral"
+      }
+    },
+    {
       "template": "testimonial",
       "name": "Testimonial",
       "label": "",
@@ -96,6 +152,73 @@
         "paragraph": "Mr. Davis started the record clearing process through the Coalition by attending one of our RAP Sheet Assistance Days. After attending the event he was connected with legal aids, and in 2022 was notified that his record has been fully cleared & sealed!",
         "quote": "Having the expungement brings me great joy. It allows me to let go of a past that no longer represents who I am. I'm now a proud owner of my own company, provider for my family and mentor for my community.",
         "style": "purple"
+      }
+    },
+    {
+      "template": "slider",
+      "name": "Slider",
+      "label": "",
+      "collapse": "hide",
+      "content": {
+        "heading": "How to get involved",
+        "style": "big",
+        "color": "green",
+        "cards": [
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "SUPPORT",
+              "paragraph": "SUPPORT ONE OF OUR COMMUNITY PROGRAMS OR JOIN AN EVENT",
+              "button": {
+                "type": "internal",
+                "text": "Ways to Support",
+                "page": "get-involved/volunteer",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "hide",
+            "content": {
+              "heading": "EXPUNGE",
+              "paragraph": "CLEAR YOUR RECORD",
+              "button": {
+                "type": "internal",
+                "text": "Expungement",
+                "page": "services/clear-your-record",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "ATTEND",
+              "paragraph": "ATTEND A COMMUNITY RESOURCE FAIR OR ONE OF OUR OTHER EVENTS",
+              "button": {
+                "type": "external",
+                "text": "Events",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://www.facebook.com/CannaEquityIL/events/https://www.facebook.com/CannaEquityIL/events/",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": ""
+              }
+            }
+          }
+        ]
       }
     }
   ]

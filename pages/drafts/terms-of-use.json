@@ -5,6 +5,7 @@
     {
       "template": "text-area",
       "name": "Text Area",
+      "label": "",
       "collapse": "show",
       "content": {
         "columnOne": "# Terms of Use\r\nTerms\r\n\r\nEFFECTIVE January 1, 2023",
@@ -14,6 +15,26 @@
           "text": "",
           "page": "contact-us",
           "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "columnOne": "## 1. INTRODUCTION AND ACCEPTANCE\r\n\r\nThese “Terms” apply to the Cannabis Equity IL (“us,” “our” “we,” or “Cannabis Equity”) and our Website, www.cannabisequityil.org, where these Terms are posted (“Website”), whether accessed via personal computers, mobile devices or otherwise (collectively, (“Access Device”)).\r\n\r\nCAREFULLY READ THESE TERMS BEFORE USING THE WEBSITE, AS THEY AFFECT YOUR LEGAL RIGHTS AND OBLIGATIONS. THESE TERMS REQUIRE YOU TO GRANT US CERTAIN CONSENTS, RIGHTS AND LICENSES AND LIMIT OUR LIABILITY AND OBLIGATIONS TO YOU. BY USING THE WEBSITE, YOU AGREE TO THESE TERMS. DO NOT USE THE WEBSITE OR SERVICES AVAILABLE VIA THE WEBSITE IF YOU DO NOT AGREE.\r\n\r\nThese Terms are supported by good and valuable consideration that includes, without limitation, your use of the Website and the materials and information available there. In addition to these Terms, Cannabis Equity has established a Privacy Policy to explain how user information is collected and used by Cannabis Equity. By accessing or using the Website, you are also signifying your acknowledgement and agreement to Cannabis Equity’s Privacy Policy.",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
           "scroll": ""
         },
         "style": "plain"
