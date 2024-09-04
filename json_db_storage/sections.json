@@ -1,24 +1,17 @@
 [
   {
-    "slug": "card-with-youtube",
-    "name": "Youtube"
+    "slug": "banner",
+    "name": "Banner"
   },
   {
     "slug": "embed",
     "name": "Embed"
   },
   {
-    "slug": "social",
-    "name": "Social"
+    "slug": "cards-with-links",
+    "name": "Hover Cards"
   },
-  {
-    "slug": "images-captions",
-    "name": "Images with Captions"
-  },
-  {
-    "slug": "banner",
-    "name": "Banner"
-  },
+
   {
     "slug": "hero",
     "name": "Hero"
@@ -28,12 +21,12 @@
     "name": "History"
   },
   {
-    "slug": "cards-with-links",
-    "name": "Hover Cards"
-  },
-  {
     "slug": "card-image",
     "name": "Image Card"
+  },
+  {
+    "slug": "images-captions",
+    "name": "Images with Captions"
   },
   {
     "slug": "line",
@@ -48,11 +41,19 @@
     "name": "Slider"
   },
   {
+    "slug": "social",
+    "name": "Social"
+  },
+  {
     "slug": "testimonial",
     "name": "Testimonial"
   },
   {
     "slug": "text-area",
     "name": "Text Area"
+  },
+  {
+    "slug": "card-with-youtube",
+    "name": "Video Card"
   }
 ]
