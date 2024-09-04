@@ -213,10 +213,10 @@
               "heading": "TOOLKIT",
               "paragraph": "DOWNLOAD THE CBA TOOLKIT",
               "button": {
-                "type": "file",
+                "type": "external",
                 "text": "Download Toolkit",
                 "page": "our-work/policy-and-advocacy",
-                "link": "",
+                "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": ""
               }
