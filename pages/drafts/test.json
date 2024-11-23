@@ -8,15 +8,16 @@
       "label": "",
       "collapse": "show",
       "content": {
-        "columnOne": "## What is a Community Benefit Agreement?\r\n\r\nCommunity Benefits Agreements (CBAs) are agreements between community members/organizations and businesses, designed to ensure local needs are met when new developments come to town. From housing developments, museums & casinos, to the cannabis industry, businesses have an obligation to listen to the community and include them in their plans. The [Obama Center CBA](http://www.obamacba.org/) is a great example that inspired our organizing.\r\n\r\n## Why Are CBAs Important to Us?\r\n\r\nAs part of cannabis legalization, Illinois lawmakers allowed for the existing medical cannabis dispensary operators to open a “Plus-1” recreational dispensary. These existing operators, none of whom are led by individuals from impacted communities, are allowed to get a head start on expanding their businesses in Illinois, while new entrepreneurs are forced to wait.\r\n\r\nTo ensure that these companies, many of whom are multi-state operators, are doing their fair share to support communities impacted by prohibition, we started the #CannabisCBA campaign. Alongside Chicago Lawyers’ Committee for Civil Rights, we’ve drafted the first Cannabis Community Benefits Agreement in the country.\r\n\r\n## The Country's First Cannabis CBA\r\n\r\nOn March 3, 2020, we announced our very first CBA with a dispensary! Read about our agreement with Nature’s Care Company in Crain’s and Block Club Chicago. We signed our second agreement in the Summer of 2020, and hope all “Plus-1” dispensaries will work with organizations like ours to ensure most impacted communities are benefiting from these dispensaries.\r\n\r\nThe most impactful community benefits partnerships will result in all of the goals and commitments listed below becoming memorialized in a Community Benefits Agreement between the new dispensary and the Coalition.\r\n\r\n## The Future\r\n\r\nWe have an action plan to bring this CBA and negotiate its binding terms with licensed cannabis businesses. We encourage you to join us, especially at public meetings for proposed dispensaries — for the most up to date public meetings regarding new sites for cannabis businesses, DM or follow us @CannaEquityIL. We welcome everyone across the state to engage with this campaign, so that the “Plus-1” dispensaries statewide are working with community partners.\r\n\r\n## How to Create a Community Benefit Agreement\r\n\r\nThe Cannabis Equity Illinois Coalition welcomes you to use our Community Benefits Agreement toolkit to develop your own plan to bring positive investment and opportunity to your community.\r\n\r\nEvery community is different. You, and other leaders in your community, know the needs of your city, town, county, and region. This guide is a framework, not a path set in stone, that can and should be adapted to your needs and circumstances.",
+        "columnOne": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
         "button": {
-          "type": "no",
+          "type": "donate",
           "text": "Squirrels",
-          "page": "our-work/policy-and-advocacy",
+          "page": "about-us/mission-and-history",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }

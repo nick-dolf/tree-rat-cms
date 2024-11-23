@@ -20,7 +20,8 @@
           "page": "get-involved/become-a-member",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -43,11 +44,12 @@
               "text": "Donate to the Coalition",
               "svg": "house",
               "link": {
-                "type": "external",
+                "type": "donate",
                 "page": "test",
                 "link": "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -68,7 +70,8 @@
           "page": "get-involved/become-a-member",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }
@@ -96,7 +99,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }
@@ -160,12 +164,13 @@
         "columnOne": "## Grassroots Supporter  \r\n**$4.20/month or $50/annually**\r\n\r\n- Individual membership\r\n\r\n- Curated member newsletter with playlists, infused recipes, interviews, and more\r\n\r\n- Exclusive member sessions with Movement and Medicine",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
-          "type": "external",
+          "type": "donate",
           "text": "Become A Grassroots Supporter",
           "page": "get-involved/become-a-member",
           "link": "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "splashy"
       }
@@ -179,12 +184,13 @@
         "columnOne": "## Equity Champion \r\n**$15/month or $120/annually**\r\n\r\n- Individual membership\r\n- Access to exclusive events co-hosted by Coalition equity partners\r\n- Discounts on Coalition merch and events\r\n- Curated member newsletter with playlists, infused recipes, interviews, and more\r\n- Exclusive member sessions with Movement and Medicine",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
-          "type": "external",
+          "type": "donate",
           "text": "Become An Equity Champion",
           "page": "get-involved/become-a-member",
           "link": "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "splashy"
       }
@@ -198,12 +204,13 @@
         "columnOne": "## Entrepreneur  \r\n**$250/annually**\r\n\r\nCorporate Membership includes Equity Champion Tier items, plus:\r\n- Community Benefits Agreement consultation support\r\n- Visibility of Brand at Coalition events\r\n- Coalition-led Workshops for your staff\r\n- Access to exclusive events co-hosted by Coalition equity partners\r\n- And more!",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
-          "type": "external",
+          "type": "donate",
           "text": "Become An Entrepreneur",
           "page": "get-involved/become-a-member",
           "link": "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "splashy"
       }

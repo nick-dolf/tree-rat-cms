@@ -162,6 +162,7 @@ router.use("/drafts", require("./drafts"));
 router.use("/publish", require("./publish"));
 router.use("/blocks", require("./blocks"));
 router.use("/sections", require("./sections"));
+router.use("/site-settings", require("./siteSettings"));
 router.use("/folders", require("./folders"));
 router.use("/assets", require("./assets"));
 router.use("/assets/images", express.static("images"));

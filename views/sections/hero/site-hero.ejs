@@ -24,9 +24,11 @@
           <% let link = (content.button.page == "home" ? "" : content.button.page) %>
           <a href="<%- site.url + link %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>
         <% } else if (content.button.type == "external") { %>
-          <a href="<%- content.button.link %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>      
+          <a href="<%- content.button.link %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>
         <% } else if (content.button.type == "scroll") { %>
           <button class="btn btn--light-bg btn--large scroll" data-scroll="<%- content.button.scroll %>" type="button" name="button" ><%- content.button.text %></button>
+        <% } else if (content.button.type == "donate") { %>
+          <a href="<%- site.donate + content.button.donate %>" class="btn btn--light-bg btn--large" ><%- content.button.text %></a>
         <% } %>
         
 </section>

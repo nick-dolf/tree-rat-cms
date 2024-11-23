@@ -20,4 +20,10 @@
 <!-- Scroll -->
 <% } else if (content.link.type == "scroll") { %>
   <button class="btn--ghost scroll link-icon" data-scroll="<%- content.link.scroll %>" type="button" name="button" ><%- include("../../components/icon-svg", {id: content.svg })%><%- content.text %></button>
+<!-- Donate -->
+<% } else if (content.link.type == "donate") { %>
+  <a class="link-icon" href="<%- site.donate + content.link.donate %>" target="_blank">
+    <%- include("../../components/icon-svg", {id: content.svg })%>
+    <span><%- content.text %></span>
+  </a>
 <% } %>

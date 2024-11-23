@@ -49,9 +49,9 @@
       "template": "embed",
       "name": "Embed",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "code": "<h2>Embed Code</h2><p>(carefully please)</p>",
+        "code": "<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSf0eFNabFacTMtKj6Q15xVgcnqc44jMeC3rIaKVUvDjwm3pUg/viewform?embedded=true\"\r\n    width=\"1440\" height=\"1000\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\">Loading…</iframe>",
         "style": "standard"
       }
     }

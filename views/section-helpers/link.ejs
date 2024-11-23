@@ -16,13 +16,14 @@ if (!content[slug]) content[slug] = {}
         <select id="<%- idIndex %>-select" 
                 class="toggle"   
                 name=<%- index %>[<%- slug %>][type]
-                data-cms-targets="<%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll"
-                data-cms-values="internal external file scroll"
+                data-cms-targets="<%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll <%- idIndex2 %>donate"
+                data-cms-values="internal external file scroll donate"
                 >
           <option value="internal" <% if (content[slug].type ==  "internal") { %>selected<% } %> >Internal Link</option>
           <option value="external" <% if (content[slug].type ==  "external") { %>selected<% } %> >External Link</option>
           <option value="file" <% if (content[slug].type ==  "file") { %>selected<% } %> >File</option>
           <option value="scroll" <% if (content[slug].type ==  "scroll") { %>selected<% } %> >Scroll to Section</option>
+          <option value="donate" <% if (content[slug].type ==  "donate") { %>selected<% } %> >Donate</option>
         </select>
         <label for="<%- idIndex %>-select"><%- label %></label>
       </div>
@@ -72,6 +73,17 @@ if (!content[slug]) content[slug] = {}
                name="<%- index %>[<%- slug %>][scroll]" 
                value=<%- content[slug].scroll %>>
         <label for="<%- idIndex %>num">Scroll to Section:</label>
+      </div>
+    </div>
+    <!-- Link -->
+    <div class="col" id="<%- idIndex2 %>donate">
+      <div class="floating-label" >
+        <textarea id="<%- idIndex %>donate"
+                  name="<%- index %>[<%- slug %>][donate]"
+                  placeholder=""  
+                  rows="1"
+        ><%= content[slug].donate %></textarea>
+        <label for="<%- idIndex %>donate" title="<%- site.donate %>? + ">Extra parameters (if needed):</label>
       </div>
     </div>
   </div>

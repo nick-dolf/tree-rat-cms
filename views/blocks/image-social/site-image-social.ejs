@@ -13,6 +13,8 @@ let imgName = publishImg(content.image.src, { width: 554, widths}, locals.promis
   <a href="<%- site.url +"assets/files/"+ content.link.file %>" target="_blank">
 <% } else if (content.link.type == "scroll") { %>
   <button class="btn--ghost scroll" data-scroll="<%- content.link.scroll %>" type="button" name="button" >
+<% } else if (content.link.type == "donate") { %>
+  <a href="<%- site.donate + content.link.donate %>" target="_blank">
 <% } %>
 <div class="container">
   <div class="image-container">

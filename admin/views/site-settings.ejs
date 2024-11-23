@@ -1,0 +1,26 @@
+<%- include("base/head", { page: { title: "Site Settings", description: "Manage Site" }})%> <%- include("layouts/header")%>
+
+<main class="container p-3">
+  <div class="white-back rounded p-3">
+    <h2 class="text-dark">Site Settings</h2>
+    <p class="text-dark">All pages will be rebuilt with a Site setting change, it may take a little bit, so be patient.</p>
+  </div>
+  <hr class="brown border-2 opacity-100" />
+    <section class="roller">
+    <header class="roller-header">
+      <button type="button" class="button-ghost roller-toggle no-left no-right">
+        <h1>Header</h1>
+        <%- include("components/icon-svg", {id:"chevron", 
+                                               color: "black", 
+                                               width: 24})%>
+      </button>
+    </header>
+    <div class="roller-body">
+      <%- include("layouts/settings-header")%>
+    </div>
+  </section>
+
+
+</main>
+
+<%- include("base/foot")%>

@@ -44,6 +44,8 @@ function setup(file) {
                                   {"name": "Services", "folder": "services"},
                                   {"name": "Get Involved", "folder": "get-involved"}]
 
+  app.locals.site.donate = "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0"
+
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;
     app.locals.env = "development"

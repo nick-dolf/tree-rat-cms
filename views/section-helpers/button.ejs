@@ -17,14 +17,15 @@ if (!content[slug]) {
     <select id="<%- idIndex %>-select"
             class="toggle"
             name=<%- index %>[<%- slug %>][type]
-            data-cms-targets="!<%- idIndex2 %>text <%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll"
-            data-cms-values="no internal external file scroll"
+            data-cms-targets="!<%- idIndex2 %>text <%- idIndex2 %>internal <%- idIndex2 %>external <%- idIndex2 %>file <%- idIndex2 %>scroll <%- idIndex2 %>donate"
+            data-cms-values="no internal external file scroll donate"
             >
       <option value="no" <% if (content[slug].type ==  "no") { %>selected<% } %> >No Button</option>
       <option value="internal" <% if (content[slug].type ==  "internal") { %>selected<% } %> >Internal Link</option>
       <option value="external" <% if (content[slug].type ==  "external") { %>selected<% } %> >External Link</option>
       <option value="file" <% if (content[slug].type ==  "file") { %>selected<% } %> >File</option>
       <option value="scroll" <% if (content[slug].type ==  "scroll") { %>selected<% } %> >Scroll to Section</option>
+      <option value="donate" <% if (content[slug].type ==  "donate") { %>selected<% } %> >Donate</option>
     </select>
   </div>
 
@@ -65,7 +66,7 @@ if (!content[slug]) {
         <label for="<%- idIndex %>link">Full Link (https://example.com)</label>
       </div>
     </div>
-        <!-- File Select -->
+    <!-- File Select -->
     <div class="col" id="<%- idIndex2 %>file">
       <div class="floating-label">
         <label for="<%- idIndex %>ButtonPage">Select Page</label>
@@ -85,6 +86,16 @@ if (!content[slug]) {
                type="number" min="0"
                name="<%- index %>[<%- slug %>][scroll]" 
                value=<%- content[slug].scroll %>>
+      </div>
+    </div>
+    <!-- Donate -->
+    <div class="col" id="<%- idIndex2 %>donate">
+      <div class="floating-label" >
+        <label for="<%- idIndex %>donate" title="<%- site.donate %>? + ">Extra parameters (if needed):</label>
+        <input id="<%- idIndex %>donate"
+               type="text"
+               name="<%- index %>[<%- slug %>][donate]" 
+               value=<%- content[slug].donate %>>
       </div>
     </div>
   </div>

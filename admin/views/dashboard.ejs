@@ -1,8 +1,16 @@
 <%- include("base/head", { page: { title: "Dashboard", description: "Manage Site" }})%> <%- include("layouts/header")%>
 
-<main class="container">
-  <h1>Dashboard under construction</h1>
+<main class="container py-2 text-dark">
+  <h2 class="text-white">Dashboard</h2>
+  <section class="my-3 p-3 white-back rounded">
+    <p><a class="link-primary" href="<%= site.url %>admin/pages">Pages:</a> Add, edit and remove pages</p>
+    <p><a class="link-primary" href="<%= site.url %>admin/images">Images:</a> Add and remove images</p>
+    <p><a class="link-primary" href="<%= site.url %>admin/files">Files:</a> Add and remove files like pdfs</p>
+  </section>
   <hr class="brown border-2 opacity-100" />
+  <!-- <section class="my-3 p-3 white-back rounded">
+    <p><a class="link-primary" href="<%= site.url %>admin/site-settings">Site Settings:</a> Adjust sitewide settings like the header and footer</p>
+  </section> -->
 
 </main>
 

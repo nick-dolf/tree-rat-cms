@@ -20,7 +20,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://docs.google.com/forms/d/e/1FAIpQLSclvmhzQn7slCBL0c98O_H_FCY6h9sTmZEsfEJzH5ZmPogheg/viewform",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -64,7 +66,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://cannabisequityil.org/assets/images/alliance-priorities-one-pager-_-4_5.pdf",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -81,7 +84,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -112,7 +116,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -130,7 +135,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -148,7 +154,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -177,7 +184,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -205,7 +213,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -233,7 +242,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -243,7 +253,7 @@
       "template": "slider",
       "name": "Slider",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "How to get involved",
         "style": "big",
@@ -253,17 +263,18 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "DONATE",
               "paragraph": "SUPPORT OUR WORK WITH A DONATION",
               "button": {
-                "type": "external",
+                "type": "donate",
                 "text": "Make A Donation",
                 "page": "our-work/policy-and-advocacy",
-                "link": "https://funraise.org/give/Ceic-Corp/3aca7fd5-e9cb-4eb4-8574-807dbbb8bc93/",
+                "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -281,7 +292,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -299,7 +311,8 @@
                 "page": "get-involved/become-a-member",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
