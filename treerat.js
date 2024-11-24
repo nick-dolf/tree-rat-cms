@@ -14,7 +14,6 @@ const sanitizeHtml = require("sanitize-html");
 build.setup("treerat.json");
 
 if (process.env.NODE_ENV === "development") {
-  console.log("Environment: Development");
   app.use(express.static(app.locals.siteDir));
 
   // Live Reload
@@ -30,9 +29,8 @@ if (process.env.NODE_ENV === "development") {
     }, 100);
   });
 
-} else {
-  console.log("Environment: Staging");
 }
+console.log("Environment:", app.locals.env)
 
 /*
  * Render Middleware

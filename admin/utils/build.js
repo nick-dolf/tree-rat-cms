@@ -49,9 +49,15 @@ function setup(file) {
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;
     app.locals.env = "development"
-  } else {
+  } else if (process.env.NODE_ENV === "staging"){
     app.locals.site.url = config.stagingUrl;
     app.locals.env = "staging"
+  } else if (process.env.NODE_ENV === "production"){
+    app.locals.site.url = config.productionUrl;
+    app.locals.env = "production"
+  } else {
+    console.log("please specify an environment: development, staging, production")
+    process.exit()
   }
 
   app.locals.pages = new JsonDb("pages", "link");
@@ -167,7 +173,7 @@ function buildSite() {
    * Publish Pages
    */
   const autoBuild = (process.env.AUTO_BUILD == "false" ? false : true)
-  console.log(process.env.AUTO_BUILD, autoBuild)
+
   if (process.env.NODE_ENV != "development" || autoBuild) {  //process.env.NODE_ENV != "development"
 
     for (page of app.locals.site.pages) {
