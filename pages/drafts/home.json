@@ -1,6 +1,6 @@
 {
   "title": "Home",
-  "description": "",
+  "description": "Cannabis Equity Illinois Coalition: Providing a space for community\r\n  members to come together to share their experiences, and to organize and advocat",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "our-work/reentry-support",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": "2"
+          "scroll": "2",
+          "donate": ""
         },
         "style": "home",
         "overlay": "yes"
@@ -40,7 +41,8 @@
           "page": "our-work/reentry-support",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": "1"
+          "scroll": "1",
+          "donate": ""
         },
         "style": "plain"
       }
@@ -65,7 +67,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://google.com",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -82,7 +85,8 @@
                 "page": "services/clear-your-record",
                 "link": "",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -99,7 +103,8 @@
                 "page": "services/community-benefits-agreements",
                 "link": "",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -116,7 +121,8 @@
                 "page": "services/know-your-rights",
                 "link": "",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -137,7 +143,8 @@
           "page": "our-work/reentry-support",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "vertical",
         "color": "purple"
@@ -165,7 +172,8 @@
           "page": "get-involved/become-a-member",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "two",
         "color": "neutral"
@@ -175,17 +183,18 @@
       "template": "banner",
       "name": "Banner",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "DONATE",
         "paragraph": "The Coalition recently launched a monthly membership program to help supporters like you maximize your impact towards equity and justice.",
         "button": {
-          "type": "external",
+          "type": "donate",
           "text": "Donate",
           "page": "our-work/reentry-support",
           "link": "https://funraise.org/give/Ceic-Corp/3aca7fd5-e9cb-4eb4-8574-807dbbb8bc93/",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "horizontal",
         "color": "green"
@@ -195,7 +204,7 @@
       "template": "social",
       "name": "Social",
       "label": "",
-      "collapse": "show",
+      "collapse": "hide",
       "content": {
         "heading": "Follow us",
         "paragraph": "Check us out on Instagram to stay up to date on our news, resources and upcoming events.",
@@ -216,7 +225,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.instagram.com/p/C77C4H4xnND",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -235,7 +245,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.instagram.com/p/C8FE_WxMMBE/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -254,7 +265,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.instagram.com/p/C-TGoSBONN9/?img_index=1",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }

@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Policy & Advocacy",
+  "description": "We work to make cannabis policy in Illinois more inclusive, transparent\r\n  and accountable",
   "sections": [
     {
       "template": "hero",
@@ -62,10 +62,10 @@
               "text": "Our Legislative Priorities",
               "svg": "bill",
               "link": {
-                "type": "external",
+                "type": "file",
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://cannabisequityil.org/assets/images/alliance-priorities-one-pager-_-4_5.pdf",
-                "file": "cba-toolkit-final.pdf",
+                "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": "",
                 "donate": ""
               }

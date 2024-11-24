@@ -14,7 +14,7 @@ const sanitizeHtml = require("sanitize-html");
 build.setup("treerat.json");
 
 if (process.env.NODE_ENV === "development") {
-  app.use(express.static(app.locals.siteDir));
+  
 
   // Live Reload
   const livereload = require("livereload");
@@ -30,6 +30,7 @@ if (process.env.NODE_ENV === "development") {
   });
 
 }
+app.use(express.static(app.locals.siteDir));
 console.log("Environment:", app.locals.env)
 
 /*

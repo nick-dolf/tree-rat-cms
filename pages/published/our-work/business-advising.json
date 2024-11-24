@@ -1,6 +1,6 @@
 {
   "title": "Business Advising",
-  "description": "",
+  "description": "CEIC works to ensure cannabis businesses in Illinois benefit the communities\r\n  most impacted by prohibition, and support entrepreneurs in achieving th",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -64,7 +66,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://calendly.com/ceiccoalition/30min",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -93,7 +96,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "https://idfpr.illinois.gov/profs/adultusecan.asp",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -121,7 +125,8 @@
           "page": "services/community-benefits-agreements",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -149,7 +154,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -171,7 +177,7 @@
       "template": "slider",
       "name": "Slider",
       "label": "How to get involved",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "How to get involved",
         "style": "big",
@@ -181,17 +187,18 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "TOOLKIT",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "TOOLKIT",
               "paragraph": "DOWNLOAD THE CBA TOOLKIT",
               "button": {
-                "type": "external",
+                "type": "file",
                 "text": "Download Toolkit",
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -199,7 +206,7 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "SCHEDULE",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "SCHEDULE",
               "paragraph": "SCHEDULE AN ENTREPRENEUR SUPPORT SESSION",
@@ -209,7 +216,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://calendly.com/ceiccoalition/30min",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -217,7 +225,7 @@
             "template": "card-slider",
             "name": "Slider Card",
             "label": "PARTICIPATE",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "PARTICIPATE",
               "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
@@ -227,7 +235,8 @@
                 "page": "get-involved/become-a-member",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }

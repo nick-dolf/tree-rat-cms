@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Reentry Support",
+  "description": "CEIC supports community members with system involvement throughout the\r\n  reentry process with record clearing, wraparound resources, and more, to ensu",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "our-work/reentry-support",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -76,7 +78,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -104,7 +107,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "https://www.instagram.com/cannaequityil/?hl=en",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -132,7 +136,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral"
@@ -178,7 +183,8 @@
                 "page": "get-involved/volunteer",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -196,7 +202,8 @@
                 "page": "services/clear-your-record",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -214,7 +221,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.facebook.com/CannaEquityIL/events/https://www.facebook.com/CannaEquityIL/events/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }

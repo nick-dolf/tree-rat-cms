@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Mission & History",
+  "description": "Founded in 2019, the Cannabis Equity Illinois Coalition is a grassroots\r\n  nonprofit that advances equity in the State of Illinois by elevating communi",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "get-involved/volunteer",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -40,7 +41,8 @@
           "page": "get-involved/volunteer",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "flashy"
       }
@@ -139,7 +141,8 @@
           "page": "get-involved/volunteer",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }
@@ -213,12 +216,13 @@
               "heading": "TOOLKIT",
               "paragraph": "DOWNLOAD THE CBA TOOLKIT",
               "button": {
-                "type": "external",
+                "type": "file",
                 "text": "Download Toolkit",
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://cannabisequityil.org/assets/images/cba-toolkit-final.pdf",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -236,7 +240,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://calendly.com/ceiccoalition/30min",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -249,12 +254,13 @@
               "heading": "PARTICIPATE",
               "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
               "button": {
-                "type": "external",
+                "type": "internal",
                 "text": "Become a member",
-                "page": "our-work/policy-and-advocacy",
-                "link": "https://cannabisequityil.org/pages/get-involved/membership",
+                "page": "get-involved/become-a-member",
+                "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }

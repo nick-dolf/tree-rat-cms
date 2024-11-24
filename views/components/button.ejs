@@ -5,6 +5,9 @@
   <a href="<%- content.button.link %>" class="btn btn--svg-icon <%- extraClass %>" ><%- content.button.text %>
   <%- include("./icon-svg", {id:"external"})%>
   </a>      
+<% } else if (content.button.type == "file") { %>
+  <a href="<%- site.url +"assets/files/" + content.button.file %>" class="btn btn--svg-icon <%- extraClass %>" ><%- content.button.text %>
+  </a>      
 <% } else if (content.button.type == "scroll") { %>
   <button class="btn scroll <%- extraClass %>" data-scroll="<%- content.button.scroll %>" type="button" name="button" ><%- content.button.text %></button>
 <% } else if (content.button.type == "donate") { %>

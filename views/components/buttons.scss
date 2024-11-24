@@ -44,6 +44,10 @@
   background: $green-600;
   border-color: $green-600;
 
+  svg {
+    background: transparent;
+  }
+
   &:hover,
   &:focus-visible {
     background: $white;

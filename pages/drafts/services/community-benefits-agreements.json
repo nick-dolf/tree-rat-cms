@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Community Benefits Agreements",
+  "description": "Community Benefits Agreements (CBAs) are agreements between community\r\n  members/organizations and businesses, designed to ensure local needs are met w",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "services/clear-your-record",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -64,7 +66,8 @@
                 "page": "test",
                 "link": "https://shelterforce.org/2016/10/21/making-community-benefits-agreements-count/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -85,7 +88,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }

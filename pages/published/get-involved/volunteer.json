@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Volunteer",
+  "description": "We welcome anyone who believes in our mission to get involved! We need\r\n  all talents to help!",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "get-involved/volunteer",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://docs.google.com/forms/d/e/1FAIpQLSf5wrfcTJ7UeI6y7ne3F9CeeiNo-7rmSQIbIcXc3Y9cPg2Aug/viewform?fbzx=-2495019821929962422&pli=1",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -68,7 +70,8 @@
           "page": "get-involved/volunteer",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }

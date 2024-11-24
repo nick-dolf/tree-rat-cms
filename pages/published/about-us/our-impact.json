@@ -1,6 +1,6 @@
 {
   "title": "Our Impact",
-  "description": "",
+  "description": "It’s been another year of growth for the Coalition, and we remain steadfast\r\n  in our mission to end the War on Drugs and achieve true justice for our ",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -50,7 +51,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -68,7 +70,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -86,7 +89,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -107,7 +111,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "plain"
       }
@@ -136,7 +141,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "flashy"
       }

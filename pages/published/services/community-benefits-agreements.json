@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Community Benefits Agreements",
+  "description": "Community Benefits Agreements (CBAs) are agreements between community\r\n  members/organizations and businesses, designed to ensure local needs are met w",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "services/clear-your-record",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -64,11 +66,42 @@
                 "page": "test",
                 "link": "https://shelterforce.org/2016/10/21/making-community-benefits-agreements-count/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
         ]
+      }
+    },
+    {
+      "template": "text-area",
+      "name": "Text Area",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "columnOne": "<h1>What is a Community Benefit Agreement?</h1>\r\n<p>Community Benefits Agreements (CBAs) are agreements between community members/organizations and businesses, designed to ensure local needs are met when new developments come to town. From housing developments, museums & casinos, to the cannabis industry, businesses have an obligation to listen to the community and include them in their plans. The Obama Center CBA is a great example that inspired our organizing.</p>\r\n\r\n<h1>Why Are CBAs Important to Us?</h1>\r\n<p>As part of cannabis legalization, Illinois lawmakers allowed for the existing medical cannabis dispensary operators to open a “Plus-1” recreational dispensary. These existing operators, none of whom are led by individuals from impacted communities, are allowed to get a head start on expanding their businesses in Illinois, while new entrepreneurs are forced to wait.\r\n\r\nTo ensure that these companies, many of whom are multi-state operators, are doing their fair share to support communities impacted by prohibition, we started the #CannabisCBA campaign. Alongside Chicago Lawyers’ Committee for Civil Rights, we’ve drafted the first Cannabis Community Benefits Agreement in the country.</p>\r\n\r\n<h1>The Country's First Cannabis CBA</h1>\r\n<p>On March 3, 2020, we announced our very first CBA with a dispensary! Read about our agreement with Nature’s Care Company in Crain’s and Block Club Chicago. We signed our second agreement in the Summer of 2020, and hope all “Plus-1” dispensaries will work with organizations like ours to ensure most impacted communities are benefiting from these dispensaries.\r\n\r\nThe most impactful community benefits partnerships will result in all of the goals and commitments listed below becoming memorialized in a Community Benefits Agreement between the new dispensary and the Coalition.</p>\r\n\r\n<h1>The Future</h1>\r\n<p>We have an action plan to bring this CBA and negotiate its binding terms with licensed cannabis businesses. We encourage you to join us, especially at public meetings for proposed dispensaries — for the most up to date public meetings regarding new sites for cannabis businesses, DM or follow us @CannaEquityIL. We welcome everyone across the state to engage with this campaign, so that the “Plus-1” dispensaries statewide are working with community partners.</p>\r\n\r\n<h1>How to Create a Community Benefit Agreement</h1>\r\n<p>The Cannabis Equity Illinois Coalition welcomes you to use our Community Benefits Agreement toolkit to develop your own plan to bring positive investment and opportunity to your community. Every community is different. You, and other leaders in your community, know the needs of your city, town, county, and region. This guide is a framework, not a path set in stone, that can and should be adapted to your needs and circumstances.</p>",
+        "columnTwo": "# Squirrel Ipsum\r\n\r\n\r\n[Squiritur](https://www.thesquirrelcensus.com/) sunt **optima**. Et ascendentes arbores et saltare amant ex genere est. Et si pascere *nuces* sunt valde dolor et facti sunt amici tui.",
+        "button": {
+          "type": "no",
+          "text": "Squirrels",
+          "page": "our-work/policy-and-advocacy",
+          "link": "",
+          "file": "cba-toolkit-final.pdf",
+          "scroll": "",
+          "donate": ""
+        },
+        "style": "plain"
+      }
+    },
+    {
+      "template": "embed",
+      "name": "Embed",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 129.4118%;\r\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\r\n border-radius: 8px; will-change: transform;\">\r\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\r\n    src=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG_oHktko&#x2F;view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\r\n  </iframe>\r\n</div>\r\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG_oHktko&#x2F;view?utm_content=DAFG_oHktko&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">CBA Toolkit</a> by Peter Contos",
+        "style": "skinny"
       }
     }
   ]

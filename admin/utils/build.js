@@ -45,6 +45,7 @@ function setup(file) {
                                   {"name": "Get Involved", "folder": "get-involved"}]
 
   app.locals.site.donate = "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0"
+  app.locals.site.title = "CEIC"
 
   if (process.env.NODE_ENV === "development") {
     app.locals.site.url = config.developmentUrl;

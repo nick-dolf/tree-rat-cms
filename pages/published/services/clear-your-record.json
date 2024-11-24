@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Clear Your Record",
+  "description": "We believe everyone who has a criminal record for a cannabis offense\r\n  should have their record cleared immediately",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "services/clear-your-record",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -47,7 +48,8 @@
                 "page": "test",
                 "link": "https://newleafillinois.org/s/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -64,7 +66,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.facebook.com/watch/live/?extid=317FVRy2rHqdpH0D&ref=watch_permalink&v=757545795007193",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -81,7 +84,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.facebook.com/watch/live/?ref=watch_permalink&v=1262070770807141",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -102,7 +106,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "two-column"
       }
@@ -111,7 +116,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "group-new2020-sharped.png",
@@ -129,7 +134,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral",
@@ -146,7 +152,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.cgla.net/get-legal-help",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -162,7 +169,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://legalaidchicago.org/get-help/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -178,7 +186,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://lincolnlegal.org/apply-for-legal-services/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -194,7 +203,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.illinoislegalaid.org/legal-information/expunging-or-sealing-criminal-record",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -202,15 +212,16 @@
             "template": "link-card",
             "name": "Link",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "text": "Prairie State Legal Aid",
               "link": {
                 "type": "external",
                 "page": "our-work/policy-and-advocacy",
-                "link": "",
+                "link": "https://pslegal.org/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -226,7 +237,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://newleafillinois.org/s/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
