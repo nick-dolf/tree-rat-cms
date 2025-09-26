@@ -44,7 +44,7 @@ function setup(file) {
                                   {"name": "Services", "folder": "services"},
                                   {"name": "Get Involved", "folder": "get-involved"}]
 
-  app.locals.site.donate = "https://www.flipcause.com/secure/cause_pdetails/MjEzNDU0"
+  app.locals.site.donate = "https://givebutter.com/ceic-corp-1"
   app.locals.site.title = "CEIC"
 
   if (process.env.NODE_ENV === "development") {
@@ -160,6 +160,13 @@ function buildSite() {
    * Copy Assets
    */
   fse.copy("assets", "site/assets").catch((err) => {
+    console.error(err);
+  });
+
+  /**
+   * Move Favicon to rot folder
+   */
+  fse.copy("assets/favicon", "site").catch((err) => {
     console.error(err);
   });
 
