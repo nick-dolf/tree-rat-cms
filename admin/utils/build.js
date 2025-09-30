@@ -44,7 +44,7 @@ function setup(file) {
                                   {"name": "Services", "folder": "services"},
                                   {"name": "Get Involved", "folder": "get-involved"}]
 
-  app.locals.site.donate = "https://givebutter.com/ceic-corp-1"
+  app.locals.site.donate = "https://givebutter.com/ceic"
   app.locals.site.title = "CEIC"
 
   if (process.env.NODE_ENV === "development") {
