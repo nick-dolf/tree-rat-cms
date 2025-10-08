@@ -1,5 +1,18 @@
 [
   {
+    "name": "new-logo.png",
+    "uploadEpochTime": 1759934583515,
+    "modifiedEpochTime": "",
+    "generatedEpochTime": "",
+    "height": 500,
+    "width": 500,
+    "og": {
+      "height": 500,
+      "width": 500
+    },
+    "alt": "coalition logo\r\n"
+  },
+  {
     "name": "jobs-and-opps-aug.png",
     "uploadEpochTime": 1723051890104,
     "modifiedEpochTime": "",
