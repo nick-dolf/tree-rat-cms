@@ -6,11 +6,11 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
-          "src": "20220309_112302.jpg",
-          "alt": "Coalition members gathered before an outing"
+          "src": "dsc03914-1.jpg",
+          "alt": "Group photo at capitol, 2024"
         },
         "heading": "Our Story",
         "paragraph": "Elevating community voices and collaborating with partners to create change in the cannabis industry",
@@ -31,9 +31,9 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "# Mission\r\n\r\nFounded in 2019, the Cannabis Equity Illinois Coalition is a grassroots nonprofit that advances equity in the State of Illinois by elevating community voices and collaborating with partners to create change in the cannabis  industry. \r\n\r\nWe fight to make sure the legalization of cannabis in Illinois repairs and reinvests in the communities most impacted by the War on Drugs, and to ensure the cannabis industry prioritizes people over profits.",
+        "columnOne": "# Mission\r\n\r\nFounded in 2019, the Cannabis Equity Illinois Coalition is a grassroots nonprofit that advances equity in the State of Illinois by elevating community voices and collaborating with partners to create change in our communities. \r\n\r\nWe fight to make sure the legalization of cannabis in Illinois repairs and reinvests in the communities most impacted by the War on Drugs, and to ensure the cannabis industry prioritizes people over profits.",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
           "type": "no",
@@ -51,7 +51,7 @@
       "template": "line",
       "name": "Line",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "style": "dashed"
       }
@@ -60,7 +60,7 @@
       "template": "history",
       "name": "History",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "History",
         "color": "purple",
@@ -79,7 +79,7 @@
             "template": "event",
             "name": "Event",
             "label": "2020",
-            "collapse": "show",
+            "collapse": "hide",
             "content": {
               "date": "2020",
               "paragraph": "The Coalition organizes the first ever Community Benefits Agreement for a cannabis business in the nation, holds its first fundraiser raising thousands of dollars for record clearing programming, and launches an expanded expungement program that includes RAP Sheet Assistance Day, a community resource fair, and virtual resource fair."
@@ -89,20 +89,40 @@
             "template": "event",
             "name": "Event",
             "label": "2021",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "date": "2021",
-              "paragraph": "The Coalition celebrates the passing of HB1443, legislation that Coalition members helped draft, secures the first of a number of grants for its work in community policy research, advocacy training, and education, and forms committees to research key legislative items."
+              "paragraph": "The Coalition launched our in-house wraparound reentry services. We also celebrated the passing of HB1443, legislation that Coalition members helped draft. We secured grants for our work, including for policy research."
             }
           },
           {
             "template": "event",
             "name": "Event",
             "label": "2022",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "date": "2022",
-              "paragraph": "The Coalition launches a community legislative working group and invites the community to learn and engage with the legislative session. The Coalition also hosts its first in-person fundraiser in partnership with Hush raising thousands of dollars to support our ongoing community programs."
+              "paragraph": "We launched two major programs this year, including our re-entry collaborative, the Community Legacy Resource Fellowship, as well as the CEIC Youth Team, who provide all the same resources and programming for their peers."
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2023",
+            "collapse": "show",
+            "content": {
+              "date": "2023",
+              "paragraph": "We continued hosting our community programming, and we launched a Tech Literacy Program for people impacted by incarceration. In total, we trained nearly 1,000 people on how to use Email, write resumes and apply for jobs, create budgets, protect their online data, and much more!"
+            }
+          },
+          {
+            "template": "event",
+            "name": "Event",
+            "label": "2024",
+            "collapse": "show",
+            "content": {
+              "date": "2024",
+              "paragraph": "On top of all of our existing programming, we distributed more than 25,000 Stash Bags in collaboration with Prevention First. We hosted another lobby day, bringing more than 100 people to the Capitol to speak truth to power. "
             }
           },
           {
@@ -112,7 +132,36 @@
             "collapse": "show",
             "content": {
               "date": "Today",
-              "paragraph": "Since Legalization, the Coalition has continued to meet weekly, advocate for impacted communities in policy, organize events & campaigns to promote our mission, and watchdog the state & the cannabis industry as legalization is implemented."
+              "paragraph": "The Coalition continues to table at nearly 200 events each year, distributing resources and education for our neighbors. We continue advocating for our communities in policy, and watchdog the state. "
+            }
+          }
+        ]
+      }
+    },
+    {
+      "template": "quick-links",
+      "name": "Quick Links",
+      "label": "",
+      "collapse": "show",
+      "content": {
+        "heading": "Quick Links",
+        "quickLinks": [
+          {
+            "template": "link-text-svg",
+            "name": "Text Link with Icon",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "text": "For more information about what we did each year, read here! ",
+              "svg": "bill",
+              "link": {
+                "type": "internal",
+                "page": "about-us/our-impact",
+                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
             }
           }
         ]
@@ -122,7 +171,7 @@
       "template": "line",
       "name": "Line",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "style": "dashed"
       }
@@ -131,9 +180,9 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "# A Grassroots Approach\r\n\r\nThe Coalition organizes as a grassroots collective to expand opportunities for record clearing in Chicagoland and across Illinois, and to educate communities about their rights and record clearing opportunities.\r\n\r\nThe Coalition utilizes its grassroots strength to advocate for ‘Plus-1’ dispensaries to sign onto Community Benefits Agreements, tying the economic success of those dispensaries to impacted communities.\r\n\r\nThe Coalition's grassroots structure shapes the development of the Coalition's legislative priorities, as we gather community feedback to ensure we're fighting for changes that will bring the largest benefit to communities.",
+        "columnOne": "# A Grassroots Approach\r\n\r\nThe Coalition continues organizing to expand opportunities for record clearing in Chicagoland and across Illinois, and to educate communities about their rights. We continue researching and advocating for policies that will bring needed investment and repair to our communities. ",
         "columnTwo": "## Sample Heading\r\n\r\n\r\nThis field accepts markdown. You can do **bold** and *italic*.\r\n\r\n\r\nAdd a line in between to get a new pararaph. [Links](https://www.thesquirrelcensus.com/) can also be added.",
         "button": {
           "type": "no",
@@ -151,7 +200,7 @@
       "template": "images-captions",
       "name": "Images with Captions",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "bgcolor": "green",
         "images": [
@@ -213,6 +262,101 @@
             "label": "",
             "collapse": "show",
             "content": {
+              "heading": "PARTICIPATE",
+              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
+              "button": {
+                "type": "internal",
+                "text": "Become a member",
+                "page": "get-involved/become-a-member",
+                "link": "",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "ADVOCATE",
+              "paragraph": "JOIN TH COALITION'S POLICY ADVOCACY WORKING GROUP",
+              "button": {
+                "type": "external",
+                "text": "Sign Up ",
+                "page": "about-us/mission-and-history",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLScLS52BiGAslDTJ5orW6i2JnMAIo4iHjdFWj_2iViKn3RwiVQ/viewform",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "SUPPORT",
+              "paragraph": "DONATE TO HELP US CONTINUE OUR PROGRAMMING!",
+              "button": {
+                "type": "external",
+                "text": "Schedule A Session",
+                "page": "our-work/policy-and-advocacy",
+                "link": "https://givebutter.com/ceic",
+                "file": "cba-toolkit-final.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "NEWSLETTER",
+              "paragraph": "GET THE FRESHEST UPDATES AND INFORMATION",
+              "button": {
+                "type": "internal",
+                "text": "Sign Up ",
+                "page": "get-involved/stay-informed",
+                "link": "https://docs.google.com/forms/d/e/1FAIpQLSf5wrfcTJ7UeI6y7ne3F9CeeiNo-7rmSQIbIcXc3Y9cPg2Aug/viewform",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "SCHEDULE ",
+              "paragraph": "SCHEDULE AND ENTREPRENEUR SUPPORT SESSION ",
+              "button": {
+                "type": "external",
+                "text": "Schedule A Session ",
+                "page": "about-us/mission-and-history",
+                "link": "https://calendly.com/ceiccoalition/30min?month=2025-10",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-slider",
+            "name": "Slider Card",
+            "label": "",
+            "collapse": "show",
+            "content": {
               "heading": "TOOLKIT",
               "paragraph": "DOWNLOAD THE CBA TOOLKIT",
               "button": {
@@ -232,33 +376,14 @@
             "label": "",
             "collapse": "show",
             "content": {
-              "heading": "SCHEDULE",
-              "paragraph": "SCHEDULE AN ENTREPRENEUR SUPPORT SESSION",
+              "heading": "FOLLOW ",
+              "paragraph": "SEE ALL THE HAPPENINGS ",
               "button": {
                 "type": "external",
-                "text": "Schedule A Session",
-                "page": "our-work/policy-and-advocacy",
-                "link": "https://calendly.com/ceiccoalition/30min",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": "",
-                "donate": ""
-              }
-            }
-          },
-          {
-            "template": "card-slider",
-            "name": "Slider Card",
-            "label": "",
-            "collapse": "show",
-            "content": {
-              "heading": "PARTICIPATE",
-              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
-              "button": {
-                "type": "internal",
-                "text": "Become a member",
-                "page": "get-involved/become-a-member",
-                "link": "",
-                "file": "cba-toolkit-final.pdf",
+                "text": "Instagram ",
+                "page": "about-us/mission-and-history",
+                "link": "https://www.instagram.com/cannaequityil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
+                "file": "kyr_flyer.pdf",
                 "scroll": "",
                 "donate": ""
               }

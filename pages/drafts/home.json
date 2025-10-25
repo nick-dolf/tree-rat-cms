@@ -31,9 +31,9 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "## What We Do\r\n\r\nFormed in 2019, the Coalition provides a space for community members to come together to share their experiences, and to organize and advocate to fight for cannabis equity and justice. The Coalition supports individuals and communities in the following ways:",
+        "columnOne": "## What We Do\r\n\r\nFounded in 2019, we provide space for community members to come together to share their experiences and organize for systemic change. The Coalition supports our communities in the following ways: ",
         "columnTwo": "## Lorem ipsim\r\n\r\nLorem ipsum dolor, sit amet consectetur adipisicing elit. Optio omnis quos eius! Corrupti praesentium, mollitia, consequuntur magnam unde omnis vel quisquam laborum excepturi ex dolorum saepe. Dicta iste ipsa sit?",
         "button": {
           "type": "no",
@@ -51,17 +51,17 @@
       "template": "cards-with-links",
       "name": "Hover Cards",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "cards": [
           {
             "template": "card-with-link",
             "name": "Card with Link",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "Legislative Education",
-              "paragraph": "Using legislative education to increase engagement amongst our community members in the policy process.",
+              "paragraph": "Using legislative education to increase engagement amongst our community members in the policy process. ",
               "link": {
                 "type": "internal",
                 "page": "our-work/policy-and-advocacy",
@@ -76,10 +76,10 @@
             "template": "card-with-link",
             "name": "Card with Link",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
               "heading": "Expungement Resources",
-              "paragraph": "Provides services and support for individuals to expunge or seal their criminal records, especially for cannabis offenses. We advocate to promote the expansion of automatic expungement, and to ensure anyone with a criminal record is able to access record clearing in a timely manner.",
+              "paragraph": "Provides services and support for individuals to expunge or seal their criminal records, especially for cannabis offenses. We advocate to promote the expansion of automatic expungement, and to ensure anyone with a criminal record is able to access record clearing in a timely manner. ",
               "link": {
                 "type": "internal",
                 "page": "services/clear-your-record",
@@ -94,13 +94,13 @@
             "template": "card-with-link",
             "name": "Card with Link",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
-              "heading": "Community Benefits Agreements",
-              "paragraph": "Advocate for cannabis dispensaries to formally partner with community organizations by encouraging the implementation of Community Benefits Agreements.",
+              "heading": "Know Your Rights",
+              "paragraph": "Hosts Know Your Rights (KYR) education sessions and promote KYR information to ensure nobody else is criminalized for cannabis.",
               "link": {
                 "type": "internal",
-                "page": "services/community-benefits-agreements",
+                "page": "services/know-your-rights",
                 "link": "",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": "",
@@ -112,13 +112,49 @@
             "template": "card-with-link",
             "name": "Card with Link",
             "label": "",
-            "collapse": "hide",
+            "collapse": "show",
             "content": {
-              "heading": "Know Your Rights",
-              "paragraph": "We host Know Your Rights education sessions and promote KYR information to ensure nobody else is criminalized for cannabis.",
+              "heading": "Mutual Aid",
+              "paragraph": "We seek to meet the immediate needs of our neighbors through resource distribution, social services referrals, education, and more.",
               "link": {
                 "type": "internal",
-                "page": "services/know-your-rights",
+                "page": "about-us/our-impact",
+                "link": "",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "Youth Programming",
+              "paragraph": "Starting in 2022, we began hosting programming and services for young people, led & delivered by young people. ",
+              "link": {
+                "type": "internal",
+                "page": "about-us/our-impact",
+                "link": "",
+                "file": "kyr_flyer.pdf",
+                "scroll": "",
+                "donate": ""
+              }
+            }
+          },
+          {
+            "template": "card-with-link",
+            "name": "Card with Link",
+            "label": "",
+            "collapse": "show",
+            "content": {
+              "heading": "Community Benefits Agreements",
+              "paragraph": "Advocate for cannabis dispensaries to formally partner with community organizations by encouraging the implementation of Community Benefits Agreements. ",
+              "link": {
+                "type": "internal",
+                "page": "services/community-benefits-agreements",
                 "link": "",
                 "file": "alliance-priorities-one-pager-_-4_5.pdf",
                 "scroll": "",
@@ -133,7 +169,7 @@
       "template": "banner",
       "name": "Banner",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "WE ARE THE WATCHDOG",
         "paragraph": "of the government and of the industry, working to ensure legalization benefits those most impacted by cannabis prohibition.",
@@ -154,7 +190,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "juneteenth-w-small-group.jpg",

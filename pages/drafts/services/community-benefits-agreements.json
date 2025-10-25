@@ -31,28 +31,10 @@
       "template": "quick-links",
       "name": "Quick Links",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "Quick Links",
         "quickLinks": [
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "hide",
-            "content": {
-              "text": "Download our CBA toolkit (pdf)",
-              "svg": "bill",
-              "link": {
-                "type": "file",
-                "page": "test",
-                "link": "https://www.youtube.com/watch?v=w7f1z27RI7g",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": "",
-                "donate": ""
-              }
-            }
-          },
           {
             "template": "link-text-svg",
             "name": "Text Link with Icon",
@@ -92,16 +74,6 @@
           "donate": ""
         },
         "style": "plain"
-      }
-    },
-    {
-      "template": "embed",
-      "name": "Embed",
-      "label": "",
-      "collapse": "show",
-      "content": {
-        "code": "<div style=\"position: relative; width: 100%; height: 0; padding-top: 129.4118%;\r\n padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;\r\n border-radius: 8px; will-change: transform;\">\r\n  <iframe loading=\"lazy\" style=\"position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;\"\r\n    src=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG_oHktko&#x2F;view?embed\" allowfullscreen=\"allowfullscreen\" allow=\"fullscreen\">\r\n  </iframe>\r\n</div>\r\n<a href=\"https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAFG_oHktko&#x2F;view?utm_content=DAFG_oHktko&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link\" target=\"_blank\" rel=\"noopener\">CBA Toolkit</a> by Peter Contos",
-        "style": "skinny"
       }
     }
   ]

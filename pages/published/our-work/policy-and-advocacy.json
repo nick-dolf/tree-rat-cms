@@ -41,24 +41,6 @@
             "label": "",
             "collapse": "show",
             "content": {
-              "text": "Lobby Day Interest Form",
-              "svg": "bill",
-              "link": {
-                "type": "external",
-                "page": "test",
-                "link": "https://docs.google.com/forms/d/e/1FAIpQLSclvmhzQn7slCBL0c98O_H_FCY6h9sTmZEsfEJzH5ZmPogheg/viewform",
-                "file": "cba-toolkit-final.pdf",
-                "scroll": "",
-                "donate": ""
-              }
-            }
-          },
-          {
-            "template": "link-text-svg",
-            "name": "Text Link with Icon",
-            "label": "",
-            "collapse": "show",
-            "content": {
               "text": "Our Legislative Priorities",
               "svg": "bill",
               "link": {
@@ -303,12 +285,12 @@
             "label": "",
             "collapse": "show",
             "content": {
-              "heading": "PARTICIPATE",
-              "paragraph": "ACTIVELY PARTICIPATE IN THE CHANGE",
+              "heading": "NEWSLETTER",
+              "paragraph": "GET THE FRESHEST UPDATES AND INFORMATION",
               "button": {
                 "type": "internal",
-                "text": "Become A Member",
-                "page": "get-involved/become-a-member",
+                "text": "Sign Up",
+                "page": "get-involved/stay-informed",
                 "link": "",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": "",

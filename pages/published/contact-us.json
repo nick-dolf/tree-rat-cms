@@ -1,6 +1,6 @@
 {
-  "title": "",
-  "description": "",
+  "title": "Contact Us",
+  "description": "Ways to reach out and connect with the Coalition",
   "sections": [
     {
       "template": "hero",
@@ -20,7 +20,8 @@
           "page": "contact-us",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -32,7 +33,7 @@
       "label": "",
       "collapse": "show",
       "content": {
-        "columnOne": "### Email\r\n\r\nCannabisEquityIL<!-- -->@gmail.com - <a href=\"mailto:CannabisEquityIL@gmail.com\" title=\"\" target=\"_blank\">launch email</a>",
+        "columnOne": "### Email\r\n\r\ninfo<!-- -->@cannabisequityil.org - <a href=\"mailto:info@cannabisequityil.org\" title=\"\" target=\"_blank\">launch email</a>",
         "columnTwo": "### Social Media\r\n\r\nFollow us on <a href=\"https://www.instagram.com/CannaEquityIL/\" title=\"\" target=\"_blank\">Instagram</a>, <a href=\"https://www.facebook.com/CannaEquityIL/?ref=page_internal\" title=\"\" target=\"_blank\">Facebook</a>, and <a href=\"https://twitter.com/CannaEquityIL/\" title=\"\" target=\"_blank\">Twitter</a>\r\n - @cannabisequityil, #CannabisEquityIL, and #CannabisCBA",
         "button": {
           "type": "no",
@@ -40,7 +41,8 @@
           "page": "contact-us",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "two-column"
       }

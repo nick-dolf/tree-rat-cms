@@ -147,7 +147,7 @@
       "template": "testimonial",
       "name": "Testimonial",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "jefferson.jpg",
@@ -163,7 +163,7 @@
       "template": "slider",
       "name": "Slider",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "How to get involved",
         "style": "big",
@@ -213,13 +213,13 @@
             "label": "",
             "collapse": "show",
             "content": {
-              "heading": "ATTEND",
-              "paragraph": "ATTEND A COMMUNITY RESOURCE FAIR OR ONE OF OUR OTHER EVENTS",
+              "heading": "INSTAGRAM",
+              "paragraph": "FOLLOW US ON INSTAGRAM FOR MORE RESOURCES AND INFORMATION",
               "button": {
                 "type": "external",
-                "text": "Events",
+                "text": "Follow ",
                 "page": "our-work/policy-and-advocacy",
-                "link": "https://www.facebook.com/CannaEquityIL/events/https://www.facebook.com/CannaEquityIL/events/",
+                "link": "https://www.instagram.com/cannaequityil?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==",
                 "file": "cba-toolkit-final.pdf",
                 "scroll": "",
                 "donate": ""

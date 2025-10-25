@@ -20,7 +20,8 @@
           "page": "get-involved/become-a-member",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "standard",
         "overlay": "yes"
@@ -30,17 +31,18 @@
       "template": "text-area",
       "name": "Text Area",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
-        "columnOne": "<h3>Community Partners</h3><ul><li><p><a href=\"https://chicagovotes.com/\">Chicago\r\nVotes</a></p></li><li><p><a href=\"https://codeforchicago.org/\">Code for Chicago</a></p></li><li><p><a\r\nhref=\"https://www.theportministries.org/\">Port Ministries</a></p></li><li><p><a\r\nhref=\"https://www.herbalnotes.co/home\">Herbal Notes</a></p></li><li><p><a href=\"https://www.instagram.com/movementandmedicine420/?hl=en\">Movement\r\n&amp; Medicine / Jean &amp; Jane</a></p></li><li><p><a href=\"https://www.organizedcommunities.org/\">Organized\r\nCommunities Against Deportation</a></p></li><li><p><a href=\"https://www.chicagonorml.org/\">Chicago\r\nNORML</a></p></li><li><p><a href=\"https://www.equityempower.org/ \" title=\"\">Social\r\nEquity Empowerment Network</a></p></li><li><p><a href=\"https://www.eatchicago.org/\">Equity\r\nAnd Transformation</a></p></li><li><p><a href=\"http://google.com/\">PURE Coalition</a></p></li><li><p><a\r\nhref=\"https://www.illinoisequitystaffing.com/\">IL Equity Staffing</a></p></li><li><p><a\r\nhref=\"https://www.thcstaffinggroup.com/\">THC Staffing Group</a></p></li><li><p><a\r\nhref=\"https://themedicalcannabiscommunity.org/\">The Medical Cannabis Community</a></p></li><li><p><a\r\nhref=\"https://endmoneybond.org/\">Coalition to End Money Bond</a></p></li><li><p><a\r\nhref=\"https://endmoneybond.org/illinois-network-for-pretrial-justice/\">Illinois\r\nNetwork for Pretrial Justice</a></p></li><li><p><a href=\"https://www.illinoiscannabistrainingcenter.com/\">Illinois\r\nCannabis Training Center</a></p></li><li><p><a href=\"https://www.institutochicago.org/\"\r\ntitle=\"\">Instituto del Progreso Latino</a></p></li><li><p><a href=\"https://www.pilsenneighbors.org/\"\r\ntitle=\"\">Pilsen Neighbors Community Council</a></p></li><li><p><a href=\"https://ilwomenincannabis.org/\"\r\ntitle=\"\">IL Women in Cannabis</a></p></li><li><p><a href=\"https://www.aclu-il.org/en\"\r\ntitle=\"\">ACLU IL</a></p></li><li><p><a href=\"https://livefreeillinois.org/\" title=\"\">Live\r\nFree Illinois</a></p></li><li><p><a href=\"https://livefreeillinois.org/\" title=\"\">Soul\r\nand Wellness</a></p></li><li><p><a href=\"https://moderncompassionatecare.com/\"\r\ntitle=\"\">Modern Compassionate Care</a></p></li><li><p><a href=\"https://www.1863fwd.org/\"\r\ntitle=\"\">1863FWD</a></p></li><li><p><a href=\"https://www.injusticewatch.org/\"\r\ntitle=\"\">Injustice Watch</a></p><p></p></li></ul>",
-        "columnTwo": "<h3>Expungement &amp; Legal Aid Partners</h3><ul><li><p><a href=\"https://www.legalaidchicago.org/\">Legal\r\n    Aid Chicago</a></p></li><li><p><a href=\"https://www.cgla.net/\">Cabrini Green Legal\r\n    Aid</a></p></li><li><p><a href=\"https://newleafillinois.org/s/\">New Leaf Illinois</a></p></li><li><p><a\r\n    href=\"https://www.herballegal.co/\">Herbal Legal</a></p></li><li><p><a href=\"https://www.law.northwestern.edu/legalclinic/civil/community-justice/\"\r\n    title=\"\">Northwestern University Community Justice and Civil Rights Clinic</a></p></li><li><p><a\r\n    href=\"https://www.instagram.com/westside_justice_center/?hl=en\" title=\"\">Westside\r\n    Justice Center</a></p></li><li><p><a href=\"https://www.teamworkenglewood.org/\"\r\n    title=\"\">Teamwork Englewood</a></p></li><li><p><a href=\"https://www.gclclaw.org/\"\r\n    title=\"\">Greater Chicago Legal Aid</a></p></li></ul><p></p><h3>National Partners</h3><ul><li><p><a\r\n    href=\"https://wocc.world/\">Women of Color in Cannabis</a></p></li><li><p><a href=\"https://massreccouncil.com/\">Massachusetts\r\n    Recreational Consumer Council</a></p></li><li><p><a href=\"https://www.hoodincubator.org/\">The\r\n    Hood Incubator</a></p></li><li><p><a href=\"https://www.cannabisworkerscoalition.org/\"\r\n    title=\"\">Cannabis Workers Coalition</a></p></li><li><p><a href=\"https://www.marijuanajustice.org/\"\r\n    title=\"\">Marijuana Justice Virginia</a></p></li><li><p><a href=\"https://www.facebook.com/nmcjp/\"\r\n    title=\"\">NM Cannabis Justice Project</a></p></li></ul><p></p>",
+        "columnOne": "<h3>Advocacy Campaigns</h3><ul><li><p><a\r\nhref=\"https://finesandfeesjusticecenter.org/\">Fines and Fees Justice Center</a></p></li><li><p><a href=\"https://endmoneybond.org/illinois-network-for-pretrial-justice//\">Ending Money Bond</a></p></li><li><p><a href=\"https://www.cleanslateillinois.org/\">Clean Slate Record Clearing</a></p></li><li><p><a href=\"https://www.illinoisharmreduction.org/\">IL Harm Reduction and Recovery Coalition</a></p></li><li><p><a href=\"https://www.organizedcommunities.org/\">Organized Communities Against Deportation</a></p></li><li><p><a href=\"https://endmoneybond.org/illinois-network-for-pretrial-justice/\">Illinois Network for Pretrial Justice</a></p></li><li><p><a  href=\"https://endmoneybond.org/illinois-network-for-pretrial-justice/\">Illinois Network for Pretrial Justice</a></p></li><li><p><a href=\"https://www.aclu-il.org/en\">ACLU IL</a></p></li><li><p><a href=\"https://livefreeillinois.org/\">Live Free Illinois</a></p></li><li><p><a href=\"https://www.free2movechi.org/\">Free2Move Coalition</a></p></li><li><p><a href=\"https://accessliving.org/\">Access Living</a></p></li></ul><p></p>\r\n<h3>Community Organizing Collaborators</h3><ul><li><p><a\r\nhref=\"https://www.buildchicago.org/\">Build Chicago</a></p></li><li><p><a href=\"https://www.callandresponsechi.com/\">Call and Response Books</a></p></li><li><p><a href=\"https://www.chicagotorturejustice.org/\">Chicago Torture Justice Center</a></p></li><li><p><a href=\"https://cedillosfreshproduce.com/marketplace/i2pm61ozf1sqkqvn00hckeh14ksojc\">Englewood Fresh Market</a></p></li><li><p><a href=\"https://eriehouse.org/\">Erie House</a></p></li><li><p><a href=\"https://www.eatchicago.org/?gad_source=1&gclid=CjwKCAjw8IfABhBXEiwAxRHlsEX9EgwypV2o2R7YDm5IYSTYaiB0qXDVgQxZdxAjMK9TwNXlvE0r2hoCzYcQAvD_BwE\">Equity and Transformation</a></p></li><li><p><a href=\"https://www.gkmcenglewood.com/\">Good Kids Mad City</a></p></li><li><p><a href=\"https://gracias-maria.square.site/\">Gracias Maria</a></p></li><li><p><a href=\"https://www.hpuc.org/\">Hyde Park Union Church</a></p></li><li><p><a href=\"https://ilwomenincannabis.org/\">IL Women in Cannabis</a></p></li><li><p><a href=\"https://www.instagram.com/moneytreegenetics/?hl=en\">Money Tree Genetics</a></p></li><li><p><a href=\"https://www.nlen.org/\">North Lawndale Employment Network</a></p></li><li><p><a href=\"https://www.instagram.com/thehustlemommies/p/C74RV3zRZGW/\">Paint the Hood Orange</a></p></li><li><p><a href=\"https://ucanchicago.org/\">UCAN</a></p></li><li><p><a href=\"https://www.ta98.org/\">TA98</a></p></li><li><p><a href=\"https://www.instagram.com/transchicago/?hl=en\">Trans Chicago</a></p></li><li><p><a href=\"https://saintsabina.org/audio-sermons/361-don-t-get-caught-up-in-the-coop.html?ref=blackcatholicmessenger.com\">St. Sabina</a></p></li><li><p><a href=\"https://yollocalli.org/\">Yollocalli</a></p></li><li><p><a href=\"https://ywcachicago.org/?gad_source=1&gclid=CjwKCAjw8IfABhBXEiwAxRHlsHPFo0NlEv_jUndvLKn3aJS08o987yA3ta8uiJrkAlVulUjmuKXeWRoCEgMQAvD_BwE\">YWCA</a></p></li></ul><p></p>\r\n<h3>Expungement &amp; Legal Aid Partners</h3><ul><li><p><a href=\"https://www.legalaidchicago.org/\">Legal\r\n    Aid Chicago</a></p></li><li><p><a href=\"https://www.cgla.net/\">Cabrini Green Legal\r\n    Aid</a></p></li><li><p><a href=\"https://newleafillinois.org/s/\">New Leaf Illinois</a></p></li><li><p><a href=\"https://www.law.northwestern.edu/legalclinic/civil/community-justice/\"\r\n    title=\"\">Northwestern University Community Justice and Civil Rights Clinic</a></p></li><li><p><a\r\n    href=\"https://www.instagram.com/westside_justice_center/?hl=en\" title=\"\">Westside\r\n    Justice Center</a></p></li><li><p><a href=\"https://www.teamworkenglewood.org/\"\r\n    title=\"\">Teamwork Englewood</a></p></li><li><p><a href=\"https://www.gclclaw.org/\"\r\n    title=\"\">Greater Chicago Legal Aid</a></p></li></ul><p></p><h3>Medical Wellness</h3><ul><li><p><a href=\"https://www.soulandwellness.net/\">Soul and Wellness LLC</a></p></li><li><p><a href=\"https://moderncompassionatecare.com/\">Modern Compassionate Care</a></p></li><li><p><a  href=\"https://leafwell.com/events/ceic\">Leafwell",
+        "columnTwo": "<h3>Community Partners</h3><ul><li><p><a href=\"https://chicagovotes.com/\">Chicago\r\nVotes</a></p></li><li><p><a href=\"https://codeforchicago.org/\">Code for Chicago</a></p></li><li><p><a\r\nhref=\"https://www.theportministries.org/\">Port Ministries</a></p></li><li><p><a\r\nhref=\"https://www.herbalnotes.co/home\">Herbal Notes</a></p></li><li><p><a href=\"https://www.instagram.com/movementandmedicine420/?hl=en\">Movement\r\n&amp; Medicine / Jean &amp; Jane</a></p></li><li><p><a href=\"https://www.organizedcommunities.org/\">Organized\r\nCommunities Against Deportation</a></p></li><li><p><a href=\"https://www.chicagonorml.org/\">Chicago\r\nNORML</a></p></li><li><p><a href=\"https://www.equityempower.org/ \" title=\"\">Social\r\nEquity Empowerment Network</a></p></li><li><p><a href=\"https://www.eatchicago.org/\">Equity\r\nAnd Transformation</a></p></li><li><p><a href=\"http://google.com/\">PURE Coalition</a></p></li><li><p><a\r\nhref=\"https://www.illinoisequitystaffing.com/\">IL Equity Staffing</a></p></li><li><p><a\r\nhref=\"https://www.thcstaffinggroup.com/\">THC Staffing Group</a></p></li><li><p><a\r\nhref=\"https://themedicalcannabiscommunity.org/\">The Medical Cannabis Community</a></p></li><li><p><a\r\nhref=\"https://endmoneybond.org/\">Coalition to End Money Bond</a></p></li><li><p><a\r\nhref=\"https://endmoneybond.org/illinois-network-for-pretrial-justice/\">Illinois\r\nNetwork for Pretrial Justice</a></p></li><li><p><a href=\"https://www.illinoiscannabistrainingcenter.com/\">Illinois\r\nCannabis Training Center</a></p></li><li><p><a href=\"https://www.institutochicago.org/\"\r\ntitle=\"\">Instituto del Progreso Latino</a></p></li><li><p><a href=\"https://www.pilsenneighbors.org/\"\r\ntitle=\"\">Pilsen Neighbors Community Council</a></p></li><li><p><a href=\"https://ilwomenincannabis.org/\"\r\ntitle=\"\">IL Women in Cannabis</a></p></li><li><p><a href=\"https://www.aclu-il.org/en\"\r\ntitle=\"\">ACLU IL</a></p></li><li><p><a href=\"https://livefreeillinois.org/\" title=\"\">Live\r\nFree Illinois</a></p></li><li><p><a href=\"https://livefreeillinois.org/\" title=\"\">Soul\r\nand Wellness</a></p></li><li><p><a href=\"https://moderncompassionatecare.com/\"\r\ntitle=\"\">Modern Compassionate Care</a></p></li><li><p><a href=\"https://www.1863fwd.org/\"\r\ntitle=\"\">1863FWD</a></p></li><li><p><a href=\"https://www.injusticewatch.org/\"\r\ntitle=\"\">Injustice Watch</a></p><p></p></li></ul>\r\n</h3><ul><li><p><a href=\"https://www.legalaidchicago.org/\">Legal\r\n    Aid Chicago</a></p></li><li><p><a href=\"https://www.cgla.net/\">Cabrini Green Legal\r\n    Aid</a></p></li><li><p><a href=\"https://newleafillinois.org/s/\">New Leaf Illinois</a></p></li><li><p><a href=\"https://www.law.northwestern.edu/legalclinic/civil/community-justice/\"\r\n    title=\"\">Northwestern University Community Justice and Civil Rights Clinic</a></p></li><li><p><a\r\n    href=\"https://www.instagram.com/westside_justice_center/?hl=en\" title=\"\">Westside\r\n    Justice Center</a></p></li><li><p><a href=\"https://www.teamworkenglewood.org/\"\r\n    title=\"\">Teamwork Englewood</a></p></li></ul><p></p><h3>Medical Wellness</h3><ul><li><p><a href=\"https://www.soulandwellness.net/\">Soul and Wellness LLC</a></p></li><li><p><a href=\"https://moderncompassionatecare.com/\">Modern Compassionate Care</a></p></li><li><p><a  href=\"https://leafwell.com/events/ceic\">Leafwell</a></p></li></ul><p></p><h3>National Partners</h3><ul><li><p><a href=\"https://drugpolicy.org/\">Drug Policy Alliance</a></p></li><li><p><a href=\"https://www.parabolacenter.com/\"\r\n    title=\"\">Parabola Celter</a></p></li><li><p><a href=\"https://www.marijuanajustice.org/\"\r\n    href=\"https://www.cannabisworkerscoalition.org/\"\r\n    title=\"\">Cannabis Workers Coalition</a></p></li><li><p><a href=\"https://www.marijuanajustice.org/\"\r\n    title=\"\">Marijuana Justice Virginia\r\n</a></p></li></ul><p></p><h3>University Partners</h3><ul><li><p><a href=\"https://www.adler.edu/adler-community-health-services/\">Adler Community Health</a></p></li><li><p><a href=\"https://business.depaul.edu/Pages/default.aspx\">DePaul College of Business</a></p></li><li><p><a href=\"https://csh.depaul.edu/academics/health-sciences/graduate/public-health-mph/Pages/default.aspx\">DePaul School of Public Health</a></p></li><li><p><a href=\"https://www.instagram.com/cannabislawsocietyuic/\">University of Illinois - Chicago - Cannabis Law Society",
         "button": {
           "type": "no",
           "text": "Squirrels",
-          "page": "get-involved/become-a-member",
+          "page": "about-us/mission-and-history",
           "link": "",
-          "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "file": "kyr_flyer.pdf",
+          "scroll": "",
+          "donate": ""
         },
         "style": "two-column"
       }
@@ -49,7 +51,7 @@
       "template": "card-image",
       "name": "Image Card",
       "label": " Illinois Cannabis Unions",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "romain-dancre-doplsdelx7e-unsplash-554-b3cf9a1de.webp",
@@ -67,7 +69,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "https://www.ilcannabisunions.com/",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral",
@@ -84,7 +87,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.ilcannabisunions.com/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }
@@ -113,7 +117,8 @@
           "page": "our-work/policy-and-advocacy",
           "link": "",
           "file": "cba-toolkit-final.pdf",
-          "scroll": ""
+          "scroll": "",
+          "donate": ""
         },
         "style": "one",
         "color": "neutral",
@@ -130,7 +135,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://cannabis.illinois.gov/agencies/cannabis-idoa.html",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -146,7 +152,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://www.chicago.gov/city/en/sites/cannabis-information-center/home.html",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -162,7 +169,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://r3.illinois.gov/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           },
@@ -178,7 +186,8 @@
                 "page": "our-work/policy-and-advocacy",
                 "link": "https://dceo.illinois.gov/",
                 "file": "cba-toolkit-final.pdf",
-                "scroll": ""
+                "scroll": "",
+                "donate": ""
               }
             }
           }

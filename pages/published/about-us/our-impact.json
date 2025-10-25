@@ -6,14 +6,14 @@
       "template": "hero",
       "name": "Hero",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "image": {
           "src": "protest-5561x3707-1600-a44d126ac.webp",
           "alt": "Image of a hand holding up a red and white bullhorn with a tall tan building in the background"
         },
         "heading": "Our Impact",
-        "paragraph": "It’s been another year of growth for the Coalition, and we remain steadfast in our mission to end the War on Drugs and achieve true justice for our communities.",
+        "paragraph": "Since 2019, we have continued to grow our membership & our impact in the community. We’re proud to include members throughout Chicagoland, from Austin to Auburn Gresham, Roseland to Rogers Park. We’ve gained members and collaborators across Illinois, including Rockford, Waukegan, Peoria, Champaign, Decatur, Springfield, Carbondale, and East St. Louis. ",
         "button": {
           "type": "no",
           "text": "Squirrels",
@@ -31,7 +31,7 @@
       "template": "slider",
       "name": "Slider",
       "label": "",
-      "collapse": "hide",
+      "collapse": "show",
       "content": {
         "heading": "Impact at a Glance",
         "style": "normal",
@@ -43,8 +43,8 @@
             "label": "7",
             "collapse": "show",
             "content": {
-              "heading": "7",
-              "paragraph": "Grants awarded to the coalition",
+              "heading": "180",
+              "paragraph": "Community Events Attended in 2024",
               "button": {
                 "type": "no",
                 "text": "",
@@ -62,8 +62,8 @@
             "label": "8",
             "collapse": "show",
             "content": {
-              "heading": "8",
-              "paragraph": "Coalition working groups officially established",
+              "heading": "110",
+              "paragraph": "People attended 2024 Lobby Day",
               "button": {
                 "type": "no",
                 "text": "",
@@ -81,8 +81,8 @@
             "label": "152",
             "collapse": "show",
             "content": {
-              "heading": "152",
-              "paragraph": "Community members initiated expungement",
+              "heading": "25000",
+              "paragraph": "Prevention First Stash Bags distributed ",
               "button": {
                 "type": "no",
                 "text": "Squirrels",
