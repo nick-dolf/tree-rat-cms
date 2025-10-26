@@ -21,10 +21,14 @@
 
 .logo--mobile {
   width: 234px;
+  aspect-ratio: 3/2;
+  object-fit: cover;
+  border-radius: 5px;
 }
 
 .logo--primary {
   width: 149px;
+  border-radius: 5px;
 }
 
 .logo-responsive {

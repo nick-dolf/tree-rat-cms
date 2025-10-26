@@ -26,7 +26,7 @@ if (process.env.NODE_ENV === "development") {
   liveReloadServer.server.once("connection", () => {
     setTimeout(() => {
       liveReloadServer.refresh("/");
-    }, 100);
+    }, 1500);
   });
 
 }

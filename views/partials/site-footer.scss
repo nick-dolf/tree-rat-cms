@@ -54,13 +54,12 @@
   @include tablet {
     margin-top: 0;
     grid-column: col-start / col-1;
-    grid-row: row-1 / row-3;
+    grid-row: row-1 / row-2;
   }
 
   @include desktop {
-    margin-top: 2rem;
     grid-column: col-start / col-1;
-    grid-row: row-2 / row-end;
+    grid-row: row-2 / row-3;
   }
 }
 

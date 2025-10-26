@@ -1,5 +1,8 @@
+<% 
+let widths = [400]; 
+let imgName = publishImg('new-logo.png', { width: 400, height: 320, widths}, locals.promises) 
+%>
+
 <a class="link--logo" href="<%- site.url %>" aria-label="Home page">
-  <svg class="logo logo--primary" viewBox="0 0 194 105" xmlns="http://www.w3.org/2000/svg">
-    <use xlink:href="<%- site.url %>assets/svgs/sprites.svg#primary-logo" />
-  </svg>
+  <img class="logo logo--primary" src="<%- site.url %>assets/images/<%- imgName %>-400.jpg" alt="">
 </a>
